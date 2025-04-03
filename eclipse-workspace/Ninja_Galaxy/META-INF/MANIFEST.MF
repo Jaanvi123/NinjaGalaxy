@@ -1,9 +1,0 @@
-Manifest-Version: 1.0
-Bundle-ManifestVersion: 2
-Bundle-Name: we_Team4
-Bundle-SymbolicName: Ninja_Galaxy
-Bundle-Version: 1.0.0.qualifier
-Bundle-RequiredExecutionEnvironment: JavaSE-23
-Automatic-Module-Name: we.Team4
-Export-Package: runner,
- we_Team4ds_algo
