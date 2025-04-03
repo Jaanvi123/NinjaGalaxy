@@ -1,6 +1,6 @@
 package Dsalgo_StepDefination;
 
-import java.sql.Driver;
+
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -11,10 +11,10 @@ import io.cucumber.java.en.When;
 
 public class home {
 	
-	
+
 
 	@Given(" The user is in the ds-algo launch page")
-	public void The_user_on_home_page() {
+	public void The_user_is_in_the_ds-algo_launch_page() {
 		
 		
 	}
