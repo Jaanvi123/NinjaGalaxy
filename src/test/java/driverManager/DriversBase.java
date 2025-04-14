@@ -1,4 +1,4 @@
-package DriverManager;
+package driverManager;
 
 
 	import org.openqa.selenium.WebDriver;
@@ -7,8 +7,8 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 	import org.openqa.selenium.firefox.FirefoxDriver;
 
-import Utils.ConfigReader;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import utils.ConfigReader;
 
 import java.time.Duration;
 

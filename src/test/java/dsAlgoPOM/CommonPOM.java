@@ -1,4 +1,4 @@
-package DSAlgoPOM;
+package dsAlgoPOM;
 
 public class CommonPOM {
 

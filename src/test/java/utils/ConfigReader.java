@@ -1,11 +1,12 @@
-package Utils;
+package utils;
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
-import DriverManager.DriversBase;
+
+import driverManager.DriversBase;
 
 public class ConfigReader {
 
