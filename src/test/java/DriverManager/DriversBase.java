@@ -1,78 +1,63 @@
 package DriverManager;
 
 
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.time.Duration;
-import java.util.Properties;
-
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+	import org.openqa.selenium.WebDriver;
+	import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.remote.RemoteWebDriver;
-import org.testng.annotations.BeforeMethod;
+	import org.openqa.selenium.firefox.FirefoxDriver;
 
+import Utils.ConfigReader;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class DriversBase {
-	
-	public static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
-//	public static ThreadLocal<RemoteWebDriver > driver = new ThreadLocal<>();
-	public Properties prop;
-	public static String url;
-	
-	public void setDriver(WebDriver driver) {
-		this. driver.set(driver);
-	}
-	
-	public WebDriver getDriver() {
-		return this.driver.get();
-	}
+import java.time.Duration;
 
-	public void setupDriver(String browser) {
-		if(getDriver()==null){
-//			if(prop.getProperty("browser").equalsIgnoreCase("chrome")){
-			if(browser.equalsIgnoreCase("chrome")){
-				WebDriverManager.chromedriver().setup();
-//				System.setProperty("webdriver.Chrome.driver","\\src\\test\\resources\\drivers\\chromedriver.exe");
-				setDriver(new ChromeDriver());
-				}else if(prop.getProperty("browser").equalsIgnoreCase("firefox")){
-					WebDriverManager.firefoxdriver().setup();
-					setDriver(new FirefoxDriver());
-					}else if(browser.equalsIgnoreCase("Edge")){
-						WebDriverManager.edgedriver().setup();
-						setDriver(new EdgeDriver());
-						}
-			}
+	public class DriversBase {	
+		public static WebDriver driver;
+
+	      	public static void initializeBrowser(String browser) throws InterruptedException {
+	      		
+	      		if (driver == null) {
+	                 switch (browser.toLowerCase()) {
+		        case "chrome":
+		        	WebDriverManager.chromedriver().setup();
+		        	driver = new ChromeDriver();
+		            break;
+		        case "firefox":
+		        	WebDriverManager.firefoxdriver().setup();
+		            driver = new FirefoxDriver();
+		            break;
+		        case "edge":
+		        	
+		        	 WebDriverManager.edgedriver().setup();
+		            driver = new EdgeDriver();
+		            break;
+		        default:
+		            throw new IllegalArgumentException("Unsupported browser: " + browser);
+		    }
+		    
+		    driver.manage().window().maximize();
+		    driver.manage().deleteAllCookies();
+		    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		}
+	      	}
+		public static WebDriver getDriver() {
+		    if (driver == null) {
+		        throw new IllegalStateException("WebDriver not initialized! Call initializeBrowser() first.");
+		    }
+		    return driver;
+		}
+
+		public static void closeDriver() {
+		    if (driver != null) {
+		        driver.quit();
+		        System.out.println("Browser closed successfully.");
+		    } else {
+		    	driver = new ChromeDriver();  // Reinitialize the driver
+		        driver.get("https://dsportalapp.herokuapp.com");
+	        }
+	    }
+		      
+		    
 		}
 	
-	public void loadProperties() {
-		try {
-			 prop = new Properties();
-			 System.out.println(System.getProperty("user.dir"));
-			FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"//src//test//resources//config//config.properties");
-			prop.load(fis);			
-			} catch (IOException e) {
-				e.getMessage();
-			}
-	}
-	
-//	@BeforeMethod (alwaysRun = true)
-	@BeforeMethod
-	public void driverInitializer(String browser) {
-		loadProperties();
-		setupDriver(browser);
-		getDriver().manage().window().maximize();
-		getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(100));
-		this.url = prop.getProperty("Url");
-		getDriver().get(url);
-	}
-}
-
-
-	
-	
-
-
-
