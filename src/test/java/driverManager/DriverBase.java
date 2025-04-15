@@ -45,7 +45,6 @@ package driverManager;
 		    }
 		    return driver;
 		}
-
 		
 		public static void closeDriver() {
 		    if (driver != null) {
