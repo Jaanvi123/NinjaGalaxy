@@ -1,50 +1,74 @@
 package stepDefinitions;
 
+import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
+
+import driverManager.DriversBase;
+import dsAlgoPOM.CommonPOM;
+import dsAlgoPOM.IntroductionPage;
+import dsAlgoPOM.LoginPage;
+import dsAlgoPOM.TreePage;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class TreeStepDefinition {
+	
+	TreePage treePage = new TreePage();
+	
+	public WebDriver driver = DriversBase.getDriver();
+
+	 LoginPage login = new LoginPage();	
+	 CommonPOM common = new CommonPOM();
+	 IntroductionPage IP = new IntroductionPage();
+	 
 	@Given("the user is in the DS Algo portal after signing in")
 	public void the_user_is_in_the_ds_algo_portal_after_signing_in() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		
+		common.openURL();
+		System.out.println("Step is executing!");
+		   
 	}
 
 	@When("the user clicks the Get Started button")
 	public void the_user_clicks_the_get_started_button() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		common.ClickHomePageGetStartedButton();
+		
+		System.out.println("Get started button clicked successfully");
+	    
 	}
 
 	@Then("the user should be redirected to the Tree data structure page")
 	public void the_user_should_be_redirected_to_the_tree_data_structure_page() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		Assert.assertEquals(IP.getPageTitle(), "Tree");
+		System.out.println("Tree data structure page opens");
+	  
 	}
 
 	@Given("the user is in the home page and is signed in")
 	public void the_user_is_in_the_home_page_and_is_signed_in() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		common.openHomeURL();
+	  
 	}
 
 	@When("The user selects tree item from the drop down menu")
 	public void the_user_selects_tree_item_from_the_drop_down_menu() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		IP.clickOnDropDown();
+		System.out.println("DropDown Clicked");
+	  
 	}
 
 	@Given("the user is on the Tree page after signing in")
 	public void the_user_is_on_the_tree_page_after_signing_in() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		IP.clickOnTreeGetStartedBtn();
+		System.out.println("Get Started Button Clicked");
+	   
 	}
 
-	@When("the user clicks the Overview of Trees button")
+	/*@When("the user clicks the Overview of Trees button")
 	public void the_user_clicks_the_overview_of_trees_button() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		System.out.println("Step is executing!");
+	   
 	}
 
 	@Then("the user should be redirected to the Overview of Trees data structure page")
@@ -339,7 +363,7 @@ public class TreeStepDefinition {
 	public void the_user_is_redirected_to_practice_questions_page() {
 	    // Write code here that turns the phrase above into concrete actions
 	    throw new io.cucumber.java.PendingException();
-	}
+	}   */
 
 
 }

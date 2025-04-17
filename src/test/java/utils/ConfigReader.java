@@ -39,6 +39,14 @@ public class ConfigReader {
 
 	public static String getUrlHome() {
 		return properties.getProperty("urlHome");
+		
+		
+	}
+	
+	public static String getUrlTree() {
+		return properties.getProperty("urlTree");
+		
+		
 	}
 
 	public static void initializeDriverFromConfig() throws Exception {

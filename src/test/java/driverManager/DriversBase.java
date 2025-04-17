@@ -32,12 +32,11 @@ import java.time.Duration;
 		        	 WebDriverManager.edgedriver().setup();
 		            driver = new EdgeDriver();
 		            break;
-		        default:
-		            throw new IllegalArgumentException("Unsupported browser: " + browser);
+		       
 		    }
 		    
 		    driver.manage().window().maximize();
-		    driver.manage().deleteAllCookies();
+		 //   driver.manage().deleteAllCookies();
 		    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		}
 	      	}
@@ -54,7 +53,7 @@ import java.time.Duration;
 		        System.out.println("Browser closed successfully.");
 		    } else {
 		    	driver = new ChromeDriver();  // Reinitialize the driver
-		        driver.get("https://dsportalapp.herokuapp.com");
+		        driver.get("https://www.google.com/");
 	        }
 	    }
 		      

@@ -44,7 +44,7 @@ public class HooksPage {
         driver.get(url);
     }
 
-    /*   @After
+       @After
     
     public void tearDown() {
         WebDriver driver = DriversBase.getDriver();
@@ -53,17 +53,17 @@ public class HooksPage {
             try {
                 
             
-				String s1 = null;
+				String s2 = "screeshot7";
 				Files.move(((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE).toPath(),
-                           Path.of("C:\\Users\\onlin\\eclipse-workspace\\DsAlgo_Galaxy\\src\\test\\resources\\Screenshots", s1 + ".png"));
-                System.out.println("Screenshot saved" + s1 + ".png");
+                           Path.of("C:\\Users\\onlin\\eclipse-workspace\\DsAlgo_Galaxy\\src\\test\\resources\\Screenshots", s2 + ".png"));
+                System.out.println("Screenshot saved" + s2 + ".png");
             } catch (Exception e) {
                 System.err.println("Error saving screenshot: " + e.getMessage());
             }
         }
          
                DriversBase.closeDriver();
-    } */
+    } 
 }
     
 
