@@ -1,0 +1,1 @@
+{"uuid":"6bf45702-cfa5-4e0f-a023-491c64a840a8","name":"Scenario: Verify that user able to see warning message on clicking Get Started buttons of Stack on the home page without Sign in","children":["4d5500d4-c406-4ab2-a6e3-0afbd071ea7b"],"befores":[],"afters":[],"start":1745119640739,"stop":1745119640750}

@@ -1,0 +1,1 @@
+{"uuid":"8a670005-0410-4f40-a2a9-fbf8ea8b912d","name":"Scenario Outline: Verify that user receives error message for empty Password Confirmation field during registration","children":["11194bec-1eb1-4a9a-b1b0-61251e89f5b0"],"befores":[],"afters":[],"start":1745119641402,"stop":1745119641407}

@@ -1,0 +1,1 @@
+{"uuid":"2c4c51e3-2c28-40d6-b64a-235c6fe7d47c","name":"Scenario Outline: Verify that user receives error message for invalid Username and invalid Password fields during Login","children":["da62724c-df56-42d0-a353-2239ab8c8bca"],"befores":[],"afters":[],"start":1745119641263,"stop":1745119641271}

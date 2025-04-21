@@ -28,7 +28,7 @@ public class ConfigReader {
 	}
 
 	public static String getUrl() {
-		return properties.getProperty("url");
+		return properties.getProperty("Url");
 	}
 
 	public static String getUserName() {
