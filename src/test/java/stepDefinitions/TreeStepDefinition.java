@@ -1,369 +1,228 @@
 package stepDefinitions;
 
-import org.openqa.selenium.WebDriver;
-import org.testng.Assert;
+
+import java.io.IOException;
+import java.util.List;
+import java.util.Map;
+
+import org.junit.Assert;
 
 import driverManager.DriversBase;
-import dsAlgoPOM.CommonPOM;
-import dsAlgoPOM.IntroductionPage;
-import dsAlgoPOM.LoginPage;
-import dsAlgoPOM.TreePage;
+import dsAlgoPageObjects.TreePage;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import utils.ExcelRead;
 
-public class TreeStepDefinition {
+public class TreeStepDefinition extends DriversBase {
 	
-	TreePage treePage = new TreePage();
 	
-	public WebDriver driver = DriversBase.getDriver();
-
-	 LoginPage login = new LoginPage();	
-	 CommonPOM common = new CommonPOM();
-	 IntroductionPage IP = new IntroductionPage();
-	 
-	@Given("the user is in the DS Algo portal after signing in")
-	public void the_user_is_in_the_ds_algo_portal_after_signing_in() {
-		
-		common.openURL();
-		System.out.println("Step is executing!");
-		   
+	
+	TreePage treepage=new TreePage(driver);
+	@Given("USER is on Dalgo homepage  and verify the page title")
+	public void user_is_on_dalgo_homepage_and_verify_the_page_title_row_number() {
+	    treepage.getpageTitle();
+	    driver.get(url + "home");
+	}
+  
+	@When("The user clicks  Get Started button below the treeList and verify pagetitle")
+	public void the_user_clicks_get_started_button_below_the_tree_list_and_verify_pagetitle() {
+	    treepage.treeclickgetstartedbtn();
+	    treepage.treepagetitle();
 	}
 
-	@When("the user clicks the Get Started button")
-	public void the_user_clicks_the_get_started_button() {
-		common.ClickHomePageGetStartedButton();
-		
-		System.out.println("Get started button clicked successfully");
+	@Then("validate treePage links")
+	public void validate_tree_page_links(io.cucumber.datatable.DataTable dataTable) {
+	   treepage.validatetreelinks();
+	}
+
+	@Given("User is on Overview of trees page and verify the pagetitle")
+	public void user_is_on_overview_of_trees_page_and_verify_the_pagetitle() {
+	    treepage.overviewclickbtn();
 	    
 	}
 
-	@Then("the user should be redirected to the Tree data structure page")
-	public void the_user_should_be_redirected_to_the_tree_data_structure_page() {
-		Assert.assertEquals(IP.getPageTitle(), "Tree");
-		System.out.println("Tree data structure page opens");
-	  
+	@When("The user clicks Try Here button of Overview of trees  Page and the user should be redirected to a page having an Python Editor with a url {string}")
+	public void the_user_clicks_try_here_button_of_overview_of_trees_page_and_the_user_should_be_redirected_to_a_page_having_an_python_editor_with_a_url(String expectedurl) {
+		 treepage.tryHerebtn();
+		    String actualpageurl = treepage.getcurrentpage1();
+			Assert.assertEquals(actualpageurl, expectedurl);
 	}
 
-	@Given("the user is in the home page and is signed in")
-	public void the_user_is_in_the_home_page_and_is_signed_in() {
-		common.openHomeURL();
-	  
+	@When("^THE  user is on python editor and User write the invalid code in Editor (.*) and (.*) and click run button and the user should able to see an (.*) in alert window$")
+	public void the_user_is_on_python_editor_and_user_write_the_invalid_code_in_editor_row_number_and_sheet_name_and_click_run_button_and_the_user_should_able_to_see_an_message_in_alert_window(int rowNumber, String sheetName, String expectedpopupmsg) throws IOException{
+		ExcelRead reader = new ExcelRead();
+	/*	List<Map<String,String>> excelData = reader.readExcelSheetFortexteditor(sheetName);
+		String invalidtext = excelData.get(rowNumber).get("invalid_text");
+		
+		String validtext = excelData.get(rowNumber).get("valid_text");
+		
+		System.out.println("invalidtext is "+ invalidtext);		
+		treepage.validateTextEditorBox(invalidtext);
+		treepage.clickrun();
+		String actualpopupmsg = treepage.alertpopup();
+		System.out.println(actualpopupmsg);
+		Assert.assertEquals(actualpopupmsg, expectedpopupmsg);
+	     treepage.acceptalert();
+	     treepage.cleartextarea();  */
+	}
+	
+
+	@Then("^The USER write the valid code in Editor (.*) and (.*) and click run button and the user should able to see output in the console$")
+	public void the_user_write_the_valid_code_in_editor_row_number_and_sheet_name_and_click_run_button_and_the_user_should_able_to_see_output_in_the_console(int rowNumber,String SheetName) throws IOException, InterruptedException {
+		ExcelRead reader = new ExcelRead();
+	/*	List<Map<String,String>> excelData = reader.readExcelSheetFortexteditor(SheetName);
+		String validtext = excelData.get(rowNumber).get("valid_text");
+		System.out.println("validtext is "+ validtext);		
+		treepage.validatetexteditor1(validtext);
+		treepage.clickrun();
+	
+		String actualconsolemsg = treepage.getconsolemsg();
+		System.out.println("console msg:" + actualconsolemsg);
+		treepage.navigateback();  */
 	}
 
-	@When("The user selects tree item from the drop down menu")
-	public void the_user_selects_tree_item_from_the_drop_down_menu() {
-		IP.clickOnDropDown();
-		System.out.println("DropDown Clicked");
-	  
+   @Given("User is on Terminologies page and verify the pagetitle")
+	public void user_is_on_terminologies_page_and_verify_the_pagetitle() {
+	    treepage.terminologiesBtn();
 	}
 
-	@Given("the user is on the Tree page after signing in")
-	public void the_user_is_on_the_tree_page_after_signing_in() {
-		IP.clickOnTreeGetStartedBtn();
-		System.out.println("Get Started Button Clicked");
-	   
+  @ When ("The user clicks Try Here button of Terminologies  Page and the user should be redirected to a page having an Python Editor with a url {string}")
+	public void the_user_clicks_try_here_button_of_terminologies_page_and_the_user_should_be_redirected_to_a_page_having_an_python_editor_with_a_url(String expectedurl) {		
+	treepage.tryHerebtn();
+
+    String actualpageurl = treepage.getcurrentpage1();
+		Assert.assertEquals(actualpageurl, expectedurl);
 	}
 
-	/*@When("the user clicks the Overview of Trees button")
-	public void the_user_clicks_the_overview_of_trees_button() {
-		System.out.println("Step is executing!");
-	   
-	}
-
-	@Then("the user should be redirected to the Overview of Trees data structure page")
-	public void the_user_should_be_redirected_to_the_overview_of_trees_data_structure_page() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
-	@Given("The user is on the Overview of Trees page in the DS Algo portal")
-	public void the_user_is_on_the_overview_of_trees_page_in_the_ds_algo_portal() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
-	@When("The user clicks Try Here button on the  page")
-	public void the_user_clicks_try_here_button_on_the_page() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
-	@Then("The user is redirected to a page having Editor with run button for Tree")
-	public void the_user_is_redirected_to_a_page_having_editor_with_run_button_for_tree() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
-	@Given("the user is on the tryEditor page of Trees with an empty code editor")
-	public void the_user_is_on_the_try_editor_page_of_trees_with_an_empty_code_editor() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
-	@When("the user clicks on the Run button without entering any code for Tree")
-	public void the_user_clicks_on_the_run_button_without_entering_any_code_for_tree() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
-	@Then("nothing happens and no error message is displayed for Tree")
-	public void nothing_happens_and_no_error_message_is_displayed_for_tree() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
-	@When("the user writes invalid Python code in the editor and clicks the Run button for Trees")
-	public void the_user_writes_invalid_python_code_in_the_editor_and_clicks_the_run_button_for_trees() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
-	@Then("the user should see an error message in an alert window for Trees")
-	public void the_user_should_see_an_error_message_in_an_alert_window_for_trees() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
-	@When("the user writes valid Python code in the editor and clicks the Run button for Trees")
-	public void the_user_writes_valid_python_code_in_the_editor_and_clicks_the_run_button_for_trees() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
-	@Then("the user should be able to see output in the console for Trees")
-	public void the_user_should_be_able_to_see_output_in_the_console_for_trees() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
-	@When("the user clicks the Terminologies button")
-	public void the_user_clicks_the_terminologies_button() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
-	@Then("the user should be redirected to the Terminologies data structure page")
-	public void the_user_should_be_redirected_to_the_terminologies_data_structure_page() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
-	@Given("The user is on the Terminologies page in the DS Algo portal")
-	public void the_user_is_on_the_terminologies_page_in_the_ds_algo_portal() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
-	@When("the user clicks the Types of Trees link")
-	public void the_user_clicks_the_types_of_trees_link() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
-	@Then("the user should be redirected to the Types of Trees page")
-	public void the_user_should_be_redirected_to_the_types_of_trees_page() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
-	@Given("The user is on the Types of Trees page in the DS Algo portal")
-	public void the_user_is_on_the_types_of_trees_page_in_the_ds_algo_portal() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
-	@When("the user clicks the Tree Traversals link")
-	public void the_user_clicks_the_tree_traversals_link() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
-	@Then("the user should be redirected to the Tree Traversals page")
-	public void the_user_should_be_redirected_to_the_tree_traversals_page() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
-	@Given("The user is on the Tree Traversals page in the DS Algo portal")
-	public void the_user_is_on_the_tree_traversals_page_in_the_ds_algo_portal() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
-	@When("the user clicks the Traversals Illustration link")
-	public void the_user_clicks_the_traversals_illustration_link() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
-	@Then("the user should be redirected to the Traversals Illustration page")
-	public void the_user_should_be_redirected_to_the_traversals_illustration_page() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
-	@Given("The user is on the Traversals Illustration page in the DS Algo portal")
-	public void the_user_is_on_the_traversals_illustration_page_in_the_ds_algo_portal() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
-	@When("the user clicks the Binary Trees link")
-	public void the_user_clicks_the_binary_trees_link() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
-	@Then("the user should be redirected to the Binary Trees page")
-	public void the_user_should_be_redirected_to_the_binary_trees_page() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
-	@Given("The user is on the Binary Trees page in the DS Algo portal")
-	public void the_user_is_on_the_binary_trees_page_in_the_ds_algo_portal() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
-	@When("the user clicks the Types of Binary Trees link")
-	public void the_user_clicks_the_types_of_binary_trees_link() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
-	@Then("the user should be redirected to the Types of Binary Trees page")
-	public void the_user_should_be_redirected_to_the_types_of_binary_trees_page() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
-	@Given("The user is on the Types of Binary Trees page in the DS Algo portal")
-	public void the_user_is_on_the_types_of_binary_trees_page_in_the_ds_algo_portal() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
-	@When("the user clicks the Implementation In Python link")
-	public void the_user_clicks_the_implementation_in_python_link() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
-	@Then("the user should be redirected to the Implementation In Python page")
-	public void the_user_should_be_redirected_to_the_implementation_in_python_page() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
-	@Given("The user is on the Implementation in Python page in the DS Algo portal")
-	public void the_user_is_on_the_implementation_in_python_page_in_the_ds_algo_portal() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
-	@When("the user clicks the Binary Tree Traversals link")
-	public void the_user_clicks_the_binary_tree_traversals_link() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
-	@Then("the user should be redirected to the Binary Tree Traversals page")
-	public void the_user_should_be_redirected_to_the_binary_tree_traversals_page() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
-	@Given("The user is on the Binary Tree Traversals page in the DS Algo portal")
-	public void the_user_is_on_the_binary_tree_traversals_page_in_the_ds_algo_portal() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
-	@When("the user clicks the Implementation Of Binary Trees link")
-	public void the_user_clicks_the_implementation_of_binary_trees_link() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
-	@Then("the user should be redirected to the Implementation Of Binary Trees page")
-	public void the_user_should_be_redirected_to_the_implementation_of_binary_trees_page() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
-	@Given("The user is on the Implementation of Binary Trees page in the DS Algo portal")
-	public void the_user_is_on_the_implementation_of_binary_trees_page_in_the_ds_algo_portal() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
-	@When("the user clicks the Applications Of Binary Trees link")
-	public void the_user_clicks_the_applications_of_binary_trees_link() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
-	@Then("the user should be redirected to the Applications Of Binary Trees page")
-	public void the_user_should_be_redirected_to_the_applications_of_binary_trees_page() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
-	@Given("The user is on the Applications of Binary Trees page in the DS Algo portal")
-	public void the_user_is_on_the_applications_of_binary_trees_page_in_the_ds_algo_portal() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
-	@When("the user clicks the Binary Search Trees link")
-	public void the_user_clicks_the_binary_search_trees_link() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
-	@Then("the user should be redirected to the Binary Search Trees page")
-	public void the_user_should_be_redirected_to_the_binary_search_trees_page() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
-	@Given("The user is on the Binary Search Trees page in the DS Algo portal")
-	public void the_user_is_on_the_binary_search_trees_page_in_the_ds_algo_portal() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
-	@When("the user clicks the Implementation of Binary Search Trees link")
-	public void the_user_clicks_the_implementation_of_binary_search_trees_link() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
-	@Then("the user should be redirected to the Implementation of Binary Search Trees page")
-	public void the_user_should_be_redirected_to_the_implementation_of_binary_search_trees_page() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
-	@Given("The user is on the Implementation of BST page in the DS Algo portal")
-	public void the_user_is_on_the_implementation_of_bst_page_in_the_ds_algo_portal() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
-	@When("The user clicks Practice Questions link")
-	public void the_user_clicks_practice_questions_link() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
-	@Then("The user is redirected to Practice Questions page.")
-	public void the_user_is_redirected_to_practice_questions_page() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}   */
-
-
+	@Given("User is on Types of Trees page and verify the pagetitle")
+public void user_is_on_types_of_trees_page_and_verify_the_pagetitle() {
+  treepage.typeoftreebtn();
 }
+
+	@When("The user clicks Try Here button of Types of Trees Page and the user should be redirected to a page having an Python Editor with a url {string}")
+	public void the_user_clicks_try_here_button_of_types_of_trees_page_and_the_user_should_be_redirected_to_a_page_having_an_python_editor_with_a_url(String expectedurl) {
+		treepage.tryHerebtn();
+    String actualpageurl = treepage.getcurrentpage1();
+	Assert.assertEquals(actualpageurl, expectedurl);
+	}
+
+	@Given("User is on Tree Traversalss page and verify the pagetitle")
+	public void user_is_on_tree_traversalss_page_and_verify_the_pagetitle() {
+	  treepage.treetraversalbtn();
+	}
+
+	@When("The user clicks Try Here button of Tree Traversals  Page and the user should be redirected to a page having an Python Editor with a url {string}")
+	public void the_user_clicks_try_here_button_of_tree_traversals_page_and_the_user_should_be_redirected_to_a_page_having_an_python_editor_with_a_url(String expectedurl) {
+		treepage.tryHerebtn();
+	    String actualpageurl = treepage.getcurrentpage1();
+		Assert.assertEquals(actualpageurl, expectedurl);	}
+
+	@Given("User is on Traversals Illustrations page and verify the pagetitle")
+	public void user_is_on_traversals_illustrations_page_and_verify_the_pagetitle() {
+	   treepage.traversalillustrationbtn();
+	}
+
+	@When("The user clicks Try Here button of Traversals Illustrations  Page and the user should be redirected to a page having an Python Editor with a url {string}")
+	public void the_user_clicks_try_here_button_of_traversals_illustrations_page_and_the_user_should_be_redirected_to_a_page_having_an_python_editor_with_a_url(String expectedurl) {
+		treepage.tryHerebtn();
+	    String actualpageurl = treepage.getcurrentpage1();
+		Assert.assertEquals(actualpageurl, expectedurl);
+	}
+
+	@Given("User is on Binary Trees page and verify the pagetitle")
+	public void user_is_on_binary_trees_page_and_verify_the_pagetitle() {
+		treepage.binarytreebtn();
+	  	}
+
+	@When("The user clicks Try Here button of Binary Trees Page and the user should be redirected to a page having an Python Editor with a url {string}")
+	public void the_user_clicks_try_here_button_of_binary_trees_page_and_the_user_should_be_redirected_to_a_page_having_an_python_editor_with_a_url(String expectedurl) {
+		treepage.tryHerebtn();
+	    String actualpageurl = treepage.getcurrentpage1();
+		Assert.assertEquals(actualpageurl, expectedurl);
+	}
+
+	@Given("User is on Types of Binary Trees page and verify the pagetitle")
+	public void user_is_on_types_of_binary_trees_page_and_verify_the_pagetitle() {
+	   treepage.typesofbinarybtn();
+	}
+
+	@When("The user clicks Try Here button of Types of Binary Trees  Page and the user should be redirected to a page having an Python Editor with a url {string}")
+	public void the_user_clicks_try_here_button_of_types_of_binary_trees_page_and_the_user_should_be_redirected_to_a_page_having_an_python_editor_with_a_url(String expectedurl) {
+		treepage.tryHerebtn();
+	    String actualpageurl = treepage.getcurrentpage1();
+		Assert.assertEquals(actualpageurl, expectedurl);
+	}
+
+	@Given("User is on Implementation in Python page and verify the pagetitle")
+	public void user_is_on_implementation_in_python_page_and_verify_the_pagetitle() {
+	    treepage.implementationinpythonbtn();
+	}
+
+	@When("The user clicks Try Here button of Implementation in Python Page and the user should be redirected to a page having an Python Editor with a url {string}")
+	public void the_user_clicks_try_here_button_of_implementation_in_python_page_and_the_user_should_be_redirected_to_a_page_having_an_python_editor_with_a_url(String expectedurl) {
+		treepage.tryHerebtn();
+	    String actualpageurl = treepage.getcurrentpage1();
+		Assert.assertEquals(actualpageurl, expectedurl);
+	}
+
+	@Given("User is on Binary Tree Traversals page and verify the pagetitle")
+	public void user_is_on_binary_tree_traversals_page_and_verify_the_pagetitle() {
+	    treepage.binarytreetraversalbtn();
+	}
+
+	@When("The user clicks Try Here button of Binary Tree Traversals  Page and the user should be redirected to a page having an Python Editor with a url {string}")
+	public void the_user_clicks_try_here_button_of_binary_tree_traversals_page_and_the_user_should_be_redirected_to_a_page_having_an_python_editor_with_a_url(String expectedurl) {
+		treepage.tryHerebtn();
+	    String actualpageurl = treepage.getcurrentpage1();
+		Assert.assertEquals(actualpageurl, expectedurl);	}
+
+	@Given("User is on Implementation Of Binary Trees page and verify the pagetitle")
+	public void user_is_on_implementation_of_binary_trees_page_and_verify_the_pagetitle() {
+	    treepage.implementationofbinarybtn();
+	}
+
+	@When("The user clicks Try Here button of Implementation Of Binary Trees Page and the user should be redirected to a page having an Python Editor with a url {string}")
+	public void the_user_clicks_try_here_button_of_implementation_of_binary_trees_page_and_the_user_should_be_redirected_to_a_page_having_an_python_editor_with_a_url(String expectedurl) {
+		treepage.tryHerebtn();
+	    String actualpageurl = treepage.getcurrentpage1();
+		Assert.assertEquals(actualpageurl, expectedurl);
+	}
+
+	@Given("User is on Application Of Binary trees page and verify the pagetitle")
+	public void user_is_on_application_of_binary_trees_page_and_verify_the_pagetitle() {
+	    treepage.applicationofbinarytreebtn();
+	}
+
+	@When("The user clicks Try Here button of Application Of Binary trees  Page and the user should be redirected to a page having an Python Editor with a url {string}")
+	public void the_user_clicks_try_here_button_of_application_of_binary_trees_page_and_the_user_should_be_redirected_to_a_page_having_an_python_editor_with_a_url(String expectedurl) {
+		treepage.tryHerebtn();
+	    String actualpageurl = treepage.getcurrentpage1();
+		Assert.assertEquals(actualpageurl, expectedurl);
+	}
+
+	@Given("User is on  Implementation of BTS  page and verify the pagetitle")
+	public void user_is_on_implementation_of_bts_page_and_verify_the_pagetitle() {
+	    treepage.implementationofbtsBtn();
+	}
+
+	@When("The user clicks Try Here button of  Implementation of BTS Page and the user should be redirected to a page having an Python Editor with a url {string}")
+	public void the_user_clicks_try_here_button_of_implementation_of_bts_page_and_the_user_should_be_redirected_to_a_page_having_an_python_editor_with_a_url(String expectedurl) {
+		treepage.tryHerebtn();
+	    String actualpageurl = treepage.getcurrentpage1();
+		Assert.assertEquals(actualpageurl, expectedurl);
+	}
+	
+	 @ Given ("USER is on Types Of PractionQuestion page and verify the url{string}")
+	 public void practicemethod(String expectedurl) {
+		 treepage.practicebtn();
+
+		 String actualpageurl = treepage.getcurrentpage1();
+		 System.out.println(expectedurl);
+		 System.out.println(actualpageurl);
+			Assert.assertEquals(actualpageurl, expectedurl);
+	 }
+}
+
+
+	

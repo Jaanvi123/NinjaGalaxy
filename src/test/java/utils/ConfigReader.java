@@ -13,13 +13,15 @@ public class ConfigReader {
 	private static Properties properties = new Properties();
 
 	public static void loadConfig() throws IOException {
-		try (InputStream inputStream = ConfigReader.class.getClassLoader()
-				.getResourceAsStream("config/config.properties")) {
+		 InputStream inputStream = ConfigReader.class.getClassLoader()
+				.getResourceAsStream("config/config.properties"); {
 			if (inputStream == null)
 				throw new IOException("Config file not found");
+			}
+		
 			properties.load(inputStream);
 		}
-	}
+	
 
 	public static String getBrowserType() {
 		return properties.getProperty("browser", "chrome").toLowerCase();
@@ -52,7 +54,7 @@ public class ConfigReader {
 	public static void initializeDriverFromConfig() throws Exception {
 		loadConfig();
 		String browser = getBrowserType();
-		DriversBase.initializeBrowser(browser);
+		DriversBase.initializeDriver();
 	}
 
 	public static Properties initializeProp() {
