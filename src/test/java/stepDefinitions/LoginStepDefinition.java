@@ -1,30 +1,33 @@
 package stepDefinitions;
 
-
-
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
-import driverManager.DriversBase;
-import dsAlgoPageObjects.LoginPage;
+import driverManager.DriverFactory;
+import dsAlgoPageObjects.HomePageObj;
+import dsAlgoPageObjects.LoginPageObj;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import utils.ConfigReader;
 import utils.ExcelRead;
 
-public class LoginStepDefinition extends DriversBase {
-	
-	public  LoginPage login= new  LoginPage(driver);
-	
+public class LoginStepDefinition extends DriverFactory {
+	WebDriver driver= DriverFactory.getDriver(); 
+	public  LoginPageObj login= new  LoginPageObj(driver);
+	HomePageObj homepage = new HomePageObj();
+	ConfigReader configReader = new ConfigReader();
 	
 	@Given("The user is on the DS Algo Sign in Page")
 	public void the_user_is_on_the_ds_algo_sign_in_page() {
+	   homepage.clickButton();	
 	   login.clicksign_in();
 	}
 
@@ -43,6 +46,7 @@ public class LoginStepDefinition extends DriversBase {
 
 	@Given("user is on the DS Algo Sign in Page")
 	public void user_is_on_the_ds_algo_sign_in_page2() {
+		configReader.getUrlHome();
 	   login.clicksign_in();
 	}
 
@@ -50,11 +54,11 @@ public class LoginStepDefinition extends DriversBase {
 	public void the_user_clicks_login_button_after_entering_the_abschallengers_and_leaves_textbox_blank(int rowNumber, String sheetName) throws IOException {
 	
 	ExcelRead reader = new ExcelRead();
-//	List<Map<String,String>> excelData = reader.readExcelSheet(sheetName);
-//	String username = excelData.get(rowNumber).get("username");
-//	System.out.println("username is "+ username);
-//	login.enterUserName(username);
-//	login.clicklogin();
+	List<Map<String,String>> excelData = reader.readExcelSheet(sheetName);
+	String username = excelData.get(rowNumber).get("username");
+	System.out.println("username is "+ username);
+	login.enterUserName(username);
+	login.clicklogin();
 		
 	}
 

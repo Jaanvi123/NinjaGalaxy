@@ -3,14 +3,15 @@ package dsAlgoPageObjects;
 import static org.testng.Assert.assertEquals;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import driverManager.DriversBase;
+import driverManager.DriverFactory;
 import utils.ConfigReader;
 
 public class RegisterPageObj {
 
-	WebDriver driver = DriversBase.getDriver();  
-    private String baseUrl = "https://dsportalapp.herokuapp.com/register";  // Define URL explicitly
-    
+	WebDriver driver = DriverFactory.getDriver();  
+ //   private String baseUrl = "https://dsportalapp.herokuapp.com/register";  // Define URL explicitly
+	public String baseUrl =ConfigReader.getUrl();
+	private By Registerlink = By.xpath("//a[text()=' Register ']");
     private By userName = By.xpath("//input[@name='username']");
     private By password = By.xpath("//input[@name='password1']");
     private By confirmPassword = By.xpath("//input[@name='password2']");
@@ -20,13 +21,13 @@ public class RegisterPageObj {
     private By signOut = By.xpath("//a[contains(@href, 'logout')]");
     private By startBtn = By.xpath("//button[@class='btn']");
 
-    public void navigateToRegisterPage() {
+  public void navigateToRegisterPage() {
         driver.get(baseUrl);
     }
-
-    public void clickRegisterButton() {
-        driver.findElement(registerButton).click();
-    }
+  public void ClickRegisteronHomepage() {
+      driver.findElement(Registerlink).click();
+  }
+   
 
     public void verifyErrorMessage(String expectedMessage) {
         String actualMessage = driver.findElement(errorMsg).getText();
@@ -46,6 +47,9 @@ public class RegisterPageObj {
         driver.findElement(confirmPassword).sendKeys(confirmPasswordText);
     }
 
+    public void clickRegisterButton() {
+        driver.findElement(registerButton).click();
+    }
     public void verifyUserNameError(String expectedErrorMessage) {
         String actualValidationMessage = driver.findElement(userName).getAttribute("validationMessage");
         System.out.println(actualValidationMessage);

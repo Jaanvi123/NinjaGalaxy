@@ -9,7 +9,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 
-import driverManager.DriversBase;
+import driverManager.DriverFactory;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.BeforeAll;
@@ -47,7 +47,7 @@ public class HooksPage {
         }
         
         System.out.println("Initializing driver for browser: " + browser);
-        driver = DriversBase.initializeDriver(browser);
+        driver = DriverFactory.initializeDriver(browser);
         
         System.out.println("Navigating to URL: " + url);
         driver.get(url);
@@ -67,7 +67,7 @@ public class HooksPage {
                } catch (Exception e) {
                    System.err.println("Error saving screenshot: " + e.getMessage());
                }
-               DriversBase.closeDriver();
+               DriverFactory.closeDriver();
            }
 
            // Close the browser after taking the screenshot

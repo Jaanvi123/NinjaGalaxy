@@ -7,7 +7,7 @@ import java.io.IOException;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 
-import driverManager.DriversBase;
+import driverManager.DriverFactory;
 import dsAlgoPageObjects.HomePageObj;
 import dsAlgoPageObjects.RegisterPageObj;
 import io.cucumber.java.en.Given;
@@ -16,7 +16,7 @@ import io.cucumber.java.en.When;
 import utils.ConfigReader;
 import utils.ExcelRead;
 
-public class RegisterStepDefinition extends DriversBase {
+public class RegisterStepDefinition extends DriverFactory {
 	
 	RegisterPageObj registerPage = new RegisterPageObj();
 	 HomePageObj homepage = new HomePageObj();
@@ -26,8 +26,10 @@ public class RegisterStepDefinition extends DriversBase {
 	
 	@Given("The User opens Register Page")
 	public void the_user_opens_register_page() {
-	    DriversBase.initializeDriver("chrome");  // Pass browser type dynamically
+	    DriverFactory.initializeDriver("chrome");  // Pass browser type dynamically
 	    registerPage.navigateToRegisterPage();
+	    homepage.clickButton();	
+	    registerPage.ClickRegisteronHomepage();
 	}
 
 	@When("The User clicks {string} button with all fields empty")
@@ -39,18 +41,22 @@ public class RegisterStepDefinition extends DriversBase {
 	@Then("It should display an error {string} below Username textbox")
 	public void it_should_display_an_error_below_username_textbox(String string) {
 	   registerPage.enterUserName();
+	   registerPage.enterPassword();
+	    registerPage.enterConfirmPassword(string);
+	    registerPage.clickRegisterButton();
+	    
 	}
 
 
 	@When("The User clicks {string} button after entering different passwords in Password and Password Confirmation fields")
 	public void the_user_clicks_button_after_entering_different_passwords_in_password_and_password_confirmation_fields(String string) {
-	    registerPage.enterPassword();
-	    registerPage.enterConfirmPassword(string);
+		 registerPage.verifyErrorMessage(string);
+		
 	}
 
 	@Then("The User should able to see an pwd warning message {string}")
 	public void the_user_should_able_to_see_an_pwd_warning_message(String string) {
-		 registerPage.verifyErrorMessage(string);
+		
 	   
 	}
 	

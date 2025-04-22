@@ -1,13 +1,14 @@
 package dsAlgoPageObjects;
 
 import java.time.Duration;
+import java.util.ArrayList;
 import java.util.List;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.SearchContext;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -15,20 +16,16 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import driverManager.DriversBase;
-
-
-
-public class IntroductionPageObj extends DriversBase {	
+public class IntroductionPageObj  {	
 	
-	WebDriver driver;
+	static WebDriver driver;
 	By signin = By.xpath("//a[@href='/login']");
 	By username = By.id("id_username");
 	By pwd = By.id("id_password");
 	By submit = By.xpath("//input[@value='Login']");	
-	By datastructure_dropdown = By.xpath("//a[text()='Data Structures']");
+	By datastructure_dropdown = By.xpath("//a[@class='nav-link dropdown-toggle']");
 	By parentDiv = By.xpath("//div[@class='dropdown-menu show']");
-	By dropdownvalues = By.tagName("a");
+	static By dropdownvalues = By.tagName("a");
 	By homepagetitle = By.xpath("//a[@href='/home']");
 	By datastructures_getstarted = By.xpath("//a[@href='data-structures-introduction']");
 	By datastructurespg = By.xpath("//h4[@class='bg-secondary text-white']");
@@ -42,35 +39,30 @@ public class IntroductionPageObj extends DriversBase {
 	WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));
 	Alert alert;
 	WebElement txtarea;
-	public IntroductionPageObj()
-	{
-		
+	
+	public String getHomePageTitle() {
+	    return driver.getTitle();
 	}
-	public String getHomePageTitle()
-	{
-		return(driver.findElement(homepagetitle).getText());		
-	}
+
 	public void drpdownClick()
 	{
 		driver.findElement(datastructure_dropdown).click();
 	}
-	public void dropdownValues()
-	{	
-		
-		List<WebElement> dropitems = parentDiv.findElements((SearchContext) (dropdownvalues) );
-		
-		/*List <WebElement> elements = driver.findElements(drpdown_values);
-		//return(elements.toString());
-		for (WebElement elm : elements) {
-			elm.getText();			
-		}
-		return elements;*/
-		 for (WebElement aTag : dropitems) {
-			 aTag.getText();
-			 //System.out.println("H3 Tag Text: " + aTag.getText());
-         }	
-
+	public List<WebElement> getDropdownElements() {
+	    return driver.findElement(parentDiv).findElements(dropdownvalues);
 	}
+
+	public  List<String> getDropdownValues() {
+	    List<String> values = new ArrayList<>();
+	    List<WebElement> dropdownItems = driver.findElements(dropdownvalues);
+
+	    
+	    for (WebElement item : dropdownItems) {
+	        values.add(item.getText());
+	    }
+	    return values;
+	}
+
 	
 	public void click_ds_getstarted()
 	{
@@ -94,14 +86,15 @@ public class IntroductionPageObj extends DriversBase {
 	{
 		driver.findElement(tryhere_btn).click();
 	}
-	public void validatetexteditor(String text)
-	{
-		
-		txtarea = driver.switchTo().activeElement();
-		Actions actions = new Actions(driver);
-		actions.moveToElement(txtarea).click().perform();
-		txtarea.sendKeys(text);			
+	public void validatetexteditor1(String text) {
+	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+	    WebElement editor = wait.until(ExpectedConditions.elementToBeClickable(txtarea));
+	    
+	    Actions actions = new Actions(driver);
+	    actions.moveToElement(editor).click().perform();
+	    editor.sendKeys(text);
 	}
+
 	
 	public void clickrun()
 	{
@@ -118,16 +111,15 @@ public class IntroductionPageObj extends DriversBase {
 		alert.accept();
 		
 	}
-	public void cleartextarea()
-	{
-		Actions actions = new Actions(driver);
-		actions.moveToElement(txtarea).click().perform();
-	//	CommonLibraries.TextIndentation(driver, txtarea, 0,0 , false);
-		txtarea.sendKeys(Keys.CONTROL + "a");
-		txtarea.sendKeys(Keys.DELETE);
-	
+	public void cleartextarea() {
+	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+	    WebElement editor = wait.until(ExpectedConditions.elementToBeClickable(txtarea));
+	    
+	    Actions actions = new Actions(driver);
+	    actions.moveToElement(editor).click().sendKeys(Keys.CONTROL + "a").sendKeys(Keys.DELETE).perform();
 	}
-	public void validatetexteditor1(String text) throws InterruptedException
+
+	public void validatetexteditor2(String text) throws InterruptedException
 	{
 		Thread.sleep(1000);
 		 txtarea = driver.switchTo().activeElement();

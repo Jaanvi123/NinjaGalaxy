@@ -9,14 +9,14 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 
-import driverManager.DriversBase;
+import driverManager.DriverFactory;
 import dsAlgoPageObjects.HomePageObj;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 
-public class HomeStepDefinition extends DriversBase{	
+public class HomeStepDefinition extends DriverFactory{	
     HomePageObj homepage = new HomePageObj() ;
 	String landingpageMsg;
 	String homepageTitle;
@@ -25,7 +25,7 @@ public class HomeStepDefinition extends DriversBase{
 	@Given("The user should open the browser and enters the DS_Algo Portal")
 	public void open_the_browser()
 	{
-		DriversBase.initializeDriver("chrome");  //added chrome
+		DriverFactory.initializeDriver("chrome");  //added chrome
 		}	
 	@Then("The user should be landed on the DS_Algo Get Started page with message {string}")
 	public void the_user_should_be_landed_on_the_ds_algo_get_started_page_with_message(String expectedmsg){

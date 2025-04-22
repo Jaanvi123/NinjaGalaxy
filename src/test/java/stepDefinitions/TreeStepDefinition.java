@@ -8,22 +8,28 @@ import java.util.Map;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 
-import driverManager.DriversBase;
+import driverManager.DriverFactory;
+import dsAlgoPageObjects.HomePageObj;
+import dsAlgoPageObjects.IntroductionPageObj;
+import dsAlgoPageObjects.LoginPageObj;
 import dsAlgoPageObjects.TreePage;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import utils.ExcelRead;
 
-public class TreeStepDefinition extends DriversBase {
+public class TreeStepDefinition  {
 	 WebDriver driver; 
 	
+		public  LoginPageObj login= new  LoginPageObj(driver);
+		HomePageObj homepage = new HomePageObj();
+		IntroductionPageObj datastructure = new IntroductionPageObj();
 	
 	TreePage treepage=new TreePage(driver);
 	@Given("USER is on Dalgo homepage  and verify the page title")
 	public void user_is_on_dalgo_homepage_and_verify_the_page_title_row_number() {
 	    treepage.getpageTitle();
-	    driver.get(Url + "home");
+	   
 	}
   
 	@When("The user clicks  Get Started button below the treeList and verify pagetitle")

@@ -65,7 +65,7 @@ public class ConfigReader {
 		
 	}
 
-	public  String getUrl() {
+	public  static String getUrl() {
 		
 				return properties.getProperty("Url");
 			

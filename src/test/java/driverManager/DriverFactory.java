@@ -6,7 +6,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import java.time.Duration;
 
-public class DriversBase {
+public class DriverFactory {
 
     private static ThreadLocal<WebDriver> tlDriver = new ThreadLocal<>();
 

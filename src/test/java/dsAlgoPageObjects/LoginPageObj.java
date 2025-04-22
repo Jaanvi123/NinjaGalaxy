@@ -1,25 +1,24 @@
 package dsAlgoPageObjects;
 
-
-import java.util.List;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 
-public class LoginPage {
+import utils.ConfigReader;
+
+
+public class LoginPageObj {
 	
-	WebDriver driver;
-	 By sign_in =By.xpath("//a[@href=\"/login\"] ");
+	 WebDriver driver;
+	 By sign_in =By.xpath("//a[text() =\"Sign in\"]");
 	 By login_btn=By.xpath("//input[@type=\"submit\"]");
 	 By userName=By.xpath("//input[@name='username']");
 	 By signIn=By.xpath("//a[@href=\"/login\"] ");
 	 By passWord=By.xpath("//input[@type=\"password\"]");
 	 By alertmsg=By.xpath("//div[@class=\"alert alert-primary\"]");
 	 By loginmsg=By.xpath("//div[@class=\"alert alert-primary\"]");
-	
 	 
-	 public LoginPage(WebDriver driver) {
+	 
+	 public LoginPageObj(WebDriver driver) {
 		  this.driver=driver;
 	 }
 	 

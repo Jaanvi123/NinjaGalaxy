@@ -3,11 +3,11 @@ package dsAlgoPageObjects;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-import driverManager.DriversBase;
+import driverManager.DriverFactory;
 
 
 public class HomePageObj {    
-	WebDriver driver= DriversBase.getDriver(); 
+	WebDriver driver= DriverFactory.getDriver(); 
 	
 	By home_msg = By.xpath("//div[@class='content']/p");
 	By startBtn = By.xpath("//button[@class='btn']");
