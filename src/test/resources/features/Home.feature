@@ -1,4 +1,3 @@
-@homePage
 Feature: Browser page
 
   I want to use this template for my feature file

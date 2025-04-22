@@ -17,43 +17,40 @@ import utils.ConfigReader;
 
 
 public class HooksPage {
-	 WebDriver driver;
-	ConfigReader configReader;
-	DriversBase driverBase;
 	
- /*/   @BeforeAll
+	WebDriver driver;
+	ConfigReader configReader = new ConfigReader();
+	String browser = configReader.getBrowserType();
+	
+   @BeforeAll
     public static void loadConfig() throws IOException {
         ConfigReader.loadConfig(); 
     }
     
-    */
- public HooksPage() {
-	 this.driverBase= new DriversBase();
-	 this.configReader = new ConfigReader();
- }
- 
+    
+
   
     @Before
     public void setUp() throws Exception {
-        String browser = configReader.getBrowserType();
+       String browser = configReader.getBrowserType();
+       String url = configReader.getUrl();
+       
         System.out.println("Browser Type: " + browser);
+        
         if (browser == null || browser.isEmpty()) {
             throw new IllegalArgumentException("Browser type not declared in config properties file");
             
         }
-
-        driver=  DriversBase.initializeDriver("chrome");
-        System.out.println("driver initialized successfully");
         
-        String url = configReader.getUrl();
-        
-        
-        System.out.println("URL: " + url);
-        driver.get("https://dsportalapp.herokuapp.com");
-        System.out.println("landing on home page" + url);
         if (url == null || url.isEmpty()) {
             throw new IllegalArgumentException("URL not declared in config properties file");
         }
+        
+        System.out.println("Initializing driver for browser: " + browser);
+        driver = DriversBase.initializeDriver(browser);
+        
+        System.out.println("Navigating to URL: " + url);
+        driver.get(url);
     }
      
        
@@ -70,10 +67,11 @@ public class HooksPage {
                } catch (Exception e) {
                    System.err.println("Error saving screenshot: " + e.getMessage());
                }
+               DriversBase.closeDriver();
            }
 
            // Close the browser after taking the screenshot
-           DriversBase.closeDriver();
+           
        }
 
                

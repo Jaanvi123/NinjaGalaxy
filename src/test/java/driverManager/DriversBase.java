@@ -2,69 +2,52 @@ package driverManager;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-
-import utils.ConfigReader;
-
-import java.io.FileInputStream;
-import java.io.IOException;
 import java.time.Duration;
-import java.util.Properties;
 
 public class DriversBase {
 
-  
-	public static Properties prop;
-	public static String Url;
-	private static ThreadLocal<WebDriver> tlDriver = new ThreadLocal<>();
-	ConfigReader cofigReader = new ConfigReader();
-	
-	public static WebDriver initializeDriver(String browser) {
-	
+    private static ThreadLocal<WebDriver> tlDriver = new ThreadLocal<>();
 
-	    if (tlDriver == null) {
-	   //     String browser = prop.getProperty("browser");
-	        if (browser == null) {
-	            System.out.println("Browser property is missing in config file!");
-	        //    return ;
-	        }
-	        if (browser.equalsIgnoreCase("chrome")) {
-	 //       System.setProperty("webdriver.chrome.driver", "C:\\Users\\onlin\\eclipse-workspace\\Chromedriver\\chromedriver.exe");
-	       tlDriver.set(new ChromeDriver()); 
-	   
-	   
-	          //  driver = new ChromeDriver();
-	        } else if (browser.equalsIgnoreCase("firefox")) {
-	        
-	        	tlDriver.set(new FirefoxDriver());
-	        } else if (browser.equalsIgnoreCase("Edge")) {
-	         
-	        	tlDriver.set(new EdgeDriver());
-	        }
-	        tlDriver.get().manage().window().maximize();
-	        tlDriver.get().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-	  	     
-	    }
-	  return   tlDriver.get();
-	}
-	
-	
-  public static WebDriver getDriver() {
-	return tlDriver.get();
-	  
-  }
+    public static WebDriver initializeDriver(String browser) {
+        if (tlDriver.get() == null) {  // Correct null check
+            if (browser == null || browser.isEmpty()) {
+                throw new IllegalArgumentException("Browser type is required!");
+            }
 
-	public static void closeDriver() {
-	    if (tlDriver != null) {
-	    	tlDriver.get().close();
-	    	tlDriver.get().quit();
-	        System.out.println("Browser closed successfully.");
-	    } else {
-	        System.out.println("Driver is already null, nothing to close.");
-	    }
-	}
+            switch (browser.toLowerCase()) {
+                case "chrome":
+                    tlDriver.set(new ChromeDriver());
+                    break;
+                case "firefox":
+                    tlDriver.set(new FirefoxDriver());
+                    break;
+                case "edge":
+                    tlDriver.set(new EdgeDriver());
+                    break;
+                default:
+                    throw new IllegalArgumentException("Unsupported browser: " + browser);
+            }
 
+            WebDriver driver = tlDriver.get();
+            driver.manage().window().maximize();
+            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        }
+        return tlDriver.get();
+    }
 
+    public static WebDriver getDriver() {
+        return tlDriver.get();
+    }
+
+    public static void closeDriver() {
+        if (tlDriver.get() != null) {
+            tlDriver.get().quit();
+            tlDriver.remove();  // Ensures proper cleanup
+            System.out.println("Browser closed successfully.");
+        } else {
+            System.out.println("Driver is already null, nothing to close.");
+        }
+    }
 }

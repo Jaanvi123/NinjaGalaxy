@@ -13,8 +13,9 @@ import java.util.Properties;
 
 public class ConfigReader {
 
-	/*public static Properties properties = new Properties();
-
+	public static Properties properties = new Properties();
+	private static final String propertyFilePath = "src//test//resources//config//config.properties";
+	
 	public static void loadConfig() throws IOException {
 		 InputStream inputStream = ConfigReader.class.getClassLoader()
 				.getResourceAsStream("config/config.properties"); {
@@ -23,13 +24,10 @@ public class ConfigReader {
 			}
 		
 			properties.load(inputStream);
-		}  */
+		}  
 	
-	private Properties properties;
 
-	private final String propertyFilePath = "src//test//resources//config//config.properties";
-
-	public ConfigReader() {
+	/*public ConfigReader() {
 		BufferedReader reader;
 		try {
 			reader = new BufferedReader(new FileReader(propertyFilePath));
@@ -45,8 +43,21 @@ public class ConfigReader {
 			throw new RuntimeException("Config.properties not found at " + propertyFilePath);
 		}
 
-	}
+	}     */
 	
+	static {
+        try (FileInputStream fileInput = new FileInputStream(propertyFilePath)) {
+            properties.load(fileInput);
+        } catch (IOException e) {
+            throw new RuntimeException("Config.properties file not found at: " + propertyFilePath);
+        }
+    }
+	
+	
+	// Method to retrieve values from properties file
+    public static String getProperty(String key) {
+        return properties.getProperty(key);
+    }
 
 	public  String getBrowserType() {
 		
@@ -60,11 +71,11 @@ public class ConfigReader {
 			
 	}
 
-	public  String getUserName() {
+	public static  String getUserName() {
 		return properties.getProperty("username");
 	}
 
-	public  String getPassword() {
+	public static  String getPassword() {
 		return properties.getProperty("password");
 	}
 
@@ -80,22 +91,6 @@ public class ConfigReader {
 		
 	}
 
-/*	public static void initializeDriverFromConfig() throws Exception {
-		loadConfig();
-		String browser = getBrowserType();
-		DriversBase.initializeDriver();
-	}   
 
-	public static Properties initializeProp() {
-		Properties prop = new Properties();
-		File profile = new File(System.getProperty("user.dir") + "/src/test/resources/config/config.properties");
-
-		try (FileInputStream fis = new FileInputStream(profile)) {
-			prop.load(fis);
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-		return prop;
-	}   */
 
 }

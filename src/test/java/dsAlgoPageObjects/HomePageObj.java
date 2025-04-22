@@ -14,10 +14,7 @@ public class HomePageObj {
 	By register_msg = By.xpath("//div[@class='alert alert-primary']");
 	private String msg;
     
- public HomePageObj()
- {
-	 	 	 
- }
+
  
  public String getmessage()
  {	

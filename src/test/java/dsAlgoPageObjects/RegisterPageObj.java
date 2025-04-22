@@ -1,70 +1,58 @@
 package dsAlgoPageObjects;
 
-
 import static org.testng.Assert.assertEquals;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-
 import driverManager.DriversBase;
+import utils.ConfigReader;
 
+public class RegisterPageObj {
 
-public class RegisterPageObj extends DriversBase {
-	
-		
-	By UserName = By.xpath("//input[@name='username']");
-	By Psswd = By.xpath("//input[@name='password1']");
-	By Psswdcnfrm = By.xpath("//input[@name='password2']");
-	By Regstr = By.xpath("//input[@value='Register']");
-	By PsswdErrMsg = By.xpath("//div[contains(text(),'password_mismatch:The two password fields didn’t match.')]");
-	By RegisterdName = By.xpath("//div[contains(text(),'New Account Created')]");
-	By SignOut = By.xpath("//a[contains(@href, 'logout')]");
-	By startBtn1 = By.xpath("//button[@class='btn']");
-	public RegisterPageObj() {
-		this.driver = driver;
-	}
-	
-	public void clickButton()
-	 {
-		 driver.findElement(startBtn1).click(); 
-	 }
-			
-	
-//	HomePageObj clickstart = new HomePageObj();
+	WebDriver driver = DriversBase.getDriver();  
+    private String baseUrl = "https://dsportalapp.herokuapp.com/register";  // Define URL explicitly
+    
+    private By userName = By.xpath("//input[@name='username']");
+    private By password = By.xpath("//input[@name='password1']");
+    private By confirmPassword = By.xpath("//input[@name='password2']");
+    private By registerButton = By.xpath("//input[@value='Register']");
+    private By errorMsg = By.xpath("//div[contains(@class, 'error-message')]");
+    private By registeredName = By.xpath("//div[contains(text(),'New Account Created')]");
+    private By signOut = By.xpath("//a[contains(@href, 'logout')]");
+    private By startBtn = By.xpath("//button[@class='btn']");
 
-	public void registerPageUrl() {
-		driver.get(Url + "register");
-		
-	}
-	
-	public void clickRegisterButton() {
-		driver.findElement(Regstr).click();
-		
-	}
-	public void verifyErrorMessage(String string) {
-		System.out.println(driver.findElement(PsswdErrMsg).getText());
-		assertEquals(driver.findElement(PsswdErrMsg).getText(), string);
-	}
-	public void setUserName(String userName2) {
-		driver.findElement(UserName).sendKeys(userName2);
-		
-	}
-	public void setpassword(String password) {
-		driver.findElement(Psswd).sendKeys(password);
-		
-	}
-	public void setConfirmPassword(String confirmPassword) {
-		driver.findElement(Psswdcnfrm).sendKeys(confirmPassword);
-	}
-	 public void verifyUserNameError(String string) {
-		 System.out.println(driver.findElement(UserName).getAttribute("validationMessage"));
-		 assertEquals(driver.findElement(UserName).getAttribute("validationMessage"),string);
-	 }
-	public void clickSignOut() {
-	
-		driver.findElement(SignOut).click();
-		
-	}
+    public void navigateToRegisterPage() {
+        driver.get(baseUrl);
+    }
 
+    public void clickRegisterButton() {
+        driver.findElement(registerButton).click();
+    }
 
+    public void verifyErrorMessage(String expectedMessage) {
+        String actualMessage = driver.findElement(errorMsg).getText();
+        System.out.println(actualMessage);
+        assertEquals(actualMessage, expectedMessage);
+    }
+
+    public void enterUserName() {
+        driver.findElement(userName).sendKeys(ConfigReader.getUserName());
+    }
+
+    public void enterPassword() {
+        driver.findElement(password).sendKeys(ConfigReader.getPassword());
+    }
+
+    public void enterConfirmPassword(String confirmPasswordText) {
+        driver.findElement(confirmPassword).sendKeys(confirmPasswordText);
+    }
+
+    public void verifyUserNameError(String expectedErrorMessage) {
+        String actualValidationMessage = driver.findElement(userName).getAttribute("validationMessage");
+        System.out.println(actualValidationMessage);
+        assertEquals(actualValidationMessage, expectedErrorMessage);
+    }
+
+    public void clickSignOut() {
+        driver.findElement(signOut).click();
+    }
 }

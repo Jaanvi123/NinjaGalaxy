@@ -8,7 +8,7 @@ import org.openqa.selenium.By;
 
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.SearchContext;
-
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -20,6 +20,8 @@ import driverManager.DriversBase;
 
 
 public class IntroductionPageObj extends DriversBase {	
+	
+	WebDriver driver;
 	By signin = By.xpath("//a[@href='/login']");
 	By username = By.id("id_username");
 	By pwd = By.id("id_password");
