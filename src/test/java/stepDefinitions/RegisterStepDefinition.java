@@ -1,11 +1,11 @@
 package stepDefinitions;
 
 
-
 import java.io.IOException;
 
 
 import org.junit.Assert;
+import org.openqa.selenium.By;
 
 import driverManager.DriversBase;
 import dsAlgoPageObjects.HomePageObj;
@@ -18,7 +18,7 @@ import utils.ExcelRead;
 public class RegisterStepDefinition extends DriversBase {
 	
 	RegisterPageObj registerPage = new RegisterPageObj();
-	public HomePageObj homepage;
+	 HomePageObj homepage = new HomePageObj();
 	ExcelRead excelreader = new ExcelRead();
 	
 	

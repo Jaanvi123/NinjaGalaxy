@@ -1,16 +1,19 @@
 package utils;
 
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
 
-import driverManager.DriversBase;
+
 
 public class ConfigReader {
 
-	private static Properties properties = new Properties();
+	/*public static Properties properties = new Properties();
 
 	public static void loadConfig() throws IOException {
 		 InputStream inputStream = ConfigReader.class.getClassLoader()
@@ -20,42 +23,68 @@ public class ConfigReader {
 			}
 		
 			properties.load(inputStream);
+		}  */
+	
+	private Properties properties;
+
+	private final String propertyFilePath = "src//test//resources//config//config.properties";
+
+	public ConfigReader() {
+		BufferedReader reader;
+		try {
+			reader = new BufferedReader(new FileReader(propertyFilePath));
+			properties = new Properties();
+			try {
+				properties.load(reader);
+				reader.close();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+			throw new RuntimeException("Config.properties not found at " + propertyFilePath);
 		}
+
+	}
 	
 
-	public static String getBrowserType() {
-		return properties.getProperty("browser", "chrome").toLowerCase();
+	public  String getBrowserType() {
+		
+			return properties.getProperty("browser");
+		
 	}
 
-	public static String getUrl() {
-		return properties.getProperty("Url");
+	public  String getUrl() {
+		
+				return properties.getProperty("Url");
+			
 	}
 
-	public static String getUserName() {
+	public  String getUserName() {
 		return properties.getProperty("username");
 	}
 
-	public static String getPassword() {
+	public  String getPassword() {
 		return properties.getProperty("password");
 	}
 
-	public static String getUrlHome() {
+	public  String getUrlHome() {
 		return properties.getProperty("urlHome");
 		
 		
 	}
 	
-	public static String getUrlTree() {
+	public  String getUrlTree() {
 		return properties.getProperty("urlTree");
 		
 		
 	}
 
-	public static void initializeDriverFromConfig() throws Exception {
+/*	public static void initializeDriverFromConfig() throws Exception {
 		loadConfig();
 		String browser = getBrowserType();
 		DriversBase.initializeDriver();
-	}
+	}   
 
 	public static Properties initializeProp() {
 		Properties prop = new Properties();
@@ -67,6 +96,6 @@ public class ConfigReader {
 			e.printStackTrace();
 		}
 		return prop;
-	}
+	}   */
 
 }

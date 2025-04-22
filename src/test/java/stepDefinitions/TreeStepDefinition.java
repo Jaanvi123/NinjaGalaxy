@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.Map;
 
 import org.junit.Assert;
+import org.openqa.selenium.WebDriver;
 
 import driverManager.DriversBase;
 import dsAlgoPageObjects.TreePage;
@@ -15,14 +16,14 @@ import io.cucumber.java.en.When;
 import utils.ExcelRead;
 
 public class TreeStepDefinition extends DriversBase {
-	
+	 WebDriver driver; 
 	
 	
 	TreePage treepage=new TreePage(driver);
 	@Given("USER is on Dalgo homepage  and verify the page title")
 	public void user_is_on_dalgo_homepage_and_verify_the_page_title_row_number() {
 	    treepage.getpageTitle();
-	    driver.get(url + "home");
+	    driver.get(Url + "home");
 	}
   
 	@When("The user clicks  Get Started button below the treeList and verify pagetitle")

@@ -19,12 +19,21 @@ public class RegisterPageObj extends DriversBase {
 	By PsswdErrMsg = By.xpath("//div[contains(text(),'password_mismatch:The two password fields didn’t match.')]");
 	By RegisterdName = By.xpath("//div[contains(text(),'New Account Created')]");
 	By SignOut = By.xpath("//a[contains(@href, 'logout')]");
-	
+	By startBtn1 = By.xpath("//button[@class='btn']");
 	public RegisterPageObj() {
-		//this.driver = driver;
+		this.driver = driver;
 	}
+	
+	public void clickButton()
+	 {
+		 driver.findElement(startBtn1).click(); 
+	 }
+			
+	
+//	HomePageObj clickstart = new HomePageObj();
+
 	public void registerPageUrl() {
-		driver.get(url + "register");
+		driver.get(Url + "register");
 		
 	}
 	
