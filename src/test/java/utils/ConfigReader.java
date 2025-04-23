@@ -26,25 +26,6 @@ public class ConfigReader {
 			properties.load(inputStream);
 		}  
 	
-
-	/*public ConfigReader() {
-		BufferedReader reader;
-		try {
-			reader = new BufferedReader(new FileReader(propertyFilePath));
-			properties = new Properties();
-			try {
-				properties.load(reader);
-				reader.close();
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-			throw new RuntimeException("Config.properties not found at " + propertyFilePath);
-		}
-
-	}     */
-	
 	static {
         try (FileInputStream fileInput = new FileInputStream(propertyFilePath)) {
             properties.load(fileInput);
@@ -60,15 +41,12 @@ public class ConfigReader {
     }
 
 	public  String getBrowserType() {
-		
-			return properties.getProperty("browser");
+		return properties.getProperty("browser");
 		
 	}
-
 	public  static String getUrl() {
+			return properties.getProperty("Url");
 		
-				return properties.getProperty("Url");
-			
 	}
 
 	public static  String getUserName() {
@@ -79,7 +57,7 @@ public class ConfigReader {
 		return properties.getProperty("password");
 	}
 
-	public  String getUrlHome() {
+	public static String getUrlHome() {
 		return properties.getProperty("urlHome");
 		
 		

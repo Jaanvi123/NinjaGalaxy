@@ -41,6 +41,7 @@ public class DriverFactory {
         return tlDriver.get();
     }
 
+    
     public static void closeDriver() {
         if (tlDriver.get() != null) {
             tlDriver.get().quit();
