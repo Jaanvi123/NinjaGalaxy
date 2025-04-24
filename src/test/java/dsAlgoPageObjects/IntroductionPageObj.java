@@ -52,11 +52,9 @@ public class IntroductionPageObj {
 	WebElement graphGetStartedBtn;
 
 	// sigin
-	@FindBy(css = "//a[@href='/login']")
-	WebElement SignInLink;
+	@FindBy(xpath ="//div[@class='navbar-nav']//a[@href='/login']") WebElement SignInLink;
 	// register
-	@FindBy(css = "//a[@href='/register']")
-	WebElement RegisterLink;
+	@FindBy(xpath="//div[2]/ul/a[2]") WebElement RegisterLink;
 
 	// to locate the authentication message element
 	@FindBy(css = "div.alert.alert-primary")
@@ -87,28 +85,23 @@ public class IntroductionPageObj {
 	private WebElement DropdownArrow;
 
 	public void clickDropdownArrow(WebDriver driver) {
-		this.driver = driver; // Set WebDriver instance
-		PageFactory.initElements(driver, this); // Initialize elements
-
+		this.driver = driver;
+		PageFactory.initElements(driver, this);
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
-
 		try {
-			wait.until(ExpectedConditions.elementToBeClickable(DropdownArrow)); // Wait until clickable
-
+			wait.until(ExpectedConditions.elementToBeClickable(DropdownArrow));
 			Actions actions = new Actions(driver);
-			actions.moveToElement(DropdownArrow).perform(); // Scroll to element
+			actions.moveToElement(DropdownArrow).perform();
 			DropdownArrow.click();
-
 			System.out.println("Dropdown Arrow clicked successfully.");
-		} catch (Exception e) {
+		    } catch (Exception e) {
 			System.out.println("Error clicking dropdown Dropdown Arrow: " + e.getMessage());
-		}
-	}
+		        }
+	         }
 
 	public void clickDropdownArray() {
 		dropdownArray.click();
 		LoggerLoad.info("Array Dropdown selected");
-
 	}
 
 	public void clickDropdownLinkedList() {
@@ -135,14 +128,13 @@ public class IntroductionPageObj {
 		dropdownGraph.click();
 		LoggerLoad.info("Graph Dropdown selected");
 	}
-	
+
 	public void clickgetStartedButton(WebDriver driver) {
 		this.driver = driver; // Set WebDriver instance
 		PageFactory.initElements(driver, this); // Initialize elements
-					System.out.println("Button clicked successfully.");
-							}
-	
-	
+		System.out.println("Button clicked successfully.");
+	}
+
 	public void clickDsGetStartedButton() {
 		dsIntroductionGetStartedBtn.click();
 		LoggerLoad.info("Clicked on DS-Introduction Get Started Button");
@@ -178,6 +170,23 @@ public class IntroductionPageObj {
 		LoggerLoad.info("Clicked on Graph Get Started Button");
 	}
 // PageFactory.initElements(driver, this); automatically finds and assigns values to @FindBy elements when the class instance is created.
-	// Without this initialization, dsIntroductionGetStartedBtn remains null, causing an error when clicking. 
-	// Now, when calling clickDsGetStartedButton(), the element is properly set up and ready for interaction.
+	// Without this initialization, dsIntroductionGetStartedBtn remains null,
+	// causing an error when clicking.
+	// Now, when calling clickDsGetStartedButton(), the element is properly set up
+	// and ready for interaction.
+	
+	public void clickRegisterLink() {
+		RegisterLink.click();
+		LoggerLoad.info("Clicked on Register Link on Homepage");
+			}
+	public void clickSignInLink() {
+		SignInLink.click();
+		LoggerLoad.info("Clicked on Sign In Link on Homepage");
+	}
+	public void clicklink(WebDriver driver) {
+		this.driver = driver; // Set WebDriver instance
+		PageFactory.initElements(driver, this); // Initialize elements
+		System.out.println("Link clicked successfully.");
+	}
+	
 }

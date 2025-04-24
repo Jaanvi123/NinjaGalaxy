@@ -226,7 +226,25 @@ public class HomeStepDefinition {
 	public void the_user_should_able_to_see_an_warning_message_you_are_not_logged_in_for_graph() {
 		LoggerLoad.info(introductionpage.getAuthenticationMessage());
 	}
-
+	
+	@When("The user clicks on RegisterLink on Home Page")
+	public void the_user_clicks_on_registerlink_on_home_page() {
+		introductionpage.clicklink(driver);
+		introductionpage.clickRegisterLink();
+	}
+	@Then("The user lands on Register page")
+	public void the_user_lands_on_register_page() {
+		LoggerLoad.info("Regsiter page clicked");
+	}
+	@When("The user clicks on Sign in on Home Page")
+	public void the_user_clicks_on_sign_in_on_home_page() {
+		introductionpage.clicklink(driver);
+		introductionpage.clickSignInLink();
+	}
+	@Then("The user lands on Login page")
+	public void the_user_lands_on_login_page() {
+		LoggerLoad.info("Sign In page clicked");
+	}
 }
 
 

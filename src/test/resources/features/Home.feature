@@ -59,3 +59,11 @@ Feature: Home page
   Scenario: Verify that user able to see warning message on clicking Get Started buttons of Graph on the home page without Sign in
     When The user clicks Get Started buttons of Graph on the homepage without Sign in
     Then The user should able to see an warning message You are not logged in for Graph
+    
+   Scenario: Verify that user clicks on RegisterLink on the home page without Sign in  
+   When  The user clicks on RegisterLink on Home Page 
+   Then The user lands on Register page 
+
+   Scenario: Verify that user clicks on Sign in on the home page without Sign in  
+   When  The user clicks on Sign in on Home Page 
+   Then The user lands on Login page 

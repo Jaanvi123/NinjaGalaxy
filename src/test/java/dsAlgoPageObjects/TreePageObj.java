@@ -10,15 +10,17 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import driverManager.DriverFactory;
+import utils.ConfigReader;
 
 
-public class TreePage {
+
+public class TreePageObj {
 	
-	WebDriver driver;
-	WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));
+	public WebDriver driver = DriverFactory.getDriver();
+	String URL = ConfigReader.getUrl();
+	String homeURL = ConfigReader.getUrlHome();
 
-	WebElement txtarea;
-	Alert alert ;
 	By treegetStartedBtn=By.xpath("//a[@href=\"tree\"]");
 	By treetitle=By.xpath("//h4[@class=\"bg-secondary text-white\"]");
 	By Overviewoftrees=By.xpath("//a[@href=\"overview-of-trees\"]");
@@ -55,7 +57,7 @@ public class TreePage {
 	By practicalquestionbtn=By.xpath("//a[@href=\"/tree/practice\"]");
 	
 	
-	public TreePage(WebDriver driver) {
+	public TreePageObj(WebDriver driver) {
 		 this.driver=driver;
 	}
 

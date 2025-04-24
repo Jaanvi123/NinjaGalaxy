@@ -18,6 +18,7 @@ public class HomePageObj {
 	// DsAlgo page
 	@FindBy(xpath = "//div[@class='content']/p")WebElement HomePageMessage;
 	@FindBy(xpath = "//button[@class='btn']")WebElement GetStartedButton;
+	
 	// alert
 	@FindBy(xpath = "//div[@class='alert alert-primary']")WebElement RegisterMsg;
 
@@ -37,7 +38,7 @@ public class HomePageObj {
 		LoggerLoad.info("Inside openURL");
 	}
 	public String getMessage() {
-		message = HomePageMessage.getText(); // Assign value before returning
+		message = HomePageMessage.getText(); 
 		return message;
 	}
 
