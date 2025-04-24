@@ -57,21 +57,21 @@ public class HooksPage {
     
        @After
        public void tearDown() {
-           if (driver != null) {
+        /*   if (driver != null) {
                try {
-                   String s2 = "screenshot12";
+                   String s2 = "screenshot13";
                    File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
                    Files.move(screenshot.toPath(),
                               Path.of("C:\\Users\\onlin\\eclipse-workspace\\DsAlgo_Galaxy\\src\\test\\resources\\Screenshots", s2 + ".png"));
                    System.out.println("Screenshot saved: " + s2 + ".png");
                } catch (Exception e) {
                    System.err.println("Error saving screenshot: " + e.getMessage());
-               }
+               }    
                DriverFactory.closeDriver();
-           }
+           }   */
 
            // Close the browser after taking the screenshot
-           
+    	   DriverFactory.closeDriver();
        }
 
                

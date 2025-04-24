@@ -23,6 +23,7 @@ public class ExcelRead {
 		Sheet sheet = workbook.getSheet(sheetName);
 
 		if (sheet == null) {
+			workbook.close();
 			throw new IOException("Sheet " + sheetName + " not found in " + FILE_PATH);
 		}
 
