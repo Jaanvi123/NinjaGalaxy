@@ -13,18 +13,18 @@ import java.util.Map;
 
 public class ExcelRead {
 
-	private static final String FILE_PATH = "src/test/resources/TestData/TestData.xlsx"; // Path to the Excel file
+	 public static String filepath = "src/test/resources/TestData/TestingData.xlsx"; // Path to the Excel file
 
-	public List<Map<String, String>> readExcelSheet(String sheetName) throws IOException {
+	public List<Map<String, String>> readExcelSheet(String filepath , String sheetName) throws IOException {
 		List<Map<String, String>> excelData = new ArrayList<>();
 
-		FileInputStream fileInputStream = new FileInputStream(new File(FILE_PATH));
+		FileInputStream fileInputStream = new FileInputStream(new File(filepath));
 		Workbook workbook = new XSSFWorkbook(fileInputStream);
 		Sheet sheet = workbook.getSheet(sheetName);
 
 		if (sheet == null) {
 			workbook.close();
-			throw new IOException("Sheet " + sheetName + " not found in " + FILE_PATH);
+			throw new IOException("Sheet " + sheetName + " not found in " + filepath);
 		}
 
 		Row headerRow = sheet.getRow(0); // First row contains column headers

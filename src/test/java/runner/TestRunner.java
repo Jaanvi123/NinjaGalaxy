@@ -9,8 +9,8 @@ import io.cucumber.testng.*;
 	@RunWith(Cucumber.class)
 
 	@CucumberOptions(
-			features="src/test/resources/features/SignIn.feature",
-			glue={"stepDefinitions/SignInStepDefinition"},
+			features="src/test/resources/features",
+			glue={"stepDefinitions"},
 			dryRun=false,
 			monochrome=true,
 			//tags= "@SignIn",
