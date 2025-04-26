@@ -6,6 +6,10 @@ import org.apache.logging.log4j.Logger;
 
 public class LoggerLoad {
 	private static Logger logger = LogManager.getLogger();
+	static {
+        // Set system property to explicitly specify the location of log4j2 properties file
+        System.setProperty("log4j2.properties", "src/test/resources/log4j2.properties");
+    }
 	
 	public static void info(String message) {
 		logger.info(message);

@@ -29,14 +29,11 @@ public class HomePageObj {
 	}
 
 	public void openUrl() {
-		driver.get(ConfigReader.getUrl());
+		PageFactory.initElements(driver, this);
+	driver.get(ConfigReader.getUrl());
 		LoggerLoad.info("Inside openURL");
 	}
-
-	public void openHomeUrl() {
-		driver.get(ConfigReader.getUrlHome());
-		LoggerLoad.info("Inside openURL");
-	}
+	
 	public String getMessage() {
 		message = HomePageMessage.getText(); 
 		return message;
@@ -52,5 +49,13 @@ public class HomePageObj {
 
 	public String registerSuccess() {
 		return RegisterMsg.getText();
+	}
+	
+	
+	public void openHomeUrl() {
+		PageFactory.initElements(driver, this);
+	//	String homeURL = ConfigReader.getUrlHome();
+		driver.get(ConfigReader.getUrlHome());
+		LoggerLoad.info("Inside Home URL");
 	}
 }

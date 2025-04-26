@@ -1,14 +1,7 @@
 package hooks;
 
-import java.io.File;
 import java.io.IOException;
-
-import java.nio.file.Files;
-import java.nio.file.Path;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
-
 import driverManager.DriverFactory;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
@@ -18,22 +11,22 @@ import utils.ConfigReader;
 
 public class HooksPage {
 	
-	WebDriver driver;
+	WebDriver driver = DriverFactory.getDriver();
 	ConfigReader configReader = new ConfigReader();
-	String browser = configReader.getBrowserType();
+
+	//String browser = configReader.getBrowserType();
 	
-   @BeforeAll
+     @BeforeAll
     public static void loadConfig() throws IOException {
         ConfigReader.loadConfig(); 
-    }
+    } 
     
-    
-
-  
-    @Before
+     
+   @Before
     public void setUp() throws Exception {
        String browser = configReader.getBrowserType();
        String url = configReader.getUrl();
+      
        
         System.out.println("Browser Type: " + browser);
         
@@ -51,10 +44,9 @@ public class HooksPage {
         
         System.out.println("Navigating to URL: " + url);
         driver.get(url);
-    }
+    }    
      
-       
-    
+   
        @After
        public void tearDown() {
         /*   if (driver != null) {

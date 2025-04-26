@@ -9,11 +9,12 @@ import io.cucumber.testng.*;
 	@RunWith(Cucumber.class)
 
 	@CucumberOptions(
-			features="src/test/resources/features",
+			features="src/test/resources/features/Tree.feature",
 			glue={"stepDefinitions"},
 			dryRun=false,
 			monochrome=true,
 			//tags= "@SignIn",
+					
 			plugin= {"pretty","html:target/output.html","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
 					"io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"
 					}

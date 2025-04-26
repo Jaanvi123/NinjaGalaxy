@@ -3,104 +3,193 @@ package dsAlgoPageObjects;
 import java.time.Duration;
 
 import org.openqa.selenium.Alert;
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import driverManager.DriverFactory;
 import utils.ConfigReader;
-
-
+import utils.LoggerLoad;
 
 public class TreePageObj {
 	
-	public WebDriver driver = DriverFactory.getDriver();
+	WebDriver driver = DriverFactory.getDriver();
 	String URL = ConfigReader.getUrl();
 	String homeURL = ConfigReader.getUrlHome();
 
-	By treegetStartedBtn=By.xpath("//a[@href=\"tree\"]");
-	By treetitle=By.xpath("//h4[@class=\"bg-secondary text-white\"]");
-	By Overviewoftrees=By.xpath("//a[@href=\"overview-of-trees\"]");
-	By Terminologies=By.xpath("//a[@href=\"terminologies\"]");
-	By TypesofTrees=By.xpath("//a[@href=\"types-of-trees\"]");
-	By TreeTraversals=By.xpath("//a[@href=\"tree-traversals\"]");
-	By TraversalsIllustrations=By.xpath("//a[@href=\"traversals-illustration\"]");
-	By BinaryTrees =By.xpath("//a[@href=\"binary-trees\"]");
-	By TypesofBinaryTrees =By.xpath("//a[@href=\"types-of-binary-trees\"]");
-	By ImplementationinPython =By.xpath("//a[@href=\"implementation-in-python\"]");
-	By BinaryTreeTraversals =By.xpath("//a[@href=\"binary-tree-traversals\"]");
-	By ImplementationOfBinaryTrees=By.xpath("//a[@href=\"implementation-of-binary-trees\"]");
-	By ApplicationOfBinarytrees =By.xpath("//a[@href=\"applications-of-binary-trees\"]");
-	By BinarySearchTrees =By.xpath("//a[@href=\"binary-search-trees\"]");
-	By  ImplementationofBTS =By.xpath("//a[@href=\"implementation-of-bst\"]");
-	By title=By.xpath("//p[@class=\"bg-secondary text-white\"]");
-	By tryHere=By.xpath("//a[@href=\"/tryEditor\"]");
-	By editorbox=By.xpath("//div[@class=\"CodeMirror-scroll\"]");
-	By txteditorarea_1 = By.xpath("//form[@id='answer_form']//pre[@class=' CodeMirror-line ']/span/span");
-	By run_btn = By.xpath("//button[text()='Run']");
-	By consolemsg = By.xpath("//*[@id='output']");
-	By Terminologies1=By.xpath("//a[@href=\"/tree/terminologies/\"]");
-	By  TypesofTrees1=By.xpath("//a[@href=\"/tree/types-of-trees/\"]");
-	By TreeTraversals1=By.xpath("//a[@href=\"/tree/tree-traversals/\"]");
-	By TraversalsIllustrations1=By.xpath("//a[@href=\"/tree/traversals-illustration/\"]");
-	By BinaryTrees1 =By.xpath("//a[@href=\"/tree/binary-trees/\"]");
-	By TypesofBinaryTrees1 =By.xpath("//a[@href=\"/tree/types-of-binary-trees/\"]");
-	By ImplementationinPython1=By.xpath("//a[@href=\"/tree/implementation-in-python/\"]");
-	By BinaryTreeTraversals1=By.xpath("//a[@href=\"/tree/binary-tree-traversals/\"]");
-	By ImplementationOfBinaryTrees1=By.xpath("//a[@href=\"/tree/implementation-of-binary-trees/\"]");
-	By ApplicationOfBinarytrees1=By.xpath("//a[@href=\"/tree/applications-of-binary-trees/\"]");
-	By BinarySearchTrees1 =By.xpath("//a[@href=\"/tree/binary-search-trees/\"]");
-	By  ImplementationofBTS1 =By.xpath("//a[@href=\"/tree/implementation-of-bst/\"]");
-	By practicalquestionbtn=By.xpath("//a[@href=\"/tree/practice\"]");
+	@FindBy(xpath= "//h4[@class='bg-secondary text-white']")WebElement TreePageTitle;
+	@FindBy(xpath = "//a[@href='overview-of-trees']") WebElement Overviewoftrees;
+	@FindBy(xpath = "//a[@href='terminologies']")WebElement Terminologies;
+	@FindBy(xpath = "//a[@href='types-of-trees']")WebElement TypesofTrees;
+	@FindBy(xpath = "//a[@href='tree-traversals']")WebElement TreeTraversals;
+	@FindBy(xpath = "//a[@href='traversals-illustration']")WebElement  TraversalsIllustrations;
+	@FindBy(xpath = "//a[@href='binary-trees']")WebElement BinaryTrees ;
+	@FindBy(xpath = "//a[@href='types-of-binary-trees']")WebElement TypesofBinaryTrees ;
+	@FindBy(xpath = "//a[@href='implementation-in-python']")WebElement ImplementationinPython;
+	@FindBy(xpath = "//a[@href='binary-tree-traversals']")WebElement BinaryTreeTraversals;
+	@FindBy(xpath = "//a[@href='implementation-of-binary-trees']")WebElement ImplementationOfBinaryTrees;
+	@FindBy(xpath = "//a[@href='applications-of-binary-trees']")WebElement ApplicationOfBinarytrees ;
+	@FindBy(xpath = "//a[@href='binary-search-trees']")WebElement BinarySearchTrees ;
+	@FindBy(xpath = "//a[@href='implementation-of-bst']")WebElement ImplementationofBTS ;
+	@FindBy(xpath = "//*[@id='content']/a")WebElement PracticeQuestions;
 	
+	@FindBy(xpath ="//a[@href='/tryEditor']")WebElement tryHere;
+	@FindBy(xpath ="//*[@id='answer_form']/button") WebElement RunButton ;
+	@FindBy(xpath= "//*[@id=\"answer_form\"]/div/div/div[6]") WebElement CodeEditor;
+	@FindBy(xpath= "//pre[@id='output']") WebElement CodeEditorOutput;
 	
 	public TreePageObj(WebDriver driver) {
 		 this.driver=driver;
+		 PageFactory.initElements(driver, this);
+	}  
+	 
+	public void TreePageTitle() {
+		 PageFactory.initElements(driver, this);
+		TreePageTitle.getText();
+		LoggerLoad.info("Tree Page title" + TreePageTitle);
 	}
-
-	public void getpageTitle()
-	 {
-		 System.out.println(driver.getTitle());	
-	 }
-	 
-	 public void treeclickgetstartedbtn() {
-		 driver.findElement(treegetStartedBtn).click();;
-	 }
-	 
-	public void treepagetitle() {
-		System.out.println(driver.findElement(treetitle));
+	public String getcurrentpageUrl()
+	{
+		System.out.println(driver.getCurrentUrl());
+		return(driver.getCurrentUrl());
 	}
 	
-	public void validatetreelinks() {
-		driver.findElement(Overviewoftrees).click();
-		driver.navigate().back();
-		driver.findElement(Terminologies).click();
-		driver.navigate().back();
-		driver.findElement(TypesofTrees).click();
-		driver.navigate().back();
-		driver.findElement(TreeTraversals).click();
-		driver.navigate().back();
-		driver.findElement(TraversalsIllustrations).click();
-		driver.navigate().back();
-		driver.findElement(BinaryTrees).click();
-		driver.navigate().back();
-		driver.findElement(TypesofBinaryTrees).click();
-		driver.navigate().back();
-		driver.findElement(ImplementationinPython).click();
-		driver.navigate().back();
-		driver.findElement(BinaryTreeTraversals).click();
-		driver.navigate().back();
-		driver.findElement(ImplementationOfBinaryTrees).click();
-		driver.navigate().back();
-		driver.findElement(ApplicationOfBinarytrees).click();
-		driver.navigate().back();
-		driver.findElement(BinarySearchTrees).click();
-		driver.navigate().back();
-		driver.findElement(ImplementationofBTS).click();
-		driver.navigate().back();
-		}
+	public void clickOverviewOfTreesLink() {
+		 PageFactory.initElements(driver, this);
+		 Overviewoftrees.click();
+		LoggerLoad.info("Overview of trees Link clicked");
+	}
+	
+	public void clickTerminologiesLink() {
+		 PageFactory.initElements(driver, this);
+		 Terminologies.click();
+		LoggerLoad.info("Terminologies Link clicked");
+	}
+	
+	public void clickTypesOfTreesLink() {
+		 PageFactory.initElements(driver, this);
+		 TypesofTrees.click();
+		LoggerLoad.info("Types of Trees Link clicked");
+	}
+	
+	public void clickTreeTraversalsLink() {
+		 PageFactory.initElements(driver, this);
+		 TreeTraversals.click();
+		LoggerLoad.info("Tree Traversals Link clicked");
+	}
+	
+	public void clickTraversalsIllustrationsLink() {
+		 PageFactory.initElements(driver, this);
+		 TraversalsIllustrations.click();
+		LoggerLoad.info("Traversals Illustrations Link clicked");
+	}
+	public void clickBinaryTreesLink() {
+		 PageFactory.initElements(driver, this);
+		 BinaryTrees.click();
+		LoggerLoad.info("Binary Trees Link clicked");
+	}
+	
+	public void clickTypesofBinaryTreesLink() {
+		 PageFactory.initElements(driver, this);
+		 TypesofBinaryTrees.click();
+		LoggerLoad.info("Types of BinaryTrees Link clicked");
+	}
+	public void clickImplementationinPythonLink() {
+		 PageFactory.initElements(driver, this);
+		 ImplementationinPython.click();
+		LoggerLoad.info("Implementation in Python Link clicked");
+	}
+	
+	public void clickBinaryTreeTraversalsLink() {
+		 PageFactory.initElements(driver, this);
+		 BinaryTreeTraversals.click();
+		LoggerLoad.info("Binary Tree Traversals Link clicked");
+	}
+	public void clickImplementationOfBinaryTreesLink() {
+		 PageFactory.initElements(driver, this);
+		 ImplementationOfBinaryTrees.click();
+		LoggerLoad.info("Implementation Of Binary Trees Link clicked");
+	}
+	
+	public void clickApplicationOfBinarytreesLink() {
+		 PageFactory.initElements(driver, this);
+		 ApplicationOfBinarytrees.click();
+		LoggerLoad.info("Application Of Binarytrees Link clicked");
+	}
+	
+	public void clickBinarySearchTreesLink() {
+		 PageFactory.initElements(driver, this);
+		 BinarySearchTrees.click();
+		LoggerLoad.info("Binary Search Trees Link clicked");
+	}
+	
+	public void clickImplementationofBTSLink() {
+		 PageFactory.initElements(driver, this);
+		 ImplementationofBTS.click();
+		LoggerLoad.info("Implementation of BTS Link clicked");
+	}
+	
+	public void clickPracticeQuestionsLink() {
+		 PageFactory.initElements(driver, this);
+		 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+		WebElement editorOutputElement = wait.until(ExpectedConditions.visibilityOf(PracticeQuestions));
+		 PracticeQuestions.click();
+		LoggerLoad.info("Practice Questions Link clicked");
+	}
+	
+	public void clickTryHereButton() {
+		 PageFactory.initElements(driver, this);
+		 tryHere.click();
+		LoggerLoad.info("Try here button clicked");
+	}
+	
+	public void clickRunButton() {
+		 PageFactory.initElements(driver, this);
+		 RunButton.click();
+		LoggerLoad.info("Run button clicked");
+	}
+	public void validateTextEditorBox() {
+
+		String Code ="print('Python is fun!')";
+		PageFactory.initElements(driver, this);
+		CodeEditor = driver.switchTo().activeElement();
+		Actions actions = new Actions(driver);
+		actions.moveToElement(CodeEditor).click().perform();
+		CodeEditor.sendKeys(Code);	
+		clickRunButton();
+		validateCodeEditorOutput();
+			}
+	
+	public void validateCodeEditorOutput() {
+	PageFactory.initElements(driver, this);
+	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+	WebElement editorOutputElement = wait.until(ExpectedConditions.visibilityOf(CodeEditorOutput));
+	String message =CodeEditorOutput.getText();
+	System.out.println("Code Printed Successfully " + message );
+	}
+	
+	public void HandleAlert() {
+		PageFactory.initElements(driver, this); 
+		Alert alert = driver.switchTo().alert();
+		String alertMessage = alert.getText();
+		LoggerLoad.info("Alert message: " + alertMessage);
+		alert.accept();
+		System.out.println("Alert message:" + alertMessage);
+	}
+	
+	public void InvalidCode() {
+		String invalidCode ="This is a test message !";
+		PageFactory.initElements(driver, this);
+		CodeEditor = driver.switchTo().activeElement();
+		Actions actions = new Actions(driver);
+		actions.moveToElement(CodeEditor).click().perform();
+		CodeEditor.sendKeys(invalidCode);	
+		clickRunButton();
+		HandleAlert();
+		
+	}
 	
 }

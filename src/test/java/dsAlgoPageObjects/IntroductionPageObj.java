@@ -16,7 +16,7 @@ import driverManager.DriverFactory;
 public class IntroductionPageObj {
 	public WebDriver driver = DriverFactory.getDriver();
 	String URL = ConfigReader.getUrl();
-	String homeURL = ConfigReader.getUrlHome();
+	//String homeURL = ConfigReader.getUrlHome();
 
 	// dropdown
 	@FindBy(css = "//a[@href='#']")
@@ -82,7 +82,7 @@ public class IntroductionPageObj {
 	}
 
 	@FindBy(css = "a.dropdown-toggle")
-	private WebElement DropdownArrow;
+	WebElement DropdownArrow;
 
 	public void clickDropdownArrow(WebDriver driver) {
 		this.driver = driver;
@@ -161,6 +161,7 @@ public class IntroductionPageObj {
 	}
 
 	public void clickTreeGetStartedButton() {
+		PageFactory.initElements(driver, this); 
 		treeGetStartedBtn.click();
 		LoggerLoad.info("Clicked on Tree Get Started Button");
 	}
@@ -176,17 +177,19 @@ public class IntroductionPageObj {
 	// and ready for interaction.
 	
 	public void clickRegisterLink() {
+		PageFactory.initElements(driver, this); 
 		RegisterLink.click();
 		LoggerLoad.info("Clicked on Register Link on Homepage");
 			}
 	public void clickSignInLink() {
+		PageFactory.initElements(driver, this); 
 		SignInLink.click();
 		LoggerLoad.info("Clicked on Sign In Link on Homepage");
 	}
 	public void clicklink(WebDriver driver) {
 		this.driver = driver; // Set WebDriver instance
 		PageFactory.initElements(driver, this); // Initialize elements
-		System.out.println("Link clicked successfully.");
+		
 	}
 	
 }

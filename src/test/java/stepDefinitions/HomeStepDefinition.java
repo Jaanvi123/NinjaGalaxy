@@ -25,8 +25,7 @@ public class HomeStepDefinition {
 	
 	@Given("The user enter correct dsAlgo portal URL")
 	public void the_user_enter_correct_ds_algo_portal_url() {
-		DriverFactory.initializeDriver("chrome");  
-		System.out.println("URl opened");
+			System.out.println("URl opened");
 	}
 
 	@Then("The user clicks the Get Started button")

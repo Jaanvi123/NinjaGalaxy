@@ -1,13 +1,14 @@
 package utils;
 
-import java.io.BufferedReader;
-import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.PageFactory;
+
+import driverManager.DriverFactory;
 
 
 
@@ -15,15 +16,14 @@ public class ConfigReader {
 
 	public static Properties properties = new Properties();
 	private static final String propertyFilePath = "src//test//resources//config//config.properties";
-	
+	static WebDriver driver = DriverFactory.getDriver();
 	public static void loadConfig() throws IOException {
 		 InputStream inputStream = ConfigReader.class.getClassLoader()
 				.getResourceAsStream("config/config.properties"); {
 			if (inputStream == null)
 				throw new IOException("Config file not found");
 			}
-		
-			properties.load(inputStream);
+					properties.load(inputStream);
 		}  
 	
 	static {
@@ -57,18 +57,15 @@ public class ConfigReader {
 		return properties.getProperty("password");
 	}
 
-	public static String getUrlHome() {
-		return properties.getProperty("urlHome");
+	public static String getUrlHome() {		
+	  return  properties.getProperty("urlHome");
 		
-		
-	}
+		}
+  public void ConfigReadPage() {
+	 	 PageFactory.initElements(driver, this);
 	
-	public  String getUrlTree() {
-		return properties.getProperty("urlTree");
-		
-		
-	}
-
-
+}
+	
+	
 
 }

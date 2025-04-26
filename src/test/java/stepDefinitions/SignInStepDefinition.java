@@ -44,15 +44,16 @@ public class SignInStepDefinition {
 	    String username = testdata.get(RowNumber).get("username");
 	    String password = testdata.get(RowNumber).get("password");
 
-	    signin.enterLoginFormFields(username, password);
-	    System.out.println("Logging in with Username: " + username + " and Password: " + password);
-       //     signin.enterLoginFormFields("login", 1);
+	        signin.enterLoginDetails(username, password);
+	//    System.out.println("Logging in with Username: " + username + " and Password: " + password);
+      //     signin.enterLoginFormFields("login", 1);
             signin.clickloginButton();
         }
 	
 
 	@Then("The user should land in Data Structure Home Page with message {string}")
 	public void the_user_should_land_in_data_structure_home_page_with_message(String expectedAlertMessage) {
+		
 		signin.homePagemsg();
 	}
 

@@ -8,12 +8,13 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
 public class ExcelRead {
 
-	 public static String filepath = "src/test/resources/TestData/TestingData.xlsx"; // Path to the Excel file
+	 public  String filepath = "src/test/resources/TestData/TestingData.xlsx"; // Path to the Excel file
 
 	public List<Map<String, String>> readExcelSheet(String filepath , String sheetName) throws IOException {
 		List<Map<String, String>> excelData = new ArrayList<>();
@@ -29,6 +30,7 @@ public class ExcelRead {
 
 		Row headerRow = sheet.getRow(0); // First row contains column headers
 		int totalColumns = headerRow.getLastCellNum();
+		
 
 		for (int i = 1; i <= sheet.getLastRowNum(); i++) { // Start from row 1 (Skipping headers)
 			Row row = sheet.getRow(i);
@@ -52,4 +54,64 @@ public class ExcelRead {
 		fileInputStream.close();
 		return excelData;
 	}
+	
+	//new
+	public List<Map<String, String>> readFromExcel(String filePath, String sheetName)
+			throws IOException {
+		
+		FileInputStream fis = new FileInputStream(new File(filePath));
+
+		
+		Workbook workbook = new XSSFWorkbook(fis);
+		
+		Sheet sheet = workbook.getSheet(sheetName);
+		
+		Row row;
+		Cell cell;
+		int totalRow = sheet.getLastRowNum();
+	//	System.out.println("totalRow--->" + totalRow);
+
+		List<Map<String, String>> excelRows = new ArrayList<>();
+
+		for (int currentRow = 1; currentRow <= totalRow; currentRow++) { 
+			row = sheet.getRow(currentRow);
+			int totalColumn = row.getLastCellNum();
+			
+			LinkedHashMap<String, String> columnMapdata = new LinkedHashMap<>();
+
+			String data = null;
+
+			for (int currentColumn = 0; currentColumn < totalColumn; currentColumn++) { 
+																						
+				cell = row.getCell(currentColumn);
+
+				String columnHeaderName = sheet.getRow(sheet.getFirstRowNum()).getCell(currentColumn)
+						.getStringCellValue(); 
+				
+
+				if (cell != null) {
+					if (cell.getCellType() == CellType.STRING) {
+						data = cell.getStringCellValue();
+					} else if (cell.getCellType() == CellType.NUMERIC) {
+						data = String.valueOf(cell.getNumericCellValue());
+					} else if (cell.getCellType() == CellType.BLANK) {
+						data = String.valueOf(cell.getStringCellValue());
+					}
+				} else {
+					data = "";
+
+				}
+				columnMapdata.put(columnHeaderName, data);
+			}
+
+			excelRows.add(columnMapdata);
+		}
+
+		return excelRows;
+
+	}
+	
+
+	
+	
 }
