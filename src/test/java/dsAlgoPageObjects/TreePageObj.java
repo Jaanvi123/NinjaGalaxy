@@ -20,7 +20,7 @@ public class TreePageObj {
 	String URL = ConfigReader.getUrl();
 	String homeURL = ConfigReader.getUrlHome();
 
-	@FindBy(xpath= "//h4[@class='bg-secondary text-white']")WebElement TreePageTitle;
+	
 	@FindBy(xpath = "//a[@href='overview-of-trees']") WebElement Overviewoftrees;
 	@FindBy(xpath = "//a[@href='terminologies']")WebElement Terminologies;
 	@FindBy(xpath = "//a[@href='types-of-trees']")WebElement TypesofTrees;
@@ -35,11 +35,12 @@ public class TreePageObj {
 	@FindBy(xpath = "//a[@href='binary-search-trees']")WebElement BinarySearchTrees ;
 	@FindBy(xpath = "//a[@href='implementation-of-bst']")WebElement ImplementationofBTS ;
 	@FindBy(xpath = "//*[@id='content']/a")WebElement PracticeQuestions;
-	
 	@FindBy(xpath ="//a[@href='/tryEditor']")WebElement tryHere;
 	@FindBy(xpath ="//*[@id='answer_form']/button") WebElement RunButton ;
 	@FindBy(xpath= "//*[@id=\"answer_form\"]/div/div/div[6]") WebElement CodeEditor;
 	@FindBy(xpath= "//pre[@id='output']") WebElement CodeEditorOutput;
+	@FindBy(xpath= "//h4[@class='bg-secondary text-white']")WebElement TreePageTitle;
+	
 	
 	public TreePageObj(WebDriver driver) {
 		 this.driver=driver;

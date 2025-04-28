@@ -1,0 +1,373 @@
+19:02:10.752 [main] INFO  utils.LoggerLoad - Tree Page title  main
+19:06:24.618 [main] INFO  utils.LoggerLoad - Tree Page title  main
+19:07:37.227 [main] INFO  utils.LoggerLoad - Tree Page title  main
+19:12:12.031 [main] INFO  utils.LoggerLoad - Tree Page title  main
+19:13:06.754 [main] INFO  utils.LoggerLoad - Inside Home URL
+19:13:06.973 [main] INFO  utils.LoggerLoad - Inside enterLoginFormFields
+19:13:07.689 [main] INFO  utils.LoggerLoad - logintestdata
+19:13:07.771 [main] INFO  utils.LoggerLoad - Fetched username from Excel: Ninja_Galaxy
+19:13:07.772 [main] INFO  utils.LoggerLoad - Fetched password from Excel: We_team3
+19:13:08.643 [main] INFO  utils.LoggerLoad - Clicked on Tree Get Started Button
+19:13:08.693 [main] INFO  utils.LoggerLoad - Tree Page title[[ChromeDriver: chrome on windows (5b4d8abc2e7b5e609324c24664c93f02)] -> xpath: //h4[@class='bg-secondary text-white']]
+19:13:10.866 [main] INFO  utils.LoggerLoad - Inside Home URL
+19:13:11.096 [main] INFO  utils.LoggerLoad - Inside enterLoginFormFields
+19:13:11.152 [main] INFO  utils.LoggerLoad - logintestdata
+19:13:11.234 [main] INFO  utils.LoggerLoad - Fetched username from Excel: Ninja_Galaxy
+19:13:11.234 [main] INFO  utils.LoggerLoad - Fetched password from Excel: We_team3
+19:13:12.127 [main] INFO  utils.LoggerLoad - Clicked on Tree Get Started Button
+19:13:12.204 [main] INFO  utils.LoggerLoad - Tree Page title[[ChromeDriver: chrome on windows (ba5d782f69a3cc0c9bdb5bdf017955d7)] -> xpath: //h4[@class='bg-secondary text-white']]
+19:13:12.475 [main] INFO  utils.LoggerLoad - Overview of trees Link clicked
+19:13:13.060 [main] INFO  utils.LoggerLoad - Try here button clicked
+19:13:15.230 [main] INFO  utils.LoggerLoad - Inside Home URL
+19:13:15.453 [main] INFO  utils.LoggerLoad - Inside enterLoginFormFields
+19:13:15.498 [main] INFO  utils.LoggerLoad - logintestdata
+19:13:15.575 [main] INFO  utils.LoggerLoad - Fetched username from Excel: Ninja_Galaxy
+19:13:15.576 [main] INFO  utils.LoggerLoad - Fetched password from Excel: We_team3
+19:13:16.476 [main] INFO  utils.LoggerLoad - Clicked on Tree Get Started Button
+19:13:16.514 [main] INFO  utils.LoggerLoad - Tree Page title[[ChromeDriver: chrome on windows (80bc2d019fbc9587d7d683f5a043c9a3)] -> xpath: //h4[@class='bg-secondary text-white']]
+19:13:16.790 [main] INFO  utils.LoggerLoad - Overview of trees Link clicked
+19:13:17.385 [main] INFO  utils.LoggerLoad - Try here button clicked
+19:13:17.480 [main] INFO  utils.LoggerLoad - Run button clicked
+15:58:05.362 [main] INFO  utils.LoggerLoad - Inside Home URL
+15:58:05.549 [main] INFO  utils.LoggerLoad - Inside enterLoginFormFields
+15:58:06.262 [main] INFO  utils.LoggerLoad - logintestdata
+15:58:06.353 [main] INFO  utils.LoggerLoad - Fetched username from Excel: Ninja_Galaxy
+15:58:06.353 [main] INFO  utils.LoggerLoad - Fetched password from Excel: We_team3
+15:58:07.296 [main] INFO  utils.LoggerLoad - Clicked on Linked List Get Started Button
+15:58:07.321 [main] INFO  utils.LoggerLoad - Linked List Page title[[ChromeDriver: chrome on windows (da60647484e496bbaae70b95a8914eb4)] -> xpath: //h4[@class='bg-secondary text-white']]
+15:58:09.500 [main] INFO  utils.LoggerLoad - Inside Home URL
+15:58:09.714 [main] INFO  utils.LoggerLoad - Inside enterLoginFormFields
+15:58:09.761 [main] INFO  utils.LoggerLoad - logintestdata
+15:58:09.830 [main] INFO  utils.LoggerLoad - Fetched username from Excel: Ninja_Galaxy
+15:58:09.831 [main] INFO  utils.LoggerLoad - Fetched password from Excel: We_team3
+15:58:10.848 [main] INFO  utils.LoggerLoad - Clicked on Linked List Get Started Button
+15:58:10.863 [main] INFO  utils.LoggerLoad - Linked List Page title[[ChromeDriver: chrome on windows (388ca4acb9c9cabc2ad71c5db7df5c5d)] -> xpath: //h4[@class='bg-secondary text-white']]
+15:58:12.908 [main] INFO  utils.LoggerLoad - Inside Home URL
+15:58:13.132 [main] INFO  utils.LoggerLoad - Inside enterLoginFormFields
+15:58:13.168 [main] INFO  utils.LoggerLoad - logintestdata
+15:58:13.250 [main] INFO  utils.LoggerLoad - Fetched username from Excel: Ninja_Galaxy
+15:58:13.250 [main] INFO  utils.LoggerLoad - Fetched password from Excel: We_team3
+15:58:14.171 [main] INFO  utils.LoggerLoad - Clicked on Linked List Get Started Button
+15:58:14.186 [main] INFO  utils.LoggerLoad - Linked List Page title[[ChromeDriver: chrome on windows (6457731d68b815af06cc852c2193e369)] -> xpath: //h4[@class='bg-secondary text-white']]
+15:58:16.188 [main] INFO  utils.LoggerLoad - Inside Home URL
+15:58:16.399 [main] INFO  utils.LoggerLoad - Inside enterLoginFormFields
+15:58:16.450 [main] INFO  utils.LoggerLoad - logintestdata
+15:58:16.533 [main] INFO  utils.LoggerLoad - Fetched username from Excel: Ninja_Galaxy
+15:58:16.533 [main] INFO  utils.LoggerLoad - Fetched password from Excel: We_team3
+15:58:17.467 [main] INFO  utils.LoggerLoad - Clicked on Linked List Get Started Button
+15:58:17.484 [main] INFO  utils.LoggerLoad - Linked List Page title[[ChromeDriver: chrome on windows (f00ca5b753a0a90b9627397a40e44239)] -> xpath: //h4[@class='bg-secondary text-white']]
+15:58:19.503 [main] INFO  utils.LoggerLoad - Inside Home URL
+15:58:19.730 [main] INFO  utils.LoggerLoad - Inside enterLoginFormFields
+15:58:19.764 [main] INFO  utils.LoggerLoad - logintestdata
+15:58:19.831 [main] INFO  utils.LoggerLoad - Fetched username from Excel: Ninja_Galaxy
+15:58:19.831 [main] INFO  utils.LoggerLoad - Fetched password from Excel: We_team3
+15:58:20.743 [main] INFO  utils.LoggerLoad - Clicked on Linked List Get Started Button
+15:58:20.768 [main] INFO  utils.LoggerLoad - Linked List Page title[[ChromeDriver: chrome on windows (0d811e1162bac574511653a1483b9772)] -> xpath: //h4[@class='bg-secondary text-white']]
+15:58:22.629 [main] INFO  utils.LoggerLoad - Inside Home URL
+15:58:22.837 [main] INFO  utils.LoggerLoad - Inside enterLoginFormFields
+15:58:22.874 [main] INFO  utils.LoggerLoad - logintestdata
+15:58:22.953 [main] INFO  utils.LoggerLoad - Fetched username from Excel: Ninja_Galaxy
+15:58:22.953 [main] INFO  utils.LoggerLoad - Fetched password from Excel: We_team3
+15:58:23.893 [main] INFO  utils.LoggerLoad - Clicked on Linked List Get Started Button
+15:58:23.941 [main] INFO  utils.LoggerLoad - Linked List Page title[[ChromeDriver: chrome on windows (21ebc78b69a5e3ae303212b1434f8630)] -> xpath: //h4[@class='bg-secondary text-white']]
+16:01:17.644 [main] INFO  utils.LoggerLoad - Inside Home URL
+16:01:17.833 [main] INFO  utils.LoggerLoad - Inside enterLoginFormFields
+16:01:18.400 [main] INFO  utils.LoggerLoad - logintestdata
+16:01:18.486 [main] INFO  utils.LoggerLoad - Fetched username from Excel: Ninja_Galaxy
+16:01:18.487 [main] INFO  utils.LoggerLoad - Fetched password from Excel: We_team3
+16:01:19.390 [main] INFO  utils.LoggerLoad - Clicked on Linked List Get Started Button
+16:01:19.406 [main] INFO  utils.LoggerLoad - Linked List Page title[[ChromeDriver: chrome on windows (31343d82c6988a9dad5535b193510c88)] -> xpath: //h4[@class='bg-secondary text-white']]
+16:05:13.717 [main] INFO  utils.LoggerLoad - Inside Home URL
+16:05:13.917 [main] INFO  utils.LoggerLoad - Inside enterLoginFormFields
+16:05:14.503 [main] INFO  utils.LoggerLoad - logintestdata
+16:05:14.599 [main] INFO  utils.LoggerLoad - Fetched username from Excel: Ninja_Galaxy
+16:05:14.600 [main] INFO  utils.LoggerLoad - Fetched password from Excel: We_team3
+16:05:15.553 [main] INFO  utils.LoggerLoad - Clicked on Linked List Get Started Button
+16:05:15.571 [main] INFO  utils.LoggerLoad - Linked List Page title[[ChromeDriver: chrome on windows (bbed7783cba6c37c98b26fc7fa3b2165)] -> xpath: //h4[@class='bg-secondary text-white']]
+16:11:58.104 [main] INFO  utils.LoggerLoad - Inside Home URL
+16:11:58.280 [main] INFO  utils.LoggerLoad - Inside enterLoginFormFields
+16:11:58.885 [main] INFO  utils.LoggerLoad - logintestdata
+16:11:58.977 [main] INFO  utils.LoggerLoad - Fetched username from Excel: Ninja_Galaxy
+16:11:58.978 [main] INFO  utils.LoggerLoad - Fetched password from Excel: We_team3
+16:11:59.954 [main] INFO  utils.LoggerLoad - Clicked on Linked List Get Started Button
+16:11:59.971 [main] INFO  utils.LoggerLoad - Linked List Page title[[ChromeDriver: chrome on windows (cb83d04ae8b07769491cf51695f9418e)] -> xpath: //h4[@class='bg-secondary text-white']]
+16:12:00.278 [main] INFO  utils.LoggerLoad - Introduction Link clicked
+16:26:48.219 [main] INFO  utils.LoggerLoad - Inside Home URL
+16:26:48.427 [main] INFO  utils.LoggerLoad - Inside enterLoginFormFields
+16:26:49.007 [main] INFO  utils.LoggerLoad - logintestdata
+16:26:49.097 [main] INFO  utils.LoggerLoad - Fetched username from Excel: Ninja_Galaxy
+16:26:49.097 [main] INFO  utils.LoggerLoad - Fetched password from Excel: We_team3
+16:26:50.068 [main] INFO  utils.LoggerLoad - Clicked on Linked List Get Started Button
+16:26:50.084 [main] INFO  utils.LoggerLoad - Linked List Page title[[ChromeDriver: chrome on windows (1158cda4d4447341ed9992b7b37ad0b4)] -> xpath: //h4[@class='bg-secondary text-white']]
+16:26:50.486 [main] INFO  utils.LoggerLoad - Introduction Link clicked
+16:26:52.551 [main] INFO  utils.LoggerLoad - Inside Home URL
+16:26:52.759 [main] INFO  utils.LoggerLoad - Inside enterLoginFormFields
+16:26:52.800 [main] INFO  utils.LoggerLoad - logintestdata
+16:26:52.875 [main] INFO  utils.LoggerLoad - Fetched username from Excel: Ninja_Galaxy
+16:26:52.876 [main] INFO  utils.LoggerLoad - Fetched password from Excel: We_team3
+16:26:53.777 [main] INFO  utils.LoggerLoad - Clicked on Linked List Get Started Button
+16:26:53.802 [main] INFO  utils.LoggerLoad - Linked List Page title[[ChromeDriver: chrome on windows (e43e32a5355add80d6c06a61103b49bb)] -> xpath: //h4[@class='bg-secondary text-white']]
+16:26:54.098 [main] INFO  utils.LoggerLoad - Introduction Link clicked
+16:26:54.676 [main] INFO  utils.LoggerLoad - Try here button clicked
+16:26:56.567 [main] INFO  utils.LoggerLoad - Inside Home URL
+16:26:56.782 [main] INFO  utils.LoggerLoad - Inside enterLoginFormFields
+16:26:56.825 [main] INFO  utils.LoggerLoad - logintestdata
+16:26:56.906 [main] INFO  utils.LoggerLoad - Fetched username from Excel: Ninja_Galaxy
+16:26:56.906 [main] INFO  utils.LoggerLoad - Fetched password from Excel: We_team3
+16:26:57.912 [main] INFO  utils.LoggerLoad - Clicked on Linked List Get Started Button
+16:26:57.937 [main] INFO  utils.LoggerLoad - Linked List Page title[[ChromeDriver: chrome on windows (0815ab7f29f3f0ce1cf2a8482c4090f6)] -> xpath: //h4[@class='bg-secondary text-white']]
+16:26:58.272 [main] INFO  utils.LoggerLoad - Introduction Link clicked
+16:26:58.865 [main] INFO  utils.LoggerLoad - Try here button clicked
+16:26:58.962 [main] INFO  utils.LoggerLoad - Run button clicked
+16:27:00.961 [main] INFO  utils.LoggerLoad - Inside Home URL
+16:27:01.176 [main] INFO  utils.LoggerLoad - Inside enterLoginFormFields
+16:27:01.219 [main] INFO  utils.LoggerLoad - logintestdata
+16:27:01.287 [main] INFO  utils.LoggerLoad - Fetched username from Excel: Ninja_Galaxy
+16:27:01.288 [main] INFO  utils.LoggerLoad - Fetched password from Excel: We_team3
+16:27:02.210 [main] INFO  utils.LoggerLoad - Clicked on Linked List Get Started Button
+16:27:02.233 [main] INFO  utils.LoggerLoad - Linked List Page title[[ChromeDriver: chrome on windows (58f2ad4e9cc090361c6baeb4c3fb5eaf)] -> xpath: //h4[@class='bg-secondary text-white']]
+16:27:02.543 [main] INFO  utils.LoggerLoad - Introduction Link clicked
+16:27:03.090 [main] INFO  utils.LoggerLoad - Try here button clicked
+16:27:03.412 [main] INFO  utils.LoggerLoad - Run button clicked
+16:27:21.175 [main] INFO  utils.LoggerLoad - Inside Home URL
+16:27:21.369 [main] INFO  utils.LoggerLoad - Inside enterLoginFormFields
+16:27:21.949 [main] INFO  utils.LoggerLoad - logintestdata
+16:27:22.041 [main] INFO  utils.LoggerLoad - Fetched username from Excel: Ninja_Galaxy
+16:27:22.042 [main] INFO  utils.LoggerLoad - Fetched password from Excel: We_team3
+16:27:22.999 [main] INFO  utils.LoggerLoad - Clicked on Linked List Get Started Button
+16:27:23.017 [main] INFO  utils.LoggerLoad - Linked List Page title[[ChromeDriver: chrome on windows (de6458f6785c00e50bb01217e325ea6f)] -> xpath: //h4[@class='bg-secondary text-white']]
+16:27:23.318 [main] INFO  utils.LoggerLoad - Introduction Link clicked
+16:27:25.406 [main] INFO  utils.LoggerLoad - Inside Home URL
+16:27:25.624 [main] INFO  utils.LoggerLoad - Inside enterLoginFormFields
+16:27:25.666 [main] INFO  utils.LoggerLoad - logintestdata
+16:27:25.737 [main] INFO  utils.LoggerLoad - Fetched username from Excel: Ninja_Galaxy
+16:27:25.738 [main] INFO  utils.LoggerLoad - Fetched password from Excel: We_team3
+16:27:26.690 [main] INFO  utils.LoggerLoad - Clicked on Linked List Get Started Button
+16:27:26.708 [main] INFO  utils.LoggerLoad - Linked List Page title[[ChromeDriver: chrome on windows (dd792ff9a7666d2586d243557cd7404e)] -> xpath: //h4[@class='bg-secondary text-white']]
+16:27:26.979 [main] INFO  utils.LoggerLoad - Introduction Link clicked
+16:27:27.519 [main] INFO  utils.LoggerLoad - Try here button clicked
+16:27:29.363 [main] INFO  utils.LoggerLoad - Inside Home URL
+16:27:29.587 [main] INFO  utils.LoggerLoad - Inside enterLoginFormFields
+16:27:29.629 [main] INFO  utils.LoggerLoad - logintestdata
+16:27:29.708 [main] INFO  utils.LoggerLoad - Fetched username from Excel: Ninja_Galaxy
+16:27:29.708 [main] INFO  utils.LoggerLoad - Fetched password from Excel: We_team3
+16:27:30.641 [main] INFO  utils.LoggerLoad - Clicked on Linked List Get Started Button
+16:27:30.667 [main] INFO  utils.LoggerLoad - Linked List Page title[[ChromeDriver: chrome on windows (745d0ecdd14e34afdd9fe462936db8d5)] -> xpath: //h4[@class='bg-secondary text-white']]
+16:27:30.979 [main] INFO  utils.LoggerLoad - Introduction Link clicked
+16:27:31.533 [main] INFO  utils.LoggerLoad - Try here button clicked
+16:27:31.626 [main] INFO  utils.LoggerLoad - Run button clicked
+16:27:33.556 [main] INFO  utils.LoggerLoad - Inside Home URL
+16:27:33.776 [main] INFO  utils.LoggerLoad - Inside enterLoginFormFields
+16:27:33.819 [main] INFO  utils.LoggerLoad - logintestdata
+16:27:33.894 [main] INFO  utils.LoggerLoad - Fetched username from Excel: Ninja_Galaxy
+16:27:33.895 [main] INFO  utils.LoggerLoad - Fetched password from Excel: We_team3
+16:27:34.792 [main] INFO  utils.LoggerLoad - Clicked on Linked List Get Started Button
+16:27:34.819 [main] INFO  utils.LoggerLoad - Linked List Page title[[ChromeDriver: chrome on windows (e451d3a4895431e64ed8029fc9140c47)] -> xpath: //h4[@class='bg-secondary text-white']]
+16:27:35.119 [main] INFO  utils.LoggerLoad - Introduction Link clicked
+16:27:35.903 [main] INFO  utils.LoggerLoad - Try here button clicked
+16:27:36.242 [main] INFO  utils.LoggerLoad - Run button clicked
+16:27:38.286 [main] INFO  utils.LoggerLoad - Inside Home URL
+16:27:38.518 [main] INFO  utils.LoggerLoad - Inside enterLoginFormFields
+16:27:38.554 [main] INFO  utils.LoggerLoad - logintestdata
+16:27:38.633 [main] INFO  utils.LoggerLoad - Fetched username from Excel: Ninja_Galaxy
+16:27:38.633 [main] INFO  utils.LoggerLoad - Fetched password from Excel: We_team3
+16:27:39.580 [main] INFO  utils.LoggerLoad - Clicked on Linked List Get Started Button
+16:27:39.594 [main] INFO  utils.LoggerLoad - Linked List Page title[[ChromeDriver: chrome on windows (7b5ba389c4759105891025b894c1039d)] -> xpath: //h4[@class='bg-secondary text-white']]
+16:27:39.892 [main] INFO  utils.LoggerLoad - Introduction Link clicked
+16:27:40.465 [main] INFO  utils.LoggerLoad - Try here button clicked
+16:27:40.780 [main] INFO  utils.LoggerLoad - Run button clicked
+16:27:40.785 [main] INFO  utils.LoggerLoad - Alert message: SyntaxError: bad input on line 1
+16:27:42.771 [main] INFO  utils.LoggerLoad - Inside Home URL
+16:27:42.994 [main] INFO  utils.LoggerLoad - Inside enterLoginFormFields
+16:27:43.030 [main] INFO  utils.LoggerLoad - logintestdata
+16:27:43.100 [main] INFO  utils.LoggerLoad - Fetched username from Excel: Ninja_Galaxy
+16:27:43.101 [main] INFO  utils.LoggerLoad - Fetched password from Excel: We_team3
+16:27:44.023 [main] INFO  utils.LoggerLoad - Clicked on Linked List Get Started Button
+16:27:44.040 [main] INFO  utils.LoggerLoad - Linked List Page title[[ChromeDriver: chrome on windows (f914d1ee812af55921d4f6dc2364a31f)] -> xpath: //h4[@class='bg-secondary text-white']]
+16:27:44.372 [main] INFO  utils.LoggerLoad - Introduction Link clicked
+16:27:44.662 [main] INFO  utils.LoggerLoad - Practice Questions Link clicked
+20:13:12.073 [main] INFO  utils.LoggerLoad - Inside Home URL
+20:13:12.265 [main] INFO  utils.LoggerLoad - Inside enterLoginFormFields
+20:13:12.877 [main] INFO  utils.LoggerLoad - logintestdata
+20:13:12.971 [main] INFO  utils.LoggerLoad - Fetched username from Excel: Ninja_Galaxy
+20:13:12.972 [main] INFO  utils.LoggerLoad - Fetched password from Excel: We_team3
+20:13:13.944 [main] INFO  utils.LoggerLoad - Clicked on Linked List Get Started Button
+20:13:13.960 [main] INFO  utils.LoggerLoad - Linked List Page title[[ChromeDriver: chrome on windows (630d80d892a2d6700d9ee1253568a41a)] -> xpath: //h4[@class='bg-secondary text-white']]
+20:13:14.218 [main] INFO  utils.LoggerLoad - creating Linked List Link clicked
+20:13:16.354 [main] INFO  utils.LoggerLoad - Inside Home URL
+20:13:16.574 [main] INFO  utils.LoggerLoad - Inside enterLoginFormFields
+20:13:16.619 [main] INFO  utils.LoggerLoad - logintestdata
+20:13:16.691 [main] INFO  utils.LoggerLoad - Fetched username from Excel: Ninja_Galaxy
+20:13:16.691 [main] INFO  utils.LoggerLoad - Fetched password from Excel: We_team3
+20:13:17.629 [main] INFO  utils.LoggerLoad - Clicked on Linked List Get Started Button
+20:13:17.648 [main] INFO  utils.LoggerLoad - Linked List Page title[[ChromeDriver: chrome on windows (694aabd3b0297d3e38b19011e4285c04)] -> xpath: //h4[@class='bg-secondary text-white']]
+20:13:17.937 [main] INFO  utils.LoggerLoad - creating Linked List Link clicked
+20:13:18.499 [main] INFO  utils.LoggerLoad - Try here button clicked
+20:13:20.573 [main] INFO  utils.LoggerLoad - Inside Home URL
+20:13:20.796 [main] INFO  utils.LoggerLoad - Inside enterLoginFormFields
+20:13:20.836 [main] INFO  utils.LoggerLoad - logintestdata
+20:13:20.912 [main] INFO  utils.LoggerLoad - Fetched username from Excel: Ninja_Galaxy
+20:13:20.913 [main] INFO  utils.LoggerLoad - Fetched password from Excel: We_team3
+20:13:21.845 [main] INFO  utils.LoggerLoad - Clicked on Linked List Get Started Button
+20:13:21.861 [main] INFO  utils.LoggerLoad - Linked List Page title[[ChromeDriver: chrome on windows (ed37f3f157572b0478ffa831a3c1dec8)] -> xpath: //h4[@class='bg-secondary text-white']]
+20:13:22.135 [main] INFO  utils.LoggerLoad - creating Linked List Link clicked
+20:13:22.217 [main] INFO  utils.LoggerLoad - Try here button clicked
+20:13:34.278 [main] INFO  utils.LoggerLoad - Inside Home URL
+20:13:34.496 [main] INFO  utils.LoggerLoad - Inside enterLoginFormFields
+20:13:34.537 [main] INFO  utils.LoggerLoad - logintestdata
+20:13:34.608 [main] INFO  utils.LoggerLoad - Fetched username from Excel: Ninja_Galaxy
+20:13:34.608 [main] INFO  utils.LoggerLoad - Fetched password from Excel: We_team3
+20:13:35.538 [main] INFO  utils.LoggerLoad - Clicked on Linked List Get Started Button
+20:13:35.554 [main] INFO  utils.LoggerLoad - Linked List Page title[[ChromeDriver: chrome on windows (37e1f8646db90a769905af0be2813c5c)] -> xpath: //h4[@class='bg-secondary text-white']]
+20:13:35.812 [main] INFO  utils.LoggerLoad - creating Linked List Link clicked
+20:13:36.379 [main] INFO  utils.LoggerLoad - Try here button clicked
+20:13:36.729 [main] INFO  utils.LoggerLoad - Run button clicked
+20:13:38.773 [main] INFO  utils.LoggerLoad - Inside Home URL
+20:13:38.996 [main] INFO  utils.LoggerLoad - Inside enterLoginFormFields
+20:13:39.032 [main] INFO  utils.LoggerLoad - logintestdata
+20:13:39.109 [main] INFO  utils.LoggerLoad - Fetched username from Excel: Ninja_Galaxy
+20:13:39.110 [main] INFO  utils.LoggerLoad - Fetched password from Excel: We_team3
+20:13:40.040 [main] INFO  utils.LoggerLoad - Clicked on Linked List Get Started Button
+20:13:40.061 [main] INFO  utils.LoggerLoad - Linked List Page title[[ChromeDriver: chrome on windows (b4e304b9ce4b1dd61298adfb82d0ba06)] -> xpath: //h4[@class='bg-secondary text-white']]
+20:13:40.331 [main] INFO  utils.LoggerLoad - creating Linked List Link clicked
+20:13:40.889 [main] INFO  utils.LoggerLoad - Try here button clicked
+20:13:41.218 [main] INFO  utils.LoggerLoad - Run button clicked
+20:13:41.227 [main] INFO  utils.LoggerLoad - Alert message: SyntaxError: bad input on line 1
+20:13:43.225 [main] INFO  utils.LoggerLoad - Inside Home URL
+20:13:43.424 [main] INFO  utils.LoggerLoad - Inside enterLoginFormFields
+20:13:43.463 [main] INFO  utils.LoggerLoad - logintestdata
+20:13:43.530 [main] INFO  utils.LoggerLoad - Fetched username from Excel: Ninja_Galaxy
+20:13:43.531 [main] INFO  utils.LoggerLoad - Fetched password from Excel: We_team3
+20:13:44.458 [main] INFO  utils.LoggerLoad - Clicked on Linked List Get Started Button
+20:13:44.482 [main] INFO  utils.LoggerLoad - Linked List Page title[[ChromeDriver: chrome on windows (b2320048bf67cd102511d2860b263e8d)] -> xpath: //h4[@class='bg-secondary text-white']]
+20:13:44.759 [main] INFO  utils.LoggerLoad - creating Linked List Link clicked
+20:13:44.998 [main] INFO  utils.LoggerLoad - Practice Questions Link clicked
+20:17:09.982 [main] INFO  utils.LoggerLoad - Inside Home URL
+20:17:10.194 [main] INFO  utils.LoggerLoad - Inside enterLoginFormFields
+20:17:10.789 [main] INFO  utils.LoggerLoad - logintestdata
+20:17:10.884 [main] INFO  utils.LoggerLoad - Fetched username from Excel: Ninja_Galaxy
+20:17:10.885 [main] INFO  utils.LoggerLoad - Fetched password from Excel: We_team3
+20:17:11.812 [main] INFO  utils.LoggerLoad - Clicked on Linked List Get Started Button
+20:17:11.834 [main] INFO  utils.LoggerLoad - Linked List Page title[[ChromeDriver: chrome on windows (a8d724b84c2696f490b02797829da839)] -> xpath: //h4[@class='bg-secondary text-white']]
+20:17:12.089 [main] INFO  utils.LoggerLoad - creating Linked List Link clicked
+20:17:12.665 [main] INFO  utils.LoggerLoad - Try here button clicked
+20:17:12.762 [main] INFO  utils.LoggerLoad - Run button clicked
+20:26:13.068 [main] INFO  utils.LoggerLoad - Inside Home URL
+20:26:13.256 [main] INFO  utils.LoggerLoad - Inside enterLoginFormFields
+20:26:14.000 [main] INFO  utils.LoggerLoad - logintestdata
+20:26:14.109 [main] INFO  utils.LoggerLoad - Fetched username from Excel: Ninja_Galaxy
+20:26:14.110 [main] INFO  utils.LoggerLoad - Fetched password from Excel: We_team3
+20:26:15.172 [main] INFO  utils.LoggerLoad - Clicked on Linked List Get Started Button
+20:26:15.190 [main] INFO  utils.LoggerLoad - Linked List Page title[[ChromeDriver: chrome on windows (9df6eda17947f781905a4e0b5cbfa274)] -> xpath: //h4[@class='bg-secondary text-white']]
+20:26:15.562 [main] INFO  utils.LoggerLoad - Types Of Linked List Link clicked
+20:26:17.758 [main] INFO  utils.LoggerLoad - Inside Home URL
+20:26:17.980 [main] INFO  utils.LoggerLoad - Inside enterLoginFormFields
+20:26:18.027 [main] INFO  utils.LoggerLoad - logintestdata
+20:26:18.096 [main] INFO  utils.LoggerLoad - Fetched username from Excel: Ninja_Galaxy
+20:26:18.097 [main] INFO  utils.LoggerLoad - Fetched password from Excel: We_team3
+20:26:19.016 [main] INFO  utils.LoggerLoad - Clicked on Linked List Get Started Button
+20:26:19.043 [main] INFO  utils.LoggerLoad - Linked List Page title[[ChromeDriver: chrome on windows (6b1f9fc66d676a84699f7017a0a8d53b)] -> xpath: //h4[@class='bg-secondary text-white']]
+20:26:19.429 [main] INFO  utils.LoggerLoad - Types Of Linked List Link clicked
+20:26:19.993 [main] INFO  utils.LoggerLoad - Try here button clicked
+20:26:21.908 [main] INFO  utils.LoggerLoad - Inside Home URL
+20:26:22.116 [main] INFO  utils.LoggerLoad - Inside enterLoginFormFields
+20:26:22.156 [main] INFO  utils.LoggerLoad - logintestdata
+20:26:22.224 [main] INFO  utils.LoggerLoad - Fetched username from Excel: Ninja_Galaxy
+20:26:22.224 [main] INFO  utils.LoggerLoad - Fetched password from Excel: We_team3
+20:26:23.182 [main] INFO  utils.LoggerLoad - Clicked on Linked List Get Started Button
+20:26:23.199 [main] INFO  utils.LoggerLoad - Linked List Page title[[ChromeDriver: chrome on windows (d4346b1258e59cb727a7afb8d530a1a1)] -> xpath: //h4[@class='bg-secondary text-white']]
+20:26:23.550 [main] INFO  utils.LoggerLoad - Types Of Linked List Link clicked
+20:26:24.116 [main] INFO  utils.LoggerLoad - Try here button clicked
+20:26:24.205 [main] INFO  utils.LoggerLoad - Run button clicked
+20:26:26.031 [main] INFO  utils.LoggerLoad - Inside Home URL
+20:26:26.238 [main] INFO  utils.LoggerLoad - Inside enterLoginFormFields
+20:26:26.283 [main] INFO  utils.LoggerLoad - logintestdata
+20:26:26.368 [main] INFO  utils.LoggerLoad - Fetched username from Excel: Ninja_Galaxy
+20:26:26.368 [main] INFO  utils.LoggerLoad - Fetched password from Excel: We_team3
+20:26:27.418 [main] INFO  utils.LoggerLoad - Clicked on Linked List Get Started Button
+20:26:27.444 [main] INFO  utils.LoggerLoad - Linked List Page title[[ChromeDriver: chrome on windows (b3e38bbb53686c0d32a563ed0bff418e)] -> xpath: //h4[@class='bg-secondary text-white']]
+20:26:27.779 [main] INFO  utils.LoggerLoad - Types Of Linked List Link clicked
+20:26:28.348 [main] INFO  utils.LoggerLoad - Try here button clicked
+20:26:28.673 [main] INFO  utils.LoggerLoad - Run button clicked
+20:26:30.673 [main] INFO  utils.LoggerLoad - Inside Home URL
+20:26:30.884 [main] INFO  utils.LoggerLoad - Inside enterLoginFormFields
+20:26:30.930 [main] INFO  utils.LoggerLoad - logintestdata
+20:26:31.005 [main] INFO  utils.LoggerLoad - Fetched username from Excel: Ninja_Galaxy
+20:26:31.005 [main] INFO  utils.LoggerLoad - Fetched password from Excel: We_team3
+20:26:31.998 [main] INFO  utils.LoggerLoad - Clicked on Linked List Get Started Button
+20:26:32.020 [main] INFO  utils.LoggerLoad - Linked List Page title[[ChromeDriver: chrome on windows (1faeafe8355294033b1857e52e9099f0)] -> xpath: //h4[@class='bg-secondary text-white']]
+20:26:32.392 [main] INFO  utils.LoggerLoad - Types Of Linked List Link clicked
+20:26:32.973 [main] INFO  utils.LoggerLoad - Try here button clicked
+20:26:33.294 [main] INFO  utils.LoggerLoad - Run button clicked
+20:26:33.300 [main] INFO  utils.LoggerLoad - Alert message: SyntaxError: bad input on line 1
+20:26:35.179 [main] INFO  utils.LoggerLoad - Inside Home URL
+20:26:35.409 [main] INFO  utils.LoggerLoad - Inside enterLoginFormFields
+20:26:35.448 [main] INFO  utils.LoggerLoad - logintestdata
+20:26:35.518 [main] INFO  utils.LoggerLoad - Fetched username from Excel: Ninja_Galaxy
+20:26:35.518 [main] INFO  utils.LoggerLoad - Fetched password from Excel: We_team3
+20:26:36.471 [main] INFO  utils.LoggerLoad - Clicked on Linked List Get Started Button
+20:26:36.484 [main] INFO  utils.LoggerLoad - Linked List Page title[[ChromeDriver: chrome on windows (231c8f52da9eb6603bb85f942e56945b)] -> xpath: //h4[@class='bg-secondary text-white']]
+20:26:36.820 [main] INFO  utils.LoggerLoad - Types Of Linked List Link clicked
+20:26:37.058 [main] INFO  utils.LoggerLoad - Practice Questions Link clicked
+20:37:38.951 [main] INFO  utils.LoggerLoad - Inside Home URL
+20:37:39.126 [main] INFO  utils.LoggerLoad - Inside enterLoginFormFields
+20:37:39.677 [main] INFO  utils.LoggerLoad - logintestdata
+20:37:39.781 [main] INFO  utils.LoggerLoad - Fetched username from Excel: Ninja_Galaxy
+20:37:39.782 [main] INFO  utils.LoggerLoad - Fetched password from Excel: We_team3
+20:37:40.761 [main] INFO  utils.LoggerLoad - Clicked on Linked List Get Started Button
+20:37:40.780 [main] INFO  utils.LoggerLoad - Linked List Page title[[ChromeDriver: chrome on windows (ca433abc9ebebda9f4d2a39278fe16ef)] -> xpath: //h4[@class='bg-secondary text-white']]
+20:37:41.108 [main] INFO  utils.LoggerLoad - Insertion Link clicked
+20:37:43.077 [main] INFO  utils.LoggerLoad - Inside Home URL
+20:37:43.275 [main] INFO  utils.LoggerLoad - Inside enterLoginFormFields
+20:37:43.319 [main] INFO  utils.LoggerLoad - logintestdata
+20:37:43.391 [main] INFO  utils.LoggerLoad - Fetched username from Excel: Ninja_Galaxy
+20:37:43.392 [main] INFO  utils.LoggerLoad - Fetched password from Excel: We_team3
+20:37:44.487 [main] INFO  utils.LoggerLoad - Clicked on Linked List Get Started Button
+20:37:44.507 [main] INFO  utils.LoggerLoad - Linked List Page title[[ChromeDriver: chrome on windows (408808d55af5b6b97b087d56f3d80b8c)] -> xpath: //h4[@class='bg-secondary text-white']]
+20:37:44.796 [main] INFO  utils.LoggerLoad - Insertion Link clicked
+20:37:45.341 [main] INFO  utils.LoggerLoad - Try here button clicked
+20:37:47.209 [main] INFO  utils.LoggerLoad - Inside Home URL
+20:37:47.434 [main] INFO  utils.LoggerLoad - Inside enterLoginFormFields
+20:37:47.475 [main] INFO  utils.LoggerLoad - logintestdata
+20:37:47.551 [main] INFO  utils.LoggerLoad - Fetched username from Excel: Ninja_Galaxy
+20:37:47.552 [main] INFO  utils.LoggerLoad - Fetched password from Excel: We_team3
+20:37:48.454 [main] INFO  utils.LoggerLoad - Clicked on Linked List Get Started Button
+20:37:48.471 [main] INFO  utils.LoggerLoad - Linked List Page title[[ChromeDriver: chrome on windows (7f7333ac82b0caff1385503cc4ae1d8a)] -> xpath: //h4[@class='bg-secondary text-white']]
+20:37:48.774 [main] INFO  utils.LoggerLoad - Insertion Link clicked
+20:37:49.291 [main] INFO  utils.LoggerLoad - Try here button clicked
+20:37:49.379 [main] INFO  utils.LoggerLoad - Run button clicked
+20:37:51.266 [main] INFO  utils.LoggerLoad - Inside Home URL
+20:37:51.489 [main] INFO  utils.LoggerLoad - Inside enterLoginFormFields
+20:37:51.532 [main] INFO  utils.LoggerLoad - logintestdata
+20:37:51.606 [main] INFO  utils.LoggerLoad - Fetched username from Excel: Ninja_Galaxy
+20:37:51.606 [main] INFO  utils.LoggerLoad - Fetched password from Excel: We_team3
+20:37:52.522 [main] INFO  utils.LoggerLoad - Clicked on Linked List Get Started Button
+20:37:52.555 [main] INFO  utils.LoggerLoad - Linked List Page title[[ChromeDriver: chrome on windows (2ab7ae3ed26ec5de3a15a85d10e8bceb)] -> xpath: //h4[@class='bg-secondary text-white']]
+20:37:52.852 [main] INFO  utils.LoggerLoad - Insertion Link clicked
+20:37:53.400 [main] INFO  utils.LoggerLoad - Try here button clicked
+20:37:53.718 [main] INFO  utils.LoggerLoad - Run button clicked
+20:37:55.638 [main] INFO  utils.LoggerLoad - Inside Home URL
+20:37:55.861 [main] INFO  utils.LoggerLoad - Inside enterLoginFormFields
+20:37:55.901 [main] INFO  utils.LoggerLoad - logintestdata
+20:37:55.981 [main] INFO  utils.LoggerLoad - Fetched username from Excel: Ninja_Galaxy
+20:37:55.982 [main] INFO  utils.LoggerLoad - Fetched password from Excel: We_team3
+20:37:57.392 [main] INFO  utils.LoggerLoad - Clicked on Linked List Get Started Button
+20:37:57.415 [main] INFO  utils.LoggerLoad - Linked List Page title[[ChromeDriver: chrome on windows (24e98be487950cee62bad5e6ac03809a)] -> xpath: //h4[@class='bg-secondary text-white']]
+20:37:57.694 [main] INFO  utils.LoggerLoad - Insertion Link clicked
+20:37:58.291 [main] INFO  utils.LoggerLoad - Try here button clicked
+20:37:58.620 [main] INFO  utils.LoggerLoad - Run button clicked
+20:37:58.625 [main] INFO  utils.LoggerLoad - Alert message: SyntaxError: bad input on line 1
+20:38:00.575 [main] INFO  utils.LoggerLoad - Inside Home URL
+20:38:00.793 [main] INFO  utils.LoggerLoad - Inside enterLoginFormFields
+20:38:00.836 [main] INFO  utils.LoggerLoad - logintestdata
+20:38:00.913 [main] INFO  utils.LoggerLoad - Fetched username from Excel: Ninja_Galaxy
+20:38:00.913 [main] INFO  utils.LoggerLoad - Fetched password from Excel: We_team3
+20:38:01.841 [main] INFO  utils.LoggerLoad - Clicked on Linked List Get Started Button
+20:38:01.865 [main] INFO  utils.LoggerLoad - Linked List Page title[[ChromeDriver: chrome on windows (1315f429e3167b8915b93ac4c2fa25bc)] -> xpath: //h4[@class='bg-secondary text-white']]
+20:38:02.160 [main] INFO  utils.LoggerLoad - Insertion Link clicked
+20:38:02.406 [main] INFO  utils.LoggerLoad - Practice Questions Link clicked
+20:46:24.407 [main] INFO  utils.LoggerLoad - Tree Page title  main
+20:47:52.677 [main] INFO  utils.LoggerLoad - Tree Page title  main
+20:49:25.927 [main] INFO  utils.LoggerLoad - Tree Page title  main
+20:49:54.111 [main] INFO  utils.LoggerLoad - Tree Page title  main
+20:50:30.841 [main] INFO  utils.LoggerLoad - Tree Page title  main

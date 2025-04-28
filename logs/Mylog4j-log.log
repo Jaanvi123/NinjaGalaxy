@@ -1,0 +1,58 @@
+[INFO ] 2025-04-27 20:56:59.817 [main] LoggerLoad - Tree Page title  main
+[INFO ] 2025-04-27 20:57:32.042 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-27 20:57:32.236 [main] LoggerLoad - Inside enterLoginFormFields
+[INFO ] 2025-04-27 20:57:32.822 [main] LoggerLoad - logintestdata
+[INFO ] 2025-04-27 20:57:32.902 [main] LoggerLoad - Fetched username from Excel: Ninja_Galaxy
+[INFO ] 2025-04-27 20:57:32.903 [main] LoggerLoad - Fetched password from Excel: We_team3
+[INFO ] 2025-04-27 20:57:33.803 [main] LoggerLoad - Clicked on Linked List Get Started Button
+[INFO ] 2025-04-27 20:57:33.832 [main] LoggerLoad - Linked List Page title[[ChromeDriver: chrome on windows (d2e570db5373e8d0f2f053d0a55fde9a)] -> xpath: //h4[@class='bg-secondary text-white']]
+[INFO ] 2025-04-27 20:57:34.099 [main] LoggerLoad - Deletion Link clicked
+[INFO ] 2025-04-27 20:57:36.061 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-27 20:57:36.263 [main] LoggerLoad - Inside enterLoginFormFields
+[INFO ] 2025-04-27 20:57:36.307 [main] LoggerLoad - logintestdata
+[INFO ] 2025-04-27 20:57:36.381 [main] LoggerLoad - Fetched username from Excel: Ninja_Galaxy
+[INFO ] 2025-04-27 20:57:36.382 [main] LoggerLoad - Fetched password from Excel: We_team3
+[INFO ] 2025-04-27 20:57:37.315 [main] LoggerLoad - Clicked on Linked List Get Started Button
+[INFO ] 2025-04-27 20:57:37.334 [main] LoggerLoad - Linked List Page title[[ChromeDriver: chrome on windows (4113105f712a2c60e3ad9fe6c94ec3f5)] -> xpath: //h4[@class='bg-secondary text-white']]
+[INFO ] 2025-04-27 20:57:37.643 [main] LoggerLoad - Deletion Link clicked
+[INFO ] 2025-04-27 20:57:38.196 [main] LoggerLoad - Try here button clicked
+[INFO ] 2025-04-27 20:57:40.025 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-27 20:57:40.233 [main] LoggerLoad - Inside enterLoginFormFields
+[INFO ] 2025-04-27 20:57:40.273 [main] LoggerLoad - logintestdata
+[INFO ] 2025-04-27 20:57:40.357 [main] LoggerLoad - Fetched username from Excel: Ninja_Galaxy
+[INFO ] 2025-04-27 20:57:40.357 [main] LoggerLoad - Fetched password from Excel: We_team3
+[INFO ] 2025-04-27 20:57:41.303 [main] LoggerLoad - Clicked on Linked List Get Started Button
+[INFO ] 2025-04-27 20:57:41.319 [main] LoggerLoad - Linked List Page title[[ChromeDriver: chrome on windows (d2fdd05adcdae47e3ecdbbf3b44cf09d)] -> xpath: //h4[@class='bg-secondary text-white']]
+[INFO ] 2025-04-27 20:57:41.621 [main] LoggerLoad - Deletion Link clicked
+[INFO ] 2025-04-27 20:57:42.224 [main] LoggerLoad - Try here button clicked
+[INFO ] 2025-04-27 20:57:42.315 [main] LoggerLoad - Run button clicked
+[INFO ] 2025-04-27 20:57:44.178 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-27 20:57:44.372 [main] LoggerLoad - Inside enterLoginFormFields
+[INFO ] 2025-04-27 20:57:44.412 [main] LoggerLoad - logintestdata
+[INFO ] 2025-04-27 20:57:44.484 [main] LoggerLoad - Fetched username from Excel: Ninja_Galaxy
+[INFO ] 2025-04-27 20:57:44.485 [main] LoggerLoad - Fetched password from Excel: We_team3
+[INFO ] 2025-04-27 20:57:45.437 [main] LoggerLoad - Clicked on Linked List Get Started Button
+[INFO ] 2025-04-27 20:57:45.468 [main] LoggerLoad - Linked List Page title[[ChromeDriver: chrome on windows (50ade7f948bb597d34baffabde81a1c6)] -> xpath: //h4[@class='bg-secondary text-white']]
+[INFO ] 2025-04-27 20:57:45.734 [main] LoggerLoad - Deletion Link clicked
+[INFO ] 2025-04-27 20:57:46.270 [main] LoggerLoad - Try here button clicked
+[INFO ] 2025-04-27 20:57:46.605 [main] LoggerLoad - Run button clicked
+[INFO ] 2025-04-27 20:57:48.531 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-27 20:57:48.760 [main] LoggerLoad - Inside enterLoginFormFields
+[INFO ] 2025-04-27 20:57:48.795 [main] LoggerLoad - logintestdata
+[INFO ] 2025-04-27 20:57:48.876 [main] LoggerLoad - Fetched username from Excel: Ninja_Galaxy
+[INFO ] 2025-04-27 20:57:48.877 [main] LoggerLoad - Fetched password from Excel: We_team3
+[INFO ] 2025-04-27 20:57:49.868 [main] LoggerLoad - Clicked on Linked List Get Started Button
+[INFO ] 2025-04-27 20:57:49.896 [main] LoggerLoad - Linked List Page title[[ChromeDriver: chrome on windows (07c6b6186defd3ec438e4b18e4231947)] -> xpath: //h4[@class='bg-secondary text-white']]
+[INFO ] 2025-04-27 20:57:50.300 [main] LoggerLoad - Deletion Link clicked
+[INFO ] 2025-04-27 20:57:50.867 [main] LoggerLoad - Try here button clicked
+[INFO ] 2025-04-27 20:57:51.198 [main] LoggerLoad - Run button clicked
+[INFO ] 2025-04-27 20:57:51.204 [main] LoggerLoad - Alert message: SyntaxError: bad input on line 1
+[INFO ] 2025-04-27 20:57:53.023 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-27 20:57:53.255 [main] LoggerLoad - Inside enterLoginFormFields
+[INFO ] 2025-04-27 20:57:53.293 [main] LoggerLoad - logintestdata
+[INFO ] 2025-04-27 20:57:53.366 [main] LoggerLoad - Fetched username from Excel: Ninja_Galaxy
+[INFO ] 2025-04-27 20:57:53.366 [main] LoggerLoad - Fetched password from Excel: We_team3
+[INFO ] 2025-04-27 20:57:54.301 [main] LoggerLoad - Clicked on Linked List Get Started Button
+[INFO ] 2025-04-27 20:57:54.353 [main] LoggerLoad - Linked List Page title[[ChromeDriver: chrome on windows (df636d31dd1f4b2e9bd3f5915226940b)] -> xpath: //h4[@class='bg-secondary text-white']]
+[INFO ] 2025-04-27 20:57:54.653 [main] LoggerLoad - Deletion Link clicked
+[INFO ] 2025-04-27 20:57:54.975 [main] LoggerLoad - Practice Questions Link clicked

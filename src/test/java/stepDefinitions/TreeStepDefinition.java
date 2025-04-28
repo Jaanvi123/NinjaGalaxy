@@ -48,7 +48,7 @@ public class TreeStepDefinition {
 	@When("The user clicks the Overview of Trees link")
 	public void the_user_clicks_the_overview_of_trees_link() {
 		treePage.clickOverviewOfTreesLink();
-		treePage.getcurrentpageUrl();
+		
 	}
 
 	@Then("The user should be redirected to the Overview of Trees data structure page")
@@ -59,7 +59,6 @@ public class TreeStepDefinition {
 	@When("The user is on the Overview of Trees page in the DS Algo portal and clicks Try Here button")
 	public void the_user_is_on_the_overview_of_trees_page_in_the_ds_algo_portal_and_clicks_try_here_button() {
 		treePage.clickOverviewOfTreesLink();
-		treePage.getcurrentpageUrl();
 		treePage.clickTryHereButton();
 	}
 
