@@ -1,14 +1,14 @@
 #Feature: Tree Page Features
 #
-  #Background: 
-    #Given The user is on home page and clicks sign in link
-    #Then The user enters valid credentials and clicks Get started tree button to land on tree page
-#
-  # Overview of Trees
-  #Scenario: Verify that the user is able to navigate to the Overview of Trees page
-    #Given the user is on the Tree page after signing in
-    #When the user clicks the Overview of Trees link
-    #Then the user should be redirected to the Overview of Trees data structure page
+  Background: 
+    Given The user is on home page and clicks sign in link
+    Then The user enters valid credentials and clicks Get started tree button to land on tree page
+
+   Overview of Trees
+  Scenario: Verify that the user is able to navigate to the Overview of Trees page
+    Given the user is on the Tree page after signing in
+    When the user clicks the Overview of Trees link
+    Then the user should be redirected to the Overview of Trees data structure page
 #
   #Scenario: Navigate to Try Editor for Tree Overview of Trees
     #When The user is on the Overview of Trees page in the DS Algo portal and clicks Try Here button

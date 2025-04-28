@@ -1,8 +1,8 @@
-Feature: Linked List Page Features
-
-  Background: 
-    Given The user is on home page and clicks sign in link on the home page
-    Then The user enters valid credentials and clicks Get started button for Linked list to land on linked list Page
+#Feature: Linked List Page Features
+#
+  #Background: 
+    #Given The user is on home page and clicks sign in link on the home page
+    #Then The user enters valid credentials and clicks Get started button for Linked list to land on linked list Page
 
   # Introduction
   #Scenario: Verify that the user is able to navigate to the Introduction page
