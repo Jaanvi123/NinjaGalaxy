@@ -1,0 +1,1 @@
+{"uuid":"51c602e3-ab0d-4dba-963b-e53aa6229220","name":"Scenario Outline: Verify that user is able to successfully register using valid username and password details","children":["30c0b62a-2b64-4722-9104-34f02b776903"],"befores":[],"afters":[],"start":1745119641495,"stop":1745119641502}

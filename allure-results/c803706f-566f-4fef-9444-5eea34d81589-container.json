@@ -1,0 +1,1 @@
+{"uuid":"c803706f-566f-4fef-9444-5eea34d81589","name":"Scenario Outline: Verify that user receives error message for all empty fields during registration","children":["bfb20dec-2f77-43dd-aadc-f92d62e484a0"],"befores":[],"afters":[],"start":1745119641360,"stop":1745119641372}

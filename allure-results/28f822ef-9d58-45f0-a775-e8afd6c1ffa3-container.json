@@ -1,0 +1,1 @@
+{"uuid":"28f822ef-9d58-45f0-a775-e8afd6c1ffa3","name":"Scenario Outline: Verify that user receives error message for invalid username field during registration","children":["ff49f34d-97cc-4fd9-81de-e3cdddc68690"],"befores":[],"afters":[],"start":1745119641422,"stop":1745119641428}
