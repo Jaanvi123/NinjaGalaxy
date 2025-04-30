@@ -13,7 +13,8 @@ import io.cucumber.testng.*;
 			glue={"stepDefinitions"},
 			dryRun=false,
 			monochrome=true,
-			//tags= "@SignIn",
+
+//tags= "@SignIn",
 					
 			plugin= {"pretty","html:target/output.html","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
 					"io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"

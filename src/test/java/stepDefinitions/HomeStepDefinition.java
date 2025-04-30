@@ -19,13 +19,10 @@ public class HomeStepDefinition {
 	RegisterPageObj registerPage = new RegisterPageObj();
 	
 	String expectedMessage = "You are not logged in";
-	//String homepageTitle;
-	//WebElement getstartedBtn;
-
-	
+		
 	@Given("The user enter correct dsAlgo portal URL")
 	public void the_user_enter_correct_ds_algo_portal_url() {
-			System.out.println("URl opened");
+			homepage.openUrl();
 	}
 
 	@Then("The user clicks the Get Started button")
@@ -35,7 +32,7 @@ public class HomeStepDefinition {
 
 	@Then("The user should land in Data Structure Introduction Page with register and Sign in links")
 	public void the_user_should_land_in_data_structure_introduction_page_with_register_and_sign_in_links() {
-		LoggerLoad.info("User is on Data Structure Introduction Page");
+		homepage.getTitle();
 	}
 
 	@When("The user clicks the Data Structures dropdown")
@@ -47,7 +44,7 @@ public class HomeStepDefinition {
 	@Then("The user should be able to see six options like Arrays Linked List Stack Queue Tree Graph in dropdown menu")
 	public void the_user_should_be_able_to_see_six_options_like_arrays_linked_list_stack_queue_tree_graph_in_dropdown_menu() {
 		LoggerLoad.info("User is on Data Structure Introduction Page and clicking on the Arrow");
-		// put assert statement
+	
 	}
 
 	@When("The user selects Arrays from the drop down without Sign in")
@@ -126,7 +123,7 @@ public class HomeStepDefinition {
 
 	@Then("The user should able to see an warning message You are not logged in for DS Introduction")
 	public void the_user_should_able_to_see_an_warning_message_you_are_not_logged_in_for_ds_introduction() {
-		System.out.println("warning message You are not logged in for DS Introduction");
+		LoggerLoad.info("warning message You are not logged in for DS Introduction");
 	}
 
 

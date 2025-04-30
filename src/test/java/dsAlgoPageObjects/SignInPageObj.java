@@ -10,6 +10,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import com.fasterxml.jackson.databind.exc.InvalidFormatException;
+
+import utils.ConfigReader;
 import utils.ExcelRead;
 import utils.LoggerLoad;
 
@@ -18,6 +20,7 @@ public class SignInPageObj {
 	
 	 WebDriver driver;
 	 ExcelRead excelReader = new ExcelRead();
+	 ConfigReader configReader = new ConfigReader();
 	 
 	 @FindBy(xpath = "//input[@name ='username']") WebElement UsernameTextBox;
 	 @FindBy(xpath = "//input[@name ='password']") WebElement PassowrdTextBox;
@@ -27,14 +30,17 @@ public class SignInPageObj {
 	 public SignInPageObj(WebDriver driver) {
 		 this.driver= driver;
 	 }
-	 public void enterUsernameText(String username) {
+	 public void enterUsernameText(String Username) {
+		 String name= configReader.getUserName();
 		 PageFactory.initElements(driver, this);
-		UsernameTextBox.sendKeys(username);
+		UsernameTextBox.sendKeys(name);
+		
 			
 		}
 		public void enterPasswordText(String password) {
+			String pwd = configReader.getPassword();
 			PageFactory.initElements(driver, this);
-			PassowrdTextBox.sendKeys(password);
+			PassowrdTextBox.sendKeys(pwd);
 		    }
 		public void clickloginButton() {
 			PageFactory.initElements(driver, this);
@@ -43,12 +49,12 @@ public class SignInPageObj {
 		
 		public void homePagemsg() {
 			homePagemsg.getText();
-			System.out.println(homePagemsg.getText());	
+			LoggerLoad.info(homePagemsg.getText());	
 		}
 		public void loginWithValidCredentials() throws InterruptedException {
 			//this.driver = driver; // Set WebDriver instance
 			PageFactory.initElements(driver, this); // Initialize elements
-			System.out.println("Button clicked successfully");	    
+			LoggerLoad.info("Button clicked successfully");	    
 	    }
 		public void enterLoginDetails(String username, String password)
 				throws InvalidFormatException, IOException, OpenXML4JException, InterruptedException {
@@ -75,7 +81,7 @@ public class SignInPageObj {
 			LoggerLoad.info("Fetched password from Excel: " + password);
 			enterPasswordText(password);
 			
-			System.out.print("Read from Excel sheet");
+			LoggerLoad.info("Read from Excel sheet");
 		}	
 		
 		

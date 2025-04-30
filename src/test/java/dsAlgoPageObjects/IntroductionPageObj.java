@@ -76,6 +76,17 @@ public class IntroductionPageObj {
 		return driver.getTitle();
 	}
 
+	public void getUserName() {
+		PageFactory.initElements(driver, this);
+		ConfigReader.getUserName();
+		LoggerLoad.info("Username Selected from Property file");
+	}
+	public void getPassword() {
+		PageFactory.initElements(driver, this);
+		ConfigReader.getPassword();
+		LoggerLoad.info("Password Selected from Property file");
+	}
+	
 	// Signin
 	public void SignInLinkClick() {
 		SignInLink.click();
@@ -95,7 +106,7 @@ public class IntroductionPageObj {
 			DropdownArrow.click();
 			System.out.println("Dropdown Arrow clicked successfully.");
 		    } catch (Exception e) {
-			System.out.println("Error clicking dropdown Dropdown Arrow: " + e.getMessage());
+		    	LoggerLoad.info("Error clicking dropdown Dropdown Arrow: " + e.getMessage());
 		        }
 	         }
 
@@ -132,43 +143,43 @@ public class IntroductionPageObj {
 	public void clickgetStartedButton(WebDriver driver) {
 		this.driver = driver; // Set WebDriver instance
 		PageFactory.initElements(driver, this); // Initialize elements
-		System.out.println("Button clicked successfully.");
+		LoggerLoad.info("Button clicked successfully.");
 	}
 
 	public void clickDsGetStartedButton() {
 		dsIntroductionGetStartedBtn.click();
-		LoggerLoad.info("Clicked on DS-Introduction Get Started Button");
+		LoggerLoad.info("DS-Introduction Get Started Button ");
 	}
 
 	public void clickArrayGetStartedButton() {
 		arrayGetStartedBtn.click();
-		LoggerLoad.info("Clicked on Array Get Started Button");
+		LoggerLoad.info("Array Get Started Button clicked");
 	}
 
 	public void clickLinkedListGetStartedButton() {
 		linkedListGetStartedBtn.click();
-		LoggerLoad.info("Clicked on Linked List Get Started Button");
+		LoggerLoad.info("Linked List Get Started Button clicked");
 	}
 
 	public void clickStackGetStartedButton() {
 		stackGetStartedBtn.click();
-		LoggerLoad.info("Clicked on Stack Get Started Button");
+		LoggerLoad.info("Stack Get Started Button clicked");
 	}
 
 	public void clickQueueGetStartedButton() {
 		queueGetStartedBtn.click();
-		LoggerLoad.info("Clicked on Queue Get Started Button");
+		LoggerLoad.info("Queue Get Started Button clicked");
 	}
 
 	public void clickTreeGetStartedButton() {
 		PageFactory.initElements(driver, this); 
 		treeGetStartedBtn.click();
-		LoggerLoad.info("Clicked on Tree Get Started Button");
+		LoggerLoad.info("Tree Get Started Button clicked");
 	}
 
 	public void clickGraphGetStartedButton() {
 		graphGetStartedBtn.click();
-		LoggerLoad.info("Clicked on Graph Get Started Button");
+		LoggerLoad.info("Graph Get Started Button clicked");
 	}
 // PageFactory.initElements(driver, this); automatically finds and assigns values to @FindBy elements when the class instance is created.
 	// Without this initialization, dsIntroductionGetStartedBtn remains null,
@@ -179,12 +190,12 @@ public class IntroductionPageObj {
 	public void clickRegisterLink() {
 		PageFactory.initElements(driver, this); 
 		RegisterLink.click();
-		LoggerLoad.info("Clicked on Register Link on Homepage");
+		LoggerLoad.info("Register Link on Homepage clicked");
 			}
 	public void clickSignInLink() {
 		PageFactory.initElements(driver, this); 
 		SignInLink.click();
-		LoggerLoad.info("Clicked on Sign In Link on Homepage");
+		LoggerLoad.info("Sign In Link on Homepage clicked");
 	}
 	public void clicklink(WebDriver driver) {
 		this.driver = driver; // Set WebDriver instance

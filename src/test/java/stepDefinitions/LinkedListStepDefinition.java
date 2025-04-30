@@ -25,7 +25,7 @@ public class LinkedListStepDefinition {
 	ConfigReader configReader = new ConfigReader();
 	IntroductionPageObj introductionpage = new IntroductionPageObj();
 	HomePageObj homepage = new HomePageObj(driver);
-	TreePageObj treePage = new TreePageObj(driver);
+	TreePageObj treePage = new TreePageObj();
 	LinkedListPageObj LinkedList = new LinkedListPageObj(driver);
 	
 	@Given("The user is on home page and clicks sign in link on the home page")

@@ -4,13 +4,9 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
-
 import driverManager.DriverFactory;
-
-
 
 public class ConfigReader {
 
@@ -49,7 +45,7 @@ public class ConfigReader {
 		
 	}
 
-	public static  String getUserName() {
+	public static String getUserName() {
 		return properties.getProperty("username");
 	}
 

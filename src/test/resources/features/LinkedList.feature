@@ -1,30 +1,32 @@
 #Feature: Linked List Page Features
-#
-  #Background: 
-    #Given The user is on home page and clicks sign in link on the home page
-    #Then The user enters valid credentials and clicks Get started button for Linked list to land on linked list Page
 
+  Background: 
+    Given The user is on home page
+    When The user clicks Sign in link and enters valid credentials and clicks Login button
+    Then The user should land on the Linked List page by clicking Get started button 
+ 
   # Introduction
-  #Scenario: Verify that the user is able to navigate to the Introduction page
+ 
+  # Scenario: Verify that the user is able to navigate to the Introduction page
      #When The user is on the linked list page after signing in and clicks introduction link
     #Then the user should be redirected to the Introduction page
-#
+
   #Scenario: Navigate to Try Editor for linked list Introduction
     #When The user is on the Introduction page in the DS Algo portal and clicks Try Here button
     #Then The user is redirected to a page having Editor with run button for linked list
-#
+
   #Scenario: User clicks the Run button without entering any code for linked list
     #When The user is on the tryEditor page of linked lists with an empty code editor and clicks Run button
     #Then No error message is displayed for linked list
-#
+
   #Scenario: User writes valid Python code and clicks Run button for linked List
     #When The user is on the tryEditor page of linked list and writes valid Python code in the editor and clicks Run button
     #Then The user should be able to see output in the console for linked lists
-#
+ 
   #Scenario: User writes Invalid code and clicks Run button on Introduction Try Editor page
     #When The user is on Introduction TryEditor page and writes invalid code in the editor and clicks Run button
     #Then The user should be able to get alert on Introduction TryEditor page
-#
+ 
   #Scenario: Verify that the user is able to navigate to Practice Questions page from Introduction page
     #When The user is on the Introduction page after signing in and clicks the Practice Questions link
     #Then The user should be redirected to the Practice Questions page from Introduction page

@@ -4,6 +4,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+
+import utils.LoggerLoad;
+
 import java.time.Duration;
 
 public class DriverFactory {
@@ -11,7 +14,7 @@ public class DriverFactory {
     private static ThreadLocal<WebDriver> tlDriver = new ThreadLocal<>();
 
     public static WebDriver initializeDriver(String browser) {
-        if (tlDriver.get() == null) {  // Correct null check
+        if (tlDriver.get() == null) { 
             if (browser == null || browser.isEmpty()) {
                 throw new IllegalArgumentException("Browser type is required!");
             }
@@ -45,10 +48,10 @@ public class DriverFactory {
     public static void closeDriver() {
         if (tlDriver.get() != null) {
             tlDriver.get().quit();
-            tlDriver.remove();  // Ensures proper cleanup
-            System.out.println("Browser closed successfully.");
+            tlDriver.remove();  
+            LoggerLoad.info("Browser closed successfully.");
         } else {
-            System.out.println("Driver is already null, nothing to close.");
+        	LoggerLoad.info("Driver is already null, nothing to close.");
         }
     }
 }

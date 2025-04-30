@@ -10,8 +10,6 @@ import utils.LoggerLoad;
 
 public class HomePageObj {
 	WebDriver driver = DriverFactory.getDriver();
-	private String message;
-
 	String URL = ConfigReader.getUrl();
 	String homeURL = ConfigReader.getUrlHome();
 
@@ -35,11 +33,12 @@ public class HomePageObj {
 	}
 	
 	public String getMessage() {
-		message = HomePageMessage.getText(); 
+		String	message = HomePageMessage.getText(); 
 		return message;
 	}
 
 	public void clickGetStartedHomePageButton() {
+		PageFactory.initElements(driver, this);
 		GetStartedButton.click();
 	}
 

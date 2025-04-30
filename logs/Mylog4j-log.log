@@ -56,3 +56,1466 @@
 [INFO ] 2025-04-27 20:57:54.353 [main] LoggerLoad - Linked List Page title[[ChromeDriver: chrome on windows (df636d31dd1f4b2e9bd3f5915226940b)] -> xpath: //h4[@class='bg-secondary text-white']]
 [INFO ] 2025-04-27 20:57:54.653 [main] LoggerLoad - Deletion Link clicked
 [INFO ] 2025-04-27 20:57:54.975 [main] LoggerLoad - Practice Questions Link clicked
+[INFO ] 2025-04-28 17:55:57.592 [main] LoggerLoad - Inside openURL
+[INFO ] 2025-04-28 17:55:58.374 [main] LoggerLoad - User is on Data Structure Introduction Page and clicking on the Arrow
+[INFO ] 2025-04-28 18:25:01.267 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-28 18:25:01.494 [main] LoggerLoad - Inside enterLoginFormFields
+[INFO ] 2025-04-28 18:25:02.502 [main] LoggerLoad - logintestdata
+[INFO ] 2025-04-28 18:25:30.238 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-28 18:25:30.457 [main] LoggerLoad - Inside enterLoginFormFields
+[INFO ] 2025-04-28 18:25:31.280 [main] LoggerLoad - logintestdata
+[INFO ] 2025-04-28 18:25:31.372 [main] LoggerLoad - Fetched username from Excel: Ninja_Galaxy
+[INFO ] 2025-04-28 18:25:31.373 [main] LoggerLoad - Fetched password from Excel: We_team3
+[INFO ] 2025-04-28 18:25:32.334 [main] LoggerLoad - Clicked on Tree Get Started Button
+[INFO ] 2025-04-28 18:25:32.387 [main] LoggerLoad - Tree Page title[[ChromeDriver: chrome on windows (a81e3fbee2cdc50053b6eb3e25cc6815)] -> xpath: //h4[@class='bg-secondary text-white']]
+[INFO ] 2025-04-29 17:00:03.789 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-29 17:00:04.007 [main] LoggerLoad - Inside enterLoginFormFields
+[INFO ] 2025-04-29 17:00:04.769 [main] LoggerLoad - logintestdata
+[INFO ] 2025-04-29 17:00:04.857 [main] LoggerLoad - Fetched username from Excel: Ninja_Galaxy
+[INFO ] 2025-04-29 17:00:04.857 [main] LoggerLoad - Fetched password from Excel: We_team3
+[INFO ] 2025-04-29 17:00:05.936 [main] LoggerLoad - Clicked on Tree Get Started Button
+[INFO ] 2025-04-29 17:00:05.977 [main] LoggerLoad - Tree Page title[[ChromeDriver: chrome on windows (4e8c46ccbe106c288c86584320004d6f)] -> xpath: //h4[@class='bg-secondary text-white']]
+[INFO ] 2025-04-29 17:00:06.282 [main] LoggerLoad - Overview of trees Link clicked
+[INFO ] 2025-04-29 17:24:26.875 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-29 17:24:27.072 [main] LoggerLoad - Inside enterLoginFormFields
+[INFO ] 2025-04-29 17:24:27.663 [main] LoggerLoad - logintestdata
+[INFO ] 2025-04-29 17:24:27.761 [main] LoggerLoad - Fetched username from Excel: Ninja_Galaxy
+[INFO ] 2025-04-29 17:24:27.762 [main] LoggerLoad - Fetched password from Excel: We_team3
+[INFO ] 2025-04-29 17:24:28.667 [main] LoggerLoad - Clicked on Tree Get Started Button
+[INFO ] 2025-04-29 17:24:28.720 [main] LoggerLoad - Tree Page title[[ChromeDriver: chrome on windows (3d4c73d640ab880998926a988c2aa003)] -> xpath: //h4[@class='bg-secondary text-white']]
+[INFO ] 2025-04-29 17:24:29.010 [main] LoggerLoad - Overview of trees Link clicked
+[INFO ] 2025-04-29 17:29:30.325 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-29 17:29:30.538 [main] LoggerLoad - Username Selected from Property file
+[INFO ] 2025-04-29 17:29:30.539 [main] LoggerLoad - Password Selected from Property file
+[INFO ] 2025-04-29 17:32:25.316 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-29 17:34:36.419 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-29 17:35:23.076 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-29 17:36:28.831 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-29 17:36:30.178 [main] LoggerLoad - Clicked on Tree Get Started Button
+[INFO ] 2025-04-29 17:36:30.219 [main] LoggerLoad - Tree Page title[[ChromeDriver: chrome on windows (eab58fe659f78fde7708a4c86c5bbd05)] -> xpath: //h4[@class='bg-secondary text-white']]
+[INFO ] 2025-04-29 17:36:30.560 [main] LoggerLoad - Overview of trees Link clicked
+[INFO ] 2025-04-30 10:29:44.455 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 10:29:45.810 [main] LoggerLoad - Clicked on Tree Get Started Button
+[INFO ] 2025-04-30 10:29:45.851 [main] LoggerLoad - Tree Page title[[ChromeDriver: chrome on windows (011fd0df51c16ce648ee949dcec520a6)] -> xpath: //h4[@class='bg-secondary text-white']]
+[INFO ] 2025-04-30 10:29:46.138 [main] LoggerLoad - Overview of trees Link clicked
+[INFO ] 2025-04-30 10:29:48.241 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 10:29:49.516 [main] LoggerLoad - Clicked on Tree Get Started Button
+[INFO ] 2025-04-30 10:29:49.554 [main] LoggerLoad - Tree Page title[[ChromeDriver: chrome on windows (217c6c231651f3ed032967014cd1af2a)] -> xpath: //h4[@class='bg-secondary text-white']]
+[INFO ] 2025-04-30 10:29:51.592 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 10:29:52.971 [main] LoggerLoad - Clicked on Tree Get Started Button
+[INFO ] 2025-04-30 10:29:53.017 [main] LoggerLoad - Tree Page title[[ChromeDriver: chrome on windows (1de9ef1d17bed2ac88485de8240a1ae9)] -> xpath: //h4[@class='bg-secondary text-white']]
+[INFO ] 2025-04-30 10:29:55.026 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 10:29:56.274 [main] LoggerLoad - Clicked on Tree Get Started Button
+[INFO ] 2025-04-30 10:29:56.316 [main] LoggerLoad - Tree Page title[[ChromeDriver: chrome on windows (fffbf8046919f52572b2ed488758b268)] -> xpath: //h4[@class='bg-secondary text-white']]
+[INFO ] 2025-04-30 10:29:58.297 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 10:29:59.549 [main] LoggerLoad - Clicked on Tree Get Started Button
+[INFO ] 2025-04-30 10:29:59.586 [main] LoggerLoad - Tree Page title[[ChromeDriver: chrome on windows (b83ed0ccf67ae408f3164c8de994ea41)] -> xpath: //h4[@class='bg-secondary text-white']]
+[INFO ] 2025-04-30 10:30:01.619 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 10:30:02.896 [main] LoggerLoad - Clicked on Tree Get Started Button
+[INFO ] 2025-04-30 10:30:02.941 [main] LoggerLoad - Tree Page title[[ChromeDriver: chrome on windows (4ac859dc2b6eb0d254dfcb05eebeda72)] -> xpath: //h4[@class='bg-secondary text-white']]
+[INFO ] 2025-04-30 10:44:54.515 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 10:44:55.864 [main] LoggerLoad - Clicked on Tree Get Started Button
+[INFO ] 2025-04-30 10:44:55.909 [main] LoggerLoad - Tree Page title[[ChromeDriver: chrome on windows (ba622e16b1c5ec1f0b6966d44fee6e04)] -> xpath: //h4[@class='bg-secondary text-white']]
+[INFO ] 2025-04-30 10:44:56.208 [main] LoggerLoad - Overview of trees Link clicked
+[INFO ] 2025-04-30 10:45:18.555 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 10:45:19.859 [main] LoggerLoad - Clicked on Tree Get Started Button
+[INFO ] 2025-04-30 10:45:19.917 [main] LoggerLoad - Tree Page title[[ChromeDriver: chrome on windows (5b6760c7c78d9c6d5073070e86b70109)] -> xpath: //h4[@class='bg-secondary text-white']]
+[INFO ] 2025-04-30 10:45:20.190 [main] LoggerLoad - Overview of trees Link clicked
+[INFO ] 2025-04-30 10:45:20.720 [main] LoggerLoad - Try here button clicked
+[INFO ] 2025-04-30 10:45:40.622 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 10:45:41.845 [main] LoggerLoad - Clicked on Tree Get Started Button
+[INFO ] 2025-04-30 10:45:41.910 [main] LoggerLoad - Tree Page title[[ChromeDriver: chrome on windows (fd17b2111595e42e0a70fb0f1e6dd57c)] -> xpath: //h4[@class='bg-secondary text-white']]
+[INFO ] 2025-04-30 10:45:42.190 [main] LoggerLoad - Overview of trees Link clicked
+[INFO ] 2025-04-30 10:45:42.705 [main] LoggerLoad - Try here button clicked
+[INFO ] 2025-04-30 10:45:42.799 [main] LoggerLoad - Run button clicked
+[INFO ] 2025-04-30 10:46:05.171 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 10:46:06.435 [main] LoggerLoad - Clicked on Tree Get Started Button
+[INFO ] 2025-04-30 10:46:06.479 [main] LoggerLoad - Tree Page title[[ChromeDriver: chrome on windows (7bc04465ee1471f179a5f8bfff3c15f8)] -> xpath: //h4[@class='bg-secondary text-white']]
+[INFO ] 2025-04-30 10:46:06.794 [main] LoggerLoad - Overview of trees Link clicked
+[INFO ] 2025-04-30 10:46:07.361 [main] LoggerLoad - Try here button clicked
+[INFO ] 2025-04-30 10:46:07.724 [main] LoggerLoad - Run button clicked
+[INFO ] 2025-04-30 10:46:36.489 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 10:46:37.732 [main] LoggerLoad - Clicked on Tree Get Started Button
+[INFO ] 2025-04-30 10:46:37.787 [main] LoggerLoad - Tree Page title[[ChromeDriver: chrome on windows (571e50fcb390dd152a991f732338553a)] -> xpath: //h4[@class='bg-secondary text-white']]
+[INFO ] 2025-04-30 10:46:38.077 [main] LoggerLoad - Overview of trees Link clicked
+[INFO ] 2025-04-30 10:46:38.657 [main] LoggerLoad - Try here button clicked
+[INFO ] 2025-04-30 10:49:17.205 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 10:49:18.426 [main] LoggerLoad - Clicked on Tree Get Started Button
+[INFO ] 2025-04-30 10:49:18.463 [main] LoggerLoad - Tree Page title[[ChromeDriver: chrome on windows (4309bbafe8ed7ae5c367996efb79c76a)] -> xpath: //h4[@class='bg-secondary text-white']]
+[INFO ] 2025-04-30 10:49:18.732 [main] LoggerLoad - Overview of trees Link clicked
+[INFO ] 2025-04-30 10:49:19.268 [main] LoggerLoad - Try here button clicked
+[INFO ] 2025-04-30 10:49:19.524 [main] LoggerLoad - The code is Invalid
+[INFO ] 2025-04-30 10:50:20.621 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 10:50:22.005 [main] LoggerLoad - Clicked on Tree Get Started Button
+[INFO ] 2025-04-30 10:50:22.041 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 10:50:22.339 [main] LoggerLoad - Overview of trees Link clicked
+[INFO ] 2025-04-30 10:50:23.049 [main] LoggerLoad - Try here button clicked
+[INFO ] 2025-04-30 10:50:23.316 [main] LoggerLoad - The code is Invalid
+[INFO ] 2025-04-30 10:51:45.954 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 10:51:47.290 [main] LoggerLoad - Clicked on Tree Get Started Button
+[INFO ] 2025-04-30 10:51:47.331 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 10:53:00.963 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 10:53:02.238 [main] LoggerLoad - Clicked on Tree Get Started Button
+[INFO ] 2025-04-30 10:53:02.277 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 10:53:02.546 [main] LoggerLoad - Overview of trees Link clicked
+[INFO ] 2025-04-30 10:53:02.787 [main] LoggerLoad - Practice Questions Link clicked
+[INFO ] 2025-04-30 11:01:43.412 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 11:01:43.419 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 11:01:44.634 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 11:01:44.697 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 11:01:44.967 [main] LoggerLoad - Overview of trees Link clicked
+[INFO ] 2025-04-30 11:01:45.207 [main] LoggerLoad - Practice Questions Link clicked
+[INFO ] 2025-04-30 11:01:45.218 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tree/practice
+[INFO ] 2025-04-30 13:22:40.400 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 13:22:40.405 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 13:22:41.657 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 13:22:41.695 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 13:22:41.704 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 13:22:41.981 [main] LoggerLoad - Overview of trees Link clicked
+[INFO ] 2025-04-30 13:22:41.990 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tree/overview-of-trees/
+[INFO ] 2025-04-30 13:22:44.101 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 13:22:44.102 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 13:22:45.398 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 13:22:45.436 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 13:22:45.708 [main] LoggerLoad - Overview of trees Link clicked
+[INFO ] 2025-04-30 13:22:46.267 [main] LoggerLoad - Try here button clicked
+[INFO ] 2025-04-30 13:22:46.278 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tryEditor
+[INFO ] 2025-04-30 13:22:48.405 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 13:22:48.406 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 13:22:49.744 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 13:22:49.789 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 13:22:50.054 [main] LoggerLoad - Overview of trees Link clicked
+[INFO ] 2025-04-30 13:22:50.597 [main] LoggerLoad - Try here button clicked
+[INFO ] 2025-04-30 13:22:50.687 [main] LoggerLoad - Run button clicked
+[INFO ] 2025-04-30 13:22:50.696 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tryEditor
+[INFO ] 2025-04-30 13:22:52.775 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 13:22:52.775 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 13:22:53.979 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 13:22:54.011 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 13:22:54.359 [main] LoggerLoad - Overview of trees Link clicked
+[INFO ] 2025-04-30 13:22:54.926 [main] LoggerLoad - Try here button clicked
+[INFO ] 2025-04-30 13:22:55.166 [main] LoggerLoad - The given code is : print('Python is fun!')
+[INFO ] 2025-04-30 13:22:55.246 [main] LoggerLoad - Run button clicked
+[INFO ] 2025-04-30 13:22:55.254 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tryEditor
+[INFO ] 2025-04-30 13:22:57.113 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 13:22:57.116 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 13:22:58.549 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 13:22:58.608 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 13:22:58.881 [main] LoggerLoad - Overview of trees Link clicked
+[INFO ] 2025-04-30 13:22:59.467 [main] LoggerLoad - Try here button clicked
+[INFO ] 2025-04-30 13:22:59.711 [main] LoggerLoad - The code is Invalid
+[INFO ] 2025-04-30 13:22:59.719 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tryEditor
+[INFO ] 2025-04-30 13:23:01.829 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 13:23:01.830 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 13:23:03.040 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 13:23:03.074 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 13:23:03.362 [main] LoggerLoad - Overview of trees Link clicked
+[INFO ] 2025-04-30 13:23:03.605 [main] LoggerLoad - Practice Questions Link clicked
+[INFO ] 2025-04-30 13:23:03.617 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tree/practice
+[INFO ] 2025-04-30 13:35:06.394 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 13:35:08.131 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 13:35:08.763 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 13:35:08.767 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 13:35:09.983 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 13:35:10.019 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 13:35:10.028 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 13:35:10.336 [main] LoggerLoad - Terminologies Link clicked
+[INFO ] 2025-04-30 13:35:10.357 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tree/terminologies/
+[INFO ] 2025-04-30 13:35:10.607 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 13:35:11.777 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 13:35:12.347 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 13:35:12.348 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 13:35:13.557 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 13:35:13.607 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 13:35:13.862 [main] LoggerLoad - Terminologies Link clicked
+[INFO ] 2025-04-30 13:35:14.413 [main] LoggerLoad - Try here button clicked
+[INFO ] 2025-04-30 13:35:14.426 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tryEditor
+[INFO ] 2025-04-30 13:35:14.664 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 13:35:15.741 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 13:35:16.366 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 13:35:16.368 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 13:35:17.765 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 13:35:17.799 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 13:35:18.071 [main] LoggerLoad - Terminologies Link clicked
+[INFO ] 2025-04-30 13:35:18.641 [main] LoggerLoad - Try here button clicked
+[INFO ] 2025-04-30 13:35:18.737 [main] LoggerLoad - Run button clicked
+[INFO ] 2025-04-30 13:35:18.743 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tryEditor
+[INFO ] 2025-04-30 13:35:18.988 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 13:35:20.195 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 13:35:20.763 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 13:35:20.764 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 13:35:22.114 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 13:35:22.156 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 13:35:22.560 [main] LoggerLoad - Terminologies Link clicked
+[INFO ] 2025-04-30 13:35:23.446 [main] LoggerLoad - Try here button clicked
+[INFO ] 2025-04-30 13:35:23.697 [main] LoggerLoad - The given code is : print('Python is fun!')
+[INFO ] 2025-04-30 13:35:23.778 [main] LoggerLoad - Run button clicked
+[INFO ] 2025-04-30 13:35:23.785 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tryEditor
+[INFO ] 2025-04-30 13:35:24.009 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 13:35:25.204 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 13:35:25.842 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 13:35:25.843 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 13:35:27.043 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 13:35:27.077 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 13:35:27.341 [main] LoggerLoad - Terminologies Link clicked
+[INFO ] 2025-04-30 13:35:27.907 [main] LoggerLoad - Try here button clicked
+[INFO ] 2025-04-30 13:35:28.172 [main] LoggerLoad - The code is Invalid
+[INFO ] 2025-04-30 13:35:28.184 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tryEditor
+[INFO ] 2025-04-30 13:35:28.417 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 13:35:29.585 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 13:35:30.205 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 13:35:30.206 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 13:35:31.466 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 13:35:31.507 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 13:35:31.765 [main] LoggerLoad - Terminologies Link clicked
+[INFO ] 2025-04-30 13:35:32.032 [main] LoggerLoad - Practice Questions Link clicked
+[INFO ] 2025-04-30 13:35:32.055 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tree/practice
+[INFO ] 2025-04-30 13:41:24.258 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 13:41:26.043 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 13:41:26.659 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 13:41:26.665 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 13:41:27.848 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 13:41:27.897 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 13:41:27.903 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 13:41:28.159 [main] LoggerLoad - Terminologies Link clicked
+[INFO ] 2025-04-30 13:41:28.183 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tree/terminologies/
+[INFO ] 2025-04-30 13:41:28.398 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 13:41:28.425 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 13:41:29.588 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 13:41:30.210 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 13:41:30.212 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 13:41:31.457 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 13:41:31.505 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 13:41:31.752 [main] LoggerLoad - Terminologies Link clicked
+[INFO ] 2025-04-30 13:41:32.277 [main] LoggerLoad - Try here button clicked
+[INFO ] 2025-04-30 13:41:32.289 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tryEditor
+[INFO ] 2025-04-30 13:41:32.500 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 13:41:32.516 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 13:41:33.657 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 13:41:34.240 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 13:41:34.240 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 13:41:35.432 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 13:41:35.477 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 13:41:35.725 [main] LoggerLoad - Terminologies Link clicked
+[INFO ] 2025-04-30 13:41:36.297 [main] LoggerLoad - Try here button clicked
+[INFO ] 2025-04-30 13:41:36.389 [main] LoggerLoad - Run button clicked
+[INFO ] 2025-04-30 13:41:36.397 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tryEditor
+[INFO ] 2025-04-30 13:41:36.595 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 13:41:36.610 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 13:41:37.768 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 13:41:38.365 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 13:41:38.366 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 13:41:39.571 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 13:41:39.617 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 13:41:39.884 [main] LoggerLoad - Terminologies Link clicked
+[INFO ] 2025-04-30 13:41:40.450 [main] LoggerLoad - Try here button clicked
+[INFO ] 2025-04-30 13:41:40.695 [main] LoggerLoad - The given code is : print('Python is fun!')
+[INFO ] 2025-04-30 13:41:40.778 [main] LoggerLoad - Run button clicked
+[INFO ] 2025-04-30 13:41:40.785 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tryEditor
+[INFO ] 2025-04-30 13:41:40.991 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 13:41:41.004 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 13:48:38.276 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 13:48:39.996 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 13:48:40.619 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 13:48:40.625 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 13:48:41.933 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 13:48:41.972 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 13:48:41.979 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 13:48:42.268 [main] LoggerLoad - Types of Trees Link clicked
+[INFO ] 2025-04-30 13:48:42.490 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 13:48:42.512 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 13:48:43.687 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 13:48:44.291 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 13:48:44.293 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 13:48:45.492 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 13:48:45.530 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 13:48:45.748 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 13:48:45.767 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 13:48:46.917 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 13:48:47.475 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 13:48:47.476 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 13:48:48.802 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 13:48:48.837 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 13:48:49.039 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 13:48:49.057 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 13:48:50.203 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 13:48:50.806 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 13:48:50.807 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 13:48:52.054 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 13:48:52.097 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 13:48:52.299 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 13:48:52.313 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 13:48:53.481 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 13:48:54.081 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 13:48:54.082 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 13:48:55.301 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 13:48:55.338 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 13:48:55.557 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 13:48:55.565 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 13:48:56.698 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 13:48:57.258 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 13:48:57.259 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 13:48:58.547 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 13:48:58.583 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 13:48:58.785 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 13:51:09.578 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 13:51:11.334 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 13:51:11.928 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 13:51:11.933 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 13:51:13.217 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 13:51:13.267 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 13:51:13.275 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 13:51:13.537 [main] LoggerLoad - Types of Trees Link clicked
+[INFO ] 2025-04-30 13:51:13.780 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 13:51:13.807 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 13:51:14.906 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 13:51:15.466 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 13:51:15.468 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 13:51:16.768 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 13:51:16.804 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 13:51:17.011 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 13:51:17.032 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 13:51:18.158 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 13:51:18.719 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 13:51:18.720 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 13:51:19.977 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 13:51:20.010 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 13:51:20.231 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 13:51:20.247 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 13:51:21.394 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 13:51:22.019 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 13:51:22.021 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 13:51:23.232 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 13:51:23.279 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 13:51:23.494 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 13:51:23.507 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 13:51:24.547 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 13:51:25.114 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 13:51:25.115 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 13:51:26.510 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 13:51:26.545 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 13:51:26.742 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 13:51:26.754 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 13:51:27.901 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 13:51:28.462 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 13:51:28.463 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 13:51:29.711 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 13:51:29.744 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 13:51:29.962 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 13:54:07.338 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 13:54:09.114 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 13:54:09.711 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 13:54:09.714 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 13:54:11.083 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 13:54:11.118 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 13:54:11.343 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 13:57:44.959 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 13:57:46.686 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 13:57:47.352 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 13:57:47.358 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 13:57:48.599 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 13:57:48.636 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 13:57:48.899 [main] LoggerLoad - Types of Trees Link clicked
+[INFO ] 2025-04-30 13:57:49.477 [main] LoggerLoad - Try here button clicked
+[INFO ] 2025-04-30 13:57:49.489 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tryEditor
+[INFO ] 2025-04-30 13:57:49.720 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 13:58:23.550 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 13:58:25.263 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 13:58:25.890 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 13:58:25.894 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 13:58:27.158 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 13:58:27.191 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 13:58:27.405 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 13:58:27.432 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 13:58:28.674 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 13:58:29.264 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 13:58:29.266 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 13:58:30.524 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 13:58:30.572 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 13:58:30.762 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 14:00:33.054 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 14:00:34.773 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 14:00:35.421 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 14:00:35.425 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 14:00:36.754 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 14:00:36.791 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 14:00:37.048 [main] LoggerLoad - Types of Trees Link clicked
+[INFO ] 2025-04-30 14:00:37.593 [main] LoggerLoad - Try here button clicked
+[INFO ] 2025-04-30 14:00:37.686 [main] LoggerLoad - Run button clicked
+[INFO ] 2025-04-30 14:00:37.695 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tryEditor
+[INFO ] 2025-04-30 14:00:37.933 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 14:00:37.956 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 14:00:39.175 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 14:00:39.777 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 14:00:39.779 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 14:00:41.155 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 14:00:41.195 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 14:00:41.519 [main] LoggerLoad - Types of Trees Link clicked
+[INFO ] 2025-04-30 14:00:42.087 [main] LoggerLoad - Try here button clicked
+[INFO ] 2025-04-30 14:00:42.330 [main] LoggerLoad - The given code is : print('Python is fun!')
+[INFO ] 2025-04-30 14:00:42.414 [main] LoggerLoad - Run button clicked
+[INFO ] 2025-04-30 14:00:42.421 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tryEditor
+[INFO ] 2025-04-30 14:00:42.644 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 14:01:01.550 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 14:01:03.258 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 14:01:03.941 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 14:01:03.947 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 14:01:05.160 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 14:01:05.217 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 14:01:05.458 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 14:01:05.479 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 14:01:06.637 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 14:01:07.275 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 14:01:07.276 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 14:01:08.679 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 14:01:08.726 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 14:01:08.927 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 14:02:29.045 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 14:02:30.774 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 14:02:31.358 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 14:02:31.362 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 14:02:32.629 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 14:02:32.667 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 14:02:32.923 [main] LoggerLoad - Types of Trees Link clicked
+[INFO ] 2025-04-30 14:02:33.481 [main] LoggerLoad - Try here button clicked
+[INFO ] 2025-04-30 14:02:33.722 [main] LoggerLoad - The code is Invalid
+[INFO ] 2025-04-30 14:02:33.728 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tryEditor
+[INFO ] 2025-04-30 14:02:33.953 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 14:02:33.975 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 14:02:35.213 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 14:02:35.764 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 14:02:35.765 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 14:02:37.183 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 14:02:37.225 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 14:02:37.489 [main] LoggerLoad - Types of Trees Link clicked
+[INFO ] 2025-04-30 14:02:37.740 [main] LoggerLoad - Practice Questions Link clicked
+[INFO ] 2025-04-30 14:02:37.748 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tree/practice
+[INFO ] 2025-04-30 14:02:37.971 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 14:04:33.014 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 14:04:34.798 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 14:04:35.487 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 14:04:35.491 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 14:04:36.743 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 14:04:36.796 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 14:04:37.015 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 14:04:37.047 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 14:04:38.228 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 14:04:38.825 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 14:04:38.827 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 14:04:39.998 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 14:04:40.046 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 14:04:40.276 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 14:04:40.295 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 14:04:41.447 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 14:04:42.055 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 14:04:42.057 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 14:04:43.314 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 14:04:43.364 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 14:04:43.557 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 14:04:43.574 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 14:04:44.751 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 14:04:45.368 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 14:04:45.369 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 14:04:46.598 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 14:04:46.649 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 14:04:46.856 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 14:04:46.869 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 14:04:48.046 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 14:04:48.650 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 14:04:48.651 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 14:04:49.929 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 14:04:49.969 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 14:04:50.178 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 14:04:50.189 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 14:04:51.376 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 14:04:51.990 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 14:04:51.991 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 14:04:53.822 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 14:04:53.857 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 14:04:54.077 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 14:09:59.146 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 14:10:00.934 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 14:10:01.632 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 14:10:01.636 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 14:10:02.925 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 14:10:02.975 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 14:10:02.982 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 14:10:03.282 [main] LoggerLoad - Tree Traversals Link clicked
+[INFO ] 2025-04-30 14:10:03.291 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tree/tree-traversals/
+[INFO ] 2025-04-30 14:10:03.528 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 14:10:03.550 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 14:10:04.728 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 14:10:05.319 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 14:10:05.320 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 14:10:06.595 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 14:10:06.641 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 14:10:06.922 [main] LoggerLoad - Tree Traversals Link clicked
+[INFO ] 2025-04-30 14:10:07.478 [main] LoggerLoad - Try here button clicked
+[INFO ] 2025-04-30 14:10:07.488 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tryEditor
+[INFO ] 2025-04-30 14:10:07.710 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 14:10:07.726 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 14:10:08.899 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 14:10:09.491 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 14:10:09.493 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 14:10:10.782 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 14:10:10.818 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 14:10:11.102 [main] LoggerLoad - Tree Traversals Link clicked
+[INFO ] 2025-04-30 14:10:11.631 [main] LoggerLoad - Try here button clicked
+[INFO ] 2025-04-30 14:10:11.735 [main] LoggerLoad - Run button clicked
+[INFO ] 2025-04-30 14:10:11.743 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tryEditor
+[INFO ] 2025-04-30 14:10:11.970 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 14:10:11.985 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 14:10:13.169 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 14:10:13.798 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 14:10:13.799 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 14:10:14.991 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 14:10:15.035 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 14:10:15.337 [main] LoggerLoad - Tree Traversals Link clicked
+[INFO ] 2025-04-30 14:10:15.867 [main] LoggerLoad - Try here button clicked
+[INFO ] 2025-04-30 14:10:36.260 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 14:10:36.267 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 14:10:37.329 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 14:10:37.900 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 14:10:37.900 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 14:10:39.143 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 14:10:39.181 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 14:10:39.482 [main] LoggerLoad - Tree Traversals Link clicked
+[INFO ] 2025-04-30 14:10:40.006 [main] LoggerLoad - Try here button clicked
+[INFO ] 2025-04-30 14:10:40.273 [main] LoggerLoad - The code is Invalid
+[INFO ] 2025-04-30 14:10:40.391 [main] LoggerLoad - Run button clicked
+[INFO ] 2025-04-30 14:10:40.648 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 14:10:40.657 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 14:10:41.797 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 14:10:42.381 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 14:10:42.382 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 14:10:43.657 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 14:10:43.691 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 14:10:43.974 [main] LoggerLoad - Tree Traversals Link clicked
+[INFO ] 2025-04-30 14:10:44.189 [main] LoggerLoad - Practice Questions Link clicked
+[INFO ] 2025-04-30 14:10:44.196 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tree/practice
+[INFO ] 2025-04-30 14:10:44.408 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 14:13:15.365 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 14:13:17.082 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 14:13:17.705 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 14:13:17.709 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 14:13:18.985 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 14:13:19.041 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 14:13:19.328 [main] LoggerLoad - Tree Traversals Link clicked
+[INFO ] 2025-04-30 14:13:19.840 [main] LoggerLoad - Try here button clicked
+[INFO ] 2025-04-30 14:13:20.089 [main] LoggerLoad - The code is Invalid
+[INFO ] 2025-04-30 14:13:20.180 [main] LoggerLoad - Run button clicked
+[INFO ] 2025-04-30 14:13:20.186 [main] LoggerLoad - Alert message: SyntaxError: bad input on line 1
+[INFO ] 2025-04-30 14:13:20.196 [main] LoggerLoad - Alert message:SyntaxError: bad input on line 1
+[INFO ] 2025-04-30 14:13:20.209 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tryEditor
+[INFO ] 2025-04-30 14:13:20.473 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 14:15:14.458 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 14:15:16.164 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 14:15:16.764 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 14:15:16.769 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 14:15:18.011 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 14:15:18.060 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 14:15:18.281 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 14:15:18.319 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 14:15:19.520 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 14:15:20.163 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 14:15:20.165 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 14:15:21.399 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 14:15:21.434 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 14:15:21.662 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 14:15:21.680 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 14:15:22.851 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 14:15:23.432 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 14:15:23.434 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 14:15:24.647 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 14:15:24.694 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 14:15:24.921 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 14:15:24.936 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 14:15:26.119 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 14:15:26.723 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 14:15:26.724 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 14:15:27.975 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 14:15:28.015 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 14:15:28.229 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 14:15:28.243 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 14:15:29.456 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 14:15:30.051 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 14:15:30.052 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 14:15:31.279 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 14:15:31.345 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 14:15:31.573 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 14:15:31.585 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 14:15:32.822 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 14:15:33.409 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 14:15:33.410 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 14:15:34.644 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 14:15:34.679 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 14:15:34.875 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 14:19:11.287 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 14:19:13.031 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 14:19:13.662 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 14:19:13.666 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 14:19:14.927 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 14:19:14.966 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 14:19:14.972 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 14:19:15.318 [main] LoggerLoad - Traversals Illustrations Link clicked
+[INFO ] 2025-04-30 14:19:15.329 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tree/traversals-illustration/
+[INFO ] 2025-04-30 14:19:15.578 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 14:19:15.602 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 14:19:16.783 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 14:19:17.389 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 14:19:17.392 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 14:19:18.674 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 14:19:18.711 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 14:19:19.014 [main] LoggerLoad - Traversals Illustrations Link clicked
+[INFO ] 2025-04-30 14:19:19.588 [main] LoggerLoad - Try here button clicked
+[INFO ] 2025-04-30 14:19:19.600 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tryEditor
+[INFO ] 2025-04-30 14:19:19.834 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 14:19:19.846 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 14:19:21.016 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 14:19:21.609 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 14:19:21.610 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 14:19:22.860 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 14:19:22.895 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 14:19:23.205 [main] LoggerLoad - Traversals Illustrations Link clicked
+[INFO ] 2025-04-30 14:19:23.839 [main] LoggerLoad - Try here button clicked
+[INFO ] 2025-04-30 14:19:23.952 [main] LoggerLoad - Run button clicked
+[INFO ] 2025-04-30 14:19:23.961 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tryEditor
+[INFO ] 2025-04-30 14:19:24.198 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 14:19:24.209 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 14:19:25.378 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 14:19:25.962 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 14:19:25.963 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 14:19:27.229 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 14:19:27.267 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 14:19:27.693 [main] LoggerLoad - Traversals Illustrations Link clicked
+[INFO ] 2025-04-30 14:19:28.286 [main] LoggerLoad - Try here button clicked
+[INFO ] 2025-04-30 14:19:48.632 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 14:19:48.641 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 14:19:49.902 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 14:19:50.483 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 14:19:50.484 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 14:19:51.782 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 14:19:51.815 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 14:19:52.094 [main] LoggerLoad - Traversals Illustrations Link clicked
+[INFO ] 2025-04-30 14:19:52.675 [main] LoggerLoad - Try here button clicked
+[INFO ] 2025-04-30 14:19:52.923 [main] LoggerLoad - The code is Invalid
+[INFO ] 2025-04-30 14:19:53.008 [main] LoggerLoad - Run button clicked
+[INFO ] 2025-04-30 14:19:53.013 [main] LoggerLoad - Alert message: SyntaxError: bad input on line 1
+[INFO ] 2025-04-30 14:19:53.020 [main] LoggerLoad - Alert message:SyntaxError: bad input on line 1
+[INFO ] 2025-04-30 14:19:53.031 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tryEditor
+[INFO ] 2025-04-30 14:19:53.315 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 14:19:53.323 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 14:19:54.468 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 14:19:55.031 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 14:19:55.032 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 14:19:56.349 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 14:19:56.390 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 14:19:56.663 [main] LoggerLoad - Traversals Illustrations Link clicked
+[INFO ] 2025-04-30 14:19:56.888 [main] LoggerLoad - Practice Questions Link clicked
+[INFO ] 2025-04-30 14:19:56.894 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tree/practice
+[INFO ] 2025-04-30 14:19:57.148 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 14:21:27.052 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 14:21:28.793 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 14:21:29.396 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 14:21:29.403 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 14:21:30.623 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 14:21:30.671 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 14:21:30.677 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 14:21:30.994 [main] LoggerLoad - Traversals Illustrations Link clicked
+[INFO ] 2025-04-30 14:21:31.004 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tree/traversals-illustration/
+[INFO ] 2025-04-30 14:21:31.253 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 14:21:31.280 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 14:21:32.464 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 14:21:33.040 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 14:21:33.041 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 14:21:34.331 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 14:21:34.370 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 14:21:34.828 [main] LoggerLoad - Traversals Illustrations Link clicked
+[INFO ] 2025-04-30 14:21:35.367 [main] LoggerLoad - Try here button clicked
+[INFO ] 2025-04-30 14:21:35.382 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tryEditor
+[INFO ] 2025-04-30 14:21:35.610 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 14:21:35.627 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 14:21:36.840 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 14:21:37.470 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 14:21:37.471 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 14:21:38.758 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 14:21:38.793 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 14:21:39.078 [main] LoggerLoad - Traversals Illustrations Link clicked
+[INFO ] 2025-04-30 14:21:39.623 [main] LoggerLoad - Try here button clicked
+[INFO ] 2025-04-30 14:21:39.723 [main] LoggerLoad - Run button clicked
+[INFO ] 2025-04-30 14:21:39.729 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tryEditor
+[INFO ] 2025-04-30 14:21:39.950 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 14:21:39.963 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 14:21:41.160 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 14:21:41.750 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 14:21:41.751 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 14:21:43.026 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 14:21:43.059 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 14:21:43.337 [main] LoggerLoad - Traversals Illustrations Link clicked
+[INFO ] 2025-04-30 14:21:43.895 [main] LoggerLoad - Try here button clicked
+[INFO ] 2025-04-30 14:21:43.927 [main] LoggerLoad - The given code is Valid :
+[INFO ] 2025-04-30 14:21:44.020 [main] LoggerLoad - Run button clicked
+[INFO ] 2025-04-30 14:21:44.028 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tryEditor
+[INFO ] 2025-04-30 14:21:44.280 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 14:21:44.292 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 14:21:45.474 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 14:21:46.037 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 14:21:46.038 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 14:21:47.299 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 14:21:47.336 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 14:21:47.646 [main] LoggerLoad - Traversals Illustrations Link clicked
+[INFO ] 2025-04-30 14:21:48.200 [main] LoggerLoad - Try here button clicked
+[INFO ] 2025-04-30 14:21:48.465 [main] LoggerLoad - The code is Invalid
+[INFO ] 2025-04-30 14:21:48.550 [main] LoggerLoad - Run button clicked
+[INFO ] 2025-04-30 14:21:48.557 [main] LoggerLoad - Alert message: SyntaxError: bad input on line 1
+[INFO ] 2025-04-30 14:21:48.567 [main] LoggerLoad - Alert message:SyntaxError: bad input on line 1
+[INFO ] 2025-04-30 14:21:48.578 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tryEditor
+[INFO ] 2025-04-30 14:21:48.802 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 14:21:48.810 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 14:21:49.952 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 14:21:50.561 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 14:21:50.562 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 14:21:51.795 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 14:21:51.828 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 14:21:52.109 [main] LoggerLoad - Traversals Illustrations Link clicked
+[INFO ] 2025-04-30 14:21:52.373 [main] LoggerLoad - Practice Questions Link clicked
+[INFO ] 2025-04-30 14:21:52.383 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tree/practice
+[INFO ] 2025-04-30 14:21:52.585 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 14:23:47.952 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 14:23:49.952 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 14:23:50.550 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 14:23:50.554 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 14:23:51.777 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 14:23:51.824 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 14:23:52.069 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 14:23:52.098 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 14:23:53.284 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 14:23:53.878 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 14:23:53.879 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 14:23:55.134 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 14:23:55.170 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 14:23:55.395 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 14:23:55.412 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 14:23:56.621 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 14:23:57.236 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 14:23:57.236 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 14:23:58.458 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 14:23:58.508 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 14:23:58.716 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 14:23:58.735 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 14:23:59.899 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 14:24:00.455 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 14:24:00.456 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 14:24:01.676 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 14:24:01.708 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 14:24:01.927 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 14:24:01.938 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 14:24:03.153 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 14:24:03.768 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 14:24:03.769 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 14:24:05.059 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 14:24:05.096 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 14:24:05.317 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 14:24:05.329 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 14:24:06.492 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 14:24:07.065 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 14:24:07.066 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 14:24:08.319 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 14:24:08.356 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 14:24:08.572 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 14:27:22.692 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 14:27:24.486 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 14:27:25.124 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 14:27:25.128 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 14:27:26.351 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 14:27:26.408 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 14:27:26.417 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 14:27:26.709 [main] LoggerLoad - Binary Trees Link clicked
+[INFO ] 2025-04-30 14:27:26.720 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tree/binary-trees/
+[INFO ] 2025-04-30 14:27:26.955 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 14:27:26.980 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 14:27:28.198 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 14:27:28.808 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 14:27:28.809 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 14:27:30.011 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 14:27:30.055 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 14:27:30.337 [main] LoggerLoad - Binary Trees Link clicked
+[INFO ] 2025-04-30 14:27:30.864 [main] LoggerLoad - Try here button clicked
+[INFO ] 2025-04-30 14:27:30.875 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tryEditor
+[INFO ] 2025-04-30 14:27:31.084 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 14:27:31.103 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 14:27:32.264 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 14:27:32.833 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 14:27:32.834 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 14:27:34.157 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 14:27:34.193 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 14:27:34.475 [main] LoggerLoad - Binary Trees Link clicked
+[INFO ] 2025-04-30 14:27:35.021 [main] LoggerLoad - Try here button clicked
+[INFO ] 2025-04-30 14:27:35.114 [main] LoggerLoad - Run button clicked
+[INFO ] 2025-04-30 14:27:35.123 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tryEditor
+[INFO ] 2025-04-30 14:27:35.347 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 14:27:35.358 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 14:27:36.511 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 14:27:37.152 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 14:27:37.153 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 14:27:38.340 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 14:27:38.373 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 14:27:38.684 [main] LoggerLoad - Binary Trees Link clicked
+[INFO ] 2025-04-30 14:27:39.285 [main] LoggerLoad - Try here button clicked
+[INFO ] 2025-04-30 14:27:39.315 [main] LoggerLoad - The given code is Valid :
+[INFO ] 2025-04-30 14:27:39.406 [main] LoggerLoad - Run button clicked
+[INFO ] 2025-04-30 14:27:39.412 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tryEditor
+[INFO ] 2025-04-30 14:27:39.648 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 14:27:39.657 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 14:27:40.810 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 14:27:41.372 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 14:27:41.373 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 14:27:42.643 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 14:27:42.698 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 14:27:42.984 [main] LoggerLoad - Binary Trees Link clicked
+[INFO ] 2025-04-30 14:27:43.523 [main] LoggerLoad - Try here button clicked
+[INFO ] 2025-04-30 14:27:43.785 [main] LoggerLoad - The code is Invalid
+[INFO ] 2025-04-30 14:27:43.869 [main] LoggerLoad - Run button clicked
+[INFO ] 2025-04-30 14:27:43.877 [main] LoggerLoad - Alert message: SyntaxError: bad input on line 1
+[INFO ] 2025-04-30 14:27:43.888 [main] LoggerLoad - Alert message:SyntaxError: bad input on line 1
+[INFO ] 2025-04-30 14:27:43.903 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tryEditor
+[INFO ] 2025-04-30 14:27:44.134 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 14:27:44.142 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 14:27:45.301 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 14:27:45.885 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 14:27:45.885 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 14:27:47.261 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 14:27:47.297 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 14:27:47.579 [main] LoggerLoad - Binary Trees Link clicked
+[INFO ] 2025-04-30 14:27:47.916 [main] LoggerLoad - Practice Questions Link clicked
+[INFO ] 2025-04-30 14:27:47.924 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tree/practice
+[INFO ] 2025-04-30 14:27:48.144 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 15:08:11.440 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 15:08:13.260 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 15:08:13.894 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 15:08:13.898 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 15:08:15.132 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 15:08:15.184 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 15:08:15.434 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 15:08:15.472 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 15:08:16.706 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 15:08:17.114 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 15:08:17.118 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 15:08:18.902 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 15:08:18.940 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 15:08:19.147 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 15:08:19.172 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 15:08:20.360 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 15:08:20.968 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 15:08:20.969 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 15:08:22.180 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 15:08:22.232 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 15:08:22.431 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 15:08:22.448 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 15:08:23.650 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 15:08:24.214 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 15:08:24.215 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 15:08:25.413 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 15:08:25.464 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 15:08:25.671 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 15:08:25.685 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 15:08:26.879 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 15:08:27.472 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 15:08:27.474 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 15:08:28.750 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 15:08:28.799 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 15:08:29.005 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 15:08:29.019 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 15:08:30.203 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 15:08:30.795 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 15:08:30.796 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 15:08:32.042 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 15:08:32.084 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 15:08:32.303 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 15:11:37.389 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 15:11:39.160 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 15:11:39.776 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 15:11:39.784 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 15:11:41.352 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 15:11:41.412 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 15:11:41.421 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 15:11:41.878 [main] LoggerLoad - Types of BinaryTrees Link clicked
+[INFO ] 2025-04-30 15:11:41.886 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tree/types-of-binary-trees/
+[INFO ] 2025-04-30 15:11:42.157 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 15:11:42.185 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 15:11:43.369 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 15:11:43.932 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 15:11:43.933 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 15:11:45.255 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 15:11:45.315 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 15:11:45.722 [main] LoggerLoad - Types of BinaryTrees Link clicked
+[INFO ] 2025-04-30 15:11:46.262 [main] LoggerLoad - Try here button clicked
+[INFO ] 2025-04-30 15:11:46.274 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tryEditor
+[INFO ] 2025-04-30 15:11:46.506 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 15:11:46.523 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 15:11:47.688 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 15:11:48.253 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 15:11:48.254 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 15:11:49.469 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 15:11:49.511 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 15:11:50.373 [main] LoggerLoad - Types of BinaryTrees Link clicked
+[INFO ] 2025-04-30 15:11:51.329 [main] LoggerLoad - Try here button clicked
+[INFO ] 2025-04-30 15:11:51.432 [main] LoggerLoad - Run button clicked
+[INFO ] 2025-04-30 15:11:51.438 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tryEditor
+[INFO ] 2025-04-30 15:11:51.663 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 15:11:51.677 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 15:11:52.890 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 15:11:53.538 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 15:11:53.539 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 15:11:55.050 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 15:11:55.086 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 15:11:55.505 [main] LoggerLoad - Types of BinaryTrees Link clicked
+[INFO ] 2025-04-30 15:11:56.109 [main] LoggerLoad - Try here button clicked
+[INFO ] 2025-04-30 15:11:56.138 [main] LoggerLoad - The given code is Valid :
+[INFO ] 2025-04-30 15:11:56.228 [main] LoggerLoad - Run button clicked
+[INFO ] 2025-04-30 15:11:56.235 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tryEditor
+[INFO ] 2025-04-30 15:11:56.473 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 15:11:56.486 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 15:11:57.630 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 15:11:58.259 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 15:11:58.260 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 15:11:59.484 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 15:11:59.519 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 15:11:59.876 [main] LoggerLoad - Types of BinaryTrees Link clicked
+[INFO ] 2025-04-30 15:12:01.284 [main] LoggerLoad - Try here button clicked
+[INFO ] 2025-04-30 15:12:01.529 [main] LoggerLoad - The code is Invalid
+[INFO ] 2025-04-30 15:12:01.616 [main] LoggerLoad - Run button clicked
+[INFO ] 2025-04-30 15:12:01.623 [main] LoggerLoad - Alert message: SyntaxError: bad input on line 1
+[INFO ] 2025-04-30 15:12:01.648 [main] LoggerLoad - Alert message:SyntaxError: bad input on line 1
+[INFO ] 2025-04-30 15:12:01.660 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tryEditor
+[INFO ] 2025-04-30 15:12:01.881 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 15:12:01.892 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 15:12:03.039 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 15:12:03.641 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 15:12:03.641 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 15:12:04.994 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 15:12:05.043 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 15:12:05.478 [main] LoggerLoad - Types of BinaryTrees Link clicked
+[INFO ] 2025-04-30 15:12:05.742 [main] LoggerLoad - Practice Questions Link clicked
+[INFO ] 2025-04-30 15:12:05.755 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tree/practice
+[INFO ] 2025-04-30 15:12:05.964 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 15:13:20.617 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 15:13:22.481 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 15:13:23.111 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 15:13:23.115 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 15:13:24.428 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 15:13:24.466 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 15:13:24.711 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 15:13:24.736 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 15:13:25.923 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 15:13:26.514 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 15:13:26.515 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 15:13:27.797 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 15:13:27.848 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 15:13:28.037 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 15:13:28.061 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 15:13:29.248 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 15:13:29.812 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 15:13:29.813 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 15:13:31.271 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 15:13:31.322 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 15:13:31.544 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 15:13:31.559 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 15:13:32.760 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 15:13:33.431 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 15:13:33.432 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 15:13:34.634 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 15:13:34.677 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 15:13:34.872 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 15:13:34.889 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 15:13:36.105 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 15:13:36.717 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 15:13:36.718 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 15:13:37.961 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 15:13:38.000 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 15:13:38.206 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 15:13:38.218 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 15:13:39.441 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 15:13:40.038 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 15:13:40.039 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 15:13:41.313 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 15:13:41.357 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 15:13:41.539 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 15:16:49.491 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 15:16:51.232 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 15:16:51.869 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 15:16:51.877 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 15:16:53.127 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 15:16:53.166 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 15:16:53.173 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 15:16:53.491 [main] LoggerLoad - Implementation in Python Link clicked
+[INFO ] 2025-04-30 15:16:53.514 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tree/implementation-in-python/
+[INFO ] 2025-04-30 15:16:53.742 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 15:16:53.766 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 15:16:54.939 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 15:16:55.562 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 15:16:55.564 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 15:16:56.851 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 15:16:56.887 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 15:16:57.162 [main] LoggerLoad - Implementation in Python Link clicked
+[INFO ] 2025-04-30 15:16:57.728 [main] LoggerLoad - Try here button clicked
+[INFO ] 2025-04-30 15:16:57.742 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tryEditor
+[INFO ] 2025-04-30 15:16:57.981 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 15:16:58.004 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 15:16:59.214 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 15:16:59.788 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 15:16:59.789 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 15:17:01.081 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 15:17:01.116 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 15:17:01.392 [main] LoggerLoad - Implementation in Python Link clicked
+[INFO ] 2025-04-30 15:17:01.938 [main] LoggerLoad - Try here button clicked
+[INFO ] 2025-04-30 15:17:02.036 [main] LoggerLoad - Run button clicked
+[INFO ] 2025-04-30 15:17:02.045 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tryEditor
+[INFO ] 2025-04-30 15:17:02.290 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 15:17:02.305 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 15:17:03.493 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 15:17:04.095 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 15:17:04.096 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 15:17:05.372 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 15:17:05.431 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 15:17:05.732 [main] LoggerLoad - Implementation in Python Link clicked
+[INFO ] 2025-04-30 15:17:06.290 [main] LoggerLoad - Try here button clicked
+[INFO ] 2025-04-30 15:17:06.321 [main] LoggerLoad - The given code is Valid :
+[INFO ] 2025-04-30 15:17:06.409 [main] LoggerLoad - Run button clicked
+[INFO ] 2025-04-30 15:17:06.415 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tryEditor
+[INFO ] 2025-04-30 15:17:06.640 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 15:17:06.652 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 15:17:07.851 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 15:17:08.435 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 15:17:08.435 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 15:17:09.805 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 15:17:09.845 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 15:17:10.127 [main] LoggerLoad - Implementation in Python Link clicked
+[INFO ] 2025-04-30 15:17:10.672 [main] LoggerLoad - Try here button clicked
+[INFO ] 2025-04-30 15:17:10.933 [main] LoggerLoad - The code is Invalid
+[INFO ] 2025-04-30 15:17:11.017 [main] LoggerLoad - Run button clicked
+[INFO ] 2025-04-30 15:17:11.025 [main] LoggerLoad - Alert message: SyntaxError: bad input on line 1
+[INFO ] 2025-04-30 15:17:11.035 [main] LoggerLoad - Alert message:SyntaxError: bad input on line 1
+[INFO ] 2025-04-30 15:17:11.051 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tryEditor
+[INFO ] 2025-04-30 15:17:11.281 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 15:17:11.290 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 15:17:12.424 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 15:17:13.009 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 15:17:13.011 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 15:17:14.198 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 15:17:14.231 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 15:17:14.581 [main] LoggerLoad - Implementation in Python Link clicked
+[INFO ] 2025-04-30 15:17:14.872 [main] LoggerLoad - Practice Questions Link clicked
+[INFO ] 2025-04-30 15:17:14.893 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tree/practice
+[INFO ] 2025-04-30 15:17:15.132 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 15:18:15.344 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 15:18:17.098 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 15:18:17.674 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 15:18:17.677 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 15:18:18.968 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 15:18:19.007 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 15:18:19.217 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 15:18:19.248 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 15:18:20.431 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 15:18:21.012 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 15:18:21.013 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 15:18:22.333 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 15:18:22.372 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 15:18:22.593 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 15:18:22.612 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 15:18:23.695 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 15:18:24.313 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 15:18:24.314 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 15:18:25.569 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 15:18:25.605 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 15:18:25.814 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 15:18:25.831 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 15:18:27.024 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 15:18:27.623 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 15:18:27.624 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 15:18:28.927 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 15:18:28.963 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 15:18:29.167 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 15:18:29.178 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 15:18:30.369 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 15:18:30.948 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 15:18:30.950 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 15:18:32.243 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 15:18:32.291 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 15:18:32.512 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 15:18:32.524 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 15:18:33.678 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 15:18:34.255 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 15:18:34.256 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 15:18:35.482 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 15:18:35.522 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 15:18:35.749 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 15:22:33.838 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 15:22:35.637 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 15:22:36.283 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 15:22:36.286 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 15:22:37.629 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 15:22:37.663 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 15:22:37.896 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 15:22:37.924 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 15:22:39.093 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 15:22:39.727 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 15:22:39.728 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 15:22:41.084 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 15:22:41.133 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 15:22:41.344 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 15:22:41.366 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 15:22:42.534 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 15:22:43.114 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 15:22:43.116 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 15:22:44.379 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 15:22:44.426 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 15:22:44.613 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 15:22:44.634 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 15:22:45.788 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 15:22:46.375 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 15:22:46.376 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 15:22:47.665 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 15:22:47.704 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 15:22:47.917 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 15:22:47.931 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 15:22:49.042 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 15:22:49.600 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 15:22:49.602 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 15:22:51.131 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 15:22:51.161 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 15:22:51.373 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 15:22:51.384 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 15:22:52.562 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 15:22:53.183 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 15:22:53.184 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 15:22:54.423 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 15:22:54.473 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 15:22:54.699 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 15:42:29.047 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 15:42:31.489 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 15:42:32.237 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 15:42:32.243 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 15:42:33.547 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 15:42:33.587 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 15:42:33.596 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 15:42:33.932 [main] LoggerLoad - Implementation Of Binary Trees Link clicked
+[INFO ] 2025-04-30 15:42:33.941 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tree/implementation-of-binary-trees/
+[INFO ] 2025-04-30 15:42:34.214 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 15:42:34.241 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 15:42:35.436 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 15:42:36.072 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 15:42:36.073 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 15:42:37.606 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 15:42:37.651 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 15:42:38.081 [main] LoggerLoad - Implementation Of Binary Trees Link clicked
+[INFO ] 2025-04-30 15:42:38.729 [main] LoggerLoad - Try here button clicked
+[INFO ] 2025-04-30 15:42:38.741 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tryEditor
+[INFO ] 2025-04-30 15:42:38.977 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 15:42:39.005 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 15:42:40.181 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 15:42:40.825 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 15:42:40.826 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 15:42:42.251 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 15:42:42.287 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 15:42:42.563 [main] LoggerLoad - Implementation Of Binary Trees Link clicked
+[INFO ] 2025-04-30 15:42:43.139 [main] LoggerLoad - Try here button clicked
+[INFO ] 2025-04-30 15:42:43.248 [main] LoggerLoad - Run button clicked
+[INFO ] 2025-04-30 15:42:43.256 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tryEditor
+[INFO ] 2025-04-30 15:42:43.475 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 15:42:43.487 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 15:42:44.731 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 15:42:45.321 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 15:42:45.323 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 15:42:46.680 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 15:42:46.716 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 15:42:47.048 [main] LoggerLoad - Implementation Of Binary Trees Link clicked
+[INFO ] 2025-04-30 15:42:47.652 [main] LoggerLoad - Try here button clicked
+[INFO ] 2025-04-30 15:42:47.678 [main] LoggerLoad - The given code is Valid :
+[INFO ] 2025-04-30 15:42:47.788 [main] LoggerLoad - Run button clicked
+[INFO ] 2025-04-30 15:42:47.794 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tryEditor
+[INFO ] 2025-04-30 15:42:48.025 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 15:42:48.033 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 15:42:49.265 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 15:42:49.850 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 15:42:49.851 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 15:42:51.163 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 15:42:51.213 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 15:42:51.518 [main] LoggerLoad - Implementation Of Binary Trees Link clicked
+[INFO ] 2025-04-30 15:42:52.093 [main] LoggerLoad - Try here button clicked
+[INFO ] 2025-04-30 15:42:52.362 [main] LoggerLoad - The code is Invalid
+[INFO ] 2025-04-30 15:42:52.461 [main] LoggerLoad - Run button clicked
+[INFO ] 2025-04-30 15:42:52.468 [main] LoggerLoad - Alert message: SyntaxError: bad input on line 1
+[INFO ] 2025-04-30 15:42:52.475 [main] LoggerLoad - Alert message:SyntaxError: bad input on line 1
+[INFO ] 2025-04-30 15:42:52.483 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tryEditor
+[INFO ] 2025-04-30 15:42:52.721 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 15:42:52.741 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 15:42:53.914 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 15:42:54.489 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 15:42:54.490 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 15:42:55.816 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 15:42:55.866 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 15:42:56.149 [main] LoggerLoad - Implementation Of Binary Trees Link clicked
+[INFO ] 2025-04-30 15:42:56.450 [main] LoggerLoad - Practice Questions Link clicked
+[INFO ] 2025-04-30 15:42:56.476 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tree/practice
+[INFO ] 2025-04-30 15:42:56.668 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 15:43:40.493 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 15:43:42.297 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 15:43:42.942 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 15:43:42.946 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 15:43:44.224 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 15:43:44.283 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 15:43:44.514 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 15:43:44.551 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 15:43:45.723 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 15:43:46.355 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 15:43:46.356 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 15:43:47.650 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 15:43:47.684 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 15:43:47.873 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 15:43:47.894 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 15:43:49.096 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 15:43:49.747 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 15:43:49.749 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 15:43:51.136 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 15:43:51.171 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 15:43:51.378 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 15:43:51.400 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 15:43:52.629 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 15:43:53.232 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 15:43:53.234 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 15:43:54.603 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 15:43:54.664 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 15:43:54.862 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 15:43:54.876 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 15:43:56.066 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 15:43:56.689 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 15:43:56.692 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 15:43:58.195 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 15:43:58.372 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 15:43:58.650 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 15:43:58.674 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 15:44:00.089 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 15:44:00.693 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 15:44:00.694 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 15:44:02.087 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 15:44:02.123 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 15:44:02.343 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 15:47:09.780 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 15:47:11.728 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 15:47:12.381 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 15:47:12.387 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 15:47:13.643 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 15:47:13.682 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 15:47:13.691 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 15:47:13.978 [main] LoggerLoad - Application Of Binarytrees Link clicked
+[INFO ] 2025-04-30 15:47:14.000 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tree/applications-of-binary-trees/
+[INFO ] 2025-04-30 15:47:14.242 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 15:47:14.268 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 15:47:15.479 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 15:47:16.066 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 15:47:16.067 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 15:47:17.442 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 15:47:17.479 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 15:47:17.771 [main] LoggerLoad - Application Of Binarytrees Link clicked
+[INFO ] 2025-04-30 15:47:18.345 [main] LoggerLoad - Try here button clicked
+[INFO ] 2025-04-30 15:47:18.358 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tryEditor
+[INFO ] 2025-04-30 15:47:18.560 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 15:47:18.579 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 15:47:19.797 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 15:47:20.078 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 15:47:20.079 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 15:47:21.672 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 15:47:21.731 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 15:47:22.057 [main] LoggerLoad - Application Of Binarytrees Link clicked
+[INFO ] 2025-04-30 15:47:22.642 [main] LoggerLoad - Try here button clicked
+[INFO ] 2025-04-30 15:47:22.787 [main] LoggerLoad - Run button clicked
+[INFO ] 2025-04-30 15:47:22.798 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tryEditor
+[INFO ] 2025-04-30 15:47:23.011 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 15:47:23.031 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 15:47:24.215 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 15:47:24.812 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 15:47:24.813 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 15:47:26.224 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 15:47:26.258 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 15:47:26.639 [main] LoggerLoad - Application Of Binarytrees Link clicked
+[INFO ] 2025-04-30 15:47:27.210 [main] LoggerLoad - Try here button clicked
+[INFO ] 2025-04-30 15:47:27.244 [main] LoggerLoad - The given code is Valid :
+[INFO ] 2025-04-30 15:47:27.339 [main] LoggerLoad - Run button clicked
+[INFO ] 2025-04-30 15:47:27.347 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tryEditor
+[INFO ] 2025-04-30 15:47:27.587 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 15:47:27.611 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 15:47:28.787 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 15:47:29.300 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 15:47:29.301 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 15:47:30.591 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 15:47:30.638 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 15:47:30.921 [main] LoggerLoad - Application Of Binarytrees Link clicked
+[INFO ] 2025-04-30 15:47:31.471 [main] LoggerLoad - Try here button clicked
+[INFO ] 2025-04-30 15:47:31.724 [main] LoggerLoad - The code is Invalid
+[INFO ] 2025-04-30 15:47:31.806 [main] LoggerLoad - Run button clicked
+[INFO ] 2025-04-30 15:47:31.812 [main] LoggerLoad - Alert message: SyntaxError: bad input on line 1
+[INFO ] 2025-04-30 15:47:31.821 [main] LoggerLoad - Alert message:SyntaxError: bad input on line 1
+[INFO ] 2025-04-30 15:47:31.832 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tryEditor
+[INFO ] 2025-04-30 15:47:32.051 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 15:47:32.062 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 15:47:33.189 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 15:47:33.803 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 15:47:33.804 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 15:47:35.133 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 15:47:35.166 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 15:47:35.448 [main] LoggerLoad - Application Of Binarytrees Link clicked
+[INFO ] 2025-04-30 15:47:35.689 [main] LoggerLoad - Practice Questions Link clicked
+[INFO ] 2025-04-30 15:47:35.708 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tree/practice
+[INFO ] 2025-04-30 15:47:35.934 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 15:48:20.900 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 15:48:22.656 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 15:48:23.413 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 15:48:23.418 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 15:48:24.818 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 15:48:24.878 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 15:48:25.091 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 15:48:25.139 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 15:48:26.376 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 15:48:27.279 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 15:48:27.280 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 15:48:28.651 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 15:48:28.698 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 15:48:28.913 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 15:48:28.934 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 15:48:30.146 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 15:48:30.760 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 15:48:30.761 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 15:48:32.150 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 15:48:32.211 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 15:48:32.422 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 15:48:32.444 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 15:48:33.647 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 15:48:34.236 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 15:48:34.237 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 15:48:35.506 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 15:48:35.544 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 15:48:35.727 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 15:48:35.744 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 15:48:36.984 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 15:48:37.580 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 15:48:37.581 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 15:48:38.894 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 15:48:38.944 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 15:48:39.151 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 15:48:39.162 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 15:48:40.385 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 15:48:41.021 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 15:48:41.022 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 15:48:42.403 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 15:48:42.455 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 15:48:42.648 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 15:52:33.718 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 15:52:35.525 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 15:52:36.146 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 15:52:36.151 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 15:52:37.572 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 15:52:37.635 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 15:52:37.644 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 15:52:38.446 [main] LoggerLoad - Binary Search Trees Link clicked
+[INFO ] 2025-04-30 15:52:38.457 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tree/binary-search-trees/
+[INFO ] 2025-04-30 15:52:38.703 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 15:52:38.739 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 15:52:39.983 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 15:52:40.579 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 15:52:40.580 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 15:52:41.949 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 15:52:41.995 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 15:52:42.557 [main] LoggerLoad - Binary Search Trees Link clicked
+[INFO ] 2025-04-30 15:52:43.134 [main] LoggerLoad - Try here button clicked
+[INFO ] 2025-04-30 15:52:43.146 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tryEditor
+[INFO ] 2025-04-30 15:52:43.377 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 15:52:43.395 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 15:52:44.570 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 15:52:45.184 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 15:52:45.186 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 15:52:46.476 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 15:52:46.521 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 15:52:47.126 [main] LoggerLoad - Binary Search Trees Link clicked
+[INFO ] 2025-04-30 15:52:47.932 [main] LoggerLoad - Try here button clicked
+[INFO ] 2025-04-30 15:52:48.037 [main] LoggerLoad - Run button clicked
+[INFO ] 2025-04-30 15:52:48.043 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tryEditor
+[INFO ] 2025-04-30 15:52:48.250 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 15:52:48.270 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 15:52:49.434 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 15:52:50.019 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 15:52:50.021 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 15:52:51.373 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 15:52:51.412 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 15:52:51.836 [main] LoggerLoad - Binary Search Trees Link clicked
+[INFO ] 2025-04-30 15:52:52.384 [main] LoggerLoad - Try here button clicked
+[INFO ] 2025-04-30 15:52:52.415 [main] LoggerLoad - The given code is Valid :
+[INFO ] 2025-04-30 15:52:52.500 [main] LoggerLoad - Run button clicked
+[INFO ] 2025-04-30 15:52:52.507 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tryEditor
+[INFO ] 2025-04-30 15:52:52.723 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 15:52:52.735 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 15:52:53.872 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 15:52:55.236 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 15:52:55.238 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 15:52:56.561 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 15:52:56.596 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 15:52:57.057 [main] LoggerLoad - Binary Search Trees Link clicked
+[INFO ] 2025-04-30 15:52:57.605 [main] LoggerLoad - Try here button clicked
+[INFO ] 2025-04-30 15:52:57.864 [main] LoggerLoad - The code is Invalid
+[INFO ] 2025-04-30 15:52:57.948 [main] LoggerLoad - Run button clicked
+[INFO ] 2025-04-30 15:52:57.955 [main] LoggerLoad - Alert message: SyntaxError: bad input on line 1
+[INFO ] 2025-04-30 15:52:57.963 [main] LoggerLoad - Alert message:SyntaxError: bad input on line 1
+[INFO ] 2025-04-30 15:52:57.976 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tryEditor
+[INFO ] 2025-04-30 15:52:58.218 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 15:52:58.230 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 15:52:59.435 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 15:53:00.115 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 15:53:00.116 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 15:53:01.483 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 15:53:01.526 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 15:53:02.106 [main] LoggerLoad - Binary Search Trees Link clicked
+[INFO ] 2025-04-30 15:53:02.363 [main] LoggerLoad - Practice Questions Link clicked
+[INFO ] 2025-04-30 15:53:02.373 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tree/practice
+[INFO ] 2025-04-30 15:53:02.595 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 15:53:21.750 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 15:53:23.481 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 15:53:24.135 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 15:53:24.139 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 15:53:25.396 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 15:53:25.433 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 15:53:25.647 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 15:53:25.678 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 15:53:26.836 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 15:53:27.409 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 15:53:27.411 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 15:53:28.643 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 15:53:28.681 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 15:53:28.884 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 15:53:28.904 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 15:53:30.077 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 15:53:30.663 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 15:53:30.664 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 15:53:31.959 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 15:53:32.015 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 15:53:32.245 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 15:53:32.267 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 15:53:33.456 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 15:53:34.037 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 15:53:34.039 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 15:53:35.379 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 15:53:35.412 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 15:53:35.628 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 15:53:35.642 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 15:53:36.829 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 15:53:37.430 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 15:53:37.431 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 15:53:38.681 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 15:53:38.717 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 15:53:38.934 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 15:53:38.944 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 15:53:40.096 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 15:53:40.653 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 15:53:40.654 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 15:53:41.922 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 15:53:41.997 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 15:53:42.190 [main] LoggerLoad - Browser closed successfully.

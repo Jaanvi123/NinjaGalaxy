@@ -9,7 +9,6 @@ import utils.ConfigReader;
 public class RegisterPageObj {
 
 	WebDriver driver = DriverFactory.getDriver();  
- //   private String baseUrl = "https://dsportalapp.herokuapp.com/register";  // Define URL explicitly
 	public String baseUrl =ConfigReader.getUrl();
 	private By Registerlink = By.xpath("//a[text()=' Register ']");
     private By userName = By.xpath("//input[@name='username']");
@@ -31,7 +30,6 @@ public class RegisterPageObj {
 
     public void verifyErrorMessage(String expectedMessage) {
         String actualMessage = driver.findElement(errorMsg).getText();
-        System.out.println(actualMessage);
         assertEquals(actualMessage, expectedMessage);
     }
 
