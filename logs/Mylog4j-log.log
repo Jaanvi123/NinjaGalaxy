@@ -1519,3 +1519,1206 @@
 [INFO ] 2025-04-30 15:53:41.922 [main] LoggerLoad - Tree Get Started Button clicked
 [INFO ] 2025-04-30 15:53:41.997 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
 [INFO ] 2025-04-30 15:53:42.190 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 16:42:12.793 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 16:42:14.575 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 16:42:15.223 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 16:42:15.227 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 16:42:16.525 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 16:42:16.566 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 16:42:16.576 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 16:42:16.885 [main] LoggerLoad - Overview of trees Link clicked
+[INFO ] 2025-04-30 16:42:17.207 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 16:54:14.607 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 16:54:16.664 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 16:54:17.355 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 16:54:17.360 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 16:54:18.592 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 16:54:18.648 [main] LoggerLoad - Tree Page title : https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 16:54:18.664 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 16:54:19.022 [main] LoggerLoad - Overview of trees Link clicked
+[INFO ] 2025-04-30 16:54:19.316 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 16:55:37.544 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 16:55:39.293 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 16:55:39.903 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 16:55:39.907 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 16:55:41.273 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 16:55:41.295 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tree/
+[INFO ] 2025-04-30 16:55:41.578 [main] LoggerLoad - Overview of trees Link clicked
+[INFO ] 2025-04-30 16:55:41.880 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 16:56:48.313 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 16:56:50.115 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 16:56:50.757 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 16:56:50.761 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-04-30 16:56:51.987 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-04-30 16:56:52.289 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 17:01:42.586 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 17:01:44.373 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 17:01:45.324 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 17:09:30.421 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 17:09:32.144 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 17:09:32.722 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 17:10:35.272 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 17:10:37.043 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 17:10:37.698 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 17:10:48.038 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 17:11:46.861 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 17:11:48.567 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 17:11:49.199 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 17:11:56.065 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 17:13:45.742 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 17:13:47.464 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 17:13:48.115 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 17:13:53.644 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 17:16:57.329 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 17:16:59.079 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 17:16:59.732 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 17:17:10.031 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 18:43:43.442 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 18:43:45.535 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 18:43:46.208 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 18:43:56.554 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 18:44:21.860 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 18:44:23.570 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 18:44:24.398 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 18:44:24.644 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-04-30 18:44:25.923 [main] LoggerLoad - Error Message is: Invalid Username and Password
+[INFO ] 2025-04-30 18:44:26.153 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 18:45:55.209 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 18:45:57.122 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 18:45:57.769 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 18:45:57.994 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-04-30 18:45:59.182 [main] LoggerLoad - Error Message is: Invalid Username and Password
+[INFO ] 2025-04-30 18:45:59.469 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 18:48:57.387 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 18:48:59.125 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 18:48:59.820 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 18:49:00.056 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-04-30 18:49:00.293 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 18:55:04.048 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 18:55:05.762 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 18:55:06.376 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 18:55:06.666 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 18:55:47.937 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 18:55:49.698 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 18:55:50.292 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 18:55:50.524 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-04-30 18:55:50.526 [main] LoggerLoad - Inside enterLoginFormFields
+[INFO ] 2025-04-30 18:55:51.160 [main] LoggerLoad - logintestdata
+[INFO ] 2025-04-30 18:55:51.252 [main] LoggerLoad - Fetched username from Excel: Ninja_Galaxy
+[INFO ] 2025-04-30 18:55:51.253 [main] LoggerLoad - Fetched password from Excel: querty@1
+[INFO ] 2025-04-30 18:55:51.355 [main] LoggerLoad - Read from Excel sheet
+[INFO ] 2025-04-30 18:55:52.069 [main] LoggerLoad - Error Message is: You are logged in
+[INFO ] 2025-04-30 18:55:52.315 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 18:57:56.792 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 18:57:58.624 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 18:57:59.276 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 18:57:59.483 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-04-30 18:57:59.485 [main] LoggerLoad - Inside enterLoginFormFields
+[INFO ] 2025-04-30 18:58:00.151 [main] LoggerLoad - logintestdata
+[INFO ] 2025-04-30 18:58:00.244 [main] LoggerLoad - Fetched username from Excel: Ninja_Galaxy
+[INFO ] 2025-04-30 18:58:00.245 [main] LoggerLoad - Fetched password from Excel: querty@1
+[INFO ] 2025-04-30 18:58:00.344 [main] LoggerLoad - Read from Excel sheet
+[INFO ] 2025-04-30 18:58:00.996 [main] LoggerLoad - Error Message is: You are logged in
+[INFO ] 2025-04-30 18:58:01.235 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 18:59:27.857 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 18:59:29.553 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 18:59:30.167 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 18:59:30.390 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-04-30 18:59:30.393 [main] LoggerLoad - Inside enterLoginFormFields
+[INFO ] 2025-04-30 18:59:31.026 [main] LoggerLoad - logintestdata
+[INFO ] 2025-04-30 18:59:31.121 [main] LoggerLoad - Fetched username from Excel: User!#
+[INFO ] 2025-04-30 18:59:31.122 [main] LoggerLoad - Fetched password from Excel: querty@1
+[INFO ] 2025-04-30 18:59:31.226 [main] LoggerLoad - Read from Excel sheet
+[INFO ] 2025-04-30 18:59:32.001 [main] LoggerLoad - Error Message is: You are logged in
+[INFO ] 2025-04-30 18:59:32.211 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 19:06:05.086 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 19:06:06.780 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 19:06:07.404 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 19:06:07.642 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-04-30 19:06:07.644 [main] LoggerLoad - Inside enterLoginFormFields
+[INFO ] 2025-04-30 19:06:08.296 [main] LoggerLoad - logintestdata
+[INFO ] 2025-04-30 19:06:08.594 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 19:08:06.104 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 19:08:07.817 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 19:08:08.473 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-04-30 19:08:08.709 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-04-30 19:08:08.712 [main] LoggerLoad - Inside enterLoginFormFields
+[INFO ] 2025-04-30 19:08:09.425 [main] LoggerLoad - logintestdata
+[INFO ] 2025-04-30 19:08:09.508 [main] LoggerLoad - Fetched username from Excel: User!#
+[INFO ] 2025-04-30 19:08:09.621 [main] LoggerLoad - Fetched password from Excel: querty@1
+[INFO ] 2025-04-30 19:08:09.621 [main] LoggerLoad - Read from Excel sheet
+[INFO ] 2025-04-30 19:08:09.955 [main] LoggerLoad - Error Message is: Invalid Username and Password
+[INFO ] 2025-04-30 19:08:10.183 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 19:16:54.119 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 19:16:55.894 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 19:16:56.440 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-04-30 19:33:11.554 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-04-30 19:33:13.443 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-04-30 19:33:13.906 [main] LoggerLoad - Inside openURL
+[INFO ] 2025-04-30 19:33:14.626 [main] LoggerLoad - User is on Data Structure Introduction Page and clicking on the Arrow
+[INFO ] 2025-04-30 19:33:14.885 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-01 18:37:15.520 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-01 18:37:18.248 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-01 18:37:18.746 [main] LoggerLoad - Inside openURL
+[INFO ] 2025-05-01 18:37:19.482 [main] LoggerLoad - User is on Data Structure Introduction Page and clicking on the Arrow
+[INFO ] 2025-05-01 18:37:19.767 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-01 18:37:19.811 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-01 18:37:21.165 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-01 18:37:21.616 [main] LoggerLoad - Inside openURL
+[INFO ] 2025-05-01 18:37:22.601 [main] LoggerLoad - Array Dropdown selected
+[INFO ] 2025-05-01 18:37:22.653 [main] LoggerLoad - You are not logged in
+[INFO ] 2025-05-01 18:37:22.865 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-01 18:37:22.894 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-01 18:37:24.066 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-01 18:37:24.517 [main] LoggerLoad - Inside openURL
+[INFO ] 2025-05-01 18:37:25.647 [main] LoggerLoad - LinkedList Dropdown selected
+[INFO ] 2025-05-01 18:37:25.689 [main] LoggerLoad - You are not logged in
+[INFO ] 2025-05-01 18:37:25.937 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-01 18:37:25.962 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-01 18:37:27.233 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-01 18:37:27.724 [main] LoggerLoad - Inside openURL
+[INFO ] 2025-05-01 18:37:28.849 [main] LoggerLoad - Stack Dropdown selected
+[INFO ] 2025-05-01 18:37:28.887 [main] LoggerLoad - You are not logged in
+[INFO ] 2025-05-01 18:37:29.118 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-01 18:37:29.130 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-02 16:31:17.409 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-02 16:31:19.902 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-02 16:31:20.524 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-05-02 16:31:20.541 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-05-02 16:31:20.750 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-02 16:31:21.713 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-05-02 16:31:22.001 [main] LoggerLoad - Overview of trees Link clicked
+[INFO ] 2025-05-02 16:31:22.001 [main] LoggerLoad - Time Complexity Link Clicked
+[INFO ] 2025-05-02 16:31:22.002 [main] LoggerLoad - The user is on tryEditor page
+[INFO ] 2025-05-02 16:31:22.666 [main] LoggerLoad - Clicked the Try Here button.
+[INFO ] 2025-05-02 16:31:22.667 [main] LoggerLoad - Try Here Button Clicked
+[INFO ] 2025-05-02 16:31:22.669 [main] LoggerLoad - Reading code from Excel sheet: tryEditorCode, Row: 1
+[INFO ] 2025-05-02 16:31:23.374 [main] LoggerLoad - Fetched code from Excel: This is a test message !
+[INFO ] 2025-05-02 16:31:23.374 [main] LoggerLoad - Setting code in CodeMirror editor...
+[INFO ] 2025-05-02 16:31:23.526 [main] LoggerLoad - Clicked the Run button.
+[INFO ] 2025-05-02 16:31:23.551 [main] LoggerLoad - Alert message: SyntaxError: bad input on line 1
+[INFO ] 2025-05-02 16:31:23.953 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-02 16:31:23.984 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-02 16:31:25.105 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-02 16:31:25.814 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-05-02 16:31:25.815 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-05-02 16:31:26.022 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-02 16:31:27.020 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-05-02 16:31:27.323 [main] LoggerLoad - Overview of trees Link clicked
+[INFO ] 2025-05-02 16:31:27.324 [main] LoggerLoad - Time Complexity Link Clicked
+[INFO ] 2025-05-02 16:31:28.025 [main] LoggerLoad - Clicked the Try Here button.
+[INFO ] 2025-05-02 16:31:28.025 [main] LoggerLoad - Try Here Button Clicked
+[INFO ] 2025-05-02 16:31:28.026 [main] LoggerLoad - Reading code from Excel sheet: tryEditorCode, Row: 0
+[INFO ] 2025-05-02 16:31:28.073 [main] LoggerLoad - Fetched code from Excel: print('Python is fun!');
+[INFO ] 2025-05-02 16:31:28.073 [main] LoggerLoad - Setting code in CodeMirror editor...
+[INFO ] 2025-05-02 16:31:28.173 [main] LoggerLoad - Clicked the Run button.
+[WARN ] 2025-05-02 16:31:28.181 [main] LoggerLoad - No alert was present to get text from.
+[INFO ] 2025-05-02 16:31:28.182 [main] LoggerLoad - Console output: null
+[INFO ] 2025-05-02 16:31:28.454 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-02 17:19:37.654 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-02 17:19:39.416 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-02 17:19:40.026 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-05-02 17:19:40.037 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-05-02 17:19:40.249 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-02 17:19:41.376 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-05-02 17:19:41.680 [main] LoggerLoad - Overview of trees Link clicked
+[INFO ] 2025-05-02 17:19:42.390 [main] LoggerLoad - Clicked the Try Here button.
+[INFO ] 2025-05-02 17:19:42.484 [main] LoggerLoad - Run button clicked
+[INFO ] 2025-05-02 17:19:42.492 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tryEditor
+[INFO ] 2025-05-02 17:19:42.730 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-02 17:19:42.803 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-02 17:19:43.870 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-02 17:19:44.398 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-05-02 17:19:44.399 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-05-02 17:19:44.626 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-02 17:19:45.613 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-05-02 17:19:45.913 [main] LoggerLoad - Overview of trees Link clicked
+[INFO ] 2025-05-02 17:19:46.425 [main] LoggerLoad - Try here button clicked
+[INFO ] 2025-05-02 17:19:46.659 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-02 17:19:46.684 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-02 17:19:47.864 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-02 17:19:48.461 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-05-02 17:19:48.462 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-05-02 17:19:48.683 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-02 17:19:49.698 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-05-02 17:19:49.994 [main] LoggerLoad - Overview of trees Link clicked
+[INFO ] 2025-05-02 17:19:49.994 [main] LoggerLoad - Time Complexity Link Clicked
+[INFO ] 2025-05-02 17:19:50.719 [main] LoggerLoad - Clicked the Try Here button.
+[INFO ] 2025-05-02 17:19:50.720 [main] LoggerLoad - Try Here Button Clicked
+[INFO ] 2025-05-02 17:19:50.938 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-02 17:44:15.252 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-02 17:44:17.281 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-02 17:44:17.966 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-05-02 17:44:17.977 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-05-02 17:44:18.188 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-02 17:44:19.173 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-05-02 17:44:19.489 [main] LoggerLoad - Overview of trees Link clicked
+[INFO ] 2025-05-02 17:44:20.087 [main] LoggerLoad - Try here button clicked
+[INFO ] 2025-05-02 17:44:20.090 [main] LoggerLoad - Reading code from Excel sheet: <Sheetname>, Row: 1
+[INFO ] 2025-05-02 17:44:20.683 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tryEditor
+[INFO ] 2025-05-02 17:44:20.983 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-02 17:44:21.013 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-02 17:44:22.208 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-02 17:44:22.804 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-05-02 17:44:22.806 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-05-02 17:44:23.006 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-02 17:44:23.957 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-05-02 17:44:24.263 [main] LoggerLoad - Overview of trees Link clicked
+[INFO ] 2025-05-02 17:44:24.920 [main] LoggerLoad - Clicked the Try Here button.
+[INFO ] 2025-05-02 17:44:24.921 [main] LoggerLoad - Reading code from Excel sheet: <Sheetname>, Row: 0
+[INFO ] 2025-05-02 17:44:24.979 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tryEditor
+[INFO ] 2025-05-02 17:44:25.193 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-02 17:45:15.343 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-02 17:45:17.043 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-02 17:45:17.667 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-05-02 17:45:17.678 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-05-02 17:45:17.890 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-02 17:45:18.836 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-05-02 17:45:19.150 [main] LoggerLoad - Overview of trees Link clicked
+[INFO ] 2025-05-02 17:45:19.671 [main] LoggerLoad - Try here button clicked
+[INFO ] 2025-05-02 17:45:19.674 [main] LoggerLoad - Reading code from Excel sheet: tryEditorCode, Row: 1
+[INFO ] 2025-05-02 17:45:20.237 [main] LoggerLoad - Editor Code is -->This is a test message !
+[INFO ] 2025-05-02 17:45:20.345 [main] LoggerLoad - Clicked the Run button.
+[INFO ] 2025-05-02 17:45:20.355 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tryEditor
+[INFO ] 2025-05-02 17:45:20.662 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-02 17:45:20.689 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-02 17:45:21.771 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-02 17:45:22.386 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-05-02 17:45:22.387 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-05-02 17:45:22.624 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-02 17:45:23.569 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-05-02 17:45:23.868 [main] LoggerLoad - Overview of trees Link clicked
+[INFO ] 2025-05-02 17:45:24.529 [main] LoggerLoad - Clicked the Try Here button.
+[INFO ] 2025-05-02 17:45:24.529 [main] LoggerLoad - Reading code from Excel sheet: tryEditorCode, Row: 0
+[INFO ] 2025-05-02 17:45:24.580 [main] LoggerLoad - Editor Code is -->print('Python is fun!');
+[INFO ] 2025-05-02 17:45:24.668 [main] LoggerLoad - Clicked the Run button.
+[INFO ] 2025-05-02 17:45:24.676 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tryEditor
+[INFO ] 2025-05-02 17:45:24.908 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-02 17:50:31.937 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-02 17:50:33.664 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-02 17:50:34.330 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-05-02 17:50:34.343 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-05-02 17:50:34.549 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-02 17:50:35.549 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-05-02 17:50:35.831 [main] LoggerLoad - Overview of trees Link clicked
+[INFO ] 2025-05-02 17:50:36.341 [main] LoggerLoad - Try here button clicked
+[INFO ] 2025-05-02 17:50:36.343 [main] LoggerLoad - Reading code from Excel sheet: tryEditorCode, Row: 1
+[INFO ] 2025-05-02 17:50:36.903 [main] LoggerLoad - Editor Code is -->This is a test message !
+[INFO ] 2025-05-02 17:50:37.015 [main] LoggerLoad - Clicked the Run button.
+[INFO ] 2025-05-02 17:50:37.026 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tryEditor
+[INFO ] 2025-05-02 17:50:37.330 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-02 17:50:37.357 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-02 17:50:38.534 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-02 17:50:39.181 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-05-02 17:50:39.184 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-05-02 17:50:39.423 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-02 17:50:40.531 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-05-02 17:50:40.872 [main] LoggerLoad - Overview of trees Link clicked
+[INFO ] 2025-05-02 17:50:41.734 [main] LoggerLoad - Clicked the Try Here button.
+[INFO ] 2025-05-02 17:50:41.735 [main] LoggerLoad - Reading code from Excel sheet: tryEditorCode, Row: 0
+[INFO ] 2025-05-02 17:50:41.784 [main] LoggerLoad - Editor Code is -->print('Python is fun!');
+[INFO ] 2025-05-02 17:50:41.871 [main] LoggerLoad - Clicked the Run button.
+[INFO ] 2025-05-02 17:50:41.879 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tryEditor
+[INFO ] 2025-05-02 17:50:42.069 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-02 17:54:16.082 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-02 17:54:17.824 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-02 17:54:19.032 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-05-02 17:54:19.041 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-05-02 17:54:19.251 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-02 17:54:20.690 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-05-02 17:54:21.058 [main] LoggerLoad - Overview of trees Link clicked
+[INFO ] 2025-05-02 17:54:21.799 [main] LoggerLoad - Try here button clicked
+[INFO ] 2025-05-02 17:54:21.800 [main] LoggerLoad - Reading code from Excel sheet: tryEditorCode, Row: 1
+[INFO ] 2025-05-02 17:54:22.396 [main] LoggerLoad - Editor Code is -->This is a test message !
+[INFO ] 2025-05-02 17:54:22.396 [main] LoggerLoad - Fetched code from Excel: This is a test message !
+[INFO ] 2025-05-02 17:54:22.687 [main] LoggerLoad - The given code is : This is a test message !
+[INFO ] 2025-05-02 17:54:22.801 [main] LoggerLoad - Clicked the Run button.
+[INFO ] 2025-05-02 17:54:23.132 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-02 17:54:23.159 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-02 17:54:24.340 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-02 17:54:25.188 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-05-02 17:54:25.189 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-05-02 17:54:25.414 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-02 17:54:26.565 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-05-02 17:54:26.967 [main] LoggerLoad - Overview of trees Link clicked
+[INFO ] 2025-05-02 17:54:27.859 [main] LoggerLoad - Clicked the Try Here button.
+[INFO ] 2025-05-02 17:54:27.859 [main] LoggerLoad - Reading code from Excel sheet: tryEditorCode, Row: 0
+[INFO ] 2025-05-02 17:54:27.910 [main] LoggerLoad - Editor Code is -->print('Python is fun!');
+[INFO ] 2025-05-02 17:54:27.910 [main] LoggerLoad - Fetched code from Excel: print('Python is fun!');
+[INFO ] 2025-05-02 17:54:28.158 [main] LoggerLoad - The given code is : print('Python is fun!');
+[INFO ] 2025-05-02 17:54:28.240 [main] LoggerLoad - Clicked the Run button.
+[INFO ] 2025-05-02 17:54:28.247 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tryEditor
+[INFO ] 2025-05-02 17:54:28.476 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-02 18:02:31.153 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-02 18:02:32.839 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-02 18:02:33.442 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-05-02 18:02:33.454 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-05-02 18:02:33.667 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-02 18:02:34.640 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-05-02 18:02:34.957 [main] LoggerLoad - Overview of trees Link clicked
+[INFO ] 2025-05-02 18:02:35.497 [main] LoggerLoad - Try here button clicked
+[INFO ] 2025-05-02 18:02:35.499 [main] LoggerLoad - Reading code from Excel sheet: tryEditorCode, Row: 1
+[INFO ] 2025-05-02 18:02:36.079 [main] LoggerLoad - Editor Code is -->This is a test message !
+[INFO ] 2025-05-02 18:02:36.079 [main] LoggerLoad - Fetched code from Excel: This is a test message !
+[INFO ] 2025-05-02 18:02:36.355 [main] LoggerLoad - The given code is : This is a test message !
+[INFO ] 2025-05-02 18:02:36.439 [main] LoggerLoad - Clicked the Run button.
+[INFO ] 2025-05-02 18:02:36.717 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-02 18:02:36.745 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-02 18:02:37.848 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-02 18:02:38.489 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-05-02 18:02:38.491 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-05-02 18:02:38.701 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-02 18:02:39.752 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-05-02 18:02:40.043 [main] LoggerLoad - Overview of trees Link clicked
+[INFO ] 2025-05-02 18:02:40.703 [main] LoggerLoad - Clicked the Try Here button.
+[INFO ] 2025-05-02 18:02:40.704 [main] LoggerLoad - Reading code from Excel sheet: tryEditorCode, Row: 0
+[INFO ] 2025-05-02 18:02:40.753 [main] LoggerLoad - Editor Code is -->print('Python is fun!');
+[INFO ] 2025-05-02 18:02:40.754 [main] LoggerLoad - Fetched code from Excel: print('Python is fun!');
+[INFO ] 2025-05-02 18:02:41.001 [main] LoggerLoad - The given code is : print('Python is fun!');
+[INFO ] 2025-05-02 18:02:41.079 [main] LoggerLoad - Clicked the Run button.
+[INFO ] 2025-05-02 18:02:41.087 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tryEditor
+[INFO ] 2025-05-02 18:02:41.308 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-02 18:04:51.687 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-02 18:04:53.415 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-02 18:04:54.085 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-05-02 18:04:54.096 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-05-02 18:04:54.306 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-02 18:04:55.352 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-05-02 18:04:55.640 [main] LoggerLoad - Overview of trees Link clicked
+[INFO ] 2025-05-02 18:04:56.189 [main] LoggerLoad - Try here button clicked
+[INFO ] 2025-05-02 18:04:56.191 [main] LoggerLoad - Reading code from Excel sheet: tryEditorCode, Row: 1
+[INFO ] 2025-05-02 18:04:56.771 [main] LoggerLoad - Editor Code is -->This is a test message !
+[INFO ] 2025-05-02 18:04:56.771 [main] LoggerLoad - Fetched code from Excel: This is a test message !
+[INFO ] 2025-05-02 18:04:57.067 [main] LoggerLoad - The given code is : This is a test message !
+[INFO ] 2025-05-02 18:04:57.174 [main] LoggerLoad - Clicked the Run button.
+[INFO ] 2025-05-02 18:04:57.439 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-02 18:04:57.469 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-02 18:04:58.648 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-02 18:04:59.301 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-05-02 18:04:59.302 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-05-02 18:04:59.519 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-02 18:05:00.545 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-05-02 18:05:00.857 [main] LoggerLoad - Overview of trees Link clicked
+[INFO ] 2025-05-02 18:05:01.473 [main] LoggerLoad - Clicked the Try Here button.
+[INFO ] 2025-05-02 18:05:01.473 [main] LoggerLoad - Reading code from Excel sheet: tryEditorCode, Row: 0
+[INFO ] 2025-05-02 18:05:01.523 [main] LoggerLoad - Editor Code is -->print('Python is fun!');
+[INFO ] 2025-05-02 18:05:01.523 [main] LoggerLoad - Fetched code from Excel: print('Python is fun!');
+[INFO ] 2025-05-02 18:05:01.753 [main] LoggerLoad - The given code is : print('Python is fun!');
+[INFO ] 2025-05-02 18:05:01.836 [main] LoggerLoad - Clicked the Run button.
+[INFO ] 2025-05-02 18:05:01.843 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tryEditor
+[INFO ] 2025-05-02 18:05:02.054 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-02 18:05:56.819 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-02 18:05:58.515 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-02 18:05:59.114 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-05-02 18:05:59.123 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-05-02 18:05:59.337 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-02 18:06:00.320 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-05-02 18:06:00.604 [main] LoggerLoad - Overview of trees Link clicked
+[INFO ] 2025-05-02 18:06:01.143 [main] LoggerLoad - Try here button clicked
+[INFO ] 2025-05-02 18:06:01.145 [main] LoggerLoad - Reading code from Excel sheet: tryEditorCode, Row: 1
+[INFO ] 2025-05-02 18:06:01.711 [main] LoggerLoad - Editor Code is -->This is a test message !
+[INFO ] 2025-05-02 18:06:01.712 [main] LoggerLoad - Fetched code from Excel: This is a test message !
+[INFO ] 2025-05-02 18:06:01.996 [main] LoggerLoad - The given code is : This is a test message !
+[INFO ] 2025-05-02 18:06:02.088 [main] LoggerLoad - Clicked the Run button.
+[INFO ] 2025-05-02 18:06:02.388 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-02 18:06:02.415 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-02 18:06:03.590 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-02 18:06:04.168 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-05-02 18:06:04.169 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-05-02 18:06:04.378 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-02 18:06:05.344 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-05-02 18:06:05.627 [main] LoggerLoad - Overview of trees Link clicked
+[INFO ] 2025-05-02 18:06:06.315 [main] LoggerLoad - Clicked the Try Here button.
+[INFO ] 2025-05-02 18:06:06.316 [main] LoggerLoad - Reading code from Excel sheet: tryEditorCode, Row: 0
+[INFO ] 2025-05-02 18:06:06.365 [main] LoggerLoad - Editor Code is -->print('Python is fun!');
+[INFO ] 2025-05-02 18:06:06.365 [main] LoggerLoad - Fetched code from Excel: print('Python is fun!');
+[INFO ] 2025-05-02 18:06:06.598 [main] LoggerLoad - The given code is : print('Python is fun!');
+[INFO ] 2025-05-02 18:06:06.677 [main] LoggerLoad - Clicked the Run button.
+[INFO ] 2025-05-02 18:06:06.685 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tryEditor
+[INFO ] 2025-05-02 18:06:06.882 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-02 18:07:28.365 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-02 18:07:30.113 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-02 18:07:30.774 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-05-02 18:07:30.783 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-05-02 18:07:31.000 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-02 18:07:32.017 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-05-02 18:07:32.360 [main] LoggerLoad - Overview of trees Link clicked
+[INFO ] 2025-05-02 18:07:32.928 [main] LoggerLoad - Try here button clicked
+[INFO ] 2025-05-02 18:07:32.930 [main] LoggerLoad - Reading code from Excel sheet: tryEditorCode, Row: 1
+[INFO ] 2025-05-02 18:07:33.504 [main] LoggerLoad - Editor Code is -->This is a test message !
+[INFO ] 2025-05-02 18:07:33.504 [main] LoggerLoad - Fetched code from Excel: This is a test message !
+[INFO ] 2025-05-02 18:07:33.795 [main] LoggerLoad - The given code is : This is a test message !
+[INFO ] 2025-05-02 18:07:33.908 [main] LoggerLoad - Clicked the Run button.
+[INFO ] 2025-05-02 18:07:34.179 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-02 18:07:34.204 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-02 18:07:35.400 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-02 18:07:35.987 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-05-02 18:07:35.989 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-05-02 18:07:36.188 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-02 18:07:37.318 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-05-02 18:07:37.602 [main] LoggerLoad - Overview of trees Link clicked
+[INFO ] 2025-05-02 18:07:38.268 [main] LoggerLoad - Clicked the Try Here button.
+[INFO ] 2025-05-02 18:07:38.269 [main] LoggerLoad - Reading code from Excel sheet: tryEditorCode, Row: 0
+[INFO ] 2025-05-02 18:07:38.318 [main] LoggerLoad - Editor Code is -->print('Python is fun!');
+[INFO ] 2025-05-02 18:07:38.318 [main] LoggerLoad - Fetched code from Excel: print('Python is fun!');
+[INFO ] 2025-05-02 18:07:38.553 [main] LoggerLoad - The given code is : print('Python is fun!');
+[INFO ] 2025-05-02 18:07:38.633 [main] LoggerLoad - Clicked the Run button.
+[INFO ] 2025-05-02 18:07:38.640 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tryEditor
+[INFO ] 2025-05-02 18:07:38.846 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-02 18:10:57.668 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-02 18:10:59.420 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-02 18:11:00.155 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-05-02 18:11:00.167 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-05-02 18:11:00.379 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-02 18:11:01.373 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-05-02 18:11:01.684 [main] LoggerLoad - Overview of trees Link clicked
+[INFO ] 2025-05-02 18:11:02.214 [main] LoggerLoad - Try here button clicked
+[INFO ] 2025-05-02 18:11:02.215 [main] LoggerLoad - Reading code from Excel sheet: tryEditorCode, Row: 1
+[INFO ] 2025-05-02 18:11:02.774 [main] LoggerLoad - Editor Code is -->This is a test message !
+[INFO ] 2025-05-02 18:11:02.774 [main] LoggerLoad - Fetched code from Excel: This is a test message !
+[INFO ] 2025-05-02 18:11:03.056 [main] LoggerLoad - The given code is : This is a test message !
+[INFO ] 2025-05-02 18:11:03.137 [main] LoggerLoad - Clicked the Run button.
+[INFO ] 2025-05-02 18:11:03.394 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-02 18:11:03.422 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-02 18:11:04.605 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-02 18:11:05.211 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-05-02 18:11:05.213 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-05-02 18:11:05.441 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-02 18:11:06.431 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-05-02 18:11:06.788 [main] LoggerLoad - Overview of trees Link clicked
+[INFO ] 2025-05-02 18:11:07.429 [main] LoggerLoad - Clicked the Try Here button.
+[INFO ] 2025-05-02 18:11:07.430 [main] LoggerLoad - Reading code from Excel sheet: tryEditorCode, Row: 0
+[INFO ] 2025-05-02 18:11:07.479 [main] LoggerLoad - Editor Code is -->print('Python is fun!');
+[INFO ] 2025-05-02 18:11:07.479 [main] LoggerLoad - Fetched code from Excel: print('Python is fun!');
+[INFO ] 2025-05-02 18:11:07.724 [main] LoggerLoad - The given code is : print('Python is fun!');
+[INFO ] 2025-05-02 18:11:07.806 [main] LoggerLoad - Clicked the Run button.
+[INFO ] 2025-05-02 18:11:07.813 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tryEditor
+[INFO ] 2025-05-02 18:11:08.023 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-02 18:12:46.405 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-02 18:12:48.097 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-02 18:12:48.687 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-05-02 18:12:48.696 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-05-02 18:12:48.916 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-02 18:12:49.983 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-05-02 18:12:50.287 [main] LoggerLoad - Overview of trees Link clicked
+[INFO ] 2025-05-02 18:12:50.870 [main] LoggerLoad - Try here button clicked
+[INFO ] 2025-05-02 18:12:50.875 [main] LoggerLoad - Reading code from Excel sheet: tryEditorCode, Row: 1
+[INFO ] 2025-05-02 18:12:51.456 [main] LoggerLoad - Editor Code is -->This is a test message !
+[INFO ] 2025-05-02 18:12:51.456 [main] LoggerLoad - Fetched code from Excel: This is a test message !
+[INFO ] 2025-05-02 18:12:51.763 [main] LoggerLoad - The given code is : This is a test message !
+[INFO ] 2025-05-02 18:12:51.874 [main] LoggerLoad - Clicked the Run button.
+[INFO ] 2025-05-02 18:12:52.182 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-02 18:12:52.211 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-02 18:12:53.401 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-02 18:12:53.983 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-05-02 18:12:53.985 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-05-02 18:12:54.198 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-02 18:12:55.299 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-05-02 18:12:55.587 [main] LoggerLoad - Overview of trees Link clicked
+[INFO ] 2025-05-02 18:12:56.237 [main] LoggerLoad - Clicked the Try Here button.
+[INFO ] 2025-05-02 18:12:56.238 [main] LoggerLoad - Reading code from Excel sheet: tryEditorCode, Row: 0
+[INFO ] 2025-05-02 18:12:56.286 [main] LoggerLoad - Editor Code is -->print('Python is fun!');
+[INFO ] 2025-05-02 18:12:56.286 [main] LoggerLoad - Fetched code from Excel: print('Python is fun!');
+[INFO ] 2025-05-02 18:12:56.563 [main] LoggerLoad - The given code is : print('Python is fun!');
+[INFO ] 2025-05-02 18:12:56.645 [main] LoggerLoad - Clicked the Run button.
+[INFO ] 2025-05-02 18:12:56.653 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tryEditor
+[INFO ] 2025-05-02 18:12:56.856 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-02 18:14:39.197 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-02 18:14:40.884 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-02 18:14:41.655 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-05-02 18:14:41.665 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-05-02 18:14:41.884 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-02 18:14:42.886 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-05-02 18:14:43.223 [main] LoggerLoad - Overview of trees Link clicked
+[INFO ] 2025-05-02 18:14:43.873 [main] LoggerLoad - Try here button clicked
+[INFO ] 2025-05-02 18:14:43.875 [main] LoggerLoad - Reading code from Excel sheet: tryEditorCode, Row: 1
+[INFO ] 2025-05-02 18:14:44.439 [main] LoggerLoad - Editor Code is -->This is a test message !
+[INFO ] 2025-05-02 18:14:44.439 [main] LoggerLoad - Fetched code from Excel: This is a test message !
+[INFO ] 2025-05-02 18:14:44.726 [main] LoggerLoad - The given code is : This is a test message !
+[INFO ] 2025-05-02 18:14:44.817 [main] LoggerLoad - Clicked the Run button.
+[INFO ] 2025-05-02 18:14:45.068 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-02 18:14:45.098 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-02 18:14:46.281 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-02 18:14:47.004 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-05-02 18:14:47.005 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-05-02 18:14:47.208 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-02 18:14:48.209 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-05-02 18:14:48.501 [main] LoggerLoad - Overview of trees Link clicked
+[INFO ] 2025-05-02 18:14:49.161 [main] LoggerLoad - Clicked the Try Here button.
+[INFO ] 2025-05-02 18:14:49.163 [main] LoggerLoad - Reading code from Excel sheet: tryEditorCode, Row: 0
+[INFO ] 2025-05-02 18:14:49.212 [main] LoggerLoad - Editor Code is -->print('Python is fun!');
+[INFO ] 2025-05-02 18:14:49.213 [main] LoggerLoad - Fetched code from Excel: print('Python is fun!');
+[INFO ] 2025-05-02 18:14:49.448 [main] LoggerLoad - The given code is : print('Python is fun!');
+[INFO ] 2025-05-02 18:14:49.536 [main] LoggerLoad - Clicked the Run button.
+[INFO ] 2025-05-02 18:14:49.543 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tryEditor
+[INFO ] 2025-05-02 18:14:49.751 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-02 18:20:35.372 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-02 18:20:37.095 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-02 18:20:37.765 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-05-02 18:20:37.773 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-05-02 18:20:37.985 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-02 18:20:39.064 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-05-02 18:20:39.347 [main] LoggerLoad - Overview of trees Link clicked
+[INFO ] 2025-05-02 18:20:39.922 [main] LoggerLoad - Try here button clicked
+[INFO ] 2025-05-02 18:20:39.925 [main] LoggerLoad - Reading code from Excel sheet: tryEditorCode, Row: 1
+[INFO ] 2025-05-02 18:20:40.499 [main] LoggerLoad - Editor Code is -->This is a test message !
+[INFO ] 2025-05-02 18:20:40.500 [main] LoggerLoad - Fetched code from Excel: This is a test message !
+[INFO ] 2025-05-02 18:20:40.798 [main] LoggerLoad - The given code is : This is a test message !
+[INFO ] 2025-05-02 18:20:40.938 [main] LoggerLoad - Clicked the Run button.
+[INFO ] 2025-05-02 18:20:41.188 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-02 18:20:41.221 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-02 18:20:42.376 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-02 18:20:43.089 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-05-02 18:20:43.090 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-05-02 18:20:43.303 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-02 18:20:44.371 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-05-02 18:20:44.652 [main] LoggerLoad - Overview of trees Link clicked
+[INFO ] 2025-05-02 18:20:45.342 [main] LoggerLoad - Clicked the Try Here button.
+[INFO ] 2025-05-02 18:20:45.343 [main] LoggerLoad - Reading code from Excel sheet: tryEditorCode, Row: 0
+[INFO ] 2025-05-02 18:20:45.392 [main] LoggerLoad - Editor Code is -->print('Python is fun!');
+[INFO ] 2025-05-02 18:20:45.392 [main] LoggerLoad - Fetched code from Excel: print('Python is fun!');
+[INFO ] 2025-05-02 18:20:45.650 [main] LoggerLoad - The given code is : print('Python is fun!');
+[INFO ] 2025-05-02 18:20:45.740 [main] LoggerLoad - Clicked the Run button.
+[INFO ] 2025-05-02 18:20:45.964 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-02 18:21:12.657 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-02 18:21:14.308 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-02 18:21:14.945 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-05-02 18:21:14.954 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-05-02 18:21:15.165 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-02 18:21:16.156 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-05-02 18:21:16.448 [main] LoggerLoad - Overview of trees Link clicked
+[INFO ] 2025-05-02 18:21:16.998 [main] LoggerLoad - Try here button clicked
+[INFO ] 2025-05-02 18:21:17.001 [main] LoggerLoad - Reading code from Excel sheet: tryEditorCode, Row: 1
+[INFO ] 2025-05-02 18:21:17.593 [main] LoggerLoad - Editor Code is -->This is a test message !
+[INFO ] 2025-05-02 18:21:17.594 [main] LoggerLoad - Fetched code from Excel: This is a test message !
+[INFO ] 2025-05-02 18:21:17.892 [main] LoggerLoad - The given code is : This is a test message !
+[INFO ] 2025-05-02 18:21:18.001 [main] LoggerLoad - Clicked the Run button.
+[INFO ] 2025-05-02 18:21:18.242 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-02 18:21:18.279 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-02 18:21:19.498 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-02 18:21:20.110 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-05-02 18:21:20.111 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-05-02 18:21:20.317 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-02 18:21:21.318 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-05-02 18:21:21.613 [main] LoggerLoad - Overview of trees Link clicked
+[INFO ] 2025-05-02 18:21:22.271 [main] LoggerLoad - Clicked the Try Here button.
+[INFO ] 2025-05-02 18:21:22.272 [main] LoggerLoad - Reading code from Excel sheet: tryEditorCode, Row: 0
+[INFO ] 2025-05-02 18:21:22.323 [main] LoggerLoad - Editor Code is -->print('Python is fun!');
+[INFO ] 2025-05-02 18:21:22.323 [main] LoggerLoad - Fetched code from Excel: print('Python is fun!');
+[INFO ] 2025-05-02 18:21:22.569 [main] LoggerLoad - The given code is : print('Python is fun!');
+[INFO ] 2025-05-02 18:21:22.653 [main] LoggerLoad - Clicked the Run button.
+[INFO ] 2025-05-02 18:21:22.868 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-02 18:23:57.806 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-02 18:23:59.550 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-02 18:24:00.147 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-05-02 18:24:00.158 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-05-02 18:24:00.356 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-02 18:24:01.352 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-05-02 18:24:01.641 [main] LoggerLoad - Overview of trees Link clicked
+[INFO ] 2025-05-02 18:24:02.155 [main] LoggerLoad - Try here button clicked
+[INFO ] 2025-05-02 18:24:02.158 [main] LoggerLoad - Reading code from Excel sheet: tryEditorCode, Row: 1
+[INFO ] 2025-05-02 18:24:02.780 [main] LoggerLoad - Editor Code is -->This is a test message !
+[INFO ] 2025-05-02 18:24:02.780 [main] LoggerLoad - Fetched code from Excel: This is a test message !
+[INFO ] 2025-05-02 18:24:03.068 [main] LoggerLoad - The given code is : This is a test message !
+[INFO ] 2025-05-02 18:24:03.159 [main] LoggerLoad - Clicked the Run button.
+[INFO ] 2025-05-02 18:24:03.402 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-02 18:24:03.433 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-02 18:24:04.615 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-02 18:24:05.223 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-05-02 18:24:05.224 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-05-02 18:24:05.426 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-02 18:24:06.405 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-05-02 18:24:06.721 [main] LoggerLoad - Overview of trees Link clicked
+[INFO ] 2025-05-02 18:24:07.419 [main] LoggerLoad - Clicked the Try Here button.
+[INFO ] 2025-05-02 18:24:07.427 [main] LoggerLoad - Reading code from Excel sheet: tryEditorCode, Row: 0
+[INFO ] 2025-05-02 18:24:07.477 [main] LoggerLoad - Editor Code is -->print('Python is fun!');
+[INFO ] 2025-05-02 18:24:07.478 [main] LoggerLoad - Fetched code from Excel: print('Python is fun!');
+[INFO ] 2025-05-02 18:24:07.725 [main] LoggerLoad - The given code is : print('Python is fun!');
+[INFO ] 2025-05-02 18:24:07.818 [main] LoggerLoad - Clicked the Run button.
+[INFO ] 2025-05-02 18:24:07.826 [main] LoggerLoad - https://dsportalapp.herokuapp.com/tryEditor
+[INFO ] 2025-05-02 18:24:08.045 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-02 18:25:48.792 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-02 18:25:50.514 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-02 18:25:51.121 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-05-02 18:25:51.131 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-05-02 18:25:51.348 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-02 18:25:52.481 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-05-02 18:25:52.716 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-02 18:25:52.749 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-02 18:25:53.919 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-02 18:25:54.563 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-05-02 18:25:54.565 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-05-02 18:25:54.794 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-02 18:25:55.806 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-05-02 18:25:56.116 [main] LoggerLoad - Overview of trees Link clicked
+[INFO ] 2025-05-02 18:25:56.781 [main] LoggerLoad - Clicked the Try Here button.
+[INFO ] 2025-05-02 18:25:56.783 [main] LoggerLoad - Reading code from Excel sheet: tryEditorCode, Row: 0
+[INFO ] 2025-05-02 18:25:57.378 [main] LoggerLoad - Editor Code is -->print('Python is fun!');
+[INFO ] 2025-05-02 18:25:57.379 [main] LoggerLoad - Fetched code from Excel: print('Python is fun!');
+[INFO ] 2025-05-02 18:25:57.652 [main] LoggerLoad - The given code is : print('Python is fun!');
+[INFO ] 2025-05-02 18:25:57.754 [main] LoggerLoad - Clicked the Run button.
+[INFO ] 2025-05-02 18:25:57.966 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-02 18:28:25.203 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-02 18:28:26.901 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-02 18:28:27.598 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-05-02 18:28:27.608 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-05-02 18:28:27.834 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-02 18:28:28.868 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-05-02 18:28:29.177 [main] LoggerLoad - Overview of trees Link clicked
+[INFO ] 2025-05-02 18:28:29.889 [main] LoggerLoad - Clicked the Try Here button.
+[INFO ] 2025-05-02 18:28:29.891 [main] LoggerLoad - Reading code from Excel sheet: tryEditorCode, Row: 1
+[INFO ] 2025-05-02 18:28:30.468 [main] LoggerLoad - Editor Code is -->This is a test message !
+[INFO ] 2025-05-02 18:28:30.468 [main] LoggerLoad - Fetched code from Excel: This is a test message !
+[INFO ] 2025-05-02 18:28:30.752 [main] LoggerLoad - The given code is : This is a test message !
+[INFO ] 2025-05-02 18:28:30.868 [main] LoggerLoad - Clicked the Run button.
+[INFO ] 2025-05-02 18:28:31.094 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-02 18:28:31.123 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-02 18:28:32.293 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-02 18:28:32.853 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-05-02 18:28:32.854 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-05-02 18:28:33.064 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-02 18:28:34.064 [main] LoggerLoad - Tree Get Started Button clicked
+[INFO ] 2025-05-02 18:28:34.358 [main] LoggerLoad - Overview of trees Link clicked
+[INFO ] 2025-05-02 18:28:35.026 [main] LoggerLoad - Clicked the Try Here button.
+[INFO ] 2025-05-02 18:28:35.027 [main] LoggerLoad - Reading code from Excel sheet: tryEditorCode, Row: 0
+[INFO ] 2025-05-02 18:28:35.076 [main] LoggerLoad - Editor Code is -->print('Python is fun!');
+[INFO ] 2025-05-02 18:28:35.076 [main] LoggerLoad - Fetched code from Excel: print('Python is fun!');
+[INFO ] 2025-05-02 18:28:35.325 [main] LoggerLoad - The given code is : print('Python is fun!');
+[INFO ] 2025-05-02 18:28:35.405 [main] LoggerLoad - Clicked the Run button.
+[INFO ] 2025-05-02 18:28:35.406 [main] LoggerLoad - Console output: 
+[INFO ] 2025-05-02 18:28:35.608 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-02 19:12:31.154 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-02 19:12:33.172 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-02 19:12:33.621 [main] LoggerLoad - Inside openURL
+[INFO ] 2025-05-02 19:12:34.252 [main] LoggerLoad - User is on Data Structure Introduction Page and clicking on the Arrow
+[INFO ] 2025-05-02 19:12:34.496 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-03 08:12:53.471 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-03 08:12:55.892 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-03 08:13:06.728 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-03 08:25:48.912 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-03 08:25:50.691 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-03 08:26:01.699 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-03 08:27:30.515 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-03 08:27:32.234 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-03 08:27:43.214 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-03 08:28:32.137 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-03 08:28:33.858 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-03 08:28:35.118 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-03 08:30:37.593 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-03 08:30:39.327 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-03 08:30:41.085 [main] LoggerLoad - Register test data: [{password="", password confirmation="", username=""}, {password=tu1234, password confirmation=tu3214, username=testuser2}, {password=We_team3, password confirmation=We_team3, username=Ninja_Galaxy13}]
+[INFO ] 2025-05-03 08:30:41.389 [main] LoggerLoad - Filled registration form with -> Username: "", Password: "", Confirm Password: ""
+[INFO ] 2025-05-03 08:30:41.563 [main] LoggerLoad - ValidationMessage: null
+[INFO ] 2025-05-03 08:30:41.826 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-03 08:34:11.232 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-03 08:34:12.950 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-03 08:34:14.587 [main] LoggerLoad - Register test data: [{password="", password confirmation="", username=""}, {password=tu1234, password confirmation=tu3214, username=testuser2}, {password=We_team3, password confirmation=We_team3, username=Ninja_Galaxy13}]
+[INFO ] 2025-05-03 08:34:14.938 [main] LoggerLoad - Filled registration form with -> Username: "", Password: "", Confirm Password: ""
+[INFO ] 2025-05-03 08:34:25.392 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-03 08:36:32.925 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-03 08:36:34.636 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-03 08:36:36.260 [main] LoggerLoad - Register test data: [{password="", password confirmation="", username=""}, {password=tu1234, password confirmation=tu3214, username=testuser2}, {password=We_team3, password confirmation=We_team3, username=Ninja_Galaxy13}]
+[INFO ] 2025-05-03 08:36:36.604 [main] LoggerLoad - Filled registration form with -> Username: "", Password: "", Confirm Password: ""
+[INFO ] 2025-05-03 08:36:47.137 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-03 08:44:52.169 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-03 08:44:54.141 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-03 08:44:56.163 [main] LoggerLoad - Register test data: [{password="", password confirmation="", username=""}, {password=tu1234, password confirmation=tu3214, username=testuser2}, {password=We_team3, password confirmation=We_team3, username=Ninja_Galaxy13}]
+[INFO ] 2025-05-03 08:44:56.576 [main] LoggerLoad - Filled registration form with -> Username: "", Password: "", Confirm Password: ""
+[INFO ] 2025-05-03 08:45:07.144 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-03 08:49:39.987 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-03 08:49:41.889 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-03 08:49:43.875 [main] LoggerLoad - Register test data: [{password="", password confirmation="", username=""}, {password=tu1234, password confirmation=tu3214, username=testuser2}, {password=We_team3, password confirmation=We_team3, username=Ninja_Galaxy13}]
+[INFO ] 2025-05-03 08:49:44.265 [main] LoggerLoad - Filled registration form with -> Username: "", Password: "", Confirm Password: ""
+[INFO ] 2025-05-03 08:49:44.461 [main] LoggerLoad - Clicked on Register button
+[INFO ] 2025-05-03 08:49:44.839 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-03 08:54:10.881 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-03 08:54:12.944 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-03 08:54:14.827 [main] LoggerLoad - Register test data: [{password=, password confirmation=, username=}, {password="", password confirmation="", username=""}, {password=tu1234, password confirmation=tu1234, username=testuser2}, {password=We_team3, password confirmation=We_team3, username=Ninja_Galaxy13}]
+[INFO ] 2025-05-03 08:54:15.178 [main] LoggerLoad - Filled registration form with -> Username: , Password: , Confirm Password: 
+[INFO ] 2025-05-03 08:54:15.269 [main] LoggerLoad - Clicked on Register button
+[INFO ] 2025-05-03 08:54:25.736 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-03 08:58:30.820 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-03 08:58:32.729 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-03 08:58:34.689 [main] LoggerLoad - Register test data: [{password=, password confirmation=, username=}, {password="", password confirmation="", username=""}, {password=tu1234, password confirmation=tu1234, username=testuser2}, {password=We_team3, password confirmation=We_team3, username=Ninja_Galaxy13}]
+[INFO ] 2025-05-03 08:58:35.058 [main] LoggerLoad - Filled registration form with -> Username: , Password: , Confirm Password: 
+[INFO ] 2025-05-03 08:58:35.149 [main] LoggerLoad - Clicked on Register button
+[INFO ] 2025-05-03 08:58:35.196 [main] LoggerLoad - ValidationMessage: Please fill out this field.
+[INFO ] 2025-05-03 08:58:45.837 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-03 09:00:08.595 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-03 09:00:10.488 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-03 09:00:12.463 [main] LoggerLoad - Register test data: [{password=, password confirmation=, username=}, {password="", password confirmation="", username=""}, {password=tu1234, password confirmation=tu1234, username=testuser2}, {password=We_team3, password confirmation=We_team3, username=Ninja_Galaxy13}]
+[INFO ] 2025-05-03 09:00:12.800 [main] LoggerLoad - Filled registration form with -> Username: , Password: , Confirm Password: 
+[INFO ] 2025-05-03 09:00:12.882 [main] LoggerLoad - Clicked on Register button
+[INFO ] 2025-05-03 09:00:12.915 [main] LoggerLoad - ValidationMessage: Please fill out this field.
+[INFO ] 2025-05-03 09:00:13.206 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-03 09:06:37.548 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-03 09:06:39.516 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-03 09:06:41.474 [main] LoggerLoad - Register test data: [{password=, password confirmation=, username=}, {password=, password confirmation=, username=NumpyNinja}, {password="", password confirmation="", username=""}, {password=tu1234, password confirmation=tu1234, username=testuser2}, {password=We_team3, password confirmation=We_team3, username=Ninja_Galaxy13}]
+[INFO ] 2025-05-03 09:06:41.918 [main] LoggerLoad - Filled registration form with -> Username: NumpyNinja, Password: , Confirm Password: 
+[INFO ] 2025-05-03 09:06:42.011 [main] LoggerLoad - Clicked on Register button
+[INFO ] 2025-05-03 09:06:42.051 [main] LoggerLoad - ValidationMessage: Please fill out this field.
+[INFO ] 2025-05-03 09:06:42.326 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-03 09:21:31.400 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-03 09:21:33.758 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-03 09:21:35.079 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-03 09:21:35.931 [main] LoggerLoad - User logged in successfully and reached Home page.
+[INFO ] 2025-05-03 09:21:36.331 [main] LoggerLoad - DS-Introduction Get Started Button 
+[INFO ] 2025-05-03 09:21:36.351 [main] LoggerLoad - Verified that the user is on the Data Structures Introduction page. Title: Data Structures-Introduction
+[INFO ] 2025-05-03 09:21:36.361 [main] LoggerLoad - Actual page title: Data Structures-Introduction
+[INFO ] 2025-05-03 09:21:36.364 [main] LoggerLoad - Navigated to Data Structures Introduction page
+[INFO ] 2025-05-03 09:21:36.698 [main] LoggerLoad - Time Complexity link clicked successfully
+[INFO ] 2025-05-03 09:21:36.743 [main] LoggerLoad - Actual page title: Time Complexity
+[INFO ] 2025-05-03 09:21:37.034 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-03 09:36:06.857 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-03 09:36:09.084 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-03 09:36:10.271 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-03 09:36:11.472 [main] LoggerLoad - DS-Introduction Get Started Button 
+[INFO ] 2025-05-03 09:36:11.805 [main] LoggerLoad - Time Complexity Link Clicked
+[INFO ] 2025-05-03 09:36:12.128 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-03 09:36:12.185 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-03 09:36:13.621 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-03 09:36:14.852 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-03 09:36:16.089 [main] LoggerLoad - DS-Introduction Get Started Button 
+[INFO ] 2025-05-03 09:36:16.478 [main] LoggerLoad - Time Complexity Link Clicked
+[INFO ] 2025-05-03 09:36:17.177 [main] LoggerLoad - Clicked the Try Here button.
+[INFO ] 2025-05-03 09:36:17.472 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-03 09:36:17.560 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-03 09:36:18.894 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-03 09:36:20.048 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-03 09:36:21.255 [main] LoggerLoad - DS-Introduction Get Started Button 
+[INFO ] 2025-05-03 09:36:21.594 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-03 09:36:21.630 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-03 09:36:22.926 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-03 09:36:24.105 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-03 09:36:25.287 [main] LoggerLoad - DS-Introduction Get Started Button 
+[INFO ] 2025-05-03 09:36:25.563 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-03 09:36:25.592 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-03 09:36:26.954 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-03 09:36:28.052 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-03 09:36:29.242 [main] LoggerLoad - DS-Introduction Get Started Button 
+[INFO ] 2025-05-03 09:36:29.586 [main] LoggerLoad - Time Complexity Link Clicked
+[INFO ] 2025-05-03 09:36:30.247 [main] LoggerLoad - Clicked the Try Here button.
+[INFO ] 2025-05-03 09:36:30.249 [main] LoggerLoad - Reading code from Excel sheet: tryEditorCode, Row: 0
+[INFO ] 2025-05-03 09:36:31.010 [main] LoggerLoad - Editor Code is -->print('Python is fun!');
+[INFO ] 2025-05-03 09:36:31.010 [main] LoggerLoad - Fetched code from Excel: print('Python is fun!');
+[INFO ] 2025-05-03 09:36:31.323 [main] LoggerLoad - The given code is : print('Python is fun!');
+[INFO ] 2025-05-03 09:36:31.472 [main] LoggerLoad - Clicked the Run button.
+[INFO ] 2025-05-03 09:36:31.532 [main] LoggerLoad - Console output: Python is fun!
+[INFO ] 2025-05-03 09:36:31.783 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-03 09:36:31.801 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-03 09:36:33.115 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-03 09:36:34.297 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-03 09:36:35.453 [main] LoggerLoad - DS-Introduction Get Started Button 
+[INFO ] 2025-05-03 09:36:35.772 [main] LoggerLoad - Time Complexity Link Clicked
+[INFO ] 2025-05-03 09:36:36.079 [main] LoggerLoad - Practice Questions link clicked
+[INFO ] 2025-05-03 09:36:36.363 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-03 09:46:02.983 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-03 09:46:05.073 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-03 09:46:06.155 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-03 09:46:07.314 [main] LoggerLoad - DS-Introduction Get Started Button 
+[INFO ] 2025-05-03 09:46:07.642 [main] LoggerLoad - Time Complexity Link Clicked
+[INFO ] 2025-05-03 09:46:07.974 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-03 09:46:08.027 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-03 09:46:09.451 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-03 09:46:10.564 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-03 09:46:11.771 [main] LoggerLoad - DS-Introduction Get Started Button 
+[INFO ] 2025-05-03 09:46:12.098 [main] LoggerLoad - Time Complexity Link Clicked
+[INFO ] 2025-05-03 09:46:12.771 [main] LoggerLoad - Clicked the Try Here button.
+[INFO ] 2025-05-03 09:46:13.053 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-03 09:46:13.092 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-03 09:46:14.537 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-03 09:46:15.867 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-03 09:46:17.072 [main] LoggerLoad - DS-Introduction Get Started Button 
+[INFO ] 2025-05-03 09:46:17.398 [main] LoggerLoad - Time Complexity Link Clicked
+[INFO ] 2025-05-03 09:46:18.103 [main] LoggerLoad - Clicked the Try Here button.
+[WARN ] 2025-05-03 09:46:18.125 [main] LoggerLoad - No alert was present to get text from.
+[INFO ] 2025-05-03 09:46:23.526 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-03 09:46:23.566 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-03 09:46:25.048 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-03 09:46:26.218 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-03 09:46:27.405 [main] LoggerLoad - DS-Introduction Get Started Button 
+[INFO ] 2025-05-03 09:46:27.751 [main] LoggerLoad - Time Complexity Link Clicked
+[INFO ] 2025-05-03 09:46:28.424 [main] LoggerLoad - Clicked the Try Here button.
+[INFO ] 2025-05-03 09:46:28.426 [main] LoggerLoad - Reading code from Excel sheet: tryEditorCode, Row: 1
+[INFO ] 2025-05-03 09:46:29.185 [main] LoggerLoad - Editor Code is -->This is a test message !
+[INFO ] 2025-05-03 09:46:29.186 [main] LoggerLoad - Fetched code from Excel: This is a test message !
+[INFO ] 2025-05-03 09:46:29.479 [main] LoggerLoad - The given code is : This is a test message !
+[INFO ] 2025-05-03 09:46:29.604 [main] LoggerLoad - Clicked the Run button.
+[INFO ] 2025-05-03 09:46:29.618 [main] LoggerLoad - Alert present: SyntaxError: bad input on line 1
+[INFO ] 2025-05-03 09:46:29.953 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-03 09:46:29.972 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-03 09:46:31.293 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-03 09:46:32.516 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-03 09:46:33.684 [main] LoggerLoad - DS-Introduction Get Started Button 
+[INFO ] 2025-05-03 09:46:34.057 [main] LoggerLoad - Time Complexity Link Clicked
+[INFO ] 2025-05-03 09:46:34.740 [main] LoggerLoad - Clicked the Try Here button.
+[INFO ] 2025-05-03 09:46:34.741 [main] LoggerLoad - Reading code from Excel sheet: tryEditorCode, Row: 0
+[INFO ] 2025-05-03 09:46:34.806 [main] LoggerLoad - Editor Code is -->print('Python is fun!');
+[INFO ] 2025-05-03 09:46:34.808 [main] LoggerLoad - Fetched code from Excel: print('Python is fun!');
+[INFO ] 2025-05-03 09:46:35.076 [main] LoggerLoad - The given code is : print('Python is fun!');
+[INFO ] 2025-05-03 09:46:35.183 [main] LoggerLoad - Clicked the Run button.
+[INFO ] 2025-05-03 09:46:35.240 [main] LoggerLoad - Console output: Python is fun!
+[INFO ] 2025-05-03 09:46:35.501 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-03 09:46:35.525 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-03 09:46:36.894 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-03 09:46:37.966 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-03 09:46:39.237 [main] LoggerLoad - DS-Introduction Get Started Button 
+[INFO ] 2025-05-03 09:46:39.565 [main] LoggerLoad - Time Complexity Link Clicked
+[INFO ] 2025-05-03 09:46:39.881 [main] LoggerLoad - Practice Questions link clicked
+[INFO ] 2025-05-03 09:46:40.162 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-03 09:50:19.062 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-03 09:50:21.079 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-03 09:50:22.350 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-03 09:50:23.498 [main] LoggerLoad - DS-Introduction Get Started Button 
+[INFO ] 2025-05-03 09:50:23.858 [main] LoggerLoad - Time Complexity Link Clicked
+[INFO ] 2025-05-03 09:50:24.185 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-03 09:50:24.254 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-03 09:50:25.674 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-03 09:50:26.749 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-03 09:50:27.971 [main] LoggerLoad - DS-Introduction Get Started Button 
+[INFO ] 2025-05-03 09:50:28.358 [main] LoggerLoad - Time Complexity Link Clicked
+[INFO ] 2025-05-03 09:50:29.047 [main] LoggerLoad - Clicked the Try Here button.
+[INFO ] 2025-05-03 09:50:29.361 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-03 09:50:29.390 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-03 09:50:30.850 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-03 09:50:31.933 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-03 09:50:33.111 [main] LoggerLoad - DS-Introduction Get Started Button 
+[INFO ] 2025-05-03 09:50:33.487 [main] LoggerLoad - Time Complexity Link Clicked
+[INFO ] 2025-05-03 09:50:34.177 [main] LoggerLoad - Clicked the Try Here button.
+[INFO ] 2025-05-03 09:50:34.316 [main] LoggerLoad - Clicked the Run button.
+[INFO ] 2025-05-03 09:50:34.329 [main] LoggerLoad - Current URL after login: https://dsportalapp.herokuapp.com/tryEditor
+[INFO ] 2025-05-03 09:50:34.620 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-03 09:50:34.657 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-03 09:50:36.024 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-03 09:50:37.156 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-03 09:50:38.295 [main] LoggerLoad - DS-Introduction Get Started Button 
+[INFO ] 2025-05-03 09:50:38.671 [main] LoggerLoad - Time Complexity Link Clicked
+[INFO ] 2025-05-03 09:50:39.428 [main] LoggerLoad - Clicked the Try Here button.
+[INFO ] 2025-05-03 09:50:39.430 [main] LoggerLoad - Reading code from Excel sheet: tryEditorCode, Row: 1
+[INFO ] 2025-05-03 09:50:40.167 [main] LoggerLoad - Editor Code is -->This is a test message !
+[INFO ] 2025-05-03 09:50:40.167 [main] LoggerLoad - Fetched code from Excel: This is a test message !
+[INFO ] 2025-05-03 09:50:40.493 [main] LoggerLoad - The given code is : This is a test message !
+[INFO ] 2025-05-03 09:50:40.676 [main] LoggerLoad - Clicked the Run button.
+[INFO ] 2025-05-03 09:50:40.699 [main] LoggerLoad - Alert present: SyntaxError: bad input on line 1
+[INFO ] 2025-05-03 09:50:41.039 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-03 09:50:41.066 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-03 09:50:42.443 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-03 09:50:43.523 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-03 09:50:44.746 [main] LoggerLoad - DS-Introduction Get Started Button 
+[INFO ] 2025-05-03 09:50:45.139 [main] LoggerLoad - Time Complexity Link Clicked
+[INFO ] 2025-05-03 09:50:45.833 [main] LoggerLoad - Clicked the Try Here button.
+[INFO ] 2025-05-03 09:50:45.833 [main] LoggerLoad - Reading code from Excel sheet: tryEditorCode, Row: 0
+[INFO ] 2025-05-03 09:50:45.893 [main] LoggerLoad - Editor Code is -->print('Python is fun!');
+[INFO ] 2025-05-03 09:50:45.894 [main] LoggerLoad - Fetched code from Excel: print('Python is fun!');
+[INFO ] 2025-05-03 09:50:46.211 [main] LoggerLoad - The given code is : print('Python is fun!');
+[INFO ] 2025-05-03 09:50:46.344 [main] LoggerLoad - Clicked the Run button.
+[INFO ] 2025-05-03 09:50:46.396 [main] LoggerLoad - Console output: Python is fun!
+[INFO ] 2025-05-03 09:50:46.684 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-03 09:50:46.702 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-03 09:50:48.065 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-03 09:50:49.152 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-03 09:50:50.273 [main] LoggerLoad - DS-Introduction Get Started Button 
+[INFO ] 2025-05-03 09:50:50.638 [main] LoggerLoad - Time Complexity Link Clicked
+[INFO ] 2025-05-03 09:50:50.992 [main] LoggerLoad - Practice Questions link clicked
+[INFO ] 2025-05-03 09:50:51.302 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-03 09:55:29.160 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-03 09:55:31.153 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-03 09:55:32.365 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-03 09:55:33.578 [main] LoggerLoad - DS-Introduction Get Started Button 
+[INFO ] 2025-05-03 09:55:33.966 [main] LoggerLoad - Time Complexity Link Clicked
+[INFO ] 2025-05-03 09:55:34.326 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-03 09:55:34.385 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-03 09:55:35.799 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-03 09:55:36.902 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-03 09:55:38.069 [main] LoggerLoad - DS-Introduction Get Started Button 
+[INFO ] 2025-05-03 09:55:38.422 [main] LoggerLoad - Time Complexity Link Clicked
+[INFO ] 2025-05-03 09:55:39.188 [main] LoggerLoad - Clicked the Try Here button.
+[INFO ] 2025-05-03 09:55:39.470 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-03 09:55:39.494 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-03 09:55:40.832 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-03 09:55:42.031 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-03 09:55:43.170 [main] LoggerLoad - DS-Introduction Get Started Button 
+[INFO ] 2025-05-03 09:55:43.512 [main] LoggerLoad - Time Complexity Link Clicked
+[INFO ] 2025-05-03 09:55:44.157 [main] LoggerLoad - Clicked the Try Here button.
+[INFO ] 2025-05-03 09:55:44.313 [main] LoggerLoad - Clicked the Run button.
+[INFO ] 2025-05-03 09:55:44.313 [main] LoggerLoad - No alert to display
+[INFO ] 2025-05-03 09:55:44.608 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-03 09:55:44.639 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-03 09:55:45.964 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-03 09:55:47.125 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-03 09:55:48.229 [main] LoggerLoad - DS-Introduction Get Started Button 
+[INFO ] 2025-05-03 09:55:48.627 [main] LoggerLoad - Time Complexity Link Clicked
+[INFO ] 2025-05-03 09:55:49.288 [main] LoggerLoad - Clicked the Try Here button.
+[INFO ] 2025-05-03 09:55:49.292 [main] LoggerLoad - Reading code from Excel sheet: tryEditorCode, Row: 1
+[INFO ] 2025-05-03 09:55:50.043 [main] LoggerLoad - Editor Code is -->This is a test message !
+[INFO ] 2025-05-03 09:55:50.044 [main] LoggerLoad - Fetched code from Excel: This is a test message !
+[INFO ] 2025-05-03 09:55:50.360 [main] LoggerLoad - The given code is : This is a test message !
+[INFO ] 2025-05-03 09:55:50.497 [main] LoggerLoad - Clicked the Run button.
+[INFO ] 2025-05-03 09:55:50.520 [main] LoggerLoad - Alert present: SyntaxError: bad input on line 1
+[INFO ] 2025-05-03 09:55:50.818 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-03 09:55:50.832 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-03 09:55:52.231 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-03 09:55:53.261 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-03 09:55:54.498 [main] LoggerLoad - DS-Introduction Get Started Button 
+[INFO ] 2025-05-03 09:55:54.871 [main] LoggerLoad - Time Complexity Link Clicked
+[INFO ] 2025-05-03 09:55:55.563 [main] LoggerLoad - Clicked the Try Here button.
+[INFO ] 2025-05-03 09:55:55.564 [main] LoggerLoad - Reading code from Excel sheet: tryEditorCode, Row: 0
+[INFO ] 2025-05-03 09:55:55.637 [main] LoggerLoad - Editor Code is -->print('Python is fun!');
+[INFO ] 2025-05-03 09:55:55.637 [main] LoggerLoad - Fetched code from Excel: print('Python is fun!');
+[INFO ] 2025-05-03 09:55:55.907 [main] LoggerLoad - The given code is : print('Python is fun!');
+[INFO ] 2025-05-03 09:55:56.011 [main] LoggerLoad - Clicked the Run button.
+[INFO ] 2025-05-03 09:55:56.064 [main] LoggerLoad - Console output: Python is fun!
+[INFO ] 2025-05-03 09:55:56.333 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-03 09:55:56.355 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-03 09:55:57.698 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-03 09:55:58.915 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-03 09:56:00.098 [main] LoggerLoad - DS-Introduction Get Started Button 
+[INFO ] 2025-05-03 09:56:00.445 [main] LoggerLoad - Time Complexity Link Clicked
+[INFO ] 2025-05-03 09:56:00.782 [main] LoggerLoad - Practice Questions link clicked
+[INFO ] 2025-05-03 09:56:01.060 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-03 10:24:57.549 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-03 10:24:59.852 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-03 10:25:01.134 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-03 10:25:02.374 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-03 10:25:02.425 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-03 10:25:03.768 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-03 10:25:04.946 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-03 10:25:05.333 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-03 10:31:37.378 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-03 10:31:39.363 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-03 10:31:40.603 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-03 10:31:40.610 [main] LoggerLoad - Reading code from Excel sheet: login, Row: 0
+[INFO ] 2025-05-03 10:31:41.833 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-03 10:31:41.883 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-03 10:31:43.223 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-03 10:31:44.482 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-03 10:31:44.483 [main] LoggerLoad - Reading code from Excel sheet: login, Row: 1
+[INFO ] 2025-05-03 10:31:44.827 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-03 10:42:43.356 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-03 10:42:45.411 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-03 10:42:46.557 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-03 10:42:47.351 [main] LoggerLoad - Register test data: [{password=We_team3, password confirmation=logged in successful, username=Ninja_Galaxy}, {password=, password confirmation=empty field, username=}, {password=We_team3, password confirmation=, username=}, {password=, password confirmation=, username=Ninja_Galaxy}, {password=csfa, password confirmation=, username=wert}, {password=We_team3, password confirmation=, username=rtaa}, {password=rwerqw, password confirmation=, username=Ninja_Galaxy}, {password=, password confirmation=, username=}]
+[INFO ] 2025-05-03 10:42:47.768 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-03 10:42:47.822 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-03 10:42:49.294 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-03 10:42:50.797 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-03 10:42:50.887 [main] LoggerLoad - Register test data: [{password=We_team3, password confirmation=logged in successful, username=Ninja_Galaxy}, {password=, password confirmation=empty field, username=}, {password=We_team3, password confirmation=, username=}, {password=, password confirmation=, username=Ninja_Galaxy}, {password=csfa, password confirmation=, username=wert}, {password=We_team3, password confirmation=, username=rtaa}, {password=rwerqw, password confirmation=, username=Ninja_Galaxy}, {password=, password confirmation=, username=}]
+[INFO ] 2025-05-03 10:42:51.207 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-03 10:49:16.334 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-03 10:49:18.353 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-03 10:49:19.627 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-03 10:49:20.377 [main] LoggerLoad - Register test data: [{Username=Ninja_Galaxy, password confirmation=logged in successful, Password=We_team3}, {Username=, password confirmation=empty field, Password=}, {Username=, password confirmation=, Password=We_team3}, {Username=Ninja_Galaxy, password confirmation=, Password=}, {Username=wert, password confirmation=, Password=csfa}, {Username=rtaa, password confirmation=, Password=We_team3}, {Username=Ninja_Galaxy, password confirmation=, Password=rwerqw}, {Username=, password confirmation=, Password=}]
+[INFO ] 2025-05-03 10:49:20.815 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-03 10:49:20.865 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-03 10:49:22.274 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-03 10:49:23.390 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-03 10:49:23.461 [main] LoggerLoad - Register test data: [{Username=Ninja_Galaxy, password confirmation=logged in successful, Password=We_team3}, {Username=, password confirmation=empty field, Password=}, {Username=, password confirmation=, Password=We_team3}, {Username=Ninja_Galaxy, password confirmation=, Password=}, {Username=wert, password confirmation=, Password=csfa}, {Username=rtaa, password confirmation=, Password=We_team3}, {Username=Ninja_Galaxy, password confirmation=, Password=rwerqw}, {Username=, password confirmation=, Password=}]
+[INFO ] 2025-05-03 10:49:23.756 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-03 10:50:54.659 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-03 10:50:56.693 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-03 10:50:57.875 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-03 10:50:58.692 [main] LoggerLoad - Register test data: [{Username=Ninja_Galaxy, password confirmation=logged in successful, Password=We_team3}, {Username=, password confirmation=empty field, Password=}, {Username=, password confirmation=, Password=We_team3}, {Username=Ninja_Galaxy, password confirmation=, Password=}, {Username=wert, password confirmation=, Password=csfa}, {Username=rtaa, password confirmation=, Password=We_team3}, {Username=Ninja_Galaxy, password confirmation=, Password=rwerqw}, {Username=, password confirmation=, Password=}]
+[INFO ] 2025-05-03 10:50:59.105 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-03 10:50:59.160 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-03 10:51:00.622 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-03 10:51:01.862 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-03 10:51:01.931 [main] LoggerLoad - Register test data: [{Username=Ninja_Galaxy, password confirmation=logged in successful, Password=We_team3}, {Username=, password confirmation=empty field, Password=}, {Username=, password confirmation=, Password=We_team3}, {Username=Ninja_Galaxy, password confirmation=, Password=}, {Username=wert, password confirmation=, Password=csfa}, {Username=rtaa, password confirmation=, Password=We_team3}, {Username=Ninja_Galaxy, password confirmation=, Password=rwerqw}, {Username=, password confirmation=, Password=}]
+[INFO ] 2025-05-03 10:51:02.250 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-03 10:52:35.199 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-03 10:52:37.412 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-03 10:52:38.643 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-03 10:52:39.445 [main] LoggerLoad - Register test data: [{Username=Ninja_Galaxy, password confirmation=logged in successful, Password=We_team3}, {Username=, password confirmation=empty field, Password=}, {Username=, password confirmation=, Password=We_team3}, {Username=Ninja_Galaxy, password confirmation=, Password=}, {Username=wert, password confirmation=, Password=csfa}, {Username=rtaa, password confirmation=, Password=We_team3}, {Username=Ninja_Galaxy, password confirmation=, Password=rwerqw}, {Username=, password confirmation=, Password=}]
+[INFO ] 2025-05-03 10:52:39.995 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-03 10:52:40.040 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-03 10:52:41.442 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-03 10:52:42.600 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-03 10:52:42.670 [main] LoggerLoad - Register test data: [{Username=Ninja_Galaxy, password confirmation=logged in successful, Password=We_team3}, {Username=, password confirmation=empty field, Password=}, {Username=, password confirmation=, Password=We_team3}, {Username=Ninja_Galaxy, password confirmation=, Password=}, {Username=wert, password confirmation=, Password=csfa}, {Username=rtaa, password confirmation=, Password=We_team3}, {Username=Ninja_Galaxy, password confirmation=, Password=rwerqw}, {Username=, password confirmation=, Password=}]
+[INFO ] 2025-05-03 10:52:42.988 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-03 10:54:12.364 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-03 10:54:14.284 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-03 10:54:15.436 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-03 10:54:16.342 [main] LoggerLoad - test data: [{Username=Ninja_Galaxy, password confirmation=logged in successful, Password=We_team3}, {Username=, password confirmation=empty field, Password=}, {Username=, password confirmation=, Password=We_team3}, {Username=Ninja_Galaxy, password confirmation=, Password=}, {Username=wert, password confirmation=, Password=csfa}, {Username=rtaa, password confirmation=, Password=We_team3}, {Username=Ninja_Galaxy, password confirmation=, Password=rwerqw}, {Username=, password confirmation=, Password=}]
+[INFO ] 2025-05-03 10:54:17.269 [main] LoggerLoad - You are logged in
+[INFO ] 2025-05-03 10:54:17.740 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-03 10:54:17.789 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-03 10:54:19.156 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-03 10:54:20.309 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-03 10:54:20.374 [main] LoggerLoad - test data: [{Username=Ninja_Galaxy, password confirmation=logged in successful, Password=We_team3}, {Username=, password confirmation=empty field, Password=}, {Username=, password confirmation=, Password=We_team3}, {Username=Ninja_Galaxy, password confirmation=, Password=}, {Username=wert, password confirmation=, Password=csfa}, {Username=rtaa, password confirmation=, Password=We_team3}, {Username=Ninja_Galaxy, password confirmation=, Password=rwerqw}, {Username=, password confirmation=, Password=}]
+[INFO ] 2025-05-03 10:54:25.334 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-03 12:30:41.124 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-03 12:30:43.451 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-03 12:30:44.407 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-03 12:30:45.066 [main] LoggerLoad - test data: [{Username=Ninja_Galaxy, password confirmation=logged in successful, Password=We_team3}, {Username=, password confirmation=empty field, Password=}, {Username=, password confirmation=, Password=We_team3}, {Username=Ninja_Galaxy, password confirmation=, Password=}, {Username=wert, password confirmation=, Password=csfa}, {Username=rtaa, password confirmation=, Password=We_team3}, {Username=Ninja_Galaxy, password confirmation=, Password=rwerqw}, {Username=, password confirmation=, Password=}]
+[INFO ] 2025-05-03 12:30:45.908 [main] LoggerLoad - You are logged in
+[INFO ] 2025-05-03 12:30:46.168 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-03 12:30:46.215 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-03 12:30:47.382 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-03 12:30:48.330 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-03 12:30:48.381 [main] LoggerLoad - test data: [{Username=Ninja_Galaxy, password confirmation=logged in successful, Password=We_team3}, {Username=, password confirmation=empty field, Password=}, {Username=, password confirmation=, Password=We_team3}, {Username=Ninja_Galaxy, password confirmation=, Password=}, {Username=wert, password confirmation=, Password=csfa}, {Username=rtaa, password confirmation=, Password=We_team3}, {Username=Ninja_Galaxy, password confirmation=, Password=rwerqw}, {Username=, password confirmation=, Password=}]
+[INFO ] 2025-05-03 12:30:58.969 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-03 12:41:36.936 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-03 12:41:38.679 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-03 12:41:39.689 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-03 12:41:40.425 [main] LoggerLoad - test data: [{Username=Ninja_Galaxy, password confirmation=logged in successful, Password=We_team3}, {Username=, password confirmation=empty field, Password=}, {Username=, password confirmation=, Password=We_team3}, {Username=Ninja_Galaxy, password confirmation=, Password=}, {Username=wert, password confirmation=, Password=csfa}, {Username=rtaa, password confirmation=, Password=We_team3}, {Username=Ninja_Galaxy, password confirmation=, Password=rwerqw}, {Username=, password confirmation=, Password=}]
+[INFO ] 2025-05-03 12:41:49.900 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-03 12:42:50.848 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-03 12:42:52.619 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-03 12:42:53.565 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-03 12:42:54.225 [main] LoggerLoad - test data: [{Username=Ninja_Galaxy, password confirmation=logged in successful, Password=We_team3}, {Username=, password confirmation=empty field, Password=}, {Username=, password confirmation=, Password=We_team3}, {Username=Ninja_Galaxy, password confirmation=, Password=}, {Username=wert, password confirmation=, Password=csfa}, {Username=rtaa, password confirmation=, Password=We_team3}, {Username=Ninja_Galaxy, password confirmation=, Password=rwerqw}, {Username=, password confirmation=, Password=}]
+[INFO ] 2025-05-03 12:42:58.765 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-03 12:44:30.616 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-03 12:44:32.351 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-03 12:44:33.267 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-03 12:44:33.891 [main] LoggerLoad - test data: [{Username=Ninja_Galaxy, password confirmation=logged in successful, Password=We_team3}, {Username=, password confirmation=empty field, Password=}, {Username=, password confirmation=, Password=We_team3}, {Username=Ninja_Galaxy, password confirmation=, Password=}, {Username=wert, password confirmation=, Password=csfa}, {Username=rtaa, password confirmation=, Password=We_team3}, {Username=Ninja_Galaxy, password confirmation=, Password=rwerqw}, {Username=, password confirmation=, Password=}]
+[INFO ] 2025-05-03 12:44:44.446 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-03 12:45:44.420 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-03 12:45:46.126 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-03 12:45:47.032 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-03 12:45:47.730 [main] LoggerLoad - test data: [{Username=Ninja_Galaxy, password confirmation=logged in successful, Password=We_team3}, {Username=, password confirmation=empty field, Password=}, {Username=, password confirmation=, Password=We_team3}, {Username=Ninja_Galaxy, password confirmation=, Password=}, {Username=wert, password confirmation=, Password=csfa}, {Username=rtaa, password confirmation=, Password=We_team3}, {Username=Ninja_Galaxy, password confirmation=, Password=rwerqw}, {Username=, password confirmation=, Password=}]
+[INFO ] 2025-05-03 12:45:48.584 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-03 12:49:42.759 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-03 12:49:44.599 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-03 12:49:45.533 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-03 12:49:46.169 [main] LoggerLoad - test data: [{=, Username=Ninja_Galaxy, Password=We_team3}, {=, Username=, Password=}, {=, Username=, Password=We_team3}, {=, Username=Ninja_Galaxy, Password=}, {=, Username=wert, Password=csfa}, {=, Username=rtaa, Password=We_team3}, {=, Username=Ninja_Galaxy, Password=rwerqw}, {=, Username=, Password=}]
+[INFO ] 2025-05-03 12:49:46.992 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-03 12:55:24.768 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-03 12:55:26.505 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-03 12:55:27.488 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-03 12:55:28.133 [main] LoggerLoad - test data: [{=, Username=Ninja_Galaxy, Password=We_team3}, {=, Username=, Password=}, {=, Username=, Password=We_team3}, {=, Username=Ninja_Galaxy, Password=}, {=, Username=wert, Password=csfa}, {=, Username=rtaa, Password=We_team3}, {=, Username=Ninja_Galaxy, Password=rwerqw}, {=, Username=, Password=}]
+[INFO ] 2025-05-03 12:55:28.844 [main] LoggerLoad - Error Message
+[INFO ] 2025-05-03 12:55:29.013 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-03 13:00:55.005 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-03 13:00:56.749 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-03 13:00:57.720 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-03 13:00:58.390 [main] LoggerLoad - test data: [{=, Username=Ninja_Galaxy, Password=We_team3}, {=, Username=, Password=}, {=, Username=, Password=We_team3}, {=, Username=Ninja_Galaxy, Password=}, {=, Username=wert, Password=csfa}, {=, Username=rtaa, Password=We_team3}, {=, Username=Ninja_Galaxy, Password=rwerqw}, {=, Username=, Password=}]
+[INFO ] 2025-05-03 13:00:59.083 [main] LoggerLoad - Error Message is displayed
+[INFO ] 2025-05-03 13:00:59.248 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-03 13:01:55.063 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-03 13:01:56.812 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-03 13:01:57.782 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-03 13:01:58.486 [main] LoggerLoad - test data: [{=, Username=Ninja_Galaxy, Password=We_team3}, {=, Username=, Password=}, {=, Username=, Password=We_team3}, {=, Username=Ninja_Galaxy, Password=}, {=, Username=wert, Password=csfa}, {=, Username=rtaa, Password=We_team3}, {=, Username=Ninja_Galaxy, Password=rwerqw}, {=, Username=, Password=}]
+[INFO ] 2025-05-03 13:01:59.100 [main] LoggerLoad - Error Message is displayed
+[INFO ] 2025-05-03 13:01:59.354 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-03 13:15:05.232 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-03 13:15:06.998 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-03 13:15:07.976 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-03 13:15:08.237 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-03 13:19:22.535 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-03 13:19:24.276 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-03 13:19:25.317 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-03 13:19:26.017 [main] LoggerLoad - test data: [{=, Username=Ninja_Galaxy, Password=We_team3}, {=, Username=, Password=}, {=, Username=, Password=We_team3}, {=, Username=Ninja_Galaxy, Password=}, {=, Username=wert, Password=csfa}, {=, Username=rtaa, Password=We_team3}, {=, Username=Ninja_Galaxy, Password=rwerqw}, {=, Username=, Password=}]
+[INFO ] 2025-05-03 13:19:26.652 [main] LoggerLoad - Error Message is displayed
+[INFO ] 2025-05-03 13:19:26.957 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-03 13:20:36.726 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-03 13:20:38.489 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-03 13:20:39.465 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-03 13:20:39.714 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-03 13:21:56.350 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-03 13:21:58.068 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-03 13:21:59.030 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-03 13:21:59.670 [main] LoggerLoad - test data: [{=, Username=Ninja_Galaxy, Password=We_team3}, {=, Username=, Password=}, {=, Username=, Password=We_team3}, {=, Username=Ninja_Galaxy, Password=}, {=, Username=wert, Password=csfa}, {=, Username=rtaa, Password=We_team3}, {=, Username=Ninja_Galaxy, Password=rwerqw}, {=, Username=, Password=}]
+[INFO ] 2025-05-03 13:22:00.316 [main] LoggerLoad - Error Message is displayed
+[INFO ] 2025-05-03 13:22:00.587 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-03 13:26:45.810 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-03 13:26:47.797 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-03 13:26:48.878 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-03 13:26:49.693 [main] LoggerLoad - test data: [{=, Username=Ninja_Galaxy, Password=We_team3}, {=, Username=, Password=}, {=, Username=, Password=We_team3}, {=, Username=Ninja_Galaxy, Password=}, {=, Username=wert, Password=csfa}, {=, Username=rtaa, Password=We_team3}, {=, Username=Ninja_Galaxy, Password=rwerqw}, {=, Username=, Password=}]
+[INFO ] 2025-05-03 13:26:50.305 [main] LoggerLoad - Error Message is displayed
+[INFO ] 2025-05-03 13:26:50.584 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-03 13:26:50.693 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-03 13:26:51.969 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-03 13:26:53.085 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-03 13:26:53.356 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-03 13:28:15.039 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-03 13:28:16.978 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-03 13:28:18.147 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-03 13:28:18.950 [main] LoggerLoad - test data: [{=, Username=Ninja_Galaxy, Password=We_team3}, {=, Username=, Password=}, {=, Username=, Password=We_team3}, {=, Username=Ninja_Galaxy, Password=}, {=, Username=wert, Password=csfa}, {=, Username=rtaa, Password=We_team3}, {=, Username=Ninja_Galaxy, Password=rwerqw}, {=, Username=, Password=}]
+[INFO ] 2025-05-03 13:28:19.597 [main] LoggerLoad - Error Message is displayed
+[INFO ] 2025-05-03 13:28:19.844 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-03 13:31:28.297 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-03 13:31:30.534 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-03 13:31:31.662 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-03 13:31:31.948 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-03 13:32:43.107 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-03 13:32:45.202 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-03 13:32:46.283 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-03 13:32:47.066 [main] LoggerLoad - test data: [{=, Username=Ninja_Galaxy, Password=We_team3}, {=, Username=, Password=}, {=, Username=, Password=We_team3}, {=, Username=Ninja_Galaxy, Password=}, {=, Username=wert, Password=csfa}, {=, Username=rtaa, Password=We_team3}, {=, Username=Ninja_Galaxy, Password=rwerqw}, {=, Username=, Password=}]
+[INFO ] 2025-05-03 13:32:47.735 [main] LoggerLoad - Error Message is displayed
+[INFO ] 2025-05-03 13:32:47.990 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-03 13:34:47.817 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-03 13:34:49.590 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-03 13:34:50.578 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-03 13:34:50.879 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-03 13:36:19.409 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-03 13:36:21.207 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-03 13:36:22.125 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-03 13:36:22.805 [main] LoggerLoad - test data: [{=, Username=Ninja_Galaxy, Password=We_team3}, {=, Username=, Password=}, {=, Username=, Password=We_team3}, {=, Username=Ninja_Galaxy, Password=}, {=, Username=wert, Password=csfa}, {=, Username=rtaa, Password=We_team3}, {=, Username=Ninja_Galaxy, Password=rwerqw}, {=, Username=, Password=}]
+[INFO ] 2025-05-03 13:36:23.387 [main] LoggerLoad - Error Message is displayed
+[INFO ] 2025-05-03 13:36:23.613 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-03 14:03:06.324 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-03 14:03:08.065 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-03 14:03:09.044 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-03 14:03:09.816 [main] LoggerLoad - test data: [{=, Username=Ninja_Galaxy, Password=We_team3}, {=, Username=, Password=}, {=, Username=, Password=We_team3}, {=, Username=Ninja_Galaxy, Password=}, {=, Username=wert, Password=csfa}, {=, Username=rtaa, Password=We_team3}, {=, Username=Ninja_Galaxy, Password=rwerqw}, {=, Username=, Password=}]
+[INFO ] 2025-05-03 14:03:10.671 [main] LoggerLoad - You are logged in
+[INFO ] 2025-05-03 14:03:10.929 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-03 14:03:10.966 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-03 14:03:12.169 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-03 14:03:13.133 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-03 14:03:13.192 [main] LoggerLoad - test data: [{=, Username=Ninja_Galaxy, Password=We_team3}, {=, Username=, Password=}, {=, Username=, Password=We_team3}, {=, Username=Ninja_Galaxy, Password=}, {=, Username=wert, Password=csfa}, {=, Username=rtaa, Password=We_team3}, {=, Username=Ninja_Galaxy, Password=rwerqw}, {=, Username=, Password=}]
+[INFO ] 2025-05-03 14:03:13.778 [main] LoggerLoad - Error Message is displayed
+[INFO ] 2025-05-03 14:03:14.012 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-03 14:03:14.029 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-03 14:03:15.238 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-03 14:03:16.176 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-03 14:03:16.219 [main] LoggerLoad - test data: [{=, Username=Ninja_Galaxy, Password=We_team3}, {=, Username=, Password=}, {=, Username=, Password=We_team3}, {=, Username=Ninja_Galaxy, Password=}, {=, Username=wert, Password=csfa}, {=, Username=rtaa, Password=We_team3}, {=, Username=Ninja_Galaxy, Password=rwerqw}, {=, Username=, Password=}]
+[INFO ] 2025-05-03 14:03:16.834 [main] LoggerLoad - Error Message is displayed
+[INFO ] 2025-05-03 14:03:17.072 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-03 14:03:17.089 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-03 14:03:18.311 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-03 14:03:19.208 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-03 14:03:19.250 [main] LoggerLoad - test data: [{=, Username=Ninja_Galaxy, Password=We_team3}, {=, Username=, Password=}, {=, Username=, Password=We_team3}, {=, Username=Ninja_Galaxy, Password=}, {=, Username=wert, Password=csfa}, {=, Username=rtaa, Password=We_team3}, {=, Username=Ninja_Galaxy, Password=rwerqw}, {=, Username=, Password=}]
+[INFO ] 2025-05-03 14:03:19.818 [main] LoggerLoad - Error Message is displayed
+[INFO ] 2025-05-03 14:03:20.041 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-03 14:03:20.052 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-03 14:03:21.204 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-03 14:03:22.182 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-03 14:03:22.228 [main] LoggerLoad - test data: [{=, Username=Ninja_Galaxy, Password=We_team3}, {=, Username=, Password=}, {=, Username=, Password=We_team3}, {=, Username=Ninja_Galaxy, Password=}, {=, Username=wert, Password=csfa}, {=, Username=rtaa, Password=We_team3}, {=, Username=Ninja_Galaxy, Password=rwerqw}, {=, Username=, Password=}]
+[INFO ] 2025-05-03 14:03:22.728 [main] LoggerLoad - Error Message is displayed
+[INFO ] 2025-05-03 14:03:22.927 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-03 14:03:22.939 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-03 14:03:24.114 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-03 14:03:25.065 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-03 14:03:25.105 [main] LoggerLoad - test data: [{=, Username=Ninja_Galaxy, Password=We_team3}, {=, Username=, Password=}, {=, Username=, Password=We_team3}, {=, Username=Ninja_Galaxy, Password=}, {=, Username=wert, Password=csfa}, {=, Username=rtaa, Password=We_team3}, {=, Username=Ninja_Galaxy, Password=rwerqw}, {=, Username=, Password=}]
+[INFO ] 2025-05-03 14:03:25.661 [main] LoggerLoad - Error Message is displayed
+[INFO ] 2025-05-03 14:03:25.860 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-03 14:03:25.882 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-03 14:03:27.007 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-03 14:03:27.940 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-03 14:03:27.976 [main] LoggerLoad - test data: [{=, Username=Ninja_Galaxy, Password=We_team3}, {=, Username=, Password=}, {=, Username=, Password=We_team3}, {=, Username=Ninja_Galaxy, Password=}, {=, Username=wert, Password=csfa}, {=, Username=rtaa, Password=We_team3}, {=, Username=Ninja_Galaxy, Password=rwerqw}, {=, Username=, Password=}]
+[INFO ] 2025-05-03 14:03:28.528 [main] LoggerLoad - Error Message is displayed
+[INFO ] 2025-05-03 14:03:28.726 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-03 14:06:29.292 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-03 14:06:31.033 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-03 14:06:32.018 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-03 14:06:32.699 [main] LoggerLoad - test data: [{=, Username=Ninja_Galaxy, Password=We_team3}, {=, Username=, Password=}, {=, Username=, Password=We_team3}, {=, Username=Ninja_Galaxy, Password=}, {=, Username=wert, Password=csfa}, {=, Username=rtaa, Password=We_team3}, {=, Username=Ninja_Galaxy, Password=rwerqw}, {=, Username=, Password=}]
+[INFO ] 2025-05-03 14:06:33.562 [main] LoggerLoad - You are logged in
+[INFO ] 2025-05-03 14:06:33.793 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-03 14:16:59.296 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-03 14:17:01.326 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-03 14:17:03.381 [main] LoggerLoad - Register test data: [{password=, password confirmation=, username=}, {password=, password confirmation=, username=NumpyNinja}, {password=Querty1, password confirmation=, username=NinjaGalaxy}, {password=Querty1, password confirmation=Querty1, username=Ninja Galaxy}, {password=testingdemo, password confirmation=Querty1, username=Ninja_Galaxy}, {password=259603.0, password confirmation=259603.0, username=Ninja_Galaxy}, {password=testingdemo, password confirmation=testingdemo123, username=Ninja_Galaxy123}, {password=We_team3, password confirmation=We_team3, username=Ninja_Galaxy14}, {password=, password confirmation=, username=}]
+[INFO ] 2025-05-03 14:17:03.650 [main] LoggerLoad - Filled registration form with -> Username: NumpyNinja, Password: , Confirm Password: 
+[INFO ] 2025-05-03 14:17:03.762 [main] LoggerLoad - Clicked on Register button
+[INFO ] 2025-05-03 14:17:03.806 [main] LoggerLoad - ValidationMessage: Please fill out this field.
+[INFO ] 2025-05-03 14:17:06.121 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-03 14:19:17.010 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-03 14:19:18.976 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-03 14:19:20.849 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-03 14:19:20.948 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-03 14:19:22.204 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-03 14:19:23.890 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-03 14:21:24.260 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-03 14:21:26.301 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-03 14:21:28.081 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-03 14:21:28.139 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-03 14:21:29.453 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-03 14:21:31.230 [main] LoggerLoad - Browser closed successfully.

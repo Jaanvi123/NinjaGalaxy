@@ -28,11 +28,11 @@ public class ExcelRead {
 			throw new IOException("Sheet " + sheetName + " not found in " + filepath);
 		}
 
-		Row headerRow = sheet.getRow(0); // First row contains column headers
+		Row headerRow = sheet.getRow(0);
 		int totalColumns = headerRow.getLastCellNum();
 		
 
-		for (int i = 1; i <= sheet.getLastRowNum(); i++) { // Start from row 1 (Skipping headers)
+		for (int i = 1; i <= sheet.getLastRowNum(); i++) {
 			Row row = sheet.getRow(i);
 			if (row == null)
 				continue;
@@ -43,7 +43,7 @@ public class ExcelRead {
 				Cell dataCell = row.getCell(j);
 
 				String header = headerCell.getStringCellValue().trim();
-				String value = (dataCell != null) ? dataCell.toString().trim() : ""; // Avoid null cells
+				String value = (dataCell != null) ? dataCell.toString().trim() : ""; 
 
 				rowData.put(header, value);
 			}
@@ -53,10 +53,10 @@ public class ExcelRead {
 		workbook.close();
 		fileInputStream.close();
 		return excelData;
-	}
+	} 
 	
 	//new
-	public List<Map<String, String>> readFromExcel(String filePath, String sheetName)
+	/*	public List<Map<String, String>> readFromExcel(String filePath, String sheetName)
 			throws IOException {
 		
 		FileInputStream fis = new FileInputStream(new File(filePath));
@@ -69,8 +69,6 @@ public class ExcelRead {
 		Row row;
 		Cell cell;
 		int totalRow = sheet.getLastRowNum();
-	//	System.out.println("totalRow--->" + totalRow);
-
 		List<Map<String, String>> excelRows = new ArrayList<>();
 
 		for (int currentRow = 1; currentRow <= totalRow; currentRow++) { 
@@ -112,6 +110,6 @@ public class ExcelRead {
 	}
 	
 
-	
+	*/
 	
 }

@@ -1,107 +1,169 @@
 package stepDefinitions;
 
-
 import java.io.IOException;
-
-
-import org.junit.Assert;
-import org.openqa.selenium.By;
+import org.apache.poi.openxml4j.exceptions.OpenXML4JException;
 import org.openqa.selenium.WebDriver;
-
+import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 import driverManager.DriverFactory;
 import dsAlgoPageObjects.HomePageObj;
+import dsAlgoPageObjects.IntroductionPageObj;
 import dsAlgoPageObjects.RegisterPageObj;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import utils.ConfigReader;
-import utils.ExcelRead;
 
-public class RegisterStepDefinition extends DriverFactory {
+
+public class RegisterStepDefinition {
+
 	WebDriver driver = DriverFactory.getDriver();
-	RegisterPageObj registerPage = new RegisterPageObj();
-	 HomePageObj homepage = new HomePageObj(driver);
-	
-	
-	
-	
-	@Given("The User opens Register Page")
-	public void the_user_opens_register_page() {
-	    DriverFactory.initializeDriver("chrome");  // Pass browser type dynamically
-	    registerPage.navigateToRegisterPage();
-	    homepage.clickGetStartedHomePageButton();	
-	    registerPage.ClickRegisteronHomepage();
-	}
+	IntroductionPageObj introductionpage = new IntroductionPageObj();
+	HomePageObj homepage = new HomePageObj(driver);
+	RegisterPageObj registerPage = new RegisterPageObj(driver);
+	WebElement getstartedBtn;
+	String actualErrorMsg;
+	String expectedErrorMsg;
+	String actualSuccessMsg;
+	String expectedSuccessMsg;
 
-	@When("The User clicks {string} button with all fields empty")
-	public void the_user_clicks_button_with_all_fields_empty(String string) {
+	@Given("The user is on the new user registration page")
+	public void the_user_is_on_the_new_user_registration_page() {
+		registerPage.openURL();
+		registerPage.clickGetStartedButton();
+		registerPage.clickRegisterLink();
+		
+	}
+//TC01
+	@When("The user clicks Register button with all fields empty on registration form from sheetname {string} and row {int}")
+	public void the_user_clicks_register_button_with_all_fields_empty_on_registration_form_from_sheetname_and_row(
+			String Sheetname, Integer RowNumber) throws IOException, OpenXML4JException, InterruptedException {
+		registerPage.fillRegistrationForm("register", 0);
 		registerPage.clickRegisterButton();
+	}
+
+	@Then("The error Please fill out this field. appears below Username textbox")
+	public void the_error_please_fill_out_this_field_appears_below_username_textbox() {
+		String browserValidationmsg = registerPage.switchToElementAndGetValidationMessage();
+		String expectedErrorMsg = "Please fill out this field.";
+		Assert.assertEquals(browserValidationmsg, expectedErrorMsg);  
 		
 	}
 
-	@Then("It should display an error {string} below Username textbox")
-	public void it_should_display_an_error_below_username_textbox(String string) {
-	   registerPage.enterUserName();
-	   registerPage.enterPassword();
-	    registerPage.enterConfirmPassword(string);
-	    registerPage.clickRegisterButton();
-	    
+//TC02
+	@When("The user clicks Register button after entering Username with other fields empty from sheetname {string} and row {int}")
+	public void the_user_clicks_register_button_after_entering_username_with_other_fields_empty_from_sheetname_and_row(
+			String string, Integer int1) throws IOException, OpenXML4JException, InterruptedException {
+		registerPage.fillRegistrationForm("register", 1);
+		registerPage.clickRegisterButton();
 	}
 
-
-	@When("The User clicks {string} button after entering different passwords in Password and Password Confirmation fields")
-	public void the_user_clicks_button_after_entering_different_passwords_in_password_and_password_confirmation_fields(String string) {
-		 registerPage.verifyErrorMessage(string);
-		
+	@Then("The error message Please fill out this field. appears below Password textbox")
+	public void the_error_message_please_fill_out_this_field_appears_below_password_textbox() throws IOException {
+		String browserValidationmsg = registerPage.switchToElementAndGetValidationMessage();
+		String expectedErrorMsg = "Please fill out this field.";
+		Assert.assertEquals(browserValidationmsg, expectedErrorMsg);
+		registerPage.TakeScreenshot();
 	}
 
-	@Then("The User should able to see an pwd warning message {string}")
-	public void the_user_should_able_to_see_an_pwd_warning_message(String string) {
-		
-	   
+	// TC03
+	@When("The user clicks Register button after entering Username and Password leaving Password Confirmation field empty from sheetname {string} and row {int}")
+	public void the_user_clicks_register_button_after_entering_username_and_password_leaving_password_confirmation_field_empty_from_sheetname_and_row(
+			String string, Integer int1) throws IOException, OpenXML4JException, InterruptedException {
+		registerPage.fillRegistrationForm("register", 2);
+		registerPage.clickRegisterButton();
 	}
+
+	@Then("The error message Please fill out this field. appears below  Password Confirmation textbox")
+	public void the_error_message_please_fill_out_this_field_appears_below_password_confirmation_textbox() throws IOException {
+		String browserValidationmsg = registerPage.switchToElementAndGetValidationMessage();
+		String expectedErrorMsg = "Please fill out this field.";
+		Assert.assertEquals(browserValidationmsg, expectedErrorMsg);
+		registerPage.TakeScreenshot();
+	}
+
+	// TC04
+	@When("The user clicks Register button after entering a username with spacebar characters other than digits and symbols from sheetname {string} and row {int}")
+	public void the_user_clicks_register_button_after_entering_a_username_with_spacebar_characters_other_than_digits_and_symbols_from_sheetname_and_row(
+			String string, Integer int1) throws IOException, OpenXML4JException, InterruptedException {
+		registerPage.fillRegistrationForm("register", 3);
+		registerPage.clickRegisterButton();
+	}
+
+	@Then("The user should be able to see error msg after entering invalid data")
+	public void the_user_should_be_able_to_see_error_msg_after_entering_invalid_data() throws IOException {
+		expectedErrorMsg = "Invalid Username Entered";
+		actualErrorMsg = registerPage.displayPasswordMismatchError();
+		Assert.assertEquals(actualErrorMsg, expectedErrorMsg);
+		registerPage.TakeScreenshot();
+	}
+
+	// TC05
+	@When("The user clicks Register button after entering a password with only numeric data from sheetname {string} and row {int}")
+	public void the_user_clicks_register_button_after_entering_a_password_with_only_numeric_data_from_sheetname_and_row(
+			String string, Integer int1) throws IOException, OpenXML4JException, InterruptedException {
+		registerPage.fillRegistrationForm("register", 4);
+		registerPage.clickRegisterButton();
+	}
+
+	@Then("The user should be able to see error msg after entering invalid data in password fields")
+	public void the_user_should_be_able_to_see_error_msg_after_entering_invalid_data_in_password_fields() throws IOException {
+		expectedErrorMsg = "Invalid Password Entered";
+		actualErrorMsg = registerPage.displayPasswordMismatchError();
+		Assert.assertEquals(actualErrorMsg, expectedErrorMsg);
+		registerPage.TakeScreenshot();
+	}
+
+	// TC06
+	@When("The user clicks Register button after entering a password with less than eight characters from sheetname {string} and row {int}")
+	public void the_user_clicks_register_button_after_entering_a_password_with_less_than_eight_characters_from_sheetname_and_row(
+			String string, Integer int1) throws IOException, OpenXML4JException, InterruptedException {
+		registerPage.fillRegistrationForm("register", 5);
+		registerPage.clickRegisterButton();
+	}
+
+	@Then("The user should be able to see error msg after entering less than eight characters")
+	public void the_user_should_be_able_to_see_error_msg_after_entering_less_than_eight_characters() throws IOException {
+		expectedErrorMsg = "Password Entered is less than eight characters";
+		actualErrorMsg = registerPage.displayPasswordMismatchError();
+		Assert.assertEquals(actualErrorMsg, expectedErrorMsg);
+		registerPage.TakeScreenshot();
+	}
+
 	
-	//@When("^User enters valid (.+) (.+) (.+) and clicks Register button$")
-	//public void user_enters_valid_username_password_confirm_password_and_clicks_register_button(String string1,String string2,String string3) throws IOException {
-	
-	@When("User enters valid username, password,confirm_password and clicks Register button from row {int}")
-	public void user_enters_valid_username_password_confirm_password_and_clicks_register_button_from_row(Integer int1) throws IOException {
-	  ExcelRead reader = new ExcelRead();
-/*		List<Map<String,String>> excelData = reader.readExcelSheet();
-		    String username = excelData.get(int1).get("username");
-	        System.out.println("username is "+ username);
-	        String password = excelData.get(int1).get("password");
-	        System.out.println("password is "+ password);
-	        String confirm_password = excelData.get(int1).get("confirm_password");
-	         System.out.println("confirm_password is "+ confirm_password);
-	
-	    
-	    registerPage.setUserName(username);
-		registerPage.setpassword(password);
-		registerPage.setConfirmPassword(confirm_password);
-		registerPage.clickRegisterButton();   */
+	// TC07
+	@When("The user clicks Register button after entering  with valid username password and password confirmation in related textboxes from sheetname {string} and row {int}")
+	public void the_user_clicks_register_button_after_entering_with_valid_username_password_and_password_confirmation_in_related_textboxes_from_sheetname_and_row(
+			String string, Integer int1) throws IOException, OpenXML4JException, InterruptedException {
+		registerPage.fillRegistrationForm("register", 7);
+		registerPage.clickRegisterButton();
 	}
 
-
-	
-	@Then("The User should be redirected to HomePage of DS_Algo")
-	public void the_user_should_be_redirected_to_home_page_of_ds_algo() {
-		homepage = new HomePageObj(driver);
-		
-	}
-	
-	@Then("The User should able to see successful message {string}  on the DS_Algo HomePage")
-	public void the_user_should_able_to_see_successful_message_on_the_ds_algo_home_page(String string) {
-	 //   String successMessage = homepage.RegisterSuccess();
-	 //   Assert.assertNotNull(successMessage, "Success message is null!");
-	//    Assert.assertTrue(successMessage.contains(string));
+	@Then("The user should be redirected to Home Page of DS Algo with message New Account Created. You are logged in as username")
+	public void the_user_should_be_redirected_to_home_page_of_ds_algo_with_message_new_account_created_you_are_logged_in_as_username() {
+		expectedSuccessMsg = "registerPage.registerSuccessMsg";
+		actualSuccessMsg = "New Account Created.You are logged in as Testing@2025";
+		actualErrorMsg = registerPage.displayPasswordMismatchError();
 	}
 
-	@Then("user clicks on signout")
-	public void user_clicks_on_signout() {
-		registerPage.clickSignOut();
+	// TC08
+	@When("The user clicks login link from Registration page")
+	public void the_user_clicks_login_link_from_registration_page() {
+		registerPage.clickLoginLink();
 	}
 
+	@Then("The user should be landed on login page")
+	public void the_user_should_be_landed_on_login_page() {
+		Assert.assertEquals(introductionpage.getHomePageTitle(), "Login");
+	}
 
+	// TC09
+	@When("The user clicks Sign in link from Registration page")
+	public void the_user_clicks_sign_in_link_from_registration_page() {
+		registerPage.clickSignInLink();
+	}
+	@Then("The user should be landed on the signin page")
+	public void the_user_should_be_landed_on_the_sigin_page() {
+		Assert.assertEquals(introductionpage.getHomePageTitle(), "Signin");
+	}
 
 }

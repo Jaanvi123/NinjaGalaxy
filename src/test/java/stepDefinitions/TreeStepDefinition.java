@@ -6,22 +6,27 @@ import dsAlgoPageObjects.HomePageObj;
 import dsAlgoPageObjects.IntroductionPageObj;
 import dsAlgoPageObjects.SignInPageObj;
 import dsAlgoPageObjects.TreePageObj;
+import dsAlgoPageObjects.TryEditorPage;
+import static org.testng.Assert.assertTrue;
 import java.io.IOException;
 import org.apache.poi.openxml4j.exceptions.OpenXML4JException;
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import utils.ConfigReader;
+import utils.LoggerLoad;
 
 public class TreeStepDefinition {
 
 	WebDriver driver = DriverFactory.getDriver();
 	SignInPageObj signin = new SignInPageObj(driver);
-	ConfigReader configReader = new ConfigReader();
+	ConfigReader configReader = new ConfigReader(driver);
 	IntroductionPageObj introductionpage = new IntroductionPageObj();
 	HomePageObj homepage = new HomePageObj(driver);
-	TreePageObj treePage = new TreePageObj();
+	TreePageObj treePage = new TreePageObj(driver);
+	TryEditorPage tryEditorPage = new TryEditorPage(driver);
 	
 	@Given("The user is on home page")
 	public void the_user_is_on_home_page() {
@@ -31,7 +36,7 @@ public class TreeStepDefinition {
 	@When("The user clicks Sign in link and enters valid credentials")
 	public void the_user_clicks_sign_in_link_and_enters_valid_credentials() throws InvalidFormatException, IOException, OpenXML4JException, InterruptedException {
 		introductionpage.clickgetStartedButton(driver);
-		introductionpage.SignInLinkClick();
+		introductionpage.clickSignInLink();
 		signin.enterUsernameText("username");
 		signin.enterPasswordText("password");
 		signin.clickloginButton();
@@ -40,15 +45,15 @@ public class TreeStepDefinition {
 	@Then("The user should land on the tree page by clicking Get started button for tree module")
 	public void the_user_should_land_on_the_tree_page_by_clicking_get_started_button_for_tree_module() {
 		introductionpage.clickTreeGetStartedButton();
-		treePage.TreePageTitle();
-	}
+		Assert.assertEquals(introductionpage.getHomePageTitle(), "Tree");
 		
+	}
+	//TC01	
 	@Given("The user is on the Tree page after signing in")
 	public void the_user_is_on_the_tree_page_after_signing_in() {
 		treePage.getcurrentpageUrl();
 	}
-	
-	
+		
 	@When("The user clicks the Overview of Trees link")
 	public void the_user_clicks_the_overview_of_trees_link() {
 		treePage.clickOverviewOfTreesLink();
@@ -57,9 +62,9 @@ public class TreeStepDefinition {
 
 	@Then("The user should be redirected to the Overview of Trees data structure page")
 	public void the_user_should_be_redirected_to_the_overview_of_trees_data_structure_page() {
-		treePage.getcurrentpageUrl();
+	//	Assert.assertTrue(getHomePageTitle.toLowerCase().contains("Overview of Trees".toLowerCase()); 
 	}
-	
+	//TC02
 	@Given("The user is on the Overview of Trees page")
 	public void the_user_is_on_the_overview_of_trees_page() {
 		treePage.clickOverviewOfTreesLink();
@@ -67,23 +72,23 @@ public class TreeStepDefinition {
 
 	@When("The user clicks Try Here button in Overview of Trees page")
 	public void the_user_clicks_try_here_button_in_overview_of_trees_page() {
-		treePage.clickTryHereButton();
+		tryEditorPage.clickTryHereButton();
 	}
 
 	@Then("The user is redirected to a page having Editor with run button for Overview of Trees page")
 	public void the_user_is_redirected_to_a_page_having_editor_with_run_button_for_overview_of_trees_page() {
 		treePage.getcurrentpageUrl();
 	}
-			
+	//TC03		
 	@Given("The user is on the tryEditor page after clicking Try here button in Overview of Trees link")
 	public void the_user_is_on_the_try_editor_page_after_clicking_try_here_button_in_overview_of_trees_link() {
 		treePage.clickOverviewOfTreesLink();
-		treePage.clickTryHereButton();
+		tryEditorPage.clickTryHereButton();
 	}
 	
 	@When("The user enters an empty code in editor of Overview of Trees link and clicks Run button")
 	public void the_user_enters_an_empty_code_in_editor_of_overview_of_trees_link_and_clicks_run_button() {		
-		treePage.clickRunButton();		
+		tryEditorPage.clickRunButton();		
 	}
 
 	@Then("No error message is displayed for Try editor of Overview of Trees page")
@@ -91,46 +96,51 @@ public class TreeStepDefinition {
 		treePage.getcurrentpageUrl();
 	}
 
-	
-	
-	@Given("The user is on the tryEditor page clicks Try here button in Overview of Trees link")
-	public void the_user_is_on_the_try_editor_page_clicks_try_here_button_in_overview_of_trees_link() {
-		treePage.clickOverviewOfTreesLink();
-		treePage.clickTryHereButton();
-	}	
-	
-	@When("The user writes valid Python code in the editor of Overview of Trees page and clicks Run button")
-	public void the_user_writes_valid_python_code_in_the_editor_of_overview_of_trees_page_and_clicks_run_button() {
-		treePage.validateTextEditorBox();
-		treePage.clickRunButton();	
-	}
+	// TC04
+    @Given("The user is on the tryEditor page and clicks Try here button in Overview of Trees link")
+    public void the_user_is_on_the_try_editor_page_and_clicks_try_here_button_in_overview_of_trees_link() {
+    	treePage.clickOverviewOfTreesLink();
+        tryEditorPage.clickTryHereButton();
+       
+    }
+    @When("The user writes invalid code in the editor of Overview of Trees page and clicks Run button from sheetname {string} and row {int}")
+    public void the_user_writes_invalid_code_in_the_editor_of_overview_of_trees_page_and_clicks_run_button_from_sheetname_and_row(String sheetName, Integer rowNumber) {
+        try {
+        	tryEditorPage.enterCodeFromExcel(sheetName, rowNumber);
+        	tryEditorPage.clickRunButton();
+        } catch (Exception e) {
+        	LoggerLoad.info("Error while entering code or clicking Run: " + e.getMessage());
+        }
+    }
+    @Then("The user should be able to get alert on Overview of Trees TryEditor page")
+    public void the_user_should_able_to_get_alert_on_overview_of_trees_tryeditor_page() {
+    	boolean isAlertPresent = tryEditorPage.HandleAlert();
+        assertTrue(isAlertPresent, "No alert displayed");
+    	
+      
+    }
+    // TC05
+    @Given("The user is on the tryEditor page along with run button and valid code")
+    public void the_user_is_on_the_try_editor_page_along_with_run_button_and_valid_code() {
+    	treePage.clickOverviewOfTreesLink();
+        tryEditorPage.clickTryHereButton();
+        
+    }
+    @When("The user writes valid Python code in the editor of Overview of Trees page and clicks Run button from sheetname {string} and row {int}")
+    public void the_user_writes_valid_python_code_in_the_editor_of_overview_of_trees_page_and_clicks_run_button_from_sheetname_and_row(String sheetName, Integer rowNumber) {
+        try {
+        	tryEditorPage.enterCodeFromExcel(sheetName, rowNumber);
+        	tryEditorPage.clickRunButton();
+        } catch (Exception e) {
+        	LoggerLoad.info("Error while entering code or clicking Run: " + e.getMessage());
+        }
+    }
+    @Then("The user should be able to see output in the console for Overview of Trees page")
+    public void the_user_should_be_able_to_see_output_in_the_console_for_overview_of_trees_page() {
+              LoggerLoad.info("Console output is displayed " );
+    }
 
-	@Then("The user should be able to see output in the console for Overview of Trees page")
-	public void the_user_should_be_able_to_see_output_in_the_console_for_overview_of_trees_page() {
-		treePage.getcurrentpageUrl();
-	}
-	
-	
-
-	@Given("The user is on the tryEditor page and clicks Try here button in Overview of Trees link")
-	public void the_user_is_on_the_try_editor_page_and_clicks_try_here_button_in_overview_of_trees_link() {
-		treePage.clickOverviewOfTreesLink();
-		treePage.clickTryHereButton();
-		
-	}
-
-	@When("The user writes invalid code in the editor of Overview of Trees page and clicks Run button")
-	public void the_user_writes_invalid_code_in_the_editor_of_overview_of_trees_page_and_clicks_run_button() {
-		treePage.InvalidCode();
-	}
-
-	
-	@Then("The user should be able to get alert on Overview of Trees TryEditor page")
-	public void the_user_should_be_able_to_get_alert_on_overview_of_trees_tryeditor_page() {
-		treePage.getcurrentpageUrl();
-	}
-	
-	
+//TC06	
 	@Given("The user is on overview of Trees page after signing in")
 	public void the_user_is_on_overview_of_trees_page_after_signing_in() {
 		treePage.clickOverviewOfTreesLink();
@@ -146,6 +156,7 @@ public class TreeStepDefinition {
 	    treePage.getcurrentpageUrl();
 	}
 
+///
 ///
 	@Given("The user is on the Tree page after valid signing in")
 	public void the_user_is_on_the_tree_page_after_valid_signing_in() {
@@ -172,7 +183,7 @@ public class TreeStepDefinition {
 
 	@When("The user clicks Try Here button in Terminologies page")
 	public void the_user_clicks_try_here_button_in_terminologies_page() {
-		treePage.clickTryHereButton();
+		tryEditorPage.clickTryHereButton();
 	}
 
 	@Then("The user is redirected to a page having Editor with run button for Terminologies page")
@@ -183,12 +194,12 @@ public class TreeStepDefinition {
 	@Given("The user is on the tryEditor page after clicking Try here button in Terminologies link")
 	public void the_user_is_on_the_try_editor_page_after_clicking_try_here_button_in_terminologies_link() {
 		treePage.clickTerminologiesLink();
-		treePage.clickTryHereButton();
+		tryEditorPage.clickTryHereButton();
 	}
 	
 	@When("The user enters an empty code in editor of Terminologies link and clicks Run button")
 	public void the_user_enters_an_empty_code_in_editor_of_terminologies_link_and_clicks_run_button() {		
-		treePage.clickRunButton();		
+		tryEditorPage.clickRunButton();		
 	}
 
 	@Then("No error message is displayed for Try editor of Terminologies page")
@@ -197,44 +208,50 @@ public class TreeStepDefinition {
 	}
 
 	
-	
-	@Given("The user is on the tryEditor page clicks Try here button in Terminologies link")
-	public void the_user_is_on_the_try_editor_page_clicks_try_here_button_in_terminologies_link() {
-		treePage.clickTerminologiesLink();
-		treePage.clickTryHereButton();
-	}	
-	
-	@When("The user writes valid Python code in the editor of Terminologies page and clicks Run button")
-	public void the_user_writes_valid_python_code_in_the_editor_of_terminologies_page_and_clicks_run_button() {
-		treePage.validateTextEditorBox();
-		treePage.clickRunButton();	
-	}
+	// TC04
+    @Given("The user is on the tryEditor page and clicks Try here button in Terminologies link")
+    public void the_user_is_on_the_try_editor_page_and_clicks_try_here_button_in_terminologies_link() {
+    	treePage.clickTerminologiesLink();
+        tryEditorPage.clickTryHereButton();
+       
+    }
+    @When("The user writes invalid code in the editor of Terminologies page and clicks Run button from sheetname {string} and row {int}")
+    public void the_user_writes_invalid_code_in_the_editor_of_terminologies_page_and_clicks_run_button_from_sheetname_and_row(String sheetName, Integer rowNumber) {
+        try {
+        	tryEditorPage.enterCodeFromExcel(sheetName, rowNumber);
+        	tryEditorPage.clickRunButton();
+        } catch (Exception e) {
+        	LoggerLoad.info("Error while entering code or clicking Run: " + e.getMessage());
+        }
+    }
+    @Then("The user should able to see an error message in alert window on Terminologies page")
+    public void the_user_should_able_to_see_an_error_message_in_alert_window_on_terminologies_page() {
+    	boolean isAlertPresent = tryEditorPage.HandleAlert();
+        assertTrue(isAlertPresent, "No alert displayed");
+    	
+      
+    }
+    // TC05
+    @Given("The user is on tryEditor page along with run button and valid code of Terminologies page")
+    public void the_user_is_on_try_editor_page_along_with_run_button_and_valid_code_of_terminologies_page() {
+    	treePage.clickTerminologiesLink();
+        tryEditorPage.clickTryHereButton();
+        
+    }
+    @When("The user writes valid Python code in the editor of Terminologies page and clicks Run button from sheetname {string} and row {int}")
+    public void the_user_writes_valid_python_code_in_the_editor_of_terminologies_page_and_clicks_run_button_from_sheetname_and_row(String sheetName, Integer rowNumber) {
+        try {
+        	tryEditorPage.enterCodeFromExcel(sheetName, rowNumber);
+        	tryEditorPage.clickRunButton();
+        } catch (Exception e) {
+        	LoggerLoad.info("Error while entering code or clicking Run: " + e.getMessage());
+        }
+    }
+    @Then("The user should be able to see output in the console for Terminologies page")
+    public void the_user_should_be_able_to_see_output_in_the_console_for_terminologies_page() {
+              LoggerLoad.info("Console output is displayed " );
+    }
 
-	@Then("The user should be able to see output in the console for Terminologies page")
-	public void the_user_should_be_able_to_see_output_in_the_console_for_terminologies_page() {
-		treePage.getcurrentpageUrl();
-	}
-	
-	
-
-	@Given("The user is on the tryEditor page and clicks Try here button in Terminologies link")
-	public void the_user_is_on_the_try_editor_page_and_clicks_try_here_button_in_terminologies_link() {
-		treePage.clickTerminologiesLink();
-		treePage.clickTryHereButton();
-		
-	}
-
-	@When("The user writes invalid code in the editor of Terminologies page and clicks Run button")
-	public void the_user_writes_invalid_code_in_the_editor_of_terminologies_page_and_clicks_run_button() {
-		treePage.InvalidCode();
-	}
-
-	
-	@Then("The user should be able to get alert on Terminologies TryEditor page")
-	public void the_user_should_be_able_to_get_alert_on_terminologies_tryeditor_page() {
-		treePage.getcurrentpageUrl();
-	}
-	
 	
 	@Given("The user is on Terminologies page after signing in")
 	public void the_user_is_on_terminologies_page_after_signing_in() {

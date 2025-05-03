@@ -22,10 +22,10 @@ public class LinkedListStepDefinition {
 	
 	WebDriver driver = DriverFactory.getDriver();
 	SignInPageObj signin = new SignInPageObj(driver);
-	ConfigReader configReader = new ConfigReader();
+	ConfigReader configReader = new ConfigReader(driver);
 	IntroductionPageObj introductionpage = new IntroductionPageObj();
 	HomePageObj homepage = new HomePageObj(driver);
-	TreePageObj treePage = new TreePageObj();
+	TreePageObj treePage = new TreePageObj(driver);
 	LinkedListPageObj LinkedList = new LinkedListPageObj(driver);
 	
 	@Given("The user is on home page and clicks sign in link on the home page")
@@ -33,8 +33,8 @@ public class LinkedListStepDefinition {
 			throws InvalidFormatException, IOException, OpenXML4JException, InterruptedException {
 		homepage.openHomeUrl();
 		introductionpage.clickgetStartedButton(driver);
-		introductionpage.SignInLinkClick();
-		signin.enterLoginFormFields("login", 0);
+		introductionpage.clickSignInLink();
+		signin.EnterFromExcel("login", 0);
 		signin.clickloginButton();
 	}
 

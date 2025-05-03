@@ -12,28 +12,24 @@ public class HomePageObj {
 	WebDriver driver = DriverFactory.getDriver();
 	String URL = ConfigReader.getUrl();
 	String homeURL = ConfigReader.getUrlHome();
-
-	// DsAlgo page
+	String expectedMessage = "You are not logged in";
+	
 	@FindBy(xpath = "//div[@class='content']/p")WebElement HomePageMessage;
 	@FindBy(xpath = "//button[@class='btn']")WebElement GetStartedButton;
-	
-	// alert
 	@FindBy(xpath = "//div[@class='alert alert-primary']")WebElement RegisterMsg;
 
-	// Constructor to initialize elements
 	public HomePageObj(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
 
 	public void openUrl() {
-		PageFactory.initElements(driver, this);
-	driver.get(ConfigReader.getUrl());
+		driver.get(ConfigReader.getUrl());
 		LoggerLoad.info("Inside openURL");
 	}
 	
 	public String getMessage() {
-		String	message = HomePageMessage.getText(); 
+		String message = HomePageMessage.getText(); 
 		return message;
 	}
 
@@ -49,11 +45,9 @@ public class HomePageObj {
 	public String registerSuccess() {
 		return RegisterMsg.getText();
 	}
-	
-	
+		
 	public void openHomeUrl() {
 		PageFactory.initElements(driver, this);
-	//	String homeURL = ConfigReader.getUrlHome();
 		driver.get(ConfigReader.getUrlHome());
 		LoggerLoad.info("Inside Home URL");
 	}

@@ -9,10 +9,11 @@ import org.openqa.selenium.support.PageFactory;
 import driverManager.DriverFactory;
 
 public class ConfigReader {
-
+	WebDriver driver = DriverFactory.getDriver();
+	
 	public static Properties properties = new Properties();
-	private static final String propertyFilePath = "src//test//resources//config//config.properties";
-	static WebDriver driver = DriverFactory.getDriver();
+	static String propertyFilePath = "src//test//resources//config//config.properties";
+
 	public static void loadConfig() throws IOException {
 		 InputStream inputStream = ConfigReader.class.getClassLoader()
 				.getResourceAsStream("config/config.properties"); {
@@ -29,10 +30,7 @@ public class ConfigReader {
             throw new RuntimeException("Config.properties file not found at: " + propertyFilePath);
         }
     }
-	
-	
-	// Method to retrieve values from properties file
-    public static String getProperty(String key) {
+	    public static String getProperty(String key) {
         return properties.getProperty(key);
     }
 
@@ -57,7 +55,8 @@ public class ConfigReader {
 	  return  properties.getProperty("urlHome");
 		
 		}
-  public void ConfigReadPage() {
+  public ConfigReader(WebDriver driver) {
+	     this.driver = driver;
 	 	 PageFactory.initElements(driver, this);
 	
 }

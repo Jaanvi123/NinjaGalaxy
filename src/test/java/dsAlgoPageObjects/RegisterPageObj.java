@@ -1,60 +1,143 @@
 package dsAlgoPageObjects;
 
-import static org.testng.Assert.assertEquals;
-import org.openqa.selenium.By;
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.text.SimpleDateFormat;
+
+import org.apache.poi.openxml4j.exceptions.OpenXML4JException;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
-import driverManager.DriverFactory;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 import utils.ConfigReader;
+import utils.ExcelRead;
+import utils.LoggerLoad;
 
+import java.util.Date;
+import java.util.List;
+import java.util.Map;
 public class RegisterPageObj {
-
-	WebDriver driver = DriverFactory.getDriver();  
-	public String baseUrl =ConfigReader.getUrl();
-	private By Registerlink = By.xpath("//a[text()=' Register ']");
-    private By userName = By.xpath("//input[@name='username']");
-    private By password = By.xpath("//input[@name='password1']");
-    private By confirmPassword = By.xpath("//input[@name='password2']");
-    private By registerButton = By.xpath("//input[@value='Register']");
-    private By errorMsg = By.xpath("//div[contains(@class, 'error-message')]");
-    private By registeredName = By.xpath("//div[contains(text(),'New Account Created')]");
-    private By signOut = By.xpath("//a[contains(@href, 'logout')]");
-    private By startBtn = By.xpath("//button[@class='btn']");
-
-  public void navigateToRegisterPage() {
-        driver.get(baseUrl);
-    }
-  public void ClickRegisteronHomepage() {
-      driver.findElement(Registerlink).click();
-  }
+    WebDriver driver ;
+	ExcelRead excelread = new ExcelRead();
+	String URL = ConfigReader.getUrl();
    
-
-    public void verifyErrorMessage(String expectedMessage) {
-        String actualMessage = driver.findElement(errorMsg).getText();
-        assertEquals(actualMessage, expectedMessage);
+   public RegisterPageObj(WebDriver driver) {
+        this.driver = driver;
+       PageFactory.initElements(driver, this);
+   }
+	
+	@FindBy(xpath = "//button[@class='btn']")WebElement GetStartedButton;
+    @FindBy(xpath = "//a[@href='/register']") WebElement registerLink;
+    @FindBy(xpath = "//a[contains(@href, 'logout')]") WebElement signOutButton;
+    @FindBy(name = "username")WebElement userNameField;
+    @FindBy(name = "password1")WebElement passwordField;
+    @FindBy(name = "password2")WebElement confirmPasswordField;
+    @FindBy(xpath = "//input[@type='submit']")WebElement registerButton;
+    @FindBy(xpath = "//div[contains(@class,'alert alert-primary')]")WebElement registerSuccessMsg;
+    @FindBy(xpath = "//div[@class='alert alert-primary']")WebElement passwordMismatchOnRegPage;
+    @FindBy(xpath = "//div[2]/a[@href='/login']")WebElement loginLink;
+    @FindBy(xpath = "//div[@class='navbar-nav']/ul/a[@href='/login']")WebElement signInLink;
+    
+    public void clickLoginLink() {
+        loginLink.click();
     }
-
-    public void enterUserName() {
-        driver.findElement(userName).sendKeys(ConfigReader.getUserName());
+    public void clickSignInLink() {
+        signInLink.click();
+        LoggerLoad.info("SignIn Link clicked");
     }
-
-    public void enterPassword() {
-        driver.findElement(password).sendKeys(ConfigReader.getPassword());
+    public void openURL() {
+    	driver.get(ConfigReader.getUrl());
+	
+	}
+    public void navigateToRegisterPage() {
+        registerLink.click();
+        LoggerLoad.info("Clicked on Register link");
     }
-
-    public void enterConfirmPassword(String confirmPasswordText) {
-        driver.findElement(confirmPassword).sendKeys(confirmPasswordText);
+    public void signOut() {
+        signOutButton.click();
+        LoggerLoad.info("Clicked on Sign Out");
     }
-
     public void clickRegisterButton() {
-        driver.findElement(registerButton).click();
+        registerButton.click();
+        LoggerLoad.info("Clicked on Register button");
     }
-    public void verifyUserNameError(String expectedErrorMessage) {
-        String actualValidationMessage = driver.findElement(userName).getAttribute("validationMessage");
-        System.out.println(actualValidationMessage);
-        assertEquals(actualValidationMessage, expectedErrorMessage);
+    public void fillRegistrationForm(String sheetName, int rowIndex)
+            throws IOException, OpenXML4JException, InterruptedException {
+        List<Map<String, String>> testData;
+		testData = excelread.readExcelSheet("src/test/resources/TestData/TestingData.xlsx", sheetName);
+		 LoggerLoad.info("Register test data: " + testData);
+        if (rowIndex >= testData.size()) {
+            LoggerLoad.error("Row index " + rowIndex + " is out of bounds for the sheet: " + sheetName);
+            throw new IllegalArgumentException("Invalid row index: " + rowIndex);
+        }
+        Map<String, String> rowData = testData.get(rowIndex);
+        String username = rowData.get("username");
+        String password = rowData.get("password");
+        String confirmPassword = rowData.get("password confirmation");
+        userNameField.sendKeys(username);
+        passwordField.sendKeys(password);
+        confirmPasswordField.sendKeys(confirmPassword);
+        LoggerLoad.info("Filled registration form with -> Username: " + username +
+                ", Password: " + password + ", Confirm Password: " + confirmPassword);
+       
+		}
+		
+      
+    public String displayPasswordMismatchError() {
+		return passwordMismatchOnRegPage.getText();
+	}
+	public boolean checkIfRegisterSuccessMsgIsDisplayed() {
+		return registerSuccessMsg.isDisplayed();
+	}
+	public String successMsg() {
+		return registerSuccessMsg.getText();
+	}
+	public String activeElementBrowserValidation() 
+	{
+		return userNameField.getAttribute("validationMessage");
+	}
+    public String getPasswordMismatchText() {
+        return passwordMismatchOnRegPage.getText();
     }
-
-    public void clickSignOut() {
-        driver.findElement(signOut).click();
+    public boolean isPasswordMismatchVisible() {
+        return passwordMismatchOnRegPage.isDisplayed();
     }
+	public void clickRegisterLink() {
+		registerLink.click();
+		LoggerLoad.info("Register Link clicked");
+	}
+	public void clickGetStartedButton() {
+		GetStartedButton.click();
+		
+	}
+	public String switchToElementAndGetValidationMessage() {
+	    WebElement activeElement = null;
+	    String actualAlertMsg = null;
+	    try {
+	        activeElement = driver.switchTo().activeElement();
+	        actualAlertMsg = activeElement.getAttribute("validationMessage");
+	        LoggerLoad.info("ValidationMessage: " + actualAlertMsg);
+	    } catch (Exception e) {
+	       
+	        System.out.println("Stale element reference caught. Retrying..");
+	        activeElement = driver.switchTo().activeElement();
+	        actualAlertMsg = activeElement.getAttribute("validationMessage");
+	        LoggerLoad.info("ValidationMessage: " + actualAlertMsg);
+	    }
+	   
+	    return actualAlertMsg;
+	}  
+	
+	public void TakeScreenshot() throws IOException {
+		String scr = "screenshot_" + new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
+		File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+		Files.move(screenshot.toPath(), Path.of(
+				"C:\\Users\\onlin\\eclipse-workspace\\DsAlgo_Galaxy\\src\\test\\resources\\Screenshots", scr + ".png"));
+		System.out.println("Screenshot saved: " + scr + ".png");
+		
+	}
 }

@@ -1,96 +1,88 @@
 package dsAlgoPageObjects;
 
+import java.io.File;
 import java.io.IOException;
+import java.nio.file.Path;
+import java.util.Date;
 import java.util.List;
 import java.util.Map;
-
-import org.apache.poi.openxml4j.exceptions.OpenXML4JException;
+import java.nio.file.Files;
+import java.text.SimpleDateFormat;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import com.fasterxml.jackson.databind.exc.InvalidFormatException;
-
 import utils.ConfigReader;
 import utils.ExcelRead;
 import utils.LoggerLoad;
 
-
 public class SignInPageObj {
-	
-	 WebDriver driver;
-	 ExcelRead excelReader = new ExcelRead();
-	 ConfigReader configReader = new ConfigReader();
-	 
-	 @FindBy(xpath = "//input[@name ='username']") WebElement UsernameTextBox;
-	 @FindBy(xpath = "//input[@name ='password']") WebElement PassowrdTextBox;
-	 @FindBy(xpath= "//input[@value='Login']") WebElement loginButton;
-	 @FindBy(xpath = "/html/body/div[2]")WebElement homePagemsg ;
-	 
-	 public SignInPageObj(WebDriver driver) {
-		 this.driver= driver;
-	 }
-	 public void enterUsernameText(String Username) {
-		 String name= configReader.getUserName();
-		 PageFactory.initElements(driver, this);
+	WebDriver driver;
+	ExcelRead excelread = new ExcelRead();
+	ConfigReader configReader = new ConfigReader(driver);
+
+	@FindBy(xpath = "//input[@name ='username']")WebElement UsernameTextBox;
+	@FindBy(xpath = "//input[@name ='password']")WebElement PasswordTextBox;
+	@FindBy(xpath = "//input[@value='Login']")WebElement loginButton;
+	@FindBy(xpath = "/html/body/div[2]")WebElement homePagemsg;
+	@FindBy(xpath = "//*[@class='alert alert-primary']")WebElement errorMessage;
+
+	public SignInPageObj(WebDriver driver) {
+		this.driver = driver;
+		PageFactory.initElements(driver, this);
+	}
+
+	public void enterUsernameText(String Username) {
+		String name = configReader.getUserName();
 		UsernameTextBox.sendKeys(name);
-		
-			
+
+	}
+
+	public void enterPasswordText(String password) {
+		String pwd = configReader.getPassword();
+		PasswordTextBox.sendKeys(pwd);
+	}
+
+	public void clickloginButton() {
+		loginButton.click();
+	}
+
+	public void homePagemsg() {
+		homePagemsg.getText();
+		LoggerLoad.info(homePagemsg.getText());
+	}
+
+	public void EnterFromExcel(String sheetname, int row) throws IOException {
+
+		List<Map<String, String>> testData;
+		testData = excelread.readExcelSheet("src/test/resources/TestData/TestingData.xlsx", sheetname);
+		LoggerLoad.info("test data: " + testData);
+		if (row >= testData.size()) {
+			LoggerLoad.info("Row index " + row + " is out of bounds for the sheet: " + sheetname);
+			throw new IllegalArgumentException("Invalid row index: " + row);
 		}
-		public void enterPasswordText(String password) {
-			String pwd = configReader.getPassword();
-			PageFactory.initElements(driver, this);
-			PassowrdTextBox.sendKeys(pwd);
-		    }
-		public void clickloginButton() {
-			PageFactory.initElements(driver, this);
-			loginButton.click();
-		   	}
-		
-		public void homePagemsg() {
-			homePagemsg.getText();
-			LoggerLoad.info(homePagemsg.getText());	
-		}
-		public void loginWithValidCredentials() throws InterruptedException {
-			//this.driver = driver; // Set WebDriver instance
-			PageFactory.initElements(driver, this); // Initialize elements
-			LoggerLoad.info("Button clicked successfully");	    
-	    }
-		public void enterLoginDetails(String username, String password)
-				throws InvalidFormatException, IOException, OpenXML4JException, InterruptedException {
-			PageFactory.initElements(driver, this); 
-			UsernameTextBox.sendKeys(username);
-			PassowrdTextBox.sendKeys(password);
-		
-			
-		}	 
-		
-		public void enterLoginFormFields(String sheetname, int row)
-				throws InvalidFormatException, IOException, OpenXML4JException, InterruptedException {
-			LoggerLoad.info("Inside enterLoginFormFields");
-	
-			List<Map<String, String>> testdata = excelReader.readFromExcel("src/test/resources/TestData/TestingData.xlsx", sheetname);
-			LoggerLoad.info("logintestdata");
-		
-			
-			String username = testdata.get(row).get("username");
-			enterUsernameText(username);
-			LoggerLoad.info("Fetched username from Excel: " + username);
-			
-			String password = testdata.get(row).get("password");
-			LoggerLoad.info("Fetched password from Excel: " + password);
-			enterPasswordText(password);
-			
-			LoggerLoad.info("Read from Excel sheet");
-		}	
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+		Map<String, String> rowData = testData.get(row);
+		String Username = rowData.get("Username");
+		String Password = rowData.get("Password");
+		UsernameTextBox.sendKeys(Username);
+		PasswordTextBox.sendKeys(Password);
+
+	}
+
+	public void ErrorMessage() {
+		String Msg = errorMessage.getText();
+		LoggerLoad.info("Error Message is: " + Msg);
+	}
+
+	public void TakeScreenshot() throws IOException {
+		String scr = "screenshot_" + new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
+		File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+		Files.move(screenshot.toPath(), Path.of(
+				"C:\\Users\\onlin\\eclipse-workspace\\DsAlgo_Galaxy\\src\\test\\resources\\Screenshots", scr + ".png"));
+		LoggerLoad.info("Screenshot saved: " + scr + ".png");
+		LoggerLoad.info("Error Message is displayed");
+	}
+
 }

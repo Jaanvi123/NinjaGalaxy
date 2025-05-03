@@ -3,7 +3,6 @@ package hooks;
 import java.io.IOException;
 import org.openqa.selenium.WebDriver;
 import driverManager.DriverFactory;
-import dsAlgoPageObjects.HomePageObj;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.BeforeAll;
@@ -13,7 +12,7 @@ import utils.LoggerLoad;
 public class HooksPage {
 
 	WebDriver driver = DriverFactory.getDriver();
-	ConfigReader configReader = new ConfigReader();
+	ConfigReader configReader = new ConfigReader(driver);
 
 	@BeforeAll
 	public static void loadConfig() throws IOException {
@@ -24,21 +23,14 @@ public class HooksPage {
 	public void setUp() throws Exception {
 		String browser = configReader.getBrowserType();
 		String url = configReader.getUrl();
-
-	//	LoggerLoad.info("Browser Type: " + browser);
-
-		if (browser == null || browser.isEmpty()) {
+			if (browser == null || browser.isEmpty()) {
 			throw new IllegalArgumentException("Browser type not declared in config properties file");
-
 		}
-
 		if (url == null || url.isEmpty()) {
 			throw new IllegalArgumentException("URL not declared in config properties file");
 		}
-
 		LoggerLoad.info("Initializing driver for browser: " + browser);
 		driver = DriverFactory.initializeDriver(browser);
-
 		LoggerLoad.info("Navigating to URL: " + url);
 		driver.get(url);
 		
