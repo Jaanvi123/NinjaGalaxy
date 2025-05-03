@@ -62,7 +62,7 @@ public class RegisterStepDefinition {
 		String browserValidationmsg = registerPage.switchToElementAndGetValidationMessage();
 		String expectedErrorMsg = "Please fill out this field.";
 		Assert.assertEquals(browserValidationmsg, expectedErrorMsg);
-		registerPage.TakeScreenshot();
+		registerPage.TakeErrorScreenshot();
 	}
 
 	// TC03
@@ -78,7 +78,7 @@ public class RegisterStepDefinition {
 		String browserValidationmsg = registerPage.switchToElementAndGetValidationMessage();
 		String expectedErrorMsg = "Please fill out this field.";
 		Assert.assertEquals(browserValidationmsg, expectedErrorMsg);
-		registerPage.TakeScreenshot();
+		registerPage.TakeErrorScreenshot();
 	}
 
 	// TC04
@@ -94,7 +94,7 @@ public class RegisterStepDefinition {
 		expectedErrorMsg = "Invalid Username Entered";
 		actualErrorMsg = registerPage.displayPasswordMismatchError();
 		Assert.assertEquals(actualErrorMsg, expectedErrorMsg);
-		registerPage.TakeScreenshot();
+		registerPage.TakeErrorScreenshot();
 	}
 
 	// TC05
@@ -110,7 +110,7 @@ public class RegisterStepDefinition {
 		expectedErrorMsg = "Invalid Password Entered";
 		actualErrorMsg = registerPage.displayPasswordMismatchError();
 		Assert.assertEquals(actualErrorMsg, expectedErrorMsg);
-		registerPage.TakeScreenshot();
+		registerPage.TakeErrorScreenshot();
 	}
 
 	// TC06
@@ -126,7 +126,7 @@ public class RegisterStepDefinition {
 		expectedErrorMsg = "Password Entered is less than eight characters";
 		actualErrorMsg = registerPage.displayPasswordMismatchError();
 		Assert.assertEquals(actualErrorMsg, expectedErrorMsg);
-		registerPage.TakeScreenshot();
+		registerPage.TakeErrorScreenshot();
 	}
 
 	

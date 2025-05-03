@@ -132,12 +132,12 @@ public class RegisterPageObj {
 	    return actualAlertMsg;
 	}  
 	
-	public void TakeScreenshot() throws IOException {
+	public void TakeErrorScreenshot() throws IOException {
 		String scr = "screenshot_" + new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
 		File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		Files.move(screenshot.toPath(), Path.of(
 				"C:\\Users\\onlin\\eclipse-workspace\\DsAlgo_Galaxy\\src\\test\\resources\\Screenshots", scr + ".png"));
-		System.out.println("Screenshot saved: " + scr + ".png");
-		
+		LoggerLoad.info("Screenshot saved: " + scr + ".png");
+		LoggerLoad.info("Error Message is displayed on the screen");
 	}
 }
