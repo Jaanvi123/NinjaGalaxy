@@ -46,6 +46,10 @@ public class ConfigReader {
 	public static String getUserName() {
 		return properties.getProperty("username");
 	}
+	
+	public static String getConfirmPassword() {
+		return properties.getProperty("confirmPassword");
+	}
 
 	public static  String getPassword() {
 		return properties.getProperty("password");

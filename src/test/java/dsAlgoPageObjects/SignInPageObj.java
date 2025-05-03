@@ -37,7 +37,6 @@ public class SignInPageObj {
 	public void enterUsernameText(String Username) {
 		String name = configReader.getUserName();
 		UsernameTextBox.sendKeys(name);
-
 	}
 
 	public void enterPasswordText(String password) {
@@ -58,7 +57,7 @@ public class SignInPageObj {
 
 		List<Map<String, String>> testData;
 		testData = excelread.readExcelSheet("src/test/resources/TestData/TestingData.xlsx", sheetname);
-		
+
 		if (row >= testData.size()) {
 			LoggerLoad.info("Row index " + row + " is out of bounds for the sheet: " + sheetname);
 			throw new IllegalArgumentException("Invalid row index: " + row);

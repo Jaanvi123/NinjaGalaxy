@@ -2770,3 +2770,17 @@
 [INFO ] 2025-05-03 14:51:12.775 [main] LoggerLoad - Screenshot saved: screenshot_20250503_145112.png
 [INFO ] 2025-05-03 14:51:12.776 [main] LoggerLoad - Error Message is displayed
 [INFO ] 2025-05-03 14:51:13.106 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-03 15:06:28.462 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-03 15:06:30.553 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-03 15:06:31.833 [main] LoggerLoad - Register Link clicked
+[INFO ] 2025-05-03 15:06:32.348 [main] LoggerLoad - Clicked on Register button
+[INFO ] 2025-05-03 15:06:32.532 [main] LoggerLoad - Screenshot saved: screenshot_20250503_150632.png
+[INFO ] 2025-05-03 15:06:32.533 [main] LoggerLoad - Error Message is displayed on the screen
+[INFO ] 2025-05-03 15:06:32.846 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-03 15:13:16.780 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-03 15:13:18.827 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-03 15:13:20.000 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-03 15:13:21.234 [main] LoggerLoad - DS-Introduction Get Started Button 
+[INFO ] 2025-05-03 15:13:21.297 [main] LoggerLoad - Current URL after login: https://dsportalapp.herokuapp.com/data-structures-introduction/
+[INFO ] 2025-05-03 15:13:21.641 [main] LoggerLoad - Time Complexity Link Clicked
+[INFO ] 2025-05-03 15:13:22.010 [main] LoggerLoad - Browser closed successfully.

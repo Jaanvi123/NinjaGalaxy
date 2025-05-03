@@ -131,18 +131,21 @@ public class RegisterStepDefinition {
 
 	
 	// TC07
-	@When("The user clicks Register button after entering  with valid username password and password confirmation in related textboxes from sheetname {string} and row {int}")
-	public void the_user_clicks_register_button_after_entering_with_valid_username_password_and_password_confirmation_in_related_textboxes_from_sheetname_and_row(
-			String string, Integer int1) throws IOException, OpenXML4JException, InterruptedException {
-		registerPage.fillRegistrationForm("register", 7);
+	@When("The user clicks Register button after entering  with valid username password and password confirmation in related textboxes")
+	public void the_user_clicks_register_button_after_entering_with_valid_username_password_and_password_confirmation_in_related_textboxes_(
+			) throws IOException, OpenXML4JException, InterruptedException {
+		registerPage.SendValidUsername();
+		registerPage.SendValidPassword();
+		registerPage.SendConfirmPassword();
 		registerPage.clickRegisterButton();
 	}
 
 	@Then("The user should be redirected to Home Page of DS Algo with message New Account Created. You are logged in as username")
-	public void the_user_should_be_redirected_to_home_page_of_ds_algo_with_message_new_account_created_you_are_logged_in_as_username() {
+	public void the_user_should_be_redirected_to_home_page_of_ds_algo_with_message_new_account_created_you_are_logged_in_as_username() throws IOException {
 		expectedSuccessMsg = "registerPage.registerSuccessMsg";
 		actualSuccessMsg = "New Account Created.You are logged in as Testing@2025";
 		actualErrorMsg = registerPage.displayPasswordMismatchError();
+		registerPage.TakeErrorScreenshot();
 	}
 
 	// TC08

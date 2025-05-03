@@ -47,6 +47,7 @@ public class DataStructureStepDefinition {
         String expectedTitle = "Data Structures-Introduction";
         String actualTitle = dataStructurepage.validatePageTitle();
         assertEquals(expectedTitle, actualTitle);
+       
         
     }
     // TC01
@@ -55,7 +56,7 @@ public class DataStructureStepDefinition {
         String expectedTitle = "Data Structures-Introduction";
         String actualTitle = dataStructurepage.validatePageTitle();
         assertEquals("User is not on the expected page.", expectedTitle, actualTitle);
-       
+        dataStructurepage.getcurrentpageUrl();
       
     }
     @When("The user clicks on Time Complexity link of DS Introduction page")
@@ -109,7 +110,6 @@ public class DataStructureStepDefinition {
     @Given("The user is on tryEditor  page with run button with alert window")
     public void the_user_is_on_try_editor_page_with_run_button_with_alert_window() {
         dataStructurepage.ClickTimeComplexityLink();
-       
         tryEditorPage.clickTryHereButton();
         
     }

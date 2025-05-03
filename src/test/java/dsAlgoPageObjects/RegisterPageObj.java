@@ -24,6 +24,7 @@ public class RegisterPageObj {
     WebDriver driver ;
 	ExcelRead excelread = new ExcelRead();
 	String URL = ConfigReader.getUrl();
+	ConfigReader configReader = new ConfigReader(driver);
    
    public RegisterPageObj(WebDriver driver) {
         this.driver = driver;
@@ -85,7 +86,21 @@ public class RegisterPageObj {
                 ", Password: " + password + ", Confirm Password: " + confirmPassword);
        
 		}
+    public void SendValidUsername() {
+    	String usernamefield = configReader.getUserName();
+    	userNameField.sendKeys(usernamefield);
 		
+	}
+    public void SendValidPassword() {
+    	String Passwordfield = configReader.getPassword();
+    	passwordField.sendKeys(Passwordfield);
+		
+	} 
+    public void SendConfirmPassword() {
+    	String confirmPasswordfield = configReader.getConfirmPassword();
+    	confirmPasswordField.sendKeys(confirmPasswordfield);
+	
+	}
       
     public String displayPasswordMismatchError() {
 		return passwordMismatchOnRegPage.getText();
