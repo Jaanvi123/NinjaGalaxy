@@ -1,6 +1,7 @@
 package dsAlgoPageObjects;
 
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -41,99 +42,102 @@ public class TreePageObj {
 	}
 
 	public void TreePageTitle() {
-		PageFactory.initElements(driver, this);
-		TreePageTitle.getText();
-		LoggerLoad.info("Tree Page title : " + driver.getCurrentUrl());
+		String actualUrl = driver.getCurrentUrl();
+		String expectedUrl = ConfigReader.getProperty("TreePageUrl"); 
+		LoggerLoad.info("Tree Page title:" + driver.getCurrentUrl());
 	}
 
 	public String getcurrentpageUrl() {
-		LoggerLoad.info(driver.getCurrentUrl());
-		return (driver.getCurrentUrl());
+	//LoggerLoad.info(driver.getCurrentUrl());
+		return driver.getCurrentUrl();
 	}
-
 	public void clickOverviewOfTreesLink() {
 		Overviewoftrees.click();
 		LoggerLoad.info("Overview of trees Link clicked");
 	}
 
 	public void clickTerminologiesLink() {
-		PageFactory.initElements(driver, this);
 		Terminologies.click();
 		LoggerLoad.info("Terminologies Link clicked");
 	}
 
 	public void clickTypesOfTreesLink() {
-		PageFactory.initElements(driver, this);
 		TypesofTrees.click();
 		LoggerLoad.info("Types of Trees Link clicked");
 	}
 
 	public void clickTreeTraversalsLink() {
-		PageFactory.initElements(driver, this);
 		TreeTraversals.click();
 		LoggerLoad.info("Tree Traversals Link clicked");
 	}
 
 	public void clickTraversalsIllustrationsLink() {
-		PageFactory.initElements(driver, this);
+	
 		TraversalsIllustrations.click();
 		LoggerLoad.info("Traversals Illustrations Link clicked");
 	}
 
 	public void clickBinaryTreesLink() {
-		PageFactory.initElements(driver, this);
+		
 		BinaryTrees.click();
 		LoggerLoad.info("Binary Trees Link clicked");
 	}
 
 	public void clickTypesofBinaryTreesLink() {
-		PageFactory.initElements(driver, this);
+		
 		TypesofBinaryTrees.click();
 		LoggerLoad.info("Types of BinaryTrees Link clicked");
 	}
 
 	public void clickImplementationinPythonLink() {
-		PageFactory.initElements(driver, this);
+		
 		ImplementationinPython.click();
 		LoggerLoad.info("Implementation in Python Link clicked");
 	}
 
 	public void clickBinaryTreeTraversalsLink() {
-		PageFactory.initElements(driver, this);
+		
 		BinaryTreeTraversals.click();
 		LoggerLoad.info("Binary Tree Traversals Link clicked");
 	}
 
 	public void clickImplementationOfBinaryTreesLink() {
-		PageFactory.initElements(driver, this);
+		
 		ImplementationOfBinaryTrees.click();
 		LoggerLoad.info("Implementation Of Binary Trees Link clicked");
 	}
 
 	public void clickApplicationOfBinarytreesLink() {
-		PageFactory.initElements(driver, this);
+		
 		ApplicationOfBinarytrees.click();
 		LoggerLoad.info("Application Of Binarytrees Link clicked");
 	}
 
 	public void clickBinarySearchTreesLink() {
-		PageFactory.initElements(driver, this);
+		
 		BinarySearchTrees.click();
 		LoggerLoad.info("Binary Search Trees Link clicked");
 	}
 
 	public void clickImplementationofBTSLink() {
-		PageFactory.initElements(driver, this);
+		
 		ImplementationofBTS.click();
 		LoggerLoad.info("Implementation of BTS Link clicked");
 	}
 
 	public void clickPracticeQuestionsLink() {
-		PageFactory.initElements(driver, this);
 		PracticeQuestions.click();
 		LoggerLoad.info("Practice Questions Link clicked");
 	}
 
-	
+	public void codeEditorOutput() {
+	CodeEditorOutput.getText();
+	LoggerLoad.info("Code editor Output is :" + CodeEditorOutput.getText());
+	}
+	public void PageScrollDown() {
+		PageFactory.initElements(driver, this);
+	JavascriptExecutor js = (JavascriptExecutor) driver;
+	js.executeScript("window.scrollBy(0, 10000);");
+	}
 	
 }

@@ -19,7 +19,7 @@ import utils.LoggerLoad;
 
 public class TryEditorPage {
     WebDriver driver;
-  //  ExcelRead excelReader = new ExcelRead();
+
    
     @FindBy(xpath = "//a[@href='/tryEditor']") WebElement tryHereButton;
     @FindBy(xpath = "//textarea[@tabindex='0']") WebElement textAreaForCode;
@@ -37,17 +37,18 @@ public class TryEditorPage {
     }
   
     public void clickTryHereButton() {
+    	PageFactory.initElements(driver, this); 
         Actions act = new Actions(driver);
         act.moveToElement(tryHereButton).click().perform();
         LoggerLoad.info("Clicked the Try Here button.");
     }
   public void enterTryHereCode(String editorCode) {
-        
-		CodeEditor = driver.switchTo().activeElement();
+	  
+        CodeEditor = driver.switchTo().activeElement();
 		Actions actions = new Actions(driver);
 		actions.moveToElement(CodeEditor).click().perform();
 		CodeEditor.sendKeys(editorCode);
-		LoggerLoad.info("The given code is : " + editorCode);
+		
     } 
 	public void enterCodeFromExcel(String sheetName, int row)
 			throws InvalidFormatException, IOException, OpenXML4JException {
@@ -62,7 +63,6 @@ public class TryEditorPage {
 			throw new IllegalArgumentException("Row index out of bounds.");
 		}
 			if (editorCode != null && !editorCode.isEmpty()) {
-			LoggerLoad.info("Fetched code from Excel: " + editorCode);
 			enterTryHereCode(editorCode);
 		} else {
 			LoggerLoad.error("No code found for the specified row in the Excel sheet.");

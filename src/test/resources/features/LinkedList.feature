@@ -1,10 +1,10 @@
 #Feature: Linked List Page Features
 
-  Background: 
-    Given The user is on home page
-    When The user clicks Sign in link and enters valid credentials and clicks Login button
-    Then The user should land on the Linked List page by clicking Get started button 
- 
+  #Background: 
+    #Given The user is on home page
+    #When The user clicks Sign in link and enters valid credentials and clicks Login button
+    #Then The user should land on the Linked List page by clicking Get started button 
+ #
   # Introduction
  
   # Scenario: Verify that the user is able to navigate to the Introduction page

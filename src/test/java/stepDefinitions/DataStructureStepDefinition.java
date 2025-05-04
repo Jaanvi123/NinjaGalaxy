@@ -18,9 +18,7 @@ import static org.junit.Assert.assertEquals;
 import static org.testng.Assert.assertNotNull;
 import static org.testng.Assert.assertTrue;
 
-public class DataStructureStepDefinition {
-	       
-        
+public class DataStructureStepDefinition {	          
 	    WebDriver driver = DriverFactory.getDriver();
         HomePageObj homepage = new HomePageObj(driver);
         SignInPageObj signin = new SignInPageObj(driver);
@@ -35,8 +33,7 @@ public class DataStructureStepDefinition {
         introductionpage.clickSignInLink();
         signin.enterUsernameText("username");
 		signin.enterPasswordText("password");
-		signin.clickloginButton();
-        
+		signin.clickloginButton();        
     }
     @When("The user clicks the Get Started button of Data Structure Introduction section")
     public void the_user_clicks_the_get_started_button_of_data_structure_introduction_section() {
@@ -46,17 +43,12 @@ public class DataStructureStepDefinition {
     public void the_user_should_be_directed_to_data_structure_introduction_page() {
         String expectedTitle = "Data Structures-Introduction";
         String actualTitle = dataStructurepage.validatePageTitle();
-        assertEquals(expectedTitle, actualTitle);
-       
-        
+        assertEquals(expectedTitle, actualTitle);       
     }
     // TC01
     @Given("The user is on data Structure introduction Page")
     public void the_user_is_on_data_structure_introduction_page() {
-        String expectedTitle = "Data Structures-Introduction";
-        String actualTitle = dataStructurepage.validatePageTitle();
-        assertEquals("User is not on the expected page.", expectedTitle, actualTitle);
-        dataStructurepage.getcurrentpageUrl();
+            dataStructurepage.getcurrentpageUrl();
       
     }
     @When("The user clicks on Time Complexity link of DS Introduction page")

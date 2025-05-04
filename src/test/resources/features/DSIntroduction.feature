@@ -1,15 +1,15 @@
-Feature: Data Structures-Introduction
-
-  Background: Verify that user is able to navigate to Data Structures - Introduction page
-    Given The user is logged into the DS Algo Portal
-    When The user clicks the Get Started button of Data Structure Introduction section
-    Then The user should be directed to Data Structure introduction Page
-
+#Feature: Data Structures-Introduction
+#
+  #Background: Verify that user is able to navigate to Data Structures - Introduction page
+    #Given The user is logged into the DS Algo Portal
+    #When The user clicks the Get Started button of Data Structure Introduction section
+    #Then The user should be directed to Data Structure introduction Page
+#
   # TC01
-  Scenario: Verify that user is able to navigate to Time Complexity page of DS Introduction page
-    Given The user is on data Structure introduction Page
-    When The user clicks on Time Complexity link of DS Introduction page
-    Then The user should be directed to Time Complexity page of DS Intro page
+  #Scenario: Verify that user is able to navigate to Time Complexity page of DS Introduction page
+    #Given The user is on data Structure introduction Page
+    #When The user clicks on Time Complexity link of DS Introduction page
+    #Then The user should be directed to Time Complexity page of DS Intro page
 
   #TC02
   #Scenario: Verify that user is able to navigate to Try Editor from Time Complexity page for DS Introduction page

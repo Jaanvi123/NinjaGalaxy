@@ -2,7 +2,6 @@ package dsAlgoPageObjects;
 
 import static org.testng.Assert.assertEquals;
 import java.time.Duration;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -27,7 +26,7 @@ public class DataStructurePageObj {
 	public void clickGetStartedBtn() {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
 		WebElement getStartedButton = wait.until(ExpectedConditions
-				.elementToBeClickable(By.xpath("//a[contains(@class,'btn') and contains(text(),'Get Started')]")));
+				.elementToBeClickable(dsGetStartedBtn));
 		getStartedButton.click();
 		LoggerLoad.info("DS Get Started Button Clicked");
 	}
@@ -38,12 +37,10 @@ public class DataStructurePageObj {
 	}
 
 	public void getcurrentpageUrl() {
-
 		String actualUrl = driver.getCurrentUrl();
-		LoggerLoad.info("Current URL after login: " + actualUrl);
 		String expectedUrl = ConfigReader.getProperty("DSPageUrl"); 
 		assertEquals(expectedUrl, actualUrl);
-
+		LoggerLoad.info("Current URL after login: " + actualUrl);
 	}
 
 	public WebElement getTimeComplexityLink() {
