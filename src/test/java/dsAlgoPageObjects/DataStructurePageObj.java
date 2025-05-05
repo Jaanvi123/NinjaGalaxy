@@ -1,71 +1,72 @@
+
 package dsAlgoPageObjects;
 
+import static org.testng.Assert.assertEquals;
+import java.time.Duration;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import utils.ConfigReader;
 import utils.LoggerLoad;
 
 public class DataStructurePageObj {
+	  WebDriver driver;
 
-    WebDriver driver;
-
-    public DataStructurePageObj(WebDriver driver) {
-        this.driver = driver;
-        PageFactory.initElements(driver, this);
-    }
-
-    @FindBy(xpath = "//a[contains(text(), 'Get Started') and contains(@href, 'data-structures-introduction')]")
-    private WebElement dsGetStartedBtn;
-
-    @FindBy(xpath = "//a[contains(@href, 'time-complexity')]")
-    private WebElement timeComplexityLink;
-
-    @FindBy(xpath = "//a[contains(text(),'Practice Questions')]")
-    private WebElement practiceQuestionsLink;
-
-    @FindBy(xpath = "//h4[text()='Data Structures-Introduction']")
-	public WebElement dsPageTitle;
-
-//	WebElement dataStructuresHeader = driver.findElement(By.xpath("//h4[@class='bg-secondary text-white']"));
-//    WebElement timeComplexityText = driver.findElement(By.xpath("//p[@class='bg-secondary text-white']"));
-   
-//    
-//    @FindBy(xpath = "//p[@class='bg-secondary text-white']")
-//    	public WebElement timeComplexityTitle;
-//    public string validatePageTitle
-    public void clickGetStartedBtn() {
-        dsGetStartedBtn.click();
-        LoggerLoad.info("DS Get Started Button Clicked");
-    }
-
-    public void clickTimeComplexityLink() {
-        timeComplexityLink.click();
-        LoggerLoad.info("Time Complexity link clicked");
-    }
-
-    public void clickPracticeQuestionsLink() {
-        practiceQuestionsLink.click();
-        LoggerLoad.info("Practice Questions link clicked");
-    }
-    public String getcurrentpageUrl()
-	{
-		System.out.println(driver.getCurrentUrl());
-		return(driver.getCurrentUrl());
+	public DataStructurePageObj(WebDriver driver) {
+		this.driver = driver;
+		PageFactory.initElements(driver, this); 
 	}
-    public Boolean validateElementDisplayed(WebElement element) {
-        return element.isDisplayed();
-    }
 
-    public String validatePageTitle() {
-        return driver.getTitle();
-    }
+	@FindBy(xpath = "//a[@href='data-structures-introduction']") WebElement dsGetStartedBtn;
+	@FindBy(xpath = "//a[@href='/data-structures-introduction/practice']") WebElement practiceQuestionsLink;
+	@FindBy(xpath = "//a[@href='time-complexity']") WebElement timeComplexityLink;
 
-    public String getTextForElement(WebElement element) {
-        return element.getText();
-    }
+	public void clickGetStartedBtn() {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+		WebElement getStartedButton = wait.until(ExpectedConditions
+				.elementToBeClickable(By.xpath("//a[contains(@class,'btn') and contains(text(),'Get Started')]")));
+		getStartedButton.click();
+		LoggerLoad.info("DS Get Started Button Clicked");
+	}
 
-    public Integer getElementSize(WebElement element) {
-        return element.isDisplayed() ? 1 : 0;
-    }
+	public void clickPracticeQuestionsLink() {
+		practiceQuestionsLink.click();
+		LoggerLoad.info("Practice Questions link clicked");
+	}
+
+	public void getcurrentpageUrl() {
+
+		String actualUrl = driver.getCurrentUrl();
+		LoggerLoad.info("Current URL after login: " + actualUrl);
+		String expectedUrl = ConfigReader.getProperty("DSPageUrl"); 
+		assertEquals(expectedUrl, actualUrl);
+
+	}
+
+	public WebElement getTimeComplexityLink() {
+		return timeComplexityLink;
+	}
+
+	public void ClickTimeComplexityLink() {
+		timeComplexityLink.click();
+		LoggerLoad.info("Time Complexity Link Clicked");
+	}
+
+	public Boolean validateElementDisplayed(WebElement element) {
+		return element.isDisplayed();
+	}
+
+	public String validatePageTitle() {
+		return driver.getTitle();
+	}
+
+	public String getTextForElement(WebElement element) {
+		return element.getText();
+	}
+
+
 }

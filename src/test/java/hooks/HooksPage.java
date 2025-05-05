@@ -1,9 +1,14 @@
 package hooks;
 
-
+import java.io.File;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
-
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 
 import driverManager.DriverFactory;
@@ -12,66 +17,49 @@ import io.cucumber.java.Before;
 import io.cucumber.java.BeforeAll;
 import utils.ConfigReader;
 
-
 public class HooksPage {
-	
-	WebDriver driver;
-	ConfigReader configReader = new ConfigReader();
-	String browser = ConfigReader.getBrowserType();
-	
-   @BeforeAll
-    public static void loadConfig() throws IOException {
-        ConfigReader.loadConfig(); 
-    }
-    
-    
 
-  
+    @BeforeAll
+    public static void loadConfig() throws IOException {
+        ConfigReader.loadConfig();
+    }
+
     @Before
     public void setUp() throws Exception {
-       String browser = ConfigReader.getBrowserType();
-       String url = ConfigReader.getUrl();
-       
-        System.out.println("Browser Type: " + browser);
-        
+        String browser = ConfigReader.getBrowserType();
+        String url = ConfigReader.getUrl();
+
         if (browser == null || browser.isEmpty()) {
             throw new IllegalArgumentException("Browser type not declared in config properties file");
-            
         }
-        
+
         if (url == null || url.isEmpty()) {
             throw new IllegalArgumentException("URL not declared in config properties file");
         }
-        
+
         System.out.println("Initializing driver for browser: " + browser);
-        driver = DriverFactory.initializeDriver(browser);
-        
+        DriverFactory.initializeDriver(browser);
+
         System.out.println("Navigating to URL: " + url);
-        driver.get(url);
+        DriverFactory.getDriver().get(url);
     }
-     
-       
-    
-       @After
-       public void tearDown() {
-        /*   if (driver != null) {
-               try {
-                   String s2 = "screenshot13";
-                   File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-                   Files.move(screenshot.toPath(),
-                              Path.of("C:\\Users\\onlin\\eclipse-workspace\\DsAlgo_Galaxy\\src\\test\\resources\\Screenshots", s2 + ".png"));
-                   System.out.println("Screenshot saved: " + s2 + ".png");
-               } catch (Exception e) {
-                   System.err.println("Error saving screenshot: " + e.getMessage());
-               }    
-               DriverFactory.closeDriver();
-           }   */
 
-           // Close the browser after taking the screenshot
-    	   DriverFactory.closeDriver();
-       }
-
-               
-    } 
-
-    
+    @After
+    public void tearDown() {
+//        WebDriver driver = DriverFactory.getDriver();
+//        if (driver != null) {
+//            try {
+//                String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss_SSS").format(new Date());
+//                String screenshotName = "screenshot_" + timestamp + ".png";
+//                File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+//                Path destination = Path.of("C:\\Users\\onlin\\eclipse-workspace\\DsAlgo_Galaxy\\src\\test\\resources\\Screenshots", screenshotName);
+//                Files.move(screenshot.toPath(), destination);
+//                System.out.println("Screenshot saved: " + screenshotName);
+//            } catch (Exception e) {
+//                System.err.println("Error saving screenshot: " + e.getMessage());
+//            } finally {
+//                DriverFactory.closeDriver();
+//            }
+//        }
+//    }
+}}

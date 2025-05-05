@@ -1,26 +1,33 @@
 package dsAlgoPageObjects;
 
+import java.time.Duration;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
+import utils.ConfigReader;
 import utils.ExcelRead;
 import utils.LoggerLoad;
 
 public class ArrayPageObj {
     WebDriver driver;
     ExcelRead excelReader = new ExcelRead();
+    ConfigReader config = new ConfigReader(driver);
     public ArrayPageObj(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this); // Initializes the @FindBy elements
     }
 
-    @FindBy(xpath = "//div[h5[text()='Array']]//a[text()='Get Started']")
-    public WebElement arrayGetStartedButton;
 
-    @FindBy(xpath = "//a[@href='arrays-in-python']")
-    public WebElement arraysInPythonLink;
+    @FindBy(xpath = "//a[text()='Arrays in Python']")
+    WebElement arraysInPythonLink;
+
+  
 
     @FindBy(xpath = "//a[@href='arrays-using-list']")
     public WebElement arraysUsingListLink;
@@ -51,12 +58,7 @@ public class ArrayPageObj {
 
     @FindBy(xpath = "/html/body/div/div/form/input[@type='submit']")
     public WebElement submitButton;
-
-    public void clickarrayGetStartedBtn() {
-        arrayGetStartedButton.click();
-        LoggerLoad.info("Clicking the Array Get Started link");
-    }
-
+ 
     public void clickarraysInPythonLink() {
         arraysInPythonLink.click();
         LoggerLoad.info("Clicking Arrays in Python link");
@@ -73,7 +75,11 @@ public class ArrayPageObj {
     }
 
     public void clickapplicationsOfArrayLink() {
-        applicationsOfArrayLink.click();
+    
+    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+    	    WebElement link = wait.until(ExpectedConditions.elementToBeClickable(applicationsOfArrayLink));
+    	    link.click();
+    	
         LoggerLoad.info("Clicking Applications Of Array link");
     }
 
@@ -101,4 +107,7 @@ public class ArrayPageObj {
         squaresOfAsortedArray.click();
         LoggerLoad.info("Clicking Squares of a Sorted Array link");
     }
+    
+    
 }
+

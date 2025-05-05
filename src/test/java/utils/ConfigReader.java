@@ -10,10 +10,15 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
 
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.PageFactory;
+
+import driverManager.DriverFactory;
+
 
 
 public class ConfigReader {
-
+	WebDriver driver = DriverFactory.getDriver();
 	public static Properties properties = new Properties();
 	private static final String propertyFilePath = "src//test//resources//config//config.properties";
 	
@@ -34,7 +39,11 @@ public class ConfigReader {
             throw new RuntimeException("Config.properties file not found at: " + propertyFilePath);
         }
     }
+	public ConfigReader(WebDriver driver) {
+	     this.driver = driver;
+	 	 PageFactory.initElements(driver, this);
 	
+}
 	
 	// Method to retrieve values from properties file
     public static String getProperty(String key) {
@@ -69,14 +78,25 @@ public class ConfigReader {
 		
 		
 	}
+	public static  String getUrlArray() {
+		return properties.getProperty("urlArrayPage");
+	}
+		
 
 
 
+	public static String urlIntroductionPage() {
+		return properties.getProperty("urlIntroductionPage");
+		
+		
 
-
-
+	}
 	public static String getRegisterPageUrl() {
 		
 		return properties.getProperty("urlRegister");
+	}
+
+	public static String urlTimeComplexityPage() {
+		return properties.getProperty("urlTimeComplexityPage");
 	}
 }

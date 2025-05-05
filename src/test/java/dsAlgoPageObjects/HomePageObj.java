@@ -1,6 +1,5 @@
 package dsAlgoPageObjects;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -10,71 +9,46 @@ import utils.ConfigReader;
 import utils.LoggerLoad;
 
 public class HomePageObj {
+	WebDriver driver = DriverFactory.getDriver();
+	String URL = ConfigReader.getUrl();
+	String homeURL = ConfigReader.getUrlHome();
+	String expectedMessage = "You are not logged in";
 	
-	
+	@FindBy(xpath = "//div[@class='content']/p")WebElement HomePageMessage;
+	@FindBy(xpath = "//button[@class='btn']")WebElement GetStartedButton;
+	@FindBy(xpath = "//div[@class='alert alert-primary']")WebElement RegisterMsg;
+
 	public HomePageObj(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
-	
-	WebDriver driver = DriverFactory.getDriver();
-	private String message;
-
-	String URL = ConfigReader.getUrl();
-	String homeURL = ConfigReader.getUrlHome();
-
-	// DsAlgo page
-	@FindBy(xpath = "//div[@class='content']/p")WebElement HomePageMessage;
-	@FindBy(xpath = "//button[@class='btn']")WebElement GetStartedButton;
-	
-	// alert
-	@FindBy(xpath = "//div[@class='alert alert-primary']")WebElement RegisterMsg;
-	@FindBy(xpath = "//a[@href='/logout']")WebElement SignOut;
-	
-	// Constructor to initialize elements
-
 
 	public void openUrl() {
 		driver.get(ConfigReader.getUrl());
 		LoggerLoad.info("Inside openURL");
 	}
-
-	public void openHomeUrl() {
-		driver.get(ConfigReader.getUrlHome());
-		LoggerLoad.info("Inside openURL");
-	}
+	
 	public String getMessage() {
-		message = HomePageMessage.getText(); 
+		String message = HomePageMessage.getText(); 
 		return message;
 	}
 
 	public void clickGetStartedHomePageButton() {
+		PageFactory.initElements(driver, this);
 		GetStartedButton.click();
 	}
 
 	public String getTitle() {
 		return driver.getTitle();
 	}
-	public void SignOut() {
-	SignOut.click();
-	}
+
 	public String registerSuccess() {
 		return RegisterMsg.getText();
 	}
-	public String getRegisterSuccessMessage() {
-	    WebElement alertElement = driver.findElement(By.cssSelector("div.alert.alert-primary"));
-	    return alertElement.getText().trim(); // trim to remove extra spaces/newlines
+		
+	public void openHomeUrl() {
+		PageFactory.initElements(driver, this);
+		driver.get(ConfigReader.getUrlHome());
+		LoggerLoad.info("Inside Home URL");
 	}
-	 public void succesMessage() throws InterruptedException {
-			//this.driver = driver; // Set WebDriver instance
-			PageFactory.initElements(driver, this); // Initialize elements
-			System.out.println("You are logged in");	    
-	    }
-
-	 public String getTextForElement(By locator) {
-			String elementText = driver.findElement(locator).getText();
-			return elementText;
-	    
-	 }	
-
 }

@@ -1,131 +1,139 @@
 package dsAlgoPageObjects;
 
-import static org.testng.Assert.assertEquals;
 import java.io.IOException;
-import java.util.List;
-import java.util.Map;
+
 import org.apache.poi.openxml4j.exceptions.OpenXML4JException;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
 import utils.ConfigReader;
 import utils.ExcelRead;
 import utils.LoggerLoad;
-
+import java.util.List;
+import java.util.Map;
 public class RegisterPageObj {
-
-     WebDriver driver;  // WebDriver instance for browser interactions
-     ExcelRead excelReader;  // ExcelReader to handle test data
-    // Web elements related to the registration page
-    @FindBy(xpath = "//a[text()=' Register ']")//register link on home page
-    private WebElement registerLink;
-    
-    @FindBy(xpath = "//a[contains(@href, 'logout')]")//signout button on homepagereeoe
-    private WebElement signoutButton;
-  
-    @FindBy(name = "username")//username box
-    private WebElement userNameField;
-
-    @FindBy(name = "password1") //password box
-    private WebElement passwordField;
-
-    @FindBy(name = "password2") //password confirmation box
-    private WebElement confirmPasswordField;
-
-    @FindBy(xpath = "//input[@type='submit' and @value='Register']")//Rgister button
-    private WebElement registerButton;
-
-
-    @FindBy(xpath = "//div[@class='alert alert-primary']") //error message on register page 
-    private WebElement errorMessage;
-
-
-  
-
-    //  Actions on the page (Methods that perform actions)
-    
-
-        public RegisterPageObj(WebDriver driver) {
-            this.driver = driver;
-            PageFactory.initElements(driver, this);
-        }
-
-        public void navigateToRegisterPage() {
-            driver.findElement(By.linkText("Register")).click(); // or however you navigate
-        }
-    
-        
-      public void signOut() {
-        signoutButton.click();  // Click signout button
-    }
-    public void clickRegisterbtn() {
-        registerButton.click();//Click the register button on register page
-    	///((JavascriptExecutor) driver).executeScript("arguments[0].click();
-    }
+    WebDriver driver ;
+	ExcelRead excelread = new ExcelRead();
+	String URL = ConfigReader.getUrl();
    
-
+   public RegisterPageObj(WebDriver driver) {
+        this.driver = driver;
+       PageFactory.initElements(driver, this);
+   }
+	
+	@FindBy(xpath = "//button[@class='btn']")WebElement GetStartedButton;
+    @FindBy(xpath = "//a[@href='/register']") WebElement registerLink;
+    @FindBy(xpath = "//a[contains(@href, 'logout')]") WebElement signOutButton;
+    @FindBy(name = "username")WebElement userNameField;
+    @FindBy(name = "password1")WebElement passwordField;
+    @FindBy(name = "password2")WebElement confirmPasswordField;
+    @FindBy(xpath = "//input[@type='submit']")WebElement registerButton;
+    @FindBy(xpath = "//div[contains(@class,'alert alert-primary')]")WebElement registerSuccessMsg;
+    @FindBy(xpath = "//div[@class='alert alert-primary']")WebElement passwordMismatchOnRegPage;
+    @FindBy(xpath = "//div[2]/a[@href='/login']")WebElement loginLink;
+    @FindBy(xpath = "//div[@class='navbar-nav']/ul/a[@href='/login']")WebElement signInLink;
+    
+    public void clickLoginLink() {
+        loginLink.click();
+    }
+    public void clickSignInLink() {
+        signInLink.click();
+    }
+    public void openURL() {
+    	driver.get(ConfigReader.getUrl());
+	
+	}
+    public void navigateToRegisterPage() {
+        registerLink.click();
+        LoggerLoad.info("Clicked on Register link");
+    }
+    public void signOut() {
+        signOutButton.click();
+        LoggerLoad.info("Clicked on Sign Out");
+    }
+    public void clickRegisterButton() {
+        registerButton.click();
+        LoggerLoad.info("Clicked on Register button");
+    }
+    public void fillRegistrationForm(String sheetName, int rowIndex)
+            throws IOException, OpenXML4JException, InterruptedException {
+        List<Map<String, String>> testData;
+		testData = excelread.readExcelSheet("src/test/resources/TestData/TestingData.xlsx", sheetName);
+		 LoggerLoad.info("Register test data: " + testData);
+        if (rowIndex >= testData.size()) {
+            LoggerLoad.error("Row index " + rowIndex + " is out of bounds for the sheet: " + sheetName);
+            throw new IllegalArgumentException("Invalid row index: " + rowIndex);
+        }
+        Map<String, String> rowData = testData.get(rowIndex);
+        String username = rowData.get("username");
+        String password = rowData.get("password");
+        String confirmPassword = rowData.get("password confirmation");
+        enterUsername(username);
+        enterPassword(password);
+        enterConfirmPassword(confirmPassword);
+        LoggerLoad.info("Filled registration form with -> Username: " + username +
+                ", Password: " + password + ", Confirm Password: " + confirmPassword);
+       
+		}
+		
+    
+    public void enterUsername(String username) {
+        userNameField.clear();
+        userNameField.sendKeys(username);
+    }
     public void enterPassword(String password) {
-        passwordField.sendKeys(password);  // Enter the password into the password field
+        passwordField.clear();
+        passwordField.sendKeys(password);
     }
-
     public void enterConfirmPassword(String confirmPassword) {
-        confirmPasswordField.sendKeys(confirmPassword);  // Enter confirm password
+        confirmPasswordField.clear();
+        confirmPasswordField.sendKeys(confirmPassword);
     }
-    
-    public void registerwithouthCredentials() throws InterruptedException {
-		//this.driver = driver; // Set WebDriver instance
-		PageFactory.initElements(driver, this); // Initialize elements
-		System.out.println("Please fill out this field.");	    
+	
+  
+    public String displayPasswordMismatchError() {
+		return passwordMismatchOnRegPage.getText();
+	}
+	public boolean checkIfRegisterSuccessMsgIsDisplayed() {
+		return registerSuccessMsg.isDisplayed();
+	}
+	public String successMsg() {
+		return registerSuccessMsg.getText();
+	}
+	public String activeElementBrowserValidation() 
+	{
+		return userNameField.getAttribute("validationMessage");
+	}
+    public String getPasswordMismatchText() {
+        return passwordMismatchOnRegPage.getText();
     }
-    public void registerdifferentCredentials() throws InterruptedException {
-		//this.driver = driver; // Set WebDriver instance
-		PageFactory.initElements(driver, this); // Initialize elements
-		System.out.println("password_mismatch:The two password fields didn’t match.");	    
+    public boolean isPasswordMismatchVisible() {
+        return passwordMismatchOnRegPage.isDisplayed();
     }
-    
-
-    // Method to fill the registration form using data from an Excel sheet
-    public void fillRegistrationForm(String username ,String password,String confirmPassword ) throws IOException, OpenXML4JException, InterruptedException {
-    	PageFactory.initElements(driver, this); 
-    	
-    	
-    	
-    	userNameField.sendKeys(username != null ? username : "");
-    	    passwordField.sendKeys(password != null ? password : "");
-    	    confirmPasswordField.sendKeys(confirmPassword != null ? confirmPassword : "");
-    	}
-       // LoggerLoad.info("Filling form with -> Username: " + username + ", Password: " + password + ", Confirm Password: " + passwordConfirm);
-
-        // Call methods that already handle null values
-        
-
-    public String verifyErrorMessage(String expectedMessage) {
-        String actualMessage = errorMessage.getText().trim();  // Get the error message text
-        LoggerLoad.info("Actual error message: '" + actualMessage + "'");
-        
-        // Normalize both expected and actual messages (replace non-breaking spaces and trim)
-        actualMessage = actualMessage.replaceAll("\\u00A0", " ").trim();  // Replace non-breaking space with regular space
-        expectedMessage = expectedMessage.replaceAll("\\u00A0", " ").trim();
-
-        // Optionally perform assertion here, after normalization
-        assertEquals(actualMessage, expectedMessage, "Validation message mismatch!");
-
-        return actualMessage;  // Return the actual error message
-    }
-
-
-
-   
-
-    // Method to get the validation message for the username field (using JavaScript)
-    public String getValidationMessageForUsername() {
-//        WebElement usernameField = driver.findElement(By.id("id_username"));  // Locate the username field
-        return (String) ((JavascriptExecutor) driver)
-                .executeScript("return arguments[0].validationMessage;", userNameField);  // Get the validation message
-    }
-
+	public void clickRegisterLink() {
+		
+		registerLink.click();
+	}
+	public void clickGetStartedButton() {
+		GetStartedButton.click();
+		
+	}
+	public String switchToElementAndGetValidationMessage() {
+	    WebElement activeElement = null;
+	    String actualAlertMsg = null;
+	    try {
+	        activeElement = driver.switchTo().activeElement();
+	        actualAlertMsg = activeElement.getAttribute("validationMessage");
+	        LoggerLoad.info("ValidationMessage: " + actualAlertMsg);
+	    } catch (Exception e) {
+	       
+	        System.out.println("Stale element reference caught. Retrying..");
+	        activeElement = driver.switchTo().activeElement();
+	        actualAlertMsg = activeElement.getAttribute("validationMessage");
+	        LoggerLoad.info("ValidationMessage: " + actualAlertMsg);
+	    }
+	   
+	    return actualAlertMsg;
+	}  
 }

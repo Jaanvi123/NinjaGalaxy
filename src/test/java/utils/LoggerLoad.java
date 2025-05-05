@@ -42,13 +42,3 @@ public class LoggerLoad {
 
 }
 
-/////import java.io.File;
-//
-//public class LogDirectorySetup {
-//    public static void createLogDirectory() {
-//        File logDir = new File("logs");
-//        if (!logDir.exists()) {
-//            logDir.mkdirs();
-//        }
-//    }
-//}

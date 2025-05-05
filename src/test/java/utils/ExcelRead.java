@@ -8,14 +8,14 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+	import java.util.List;
+	import java.util.Map;
 
 public class ExcelRead {
 
     private static final String FILE_PATH = "Users/dineshdeshmukh/eclipse-workspace/NinjaGalaxy-Jaanvi-branch/src/test/resources/TestData/TestingData.xlsx"; 
 
-    public List<Map<String, String>> readExcelSheet(String filePath, String sheetName) throws IOException {
+    public static List<Map<String, String>> readExcelSheet(String filePath, String sheetName) throws IOException {
         List<Map<String, String>> excelData = new ArrayList<>();
 
         FileInputStream fileInputStream = new FileInputStream(new File(filePath));
