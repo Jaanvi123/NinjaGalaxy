@@ -44,5 +44,6 @@ public class HomePageObj {
 		PageFactory.initElements(driver, this);
 		driver.get(ConfigReader.getUrlHome());
 		LoggerLoad.info("Inside Home URL");
+		GetStartedButton.click();
 	}
 }

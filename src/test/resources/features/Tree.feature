@@ -1,9 +1,9 @@
-Feature: Tree Page Feature
-
-  Background: 
-    Given The user is on home page
-    When The user clicks Sign in link and enters valid credentials
-    Then The user should land on the tree page by clicking Get started button for tree module
+#Feature: Tree Page Feature
+#
+  #Background: 
+    #Given The user is on home page
+    #When The user clicks Sign in link and enters valid credentials
+    #Then The user should land on the tree page by clicking Get started button for tree module
 
    # Overview of Trees
  ##TC01

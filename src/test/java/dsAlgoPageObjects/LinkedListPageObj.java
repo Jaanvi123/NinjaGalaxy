@@ -24,7 +24,7 @@ public class LinkedListPageObj {
 	@FindBy(xpath = "//a[@href='traversal']") WebElement Traversal;
 	@FindBy(xpath = "//a[@href='insertion-in-linked-list']") WebElement Insertion;
 	@FindBy(xpath = "//a[@href='deletion-in-linked-list']")WebElement Deletion;
-	@FindBy(xpath = "Practice Questions")WebElement PracticeQueLinkedList;
+	@FindBy(xpath = "//a[@href='/linked-list/practice']") WebElement PracticeQueLinkedList;
 	@FindBy(xpath = "//a[@href='/tryEditor']")WebElement TryHere;
 	@FindBy(xpath = "//h4[@class='bg-secondary text-white']")WebElement LinkedListTitle;
 	

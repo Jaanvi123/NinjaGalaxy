@@ -14,25 +14,36 @@ public class HooksPage {
 	WebDriver driver = DriverFactory.getDriver();
 	ConfigReader configReader = new ConfigReader(driver);
 
-	@BeforeAll
-	public static void loadConfig() throws IOException {
+/*	@BeforeAll
+	public void loadConfig() throws IOException {
 		ConfigReader.loadConfig();
-	}
+	}   */
 
 	@Before
 	public void setUp() throws Exception {
-		String browser = configReader.getBrowserType();
-		String url = configReader.getUrl();
+		ConfigReader.loadConfig();
+//		String browser = configReader.getBrowserType();
+		String browser = ConfigReader.getProperty("browser");
+	//	String url = configReader.getProperty("urlHome");
 			if (browser == null || browser.isEmpty()) {
 			throw new IllegalArgumentException("Browser type not declared in config properties file");
 		}
-		if (url == null || url.isEmpty()) {
+			LoggerLoad.info("Initializing WebDriver...");
+		    DriverFactory.initializeDriver(browser);
+		    driver = DriverFactory.getDriver();
+	/*	if (url == null || url.isEmpty()) {
 			throw new IllegalArgumentException("URL not declared in config properties file");
 		}
-		LoggerLoad.info("Initializing driver for browser: " + browser);
+	/*	LoggerLoad.info("Initializing driver for browser: " + browser);
 		driver = DriverFactory.initializeDriver(browser);
 		LoggerLoad.info("Navigating to URL: " + url);
-		driver.get(url);
+		driver.get(url);  */
+		String url = ConfigReader.getProperty("Url");
+		if (url == null || url.isEmpty()) {
+	        throw new IllegalArgumentException("URL not declared in config properties file");
+	    }
+	    LoggerLoad.info("Navigating to URL: " + url);
+	    driver.get(url);
 		
 	}
 

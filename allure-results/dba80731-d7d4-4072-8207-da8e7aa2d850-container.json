@@ -1,0 +1,1 @@
+{"uuid":"dba80731-d7d4-4072-8207-da8e7aa2d850","name":"Scenario Outline: Verify that user receives error message in the alert window for invalid python code in Deletion page","children":["0346acbb-aeab-4a6c-bd19-71ef32b624c5"],"befores":[],"afters":[],"start":1746552265625,"stop":1746552265645}

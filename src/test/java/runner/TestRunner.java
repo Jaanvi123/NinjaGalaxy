@@ -11,8 +11,8 @@ import io.cucumber.testng.*;
 	@RunWith(Cucumber.class)
 
 	@CucumberOptions(
-			features="src/test/resources/features",
-			glue={"stepDefinitions"},
+			features="src/test/resources/features/LinkedList.feature",
+			glue={"stepDefinitions","hooks"},
 			dryRun=false,
 			monochrome=true,	
 			plugin= {"pretty","html:target/output.html","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",

@@ -11,11 +11,7 @@ public class DriverFactory {
     private static ThreadLocal<WebDriver> tlDriver = new ThreadLocal<>();
 
     public static WebDriver initializeDriver(String browser) {
-        if (tlDriver.get() == null) { 
-            if (browser == null || browser.isEmpty()) {
-                throw new IllegalArgumentException("Browser type is required!");
-            }
-
+        if (tlDriver.get() == null) 
             switch (browser.toLowerCase()) {
                 case "chrome":
                     tlDriver.set(new ChromeDriver());
@@ -33,10 +29,10 @@ public class DriverFactory {
             WebDriver driver = tlDriver.get();
             driver.manage().window().maximize();
             driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-        }
+        
         return tlDriver.get();
     }
-
+    
     public static WebDriver getDriver() {
         return tlDriver.get();
     }

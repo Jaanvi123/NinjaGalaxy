@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 import org.apache.poi.openxml4j.exceptions.OpenXML4JException;
 import org.openqa.selenium.Alert;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -21,17 +22,19 @@ public class TryEditorPage {
     WebDriver driver;
 
    
-    @FindBy(xpath = "//a[@href='/tryEditor']") WebElement tryHereButton;
+   @FindBy(xpath = "//a[@href='/tryEditor']") public  WebElement tryHereButton;
     @FindBy(xpath = "//textarea[@tabindex='0']") WebElement textAreaForCode;
     @FindBy(xpath = "//button[text()='Run']") WebElement runButton;
     @FindBy(xpath = "//*[@id=\"answer_form\"]/div/div/div[6]")WebElement CodeEditor;
     @FindBy(xpath = "//pre[@id='output']")WebElement consoleOutputMsg;
+    @FindBy(xpath = "//pre[@id='output']")WebElement CodeEditorOutput;
     public TryEditorPage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this); 
     }
  
     public void clickRunButton() {
+    //	PageFactory.initElements(driver, this); 
         runButton.click();
         LoggerLoad.info("Clicked the Run button.");
     }
@@ -105,5 +108,14 @@ public class TryEditorPage {
            return "";
        }
    }
-  	
+   
+   public void PageScrolldown() {
+		PageFactory.initElements(driver, this);
+	JavascriptExecutor js = (JavascriptExecutor) driver;
+	js.executeScript("window.scrollBy(0, 500);");
+	}
+   public void CodeEditorOutput() {
+		CodeEditorOutput.getText();
+		LoggerLoad.info("Code editor Output is :" + CodeEditorOutput.getText());
+		}
 }

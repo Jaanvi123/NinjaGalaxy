@@ -92,8 +92,8 @@ public class DataStructureStepDefinition {
     	tryEditorPage.clickRunButton();
                    }
     
-    @Then("The user does not see any error message displayed")
-    public void the_user_does_not_see_any_error_message_displayed() {
+    @Then("The user does not see any error message displayed on time complexity page")
+    public void the_user_does_not_see_any_error_message_displayed_on_time_complexity_page() {
     	LoggerLoad.info("No alert to display");
              
         }
@@ -114,20 +114,20 @@ public class DataStructureStepDefinition {
         	LoggerLoad.info("Error while entering code or clicking Run: " + e.getMessage());
         }
     }
-    @Then("The user should able to see an error message in the alert window")
-    public void the_user_should_able_to_see_an_error_message_in_the_alert_window() {
+    @Then("The user should able to see an error message in the alert window on time complexity page")
+    public void the_user_should_able_to_see_an_error_message_in_the_alert_window_on_time_complexity_page() {
         boolean isAlertPresent = tryEditorPage.HandleAlert();
         assertTrue(isAlertPresent, "No alert displayed");
     }
     // TC05
-    @Given("The user is on tryEditor page with run button and valid code")
-    public void the_user_is_on_try_editor_page_with_run_button_and_valid_code() {
+    @Given("The user is on tryEditor page with run button and valid code on time complexity page")
+    public void the_user_is_on_try_editor_page_with_run_button_and_valid_code_on_time_complexity_page() {
         dataStructurepage.ClickTimeComplexityLink();
         tryEditorPage.clickTryHereButton();
        
     }
-    @When("The user clicks Run button with valid code from sheetname {string} and row {int}")
-    public void the_user_clicks_run_button_with_valid_code_from_sheetname_and_row(String sheetName, Integer rowNumber) {
+    @When("The user clicks Run button with valid code on time complexity page from sheetname {string} and row {int}")
+    public void the_user_clicks_run_button_with_valid_code_on_time_complexity_code_from_sheetname_and_row(String sheetName, Integer rowNumber) {
         try {
             tryEditorPage.enterCodeFromExcel(sheetName, rowNumber);
             tryEditorPage.clickRunButton();
@@ -135,8 +135,8 @@ public class DataStructureStepDefinition {
         	LoggerLoad.info("Error while entering code or clicking Run: " + e.getMessage());
         }
     }
-    @Then("The user should able to see output in the console")
-    public void the_user_should_able_to_see_output_in_the_console() {
+    @Then("The user should able to see output in the console on time complexity page")
+    public void the_user_should_able_to_see_output_in_the_consoleon_on_time_complexity_page() {
         String consoleOutput = tryEditorPage.getOutputText();
         assertNotNull("Console output is null or empty.", consoleOutput);
        
