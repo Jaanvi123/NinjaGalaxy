@@ -1,21 +1,23 @@
-#Feature: DS Portal SignIn Feature
-#
-  #Background: User is on DS Algo Sign in Page
-    #Given The user is on the DS Algo Sign in Page
-##TC01
-  #Scenario Outline: Verify that user able to land on Home page after entering valid Username and Password fields
-    #When The user clicks login button after entering valid username and valid password 
-    #Then The user should land on Data Structure Home Page with message "You are logged in"
-#
-#TC02
-  #Scenario Outline: Verify that user receives error message for all empty fields during Login
-    #When The user clicks login button after leaving the Username textbox and Password textbox empty from sheetname "<SheetName>" and row <RowNumber>
-    #Then The error message "Please fill out this field." appears below Username textbox
-#
-    #Examples: 
-      #| SheetName | RowNumber |
-      #| login     |         1 |
-#
+Feature: DS Portal SignIn Feature
+
+ ## Background: User is on DS Algo Sign in Page
+ ##   Given The user is on the DS Algo Sign in Page
+#TC01
+  Scenario Outline: Verify that user able to land on Home page after entering valid Username and Password fields
+    Given The user is on the DS Algo Sign in Page
+    When The user clicks login button after entering valid username and valid password 
+    Then The user should land on Data Structure Home Page with message "You are logged in"
+
+##TC02
+  Scenario Outline: Verify that user receives error message for all empty fields during Login
+    Given The user is on the DS Algo Sign in Page
+    When The user clicks login button after leaving the Username textbox and Password textbox empty from sheetname "<SheetName>" and row <RowNumber>
+    Then The error message "Please fill out this field." appears below Username textbox
+
+    Examples: 
+      | SheetName | RowNumber |
+      | login     |         1 |
+
  #TC03
   #Scenario Outline: Verify that user receives error message for empty Username field during Login
     #When The user clicks login button after entering the Password only from sheetname "<SheetName>" and row <RowNumber>

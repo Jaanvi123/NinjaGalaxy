@@ -5115,3 +5115,16 @@ Session ID: 1d586108bb5099c7820a8e730582e299
 [INFO ] 2025-05-04 18:39:26.182 [main] LoggerLoad - Binary Tree Traversals Link clicked
 [INFO ] 2025-05-04 18:39:26.381 [main] LoggerLoad - Clicked the Try Here button.
 [INFO ] 2025-05-04 18:39:36.666 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-05 20:53:35.379 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-05 20:53:38.189 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-05 20:53:39.449 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-05 20:53:39.871 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-05 20:53:40.835 [main] LoggerLoad - You are logged in
+[INFO ] 2025-05-05 20:53:41.199 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-05 20:53:41.253 [main] LoggerLoad - Initializing driver for browser: chrome
+[INFO ] 2025-05-05 20:53:42.738 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-05 20:53:43.968 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-05 20:53:45.009 [main] LoggerLoad - Entered data from Excel
+[INFO ] 2025-05-05 20:53:45.563 [main] LoggerLoad - Screenshot saved: screenshot_20250505_205345.png
+[INFO ] 2025-05-05 20:53:45.564 [main] LoggerLoad - Error Message is displayed
+[INFO ] 2025-05-05 20:53:45.902 [main] LoggerLoad - Browser closed successfully.

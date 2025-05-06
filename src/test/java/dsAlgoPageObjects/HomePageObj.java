@@ -22,30 +22,24 @@ public class HomePageObj {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
-
 	public void openUrl() {
 		driver.get(ConfigReader.getUrl());
 		LoggerLoad.info("Inside openURL");
-	}
-	
+	}	
 	public String getMessage() {
 		String message = HomePageMessage.getText(); 
 		return message;
 	}
-
 	public void clickGetStartedHomePageButton() {
 		PageFactory.initElements(driver, this);
 		GetStartedButton.click();
 	}
-
 	public String getTitle() {
 		return driver.getTitle();
 	}
-
 	public String registerSuccess() {
 		return RegisterMsg.getText();
-	}
-		
+	}		
 	public void openHomeUrl() {
 		PageFactory.initElements(driver, this);
 		driver.get(ConfigReader.getUrlHome());
