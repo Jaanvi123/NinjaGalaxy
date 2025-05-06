@@ -14,7 +14,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import driverManager.DriverFactory;
 
 public class IntroductionPageObj {
-	public WebDriver driver = DriverFactory.getDriver();
+	WebDriver driver = DriverFactory.getDriver();
 	String URL = ConfigReader.getUrl();
 	// dropdown
 	@FindBy(css = "//a[@href='#']")WebElement dropdown;
@@ -41,7 +41,7 @@ public class IntroductionPageObj {
 	@FindBy(css = "a.dropdown-toggle")WebElement DropdownArrow;
 	
 	public IntroductionPageObj() {
-		 this.driver= driver;
+		this.driver = driver;
 		 PageFactory.initElements(driver, this);
 	}
 	public String getAuthenticationMessage() {

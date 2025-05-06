@@ -17,7 +17,6 @@ public class LinkedListPageObj {
 	String URL = ConfigReader.getUrl();
 	String homeURL = ConfigReader.getUrlHome();
 	
-
 	@FindBy(xpath = "//a[@href='introduction']")WebElement Introduction;
 	@FindBy(xpath = "//a[@href='creating-linked-list']") WebElement creatingLinkedList;
 	@FindBy(xpath = "//a[@href='types-of-linked-list']") WebElement TypesOfLinkedList;
@@ -77,8 +76,6 @@ public class LinkedListPageObj {
 	}
 	
 	public void clickPracticeQueLink() {
-		 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
-		WebElement editorOutputEle = wait.until(ExpectedConditions.visibilityOf(PracticeQueLinkedList));
 		PracticeQueLinkedList.click();
 		LoggerLoad.info("Practice Questions Link clicked");
 	}
