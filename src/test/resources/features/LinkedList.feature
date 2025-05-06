@@ -5,23 +5,23 @@ Feature: Linked List Page Features
     When The user clicks Sign in link and enters valid credentials to sign in 
     Then The user should land on the Linked list page by clicking Get started button for Linked list module
  
-##Introduction
-#TC01
-   #Scenario: Verify that the user is able to navigate to the Introduction page
-    #Given The user is on the Linked List page after signing in
-    #When The user clicks the Introduction link
-    #Then The user should be redirected to the Introduction page
-#TC02
-  #Scenario: Navigate to Try Editor for linked list Introduction
-    #Given The user is on the Introduction page 
-    #When The user clicks Try Here button on the Introduction page
-    #Then The user is redirected to a page having Editor with run button on the Introduction page
-      #
-#TC03
-  #Scenario: User clicks the Run button without entering any code for linked list
-    #Given The user is on the tryEditor page after clicking Try here button on the Introduction page
-    #When The user enters an empty code in editor of Introduction page and clicks Run button
-    #Then No error message is displayed for Try editor of Introduction page
+#Introduction
+##TC01
+   Scenario: Verify that the user is able to navigate to the Introduction page
+    Given The user is on the Linked List page after signing in
+    When The user clicks the Introduction link
+    Then The user should be redirected to the Introduction page
+##TC02
+  Scenario: Navigate to Try Editor for linked list Introduction
+    Given The user is on the Introduction page 
+    When The user clicks Try Here button on the Introduction page
+    Then The user is redirected to a page having Editor with run button on the Introduction page
+      
+##TC03
+  Scenario: User clicks the Run button without entering any code for linked list
+    Given The user is on the tryEditor page after clicking Try here button on the Introduction page
+    When The user enters an empty code in editor of Introduction page and clicks Run button
+    Then No error message is displayed for Try editor of Introduction page
   #
  #TC04
    #Scenario Outline: Verify that user receives error message for invalid python code
@@ -47,8 +47,8 @@ Feature: Linked List Page Features
     #Given The user is on the Introduction page after signing in
     #When The user clicks the Practice Questions link present on the Introduction page
     #Then The user should be redirected to the Practice Questions page from the Introduction page
-
-
+#
+#
     # Creating Linked List
 ##TC07
   #Scenario: Verify that the user is able to navigate to the Creating Linked List page
@@ -91,7 +91,7 @@ Feature: Linked List Page Features
   #When The user clicks the Practice Questions link present in Creating Linked List page
   #Then The user should be redirected to the Practice Questions page from Creating Linked List page
   #
-    
+    #
     # Types of Linked List
     ##TC13
  #Scenario: Verify that the user is able to navigate to the Types of Linked List page
@@ -134,8 +134,8 @@ Feature: Linked List Page Features
   #When The user clicks the Practice Questions link present in Types of Linked List page
   #Then The user should be redirected to the Practice Questions page from Types of Linked List page
   #
-   
-   
+   #
+   #
     # Implement Linked List in Python
 ##TC19
   #Scenario: Verify that the user is able to navigate to the Implement Linked List in Python page
@@ -177,8 +177,8 @@ Feature: Linked List Page Features
   #Given The user is on Implement Linked List in Python page after signing in
   #When The user clicks the Practice Questions link present in Implement Linked List in Python page
   #Then The user should be redirected to the Practice Questions page from Implement Linked List in Python page
-  
-    
+  #
+    #
      # Traversal
  ##TC25
  #Scenario: Verify that the user is able to navigate to the Traversal page
@@ -221,8 +221,8 @@ Feature: Linked List Page Features
   #When The user clicks the Practice Questions link present in Traversal page
   #Then The user should be redirected to the Practice Questions page from Traversal page
   #
-    
-     
+    #
+     #
      # Insertion
  ##TC31
   #Scenario: Verify that the user is able to navigate to the Insertion page
@@ -265,46 +265,46 @@ Feature: Linked List Page Features
   #When The user clicks the Practice Questions link present in Insertion page
   #Then The user should be redirected to the Practice Questions page from Insertion page
   #
-   
+   #
    # Deletion
 ##TC37
-Scenario: Verify that the user is able to navigate to the Deletion page
-  Given The user is on the Deletion data structure page
-  When The user clicks the Deletion link
-  Then The user should be redirected to the Deletion data structure page
+#Scenario: Verify that the user is able to navigate to the Deletion page
+  #Given The user is on the Deletion data structure page
+  #When The user clicks the Deletion link
+  #Then The user should be redirected to the Deletion data structure page
    #TC38
-  Scenario: Navigate to Try Editor for Deletion
-  Given The user is on the Deletion page
-  When  The user clicks Try Here button in Deletion page
-  Then The user is redirected to a page having Editor with run button for Deletion page
+  #Scenario: Navigate to Try Editor for Deletion
+  #Given The user is on the Deletion page
+  #When  The user clicks Try Here button in Deletion page
+  #Then The user is redirected to a page having Editor with run button for Deletion page
    #TC39
-  Scenario: User clicks the Run button without entering any code for Deletion
-  Given The user is on the tryEditor page after clicking Try here button in Deletion link
-  When  The user enters an empty code in editor of Deletion link and clicks Run button
-  Then  No error message is displayed for Try editor of Deletion page
+  #Scenario: User clicks the Run button without entering any code for Deletion
+  #Given The user is on the tryEditor page after clicking Try here button in Deletion link
+  #When  The user enters an empty code in editor of Deletion link and clicks Run button
+  #Then  No error message is displayed for Try editor of Deletion page
    #TC40
-  Scenario Outline: Verify that user receives error message in the alert window for invalid python code in Deletion page
-    Given The user is on the tryEditor page and clicks Try here button in Deletion page
-    When The user writes invalid code in the editor of Deletion page and clicks Run button from sheetname "<Sheetname>" and row <RowNumber>
-    Then The user should be able to get alert on Deletion TryEditor page
-
-    Examples: 
-      | Sheetname     | RowNumber |
-      | tryEditorCode |         1 |
-
+  #Scenario Outline: Verify that user receives error message in the alert window for invalid python code in Deletion page
+    #Given The user is on the tryEditor page and clicks Try here button in Deletion page
+    #When The user writes invalid code in the editor of Deletion page and clicks Run button from sheetname "<Sheetname>" and row <RowNumber>
+    #Then The user should be able to get alert on Deletion TryEditor page
+#
+    #Examples: 
+      #| Sheetname     | RowNumber |
+      #| tryEditorCode |         1 |
+#
  #TC41
-  Scenario Outline: Verify that user is able to see output for valid python code on Deletion page
-    Given The user is on tryEditor page along with run button and valid code for Deletion page
-    When The user writes valid Python code in the editor of Deletion page and clicks Run button from sheetname "<Sheetname>" and row <RowNumber>
-    Then The user should be able to see output in the console for Deletion page
-
-    Examples: 
-      | Sheetname     | RowNumber |
-      | tryEditorCode |         0 |
-
+  #Scenario Outline: Verify that user is able to see output for valid python code on Deletion page
+    #Given The user is on tryEditor page along with run button and valid code for Deletion page
+    #When The user writes valid Python code in the editor of Deletion page and clicks Run button from sheetname "<Sheetname>" and row <RowNumber>
+    #Then The user should be able to see output in the console for Deletion page
+#
+    #Examples: 
+      #| Sheetname     | RowNumber |
+      #| tryEditorCode |         0 |
+#
   #TC42
-  Scenario: Verify that the user is able to navigate to Practice Questions page from Deletion page
-  Given The user is on Deletion page after signing in
-  When The user clicks the Practice Questions link present in Deletion page
-  Then The user should be redirected to the Practice Questions page from Deletion page
+  #Scenario: Verify that the user is able to navigate to Practice Questions page from Deletion page
+  #Given The user is on Deletion page after signing in
+  #When The user clicks the Practice Questions link present in Deletion page
+  #Then The user should be redirected to the Practice Questions page from Deletion page
   #

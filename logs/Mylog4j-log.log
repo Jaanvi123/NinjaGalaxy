@@ -6228,3 +6228,171 @@ Session ID: 5c2f2f24305771bcb467eeeed5f6e5ff
 [INFO ] 2025-05-06 15:51:51.929 [main] LoggerLoad - Deletion Link clicked
 [INFO ] 2025-05-06 15:51:52.188 [main] LoggerLoad - Practice Questions Link clicked
 [INFO ] 2025-05-06 15:51:52.440 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-06 16:07:24.039 [main] LoggerLoad - Initializing WebDriver...
+[INFO ] 2025-05-06 16:07:25.937 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-06 16:07:47.414 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-05-06 16:07:47.762 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-05-06 16:07:47.948 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-06 16:07:49.071 [main] LoggerLoad - Linked List Get Started Button clicked
+[INFO ] 2025-05-06 16:07:49.376 [main] LoggerLoad - Deletion Link clicked
+[INFO ] 2025-05-06 16:07:49.674 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-06 16:07:49.716 [main] LoggerLoad - Initializing WebDriver...
+[INFO ] 2025-05-06 16:07:50.893 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-06 16:07:51.307 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-05-06 16:07:51.676 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-05-06 16:07:51.881 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-06 16:07:52.902 [main] LoggerLoad - Linked List Get Started Button clicked
+[INFO ] 2025-05-06 16:07:53.252 [main] LoggerLoad - Deletion Link clicked
+[INFO ] 2025-05-06 16:07:54.105 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-06 16:07:54.155 [main] LoggerLoad - Initializing WebDriver...
+[INFO ] 2025-05-06 16:07:55.415 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-06 16:07:55.842 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-05-06 16:07:56.242 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-05-06 16:07:56.439 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-06 16:07:57.509 [main] LoggerLoad - Linked List Get Started Button clicked
+[INFO ] 2025-05-06 16:07:57.805 [main] LoggerLoad - Deletion Link clicked
+[INFO ] 2025-05-06 16:07:58.511 [main] LoggerLoad - Clicked the Run button.
+[INFO ] 2025-05-06 16:07:58.749 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-06 16:07:58.777 [main] LoggerLoad - Initializing WebDriver...
+[INFO ] 2025-05-06 16:07:59.902 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-06 16:08:00.377 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-05-06 16:08:00.745 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-05-06 16:08:00.952 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-06 16:08:02.037 [main] LoggerLoad - Linked List Get Started Button clicked
+[INFO ] 2025-05-06 16:08:02.420 [main] LoggerLoad - Deletion Link clicked
+[INFO ] 2025-05-06 16:08:03.074 [main] LoggerLoad - Reading code from Excel sheet: tryEditorCode, Row: 1
+[INFO ] 2025-05-06 16:08:03.671 [main] LoggerLoad - Editor Code is -->This is a test message !
+[INFO ] 2025-05-06 16:08:04.083 [main] LoggerLoad - Clicked the Run button.
+[INFO ] 2025-05-06 16:08:04.097 [main] LoggerLoad - Alert present: SyntaxError: bad input on line 1
+[INFO ] 2025-05-06 16:08:04.312 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-06 16:08:04.329 [main] LoggerLoad - Initializing WebDriver...
+[INFO ] 2025-05-06 16:08:05.524 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-06 16:08:05.959 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-05-06 16:08:06.351 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-05-06 16:08:06.574 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-06 16:08:07.794 [main] LoggerLoad - Linked List Get Started Button clicked
+[INFO ] 2025-05-06 16:08:08.105 [main] LoggerLoad - Deletion Link clicked
+[INFO ] 2025-05-06 16:08:08.739 [main] LoggerLoad - Reading code from Excel sheet: tryEditorCode, Row: 0
+[INFO ] 2025-05-06 16:08:08.792 [main] LoggerLoad - Editor Code is -->print('Python is fun!');
+[INFO ] 2025-05-06 16:08:09.110 [main] LoggerLoad - Clicked the Run button.
+[INFO ] 2025-05-06 16:08:09.147 [main] LoggerLoad - Code editor Output is :Python is fun!
+[INFO ] 2025-05-06 16:08:09.347 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-06 16:08:09.364 [main] LoggerLoad - Initializing WebDriver...
+[INFO ] 2025-05-06 16:08:10.553 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-06 16:08:10.981 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-05-06 16:08:11.337 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-05-06 16:08:11.544 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-06 16:08:12.588 [main] LoggerLoad - Linked List Get Started Button clicked
+[INFO ] 2025-05-06 16:08:12.886 [main] LoggerLoad - Deletion Link clicked
+[INFO ] 2025-05-06 16:08:13.132 [main] LoggerLoad - Practice Questions Link clicked
+[INFO ] 2025-05-06 16:08:13.360 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-06 17:08:28.562 [main] LoggerLoad - Initializing WebDriver...
+[INFO ] 2025-05-06 17:08:30.867 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-06 17:09:42.629 [main] LoggerLoad - Initializing WebDriver...
+[INFO ] 2025-05-06 17:09:44.390 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-06 17:10:16.725 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-05-06 17:10:17.126 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-05-06 17:10:17.331 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-06 17:10:18.463 [main] LoggerLoad - Linked List Get Started Button clicked
+[INFO ] 2025-05-06 17:10:18.503 [main] LoggerLoad - Linked List Page title[[ChromeDriver: chrome on windows (fcbbf96793123e1451e246bd4067980a)] -> xpath: //h4[@class='bg-secondary text-white']]
+[INFO ] 2025-05-06 17:10:18.812 [main] LoggerLoad - Introduction Link clicked
+[INFO ] 2025-05-06 17:10:19.128 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-06 17:10:20.976 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-05-06 17:10:21.320 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-05-06 17:10:21.510 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-06 17:10:22.537 [main] LoggerLoad - DS Get Started Button Clicked
+[INFO ] 2025-05-06 17:10:22.574 [main] LoggerLoad - Current URL after login: https://dsportalapp.herokuapp.com/data-structures-introduction/
+[INFO ] 2025-05-06 17:10:22.825 [main] LoggerLoad - Time Complexity Link Clicked
+[INFO ] 2025-05-06 17:10:23.147 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-06 17:10:23.296 [main] LoggerLoad - Initializing WebDriver...
+[INFO ] 2025-05-06 17:10:24.624 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-06 17:10:25.071 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-05-06 17:10:25.411 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-05-06 17:10:25.613 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-06 17:10:26.713 [main] LoggerLoad - DS Get Started Button Clicked
+[INFO ] 2025-05-06 17:10:27.054 [main] LoggerLoad - Time Complexity Link Clicked
+[INFO ] 2025-05-06 17:10:27.700 [main] LoggerLoad - Clicked the Try Here button.
+[INFO ] 2025-05-06 17:10:27.974 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-06 17:10:28.011 [main] LoggerLoad - Initializing WebDriver...
+[INFO ] 2025-05-06 17:10:29.312 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-06 17:10:29.733 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-05-06 17:10:30.076 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-05-06 17:10:30.296 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-06 17:10:31.334 [main] LoggerLoad - DS Get Started Button Clicked
+[INFO ] 2025-05-06 17:10:31.646 [main] LoggerLoad - Time Complexity Link Clicked
+[INFO ] 2025-05-06 17:10:32.293 [main] LoggerLoad - Clicked the Try Here button.
+[INFO ] 2025-05-06 17:10:32.432 [main] LoggerLoad - Clicked the Run button.
+[INFO ] 2025-05-06 17:10:32.698 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-06 17:10:32.761 [main] LoggerLoad - Initializing WebDriver...
+[INFO ] 2025-05-06 17:10:34.044 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-06 17:10:34.466 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-05-06 17:10:34.847 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-05-06 17:10:35.048 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-06 17:10:36.043 [main] LoggerLoad - DS Get Started Button Clicked
+[INFO ] 2025-05-06 17:10:36.365 [main] LoggerLoad - Time Complexity Link Clicked
+[INFO ] 2025-05-06 17:10:36.995 [main] LoggerLoad - Clicked the Try Here button.
+[INFO ] 2025-05-06 17:10:37.287 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-06 17:10:37.318 [main] LoggerLoad - Initializing WebDriver...
+[INFO ] 2025-05-06 17:10:38.553 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-06 17:10:38.977 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-05-06 17:10:39.340 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-05-06 17:10:39.523 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-06 17:10:40.522 [main] LoggerLoad - DS Get Started Button Clicked
+[INFO ] 2025-05-06 17:10:40.837 [main] LoggerLoad - Time Complexity Link Clicked
+[INFO ] 2025-05-06 17:10:41.457 [main] LoggerLoad - Clicked the Try Here button.
+[INFO ] 2025-05-06 17:10:41.708 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-06 17:11:44.348 [main] LoggerLoad - Initializing WebDriver...
+[INFO ] 2025-05-06 17:11:46.076 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-06 17:12:56.732 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-05-06 17:12:57.168 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-05-06 17:12:57.330 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-06 17:12:58.335 [main] LoggerLoad - DS Get Started Button Clicked
+[INFO ] 2025-05-06 17:12:58.363 [main] LoggerLoad - Current URL after login: https://dsportalapp.herokuapp.com/data-structures-introduction/
+[INFO ] 2025-05-06 17:12:58.600 [main] LoggerLoad - Time Complexity Link Clicked
+[INFO ] 2025-05-06 17:12:58.814 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-06 17:12:58.935 [main] LoggerLoad - Initializing WebDriver...
+[INFO ] 2025-05-06 17:13:00.216 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-06 17:13:00.697 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-05-06 17:13:01.065 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-05-06 17:13:01.251 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-06 17:13:02.305 [main] LoggerLoad - DS Get Started Button Clicked
+[INFO ] 2025-05-06 17:13:02.575 [main] LoggerLoad - Time Complexity Link Clicked
+[INFO ] 2025-05-06 17:13:03.219 [main] LoggerLoad - Clicked the Try Here button.
+[INFO ] 2025-05-06 17:13:03.468 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-06 17:13:03.507 [main] LoggerLoad - Initializing WebDriver...
+[INFO ] 2025-05-06 17:13:04.782 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-06 17:13:05.207 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-05-06 17:13:05.564 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-05-06 17:13:05.777 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-06 17:13:06.785 [main] LoggerLoad - DS Get Started Button Clicked
+[INFO ] 2025-05-06 17:13:07.064 [main] LoggerLoad - Time Complexity Link Clicked
+[INFO ] 2025-05-06 17:13:07.663 [main] LoggerLoad - Clicked the Try Here button.
+[INFO ] 2025-05-06 17:13:07.765 [main] LoggerLoad - Clicked the Run button.
+[INFO ] 2025-05-06 17:13:07.768 [main] LoggerLoad - No alert to display
+[INFO ] 2025-05-06 17:13:07.974 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-06 17:13:08.039 [main] LoggerLoad - Initializing WebDriver...
+[INFO ] 2025-05-06 17:13:09.257 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-06 17:13:09.678 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-05-06 17:13:10.030 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-05-06 17:13:10.243 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-06 17:13:11.224 [main] LoggerLoad - DS Get Started Button Clicked
+[INFO ] 2025-05-06 17:13:11.494 [main] LoggerLoad - Time Complexity Link Clicked
+[INFO ] 2025-05-06 17:13:12.098 [main] LoggerLoad - Clicked the Try Here button.
+[INFO ] 2025-05-06 17:13:12.103 [main] LoggerLoad - Reading code from Excel sheet: tryEditorCode, Row: 1
+[INFO ] 2025-05-06 17:13:12.784 [main] LoggerLoad - Editor Code is -->This is a test message !
+[INFO ] 2025-05-06 17:13:13.146 [main] LoggerLoad - Clicked the Run button.
+[INFO ] 2025-05-06 17:13:13.160 [main] LoggerLoad - Alert present: SyntaxError: bad input on line 1
+[INFO ] 2025-05-06 17:13:13.369 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-06 17:13:13.396 [main] LoggerLoad - Initializing WebDriver...
+[INFO ] 2025-05-06 17:13:14.612 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-06 17:13:15.024 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-05-06 17:13:15.381 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-05-06 17:13:15.578 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-06 17:13:16.586 [main] LoggerLoad - DS Get Started Button Clicked
+[INFO ] 2025-05-06 17:13:16.879 [main] LoggerLoad - Time Complexity Link Clicked
+[INFO ] 2025-05-06 17:13:17.543 [main] LoggerLoad - Clicked the Try Here button.
+[INFO ] 2025-05-06 17:13:17.547 [main] LoggerLoad - Reading code from Excel sheet: tryEditorCode, Row: 0
+[INFO ] 2025-05-06 17:13:17.596 [main] LoggerLoad - Editor Code is -->print('Python is fun!');
+[INFO ] 2025-05-06 17:13:17.917 [main] LoggerLoad - Clicked the Run button.
+[INFO ] 2025-05-06 17:13:17.957 [main] LoggerLoad - Console output: Python is fun!
+[INFO ] 2025-05-06 17:13:18.155 [main] LoggerLoad - Browser closed successfully.

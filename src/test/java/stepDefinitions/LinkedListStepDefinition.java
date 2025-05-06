@@ -54,7 +54,7 @@ public class LinkedListStepDefinition {
 	@Then("The user should land on the Linked list page by clicking Get started button for Linked list module")
 	public void the_user_should_land_on_the_linked_list_page_by_clicking_get_started_button_for_linked_list_module() {
 		introductionpage.clickLinkedListGetStartedButton();
-		;
+		
 		Assert.assertEquals(introductionpage.getHomePageTitle(), "Linked List");
 	}
 

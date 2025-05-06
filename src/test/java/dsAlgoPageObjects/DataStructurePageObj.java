@@ -13,7 +13,8 @@ import utils.LoggerLoad;
 
 public class DataStructurePageObj {
 	  WebDriver driver;
-
+	   String URL = ConfigReader.getUrl();
+		String homeURL = ConfigReader.getUrlHome();
 	public DataStructurePageObj(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this); 

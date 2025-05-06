@@ -4,32 +4,40 @@ import java.io.IOException;
 import org.apache.poi.openxml4j.exceptions.OpenXML4JException;
 import org.openqa.selenium.WebDriver;
 import com.fasterxml.jackson.databind.exc.InvalidFormatException;
+
 import driverManager.DriverFactory;
 import dsAlgoPageObjects.DataStructurePageObj;
 import dsAlgoPageObjects.HomePageObj;
 import dsAlgoPageObjects.IntroductionPageObj;
+import dsAlgoPageObjects.LinkedListPageObj;
 import dsAlgoPageObjects.SignInPageObj;
+import dsAlgoPageObjects.TreePageObj;
 import dsAlgoPageObjects.TryEditorPage;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import utils.ConfigReader;
 import utils.LoggerLoad;
+
 import static org.junit.Assert.assertEquals;
 import static org.testng.Assert.assertNotNull;
 import static org.testng.Assert.assertTrue;
 
-public class DataStructureStepDefinition {	          
+public class DsStepDefinition {	
+
+	
 	    WebDriver driver = DriverFactory.getDriver();
         HomePageObj homepage = new HomePageObj(driver);
         SignInPageObj signin = new SignInPageObj(driver);
         IntroductionPageObj introductionpage = new IntroductionPageObj();
         DataStructurePageObj dataStructurepage = new DataStructurePageObj(driver);
         TryEditorPage tryEditorPage = new TryEditorPage(driver);
-    
+        ConfigReader configReader = new ConfigReader(driver);
     
     @Given("The user is logged into the DS Algo Portal")
     public void the_user_is_logged_into_the_ds_algo_portal() throws InterruptedException, InvalidFormatException, IOException, OpenXML4JException {
-        homepage.clickGetStartedHomePageButton();
+        homepage.openHomeUrl();
+    	introductionpage.clickgetStartedButton(driver);
         introductionpage.clickSignInLink();
         signin.enterUsernameText("username");
 		signin.enterPasswordText("password");
@@ -37,7 +45,7 @@ public class DataStructureStepDefinition {
     }
     @When("The user clicks the Get Started button of Data Structure Introduction section")
     public void the_user_clicks_the_get_started_button_of_data_structure_introduction_section() {
-        introductionpage.clickDsGetStartedButton();
+    	dataStructurepage.clickGetStartedBtn();
     }
     @Then("The user should be directed to Data Structure introduction Page")
     public void the_user_should_be_directed_to_data_structure_introduction_page() {

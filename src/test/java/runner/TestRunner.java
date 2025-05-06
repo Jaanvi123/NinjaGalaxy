@@ -2,7 +2,6 @@ package runner;
 
 import org.junit.runner.RunWith;
 import org.testng.annotations.DataProvider;
-
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import io.cucumber.testng.*;
@@ -11,7 +10,7 @@ import io.cucumber.testng.*;
 	@RunWith(Cucumber.class)
 
 	@CucumberOptions(
-			features="src/test/resources/features/LinkedList.feature",
+			features="src/test/resources/features/DsIntroduction.feature",
 			glue={"stepDefinitions","hooks"},
 			dryRun=false,
 			monochrome=true,	
