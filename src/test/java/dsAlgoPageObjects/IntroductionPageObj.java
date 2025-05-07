@@ -108,7 +108,7 @@ public class IntroductionPageObj {
 	
 	public void clickgetStartedButton(WebDriver driver) {
 		LoggerLoad.info("Button clicked successfully.");
-	}
+	}  
 
 	public void clickDsGetStartedButton() {
 		dsIntroductionGetStartedBtn.click();
@@ -150,6 +150,7 @@ public class IntroductionPageObj {
 		LoggerLoad.info("Register Link on Homepage clicked");
 			}
 	public void clickSignInLink() {
+		 PageFactory.initElements(driver, this);
 		SignInLink.click();
 		LoggerLoad.info("Sign In Link on Homepage clicked");
 	}

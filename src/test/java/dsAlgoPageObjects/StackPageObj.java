@@ -35,22 +35,6 @@ public class StackPageObj {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
-
-	public String getPageHeading(String headingText) {
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		WebElement heading = wait.until(ExpectedConditions
-				.visibilityOfElementLocated(By.xpath("//h4[contains(text(), '" + headingText + "')]")));
-		return heading.getText().trim();
-	}
-//
-//		public String stackPageTitle() {
-////		    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-////		    WebElement heading = wait.until(ExpectedConditions.visibilityOfElementLocated(
-////		        By.xpath("//h4[contains(text(), 'Operations in Stack')]")
-////		    ));
-////		    return heading.getText().trim();
-////		}
-
 	public String getcurrentpageUrl() {
 		System.out.println(driver.getCurrentUrl());
 		return (driver.getCurrentUrl());

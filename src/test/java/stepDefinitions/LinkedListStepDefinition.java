@@ -73,7 +73,7 @@ public class LinkedListStepDefinition {
 
 	@Then("The user should be redirected to the Introduction page")
 	public void the_user_should_be_redirected_to_the_introduction_page() {
-		Assert.assertTrue(treePage.getcurrentpageUrl().endsWith("/introduction"));
+		Assert.assertTrue(treePage.getcurrentpageUrl().endsWith("linked-list/introduction/"));
 	}
 
 //TC02

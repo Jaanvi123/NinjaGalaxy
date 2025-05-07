@@ -61,14 +61,13 @@ public class StackStepDefinition {
 
 	@When("The user clicks on Operations in stack link of stack page")
 	public void the_user_clicks_on_operations_in_stack_link_of_stack_page() {
-	
-		stackpage.ClickOperationsinstackLink();		
+			stackpage.ClickOperationsinstackLink();		
 	}
 
 	@Then("The user should be directed to Operations in stack page of stack")
 	public void the_user_should_be_directed_to_operations_in_stack_page_of_stack() {
 
-		String expectedTitle = "Operations in Stack"; // Use actual title shown on the page
+		String expectedTitle = "Operations in Stack"; 
 		String actualTitle = stackpage.validatePageTitle();
 		LoggerLoad.info("Expected: " + expectedTitle + " | Actual: " + actualTitle);
 		assertEquals(expectedTitle, actualTitle, "User is not on the expected Stack page.");
@@ -77,14 +76,12 @@ public class StackStepDefinition {
 //TC02
 	@Given("The user is on Operations in stack page of stack page")
 	public void the_user_is_on_operations_in_stack_page_of_stack_page() {
-
 		stackpage.ClickOperationsinstackLink();
 	
 	}
 
 	@When("The user clicks on Try here button of Operations in stack Page")
 	public void the_user_clicks_on_try_here_button_of_operations_in_stack_page() {
-		
 		tryeditor.PageScrolldown();
 		tryeditor.clickTryHereButton();
 	}

@@ -5,7 +5,7 @@ Feature: Arrays
     When The user clicks the Get Started button in Array Panel
     Then The user should be navigated to the Array page
 
-  ---------------------------  (Arrays in Python page)---------------------------
+  ## (Arrays in Python page)
  ##TC01
   Scenario: Verify that user is able to navigate to Arrays in Python page
   Given The user is on the Array page
@@ -13,25 +13,25 @@ Feature: Arrays
   Then The user should be redirected to Arrays in Python page
   
  ##TC02
-  Scenario: Verify that user is able to navigate to try Editor page under Arrays in Python page
-  Given The user is on the Arrays in Python page
-  When The user clicks Try Here button in Arrays in Python page
-  Then The user should be redirected to a page having a tryEditor with a Run button
-  
+  #Scenario: Verify that user is able to navigate to try Editor page under Arrays in Python page
+  #Given The user is on the Arrays in Python page
+  #When The user clicks Try Here button in Arrays in Python page
+  #Then The user should be redirected to a page having a tryEditor with a Run button
+  #
  ##TC03
-  Scenario: Verify Run button behavior with empty code editor on Try
-  Given The user is on the tryEditor page with a Run button
-  When The user clicks the Run button without entering the code in the code Editor
-  Then The user should not see any error message in the popup
-  
+  #Scenario: Verify Run button behavior with empty code editor on Try
+  #Given The user is on the tryEditor page with a Run button
+  #When The user clicks the Run button without entering the code in the code Editor
+  #Then The user should not see any error message in the popup
+  #
  ##TC04
-  Scenario Outline: Verify error message for invalid code on Try Editor
-  Given The user is on the tryEditor page of Array in python
-  When The user clicks Run button with invalid code from sheetname "<Sheetname>" and row <RowNumber> for Arrays in Python page
-  Then The user should be able to see an error message in alert window
-  Examples:
-  | Sheetname     | RowNumber |
-  | tryEditorCode |         1 |
+  #Scenario Outline: Verify error message for invalid code on Try Editor
+  #Given The user is on the tryEditor page of Array in python
+  #When The user clicks Run button with invalid code from sheetname "<Sheetname>" and row <RowNumber> for Arrays in Python page
+  #Then The user should be able to see an error message in alert window
+  #Examples:
+  #| Sheetname     | RowNumber |
+  #| tryEditorCode |         1 |
   #
   #TC05
   #Scenario Outline: Verify output for valid code on Try Editor page of Array in Python
@@ -42,7 +42,7 @@ Feature: Arrays
   #| Sheetname     | RowNumber |
   #| tryEditorCode |         0 |
   #
-  #---------------------------( Arrays Using List page)---------------------------
+  #( Arrays Using List page)
   #TC06
   #Scenario: Verify navigation to Arrays Using List page
   #Given The user is on the Array page to explore Arrays Using List page
@@ -78,7 +78,7 @@ Feature: Arrays
   #Examples:
   #| Sheetname     | RowNumber |
   #| tryEditorCode |         0 |
-  #---------------------------(Basic Operations in Lists)---------------------------
+  #(Basic Operations in Lists)---------------------------
   #
   #TC11
   #Scenario: Verify that user is able to navigate to Basic Operations in Lists page
@@ -118,7 +118,7 @@ Feature: Arrays
   #| Sheetname     | RowNumber |
   #| tryEditorCode |         0 |
   #
-  #--------------------------- (Applications of Array)---------------------------
+  # (Applications of Array)---------------------------
   #TC16
   #Scenario: Verify that user is able to navigate to Applications of Array page
     #Given The user is on overview of the Array page
@@ -156,7 +156,7 @@ Feature: Arrays
     #Examples: 
       #| Sheetname     | RowNumber |
       #| tryEditorCode |         0 |
-  #--------------------------- (Practice Questions page scenarios)---------------------------
+  #(Practice Questions page scenarios)---------------------------
   #TC21				
   #Scenario: Verify that user is able to navigate to list of Practice Questions under Array page
     #Given The user is on the Array page

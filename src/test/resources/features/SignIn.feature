@@ -1,9 +1,9 @@
 Feature: DS Portal SignIn Feature
 
- ## Background: User is on DS Algo Sign in Page
- ##   Given The user is on the DS Algo Sign in Page
+ Background: User is on DS Algo Sign in Page
+  Given The user is on the DS Algo Sign in Page
 #TC01
-  Scenario Outline: Verify that user able to land on Home page after entering valid Username and Password fields
+  Scenario: Verify that user able to land on Home page after entering valid Username and Password fields
     Given The user is on the DS Algo Sign in Page
     When The user clicks login button after entering valid username and valid password 
     Then The user should land on Data Structure Home Page with message "You are logged in"

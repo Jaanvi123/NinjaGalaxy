@@ -9,8 +9,13 @@ import dsAlgoPageObjects.TreePageObj;
 import dsAlgoPageObjects.TryEditorPage;
 import static org.testng.Assert.assertTrue;
 import java.io.IOException;
+import java.time.Duration;
+
 import org.apache.poi.openxml4j.exceptions.OpenXML4JException;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -955,7 +960,10 @@ public class TreeStepDefinition {
 	public void the_user_is_on_the_try_editor_page_after_clicking_try_here_button_in_binary_tree_traversals_link() {
 		  treePage.clickBinaryTreeTraversalsLink();	
 		  treePage.PageScrollDown();
-	      tryEditorPage.clickTryHereButton();	
+		  WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+			WebElement tryHerebutton = wait.until(ExpectedConditions.elementToBeClickable(tryEditorPage.tryHereButton));
+			tryHerebutton.click();
+	     
 	}
 	@When("The user enters an empty code in editor of Binary Tree Traversals link and clicks Run button")
 	public void the_user_enters_an_empty_code_in_editor_of_binary_tree_traversals_link_and_clicks_run_button() {

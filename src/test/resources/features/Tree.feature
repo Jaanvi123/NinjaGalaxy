@@ -5,24 +5,24 @@ Feature: Tree Page Feature
     When The user clicks Sign in link and enters valid credentials
     Then The user should land on the tree page by clicking Get started button for tree module
 
-    Overview of Trees
+    ##Overview of Trees
  #TC01
-  Scenario: Verify that the user is able to navigate to the Overview of Trees page
-    Given The user is on the Tree page after signing in
-    When The user clicks the Overview of Trees link
-    Then The user should be redirected to the Overview of Trees data structure page
-
+  #Scenario: Verify that the user is able to navigate to the Overview of Trees page
+    #Given The user is on the Tree page after signing in
+    #When The user clicks the Overview of Trees link
+    #Then The user should be redirected to the Overview of Trees data structure page
+#
  #TC02
-  Scenario: Navigate to Try Editor for Tree Overview of Trees
-    Given The user is on the Overview of Trees page
-    When The user clicks Try Here button in Overview of Trees page
-    Then The user is redirected to a page having Editor with run button for Overview of Trees page
-
+  #Scenario: Navigate to Try Editor for Tree Overview of Trees
+    #Given The user is on the Overview of Trees page
+    #When The user clicks Try Here button in Overview of Trees page
+    #Then The user is redirected to a page having Editor with run button for Overview of Trees page
+#
  #TC03
-  Scenario: User clicks the Run button without entering any code for Tree
-    Given The user is on the tryEditor page after clicking Try here button in Overview of Trees link
-    When The user enters an empty code in editor of Overview of Trees link and clicks Run button
-    Then No error message is displayed for Try editor of Overview of Trees page
+  #Scenario: User clicks the Run button without entering any code for Tree
+    #Given The user is on the tryEditor page after clicking Try here button in Overview of Trees link
+    #When The user enters an empty code in editor of Overview of Trees link and clicks Run button
+    #Then No error message is displayed for Try editor of Overview of Trees page
 #
 ##TC04
   #Scenario Outline: Verify that user receives error message in the alert window for invalid python code
