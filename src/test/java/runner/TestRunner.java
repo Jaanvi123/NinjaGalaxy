@@ -10,7 +10,7 @@ import io.cucumber.testng.*;
 	@RunWith(Cucumber.class)
 
 	@CucumberOptions(
-			features="src/test/resources/features/Queue.feature",
+			features="src/test/resources/features",
 			glue={"stepDefinitions","hooks"},
 			dryRun=false,
 			monochrome=true,	
