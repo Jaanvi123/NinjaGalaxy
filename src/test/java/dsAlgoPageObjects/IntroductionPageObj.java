@@ -41,7 +41,6 @@ public class IntroductionPageObj {
 	@FindBy(css = "a.dropdown-toggle")WebElement DropdownArrow;
 	
 	public IntroductionPageObj() {
-		this.driver = driver;
 		 PageFactory.initElements(driver, this);
 	}
 	public String getAuthenticationMessage() {

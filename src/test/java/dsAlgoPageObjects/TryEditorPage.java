@@ -34,7 +34,7 @@ public class TryEditorPage {
     }
  
     public void clickRunButton() {
-    //	PageFactory.initElements(driver, this); 
+    
         runButton.click();
         LoggerLoad.info("Clicked the Run button.");
     }

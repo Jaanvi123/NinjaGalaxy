@@ -77,7 +77,7 @@ public class LinkedListStepDefinition {
 	}
 
 //TC02
-	@Given("The user is on the Introduction page ")
+	@Given("The user is on the Introduction page")
 	public void the_user_is_on_introduction_page() {
 		LinkedList.clickIntroductionLink();
 	}
