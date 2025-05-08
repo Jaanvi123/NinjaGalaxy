@@ -1,11 +1,9 @@
 package hooks;
 
-import java.io.IOException;
 import org.openqa.selenium.WebDriver;
 import driverManager.DriverFactory;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
-import io.cucumber.java.BeforeAll;
 import utils.ConfigReader;
 import utils.LoggerLoad;
 

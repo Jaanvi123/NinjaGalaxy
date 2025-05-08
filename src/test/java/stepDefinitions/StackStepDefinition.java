@@ -1,16 +1,7 @@
 package stepDefinitions;
 
-import static org.junit.Assert.assertEquals;
-import static org.testng.Assert.assertEquals;
-import static org.testng.Assert.assertNotNull;
-import static org.testng.Assert.assertTrue;
-import java.time.Duration;
-import org.openqa.selenium.Alert;
-import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-
 import driverManager.DriverFactory;
 import dsAlgoPageObjects.HomePageObj;
 import dsAlgoPageObjects.IntroductionPageObj;
@@ -20,375 +11,372 @@ import dsAlgoPageObjects.TryEditorPage;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import utils.ConfigReader;
 import utils.LoggerLoad;
-
-public class StackStepDefinition {
-
+import static org.testng.Assert.assertTrue;
+import java.io.IOException;
+import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
+import org.apache.poi.openxml4j.exceptions.OpenXML4JException;
+public class StackStepDefinition 
+{
 	WebDriver driver = DriverFactory.getDriver();
 	SignInPageObj signin = new SignInPageObj(driver);
-	ConfigReader configReader = new ConfigReader(driver);
 	IntroductionPageObj introductionpage = new IntroductionPageObj();
 	HomePageObj homepage = new HomePageObj(driver);
-	StackPageObj stackpage = new StackPageObj(driver);
-	TryEditorPage tryeditor = new TryEditorPage(driver);
+	TryEditorPage tryEditorPage = new TryEditorPage(driver);
+	StackPageObj stackPage = new StackPageObj(driver);
 	
-	@Given("The user is logged into the Ds Algo Portal")
-	public void the_user_is_logged_into_the_ds_algo_protal() {
+	
+	//Operations in Stack link
+	
+	@Given("The user is on home page of dsalgo portal")
+	public void the_user_is_on_home_page_of_dsalgo_portal() {
 		homepage.openHomeUrl();
+		homepage.clickGetStartedHomePageButton();
 	}
-
-	@When("The user clicks the Get Started button of stack section")
-	public void the_user_clicks_the_get_started_button_of_stack_section() {
-		introductionpage.clickStackGetStartedButton();
-
-	}
-
-	@Then("The user should be directed to stack Page")
-	public void the_user_should_be_directed_to_stack_page() {
-		String expectedTitle = "Stack"; 
-		String actualTitle = stackpage.validatePageTitle();
-		LoggerLoad.info("Expected: " + expectedTitle + " | Actual: " + actualTitle);
-		assertEquals(expectedTitle, actualTitle, "User is not on the expected Stack page.");
-
-	}
-//TC01
-	@Given("The user is on stack Page")
-	public void the_user_is_on_stack_page() {
-		LoggerLoad.info("The user is on stack Page");
-
-	}
-
-	@When("The user clicks on Operations in stack link of stack page")
-	public void the_user_clicks_on_operations_in_stack_link_of_stack_page() {
-			stackpage.ClickOperationsinstackLink();		
-	}
-
-	@Then("The user should be directed to Operations in stack page of stack")
-	public void the_user_should_be_directed_to_operations_in_stack_page_of_stack() {
-
-		String expectedTitle = "Operations in Stack"; 
-		String actualTitle = stackpage.validatePageTitle();
-		LoggerLoad.info("Expected: " + expectedTitle + " | Actual: " + actualTitle);
-		assertEquals(expectedTitle, actualTitle, "User is not on the expected Stack page.");
-
-	}
-//TC02
-	@Given("The user is on Operations in stack page of stack page")
-	public void the_user_is_on_operations_in_stack_page_of_stack_page() {
-		stackpage.ClickOperationsinstackLink();
 	
+	@When("The user press Sign in link and enters valid credentials")
+	public void the_user_press_sign_in_link_and_enters_valid_credentials() throws InvalidFormatException, IOException, OpenXML4JException, InterruptedException{
+		introductionpage.clickgetStartedButton(driver);
+		introductionpage.clickSignInLink();
+		signin.enterUsernameText("username");
+		signin.enterPasswordText("password");
+		signin.clickloginButton();
+	}
+	
+	@Then("The user lands on the stack page on clicking Get started button for stack module")
+	public void the_user_lands_on_the_stack_page_on_clicking_get_started_button_for_stack_module() {
+		introductionpage.clickStackGetStartedButton();
+		Assert.assertEquals(introductionpage.getHomePageTitle(), "Stack");
+	}
+	
+//TC01
+	
+	@Given("the user is on the stack page after signing in")
+	public void the_user_is_on_the_stack_page_after_signing_in() {
+	   stackPage.validatePageTitle();
+	}
+	
+	@When("the user clicks the Operations in Stack link")
+	public void the_user_clicks_the_operations_in_stack_link() {
+	    stackPage.ClickOperationsinstackLink();
+	}
+	
+	@Then("the user should be redirected to the Operations in Stack data structure page")
+	public void the_user_should_be_redirected_to_the_operations_in_stack_data_structure_page() {
+		 stackPage.getcurrentpageUrl();
+		 Assert.assertTrue(stackPage.getcurrentpageUrl().endsWith("operations-in-stack/"));
 	}
 
-	@When("The user clicks on Try here button of Operations in stack Page")
-	public void the_user_clicks_on_try_here_button_of_operations_in_stack_page() {
-		tryeditor.PageScrolldown();
-		tryeditor.clickTryHereButton();
+//TC02
+	@Given("The user is on the Operations in Stack page")
+	public void the_user_is_on_the_operations_in_stack_page() {
+	    stackPage.ClickOperationsinstackLink();
+	    stackPage.getcurrentpageUrl();
 	}
-
-//TC03
-	@Given("The user is on Operations in stack page to explore tryhere page with run button")
-	public void the_user_is_on_operations_in_stack_page_to_explore_tryhere_page_with_run_button() {
-		stackpage.ClickOperationsinstackLink();
-		tryeditor.PageScrolldown();
-		tryeditor.clickTryHereButton();
-		String expectedTitle = "Operations in Stack";
-		String actualTitle = introductionpage.getHomePageTitle();
-		assertEquals(actualTitle, expectedTitle,
-				"Page title is incorrect. Expected: " + expectedTitle + ", but found: " + actualTitle);
-
+	
+	@When("The user clicks Try Here button on the Operations in Stack page")
+	public void the_user_clicks_try_here_button_on_the_operations_in_stack_page() {
+		tryEditorPage.clickTryHereButton();
 	}
-
-	@When("The user clicks the Run button without entering code in the text area editor")
-	public void the_user_clicks_the_run_button_without_entering_code_in_the_text_area_editor() {
-			stackpage.clickRunButton();
-		
+	
+	@Then("The user is redirected to a page having Editor with run button for Operations in Stack")
+	public void the_user_is_redirected_to_a_page_having_editor_with_run_button_for_operations_in_stack() {
+		 stackPage.getcurrentpageUrl();
+		 Assert.assertTrue(stackPage.getcurrentpageUrl().endsWith("tryEditor"));
 	}
-
-	@Then("The user does not see error message displayed")
-	public void the_user_does_not_see_error_message_displayed() {
-		LoggerLoad.info("The user does not see error message displayed");
-
+	
+//TC03	
+	@Given("The user is on tryEditor page and clicks Try here button in Operations in Stack")
+	public void the_user_is_on_try_editor_page_and_clicks_try_here_button_in_operations_in_stack() {
+		stackPage.ClickOperationsinstackLink();
+		tryEditorPage.clickTryHereButton();
 	}
+	
+	@When("The user enters an empty code in editor of Operations in Stack and clicks Run button")
+	public void the_user_enters_an_empty_code_in_editor_of_operations_in_stack_and_clicks_run_button() {
+		tryEditorPage.clickRunButton();	
+	}
+	
+	@Then("No error message is displayed for Operations in Stack")
+	public void no_error_message_is_displayed_for_operations_in_stack() {
+		stackPage.getcurrentpageUrl();
+		Assert.assertTrue(stackPage.getcurrentpageUrl().endsWith("tryEditor"));
+	}
+	
 //TC04
-	@Given("The user is on tryEditor  page with run button and alert window")
-	public void the_user_is_on_try_editor_page_with_run_button_and_alert_window() {
-		stackpage.ClickOperationsinstackLink();
-		tryeditor.PageScrolldown();
-		tryeditor.clickTryHereButton();
-		Assert.assertTrue(stackpage.getcurrentpageUrl().endsWith("tryEditor"));
-
+	@Given("The user is on the tryEditor page after clicking Try here button in Operations in Stack")
+	public void the_user_is_on_the_try_editor_page_after_clicking_try_here_button_in_operations_in_stack() {
+		stackPage.ClickOperationsinstackLink();
+		tryEditorPage.clickTryHereButton();
 	}
 
-	@When("The user clicks Run button in stack with invalid code from sheetname {string} and row {int}")
-	public void the_user_clicks_run_button_in_stack_with_invalid_code_from_sheetname_and_row(String sheetName,
-			Integer rowNumber) {
-		try {
-			tryeditor.enterCodeFromExcel(sheetName, rowNumber);
-			tryeditor.clickRunButton();
-		} catch (Exception e) {
-			LoggerLoad.error("Error while running invalid code: " + e.getMessage());
-		}
+	@When("The user enter valid Python code in the editor of Operations in Stack page and clicks Run button from sheetname {string} and row {int}")
+	public void the_user_enter_valid_python_code_in_the_editor_of_operations_in_stack_page_and_clicks_run_button_from_sheetname_and_row(String string, Integer int1) {
+		 try {
+	        	tryEditorPage.enterCodeFromExcel("tryEditorCode", 0);
+	        	tryEditorPage.clickRunButton();
+	        } catch (Exception e) {
+	        	LoggerLoad.info("Error while entering code or clicking Run: " + e.getMessage());
+	        }
 	}
 
-	@Then("The user should able to see error message in the alert window")
-	public boolean the_user_should_able_to_see_error_message_in_the_alert_window() {
-
-		try {
-			Alert alert = driver.switchTo().alert();
-			LoggerLoad.info("Alert found: " + alert.getText());
-			alert.accept(); 
-			return true;
-		} catch (NoAlertPresentException e) {
-			LoggerLoad.error("No alert found.");
-			return false;
-		}
+	@Then("The user should be able to see output in the console for Operations in Stack")
+	public void the_user_should_be_able_to_see_output_in_the_console_for_operations_in_stack() {
+		 stackPage.validateCodeEditorOutput();
 	}
-//TC05
-	@Given("The user is on tryEditor page along with run button and valid code in the editor")
-	public void the_user_is_on_try_editor_page_along_with_run_button_and_valid_code_in_the_editor() {
-		stackpage.ClickOperationsinstackLink();
-		tryeditor.PageScrolldown();
-		tryeditor.clickTryHereButton();
-		String expectedTitle = "Assessment"; 
-		String actualTitle = stackpage.validatePageTitle();
-		LoggerLoad.info("Expected: " + expectedTitle + " | Actual: " + actualTitle);
-		assertEquals(actualTitle, expectedTitle,
-				"Page title is incorrect. Expected: " + expectedTitle + ", but found: " + actualTitle);
-
+	
+//TC05	
+	@Given("The user is on the tryEditor page and clicks Try here button in Operations in Stack link")
+	public void the_user_is_on_the_try_editor_page_and_clicks_try_here_button_in_operations_in_stack_link() {
+	    stackPage.ClickOperationsinstackLink();
+	    tryEditorPage.clickTryHereButton();
 	}
-
-	@When("The user clicks Run button with valid code from the sheetname {string} and row {int} of implementation link")
-	public void the_user_clicks_run_button_with_valid_code_from_the_sheetname_and_row_of_implementation_link(
-			String sheetName, Integer rowNumber) {
-		try {
-			tryeditor.enterCodeFromExcel(sheetName, rowNumber);
-			tryeditor.clickRunButton();
-		} catch (Exception e) {
-			LoggerLoad.error("Error while running invalid code: " + e.getMessage());
-		}
-
+	
+	@When("The user enter invalid code in the editor Operations in Stack and clicks Run button from sheetname {string} and row {int}")
+	public void the_user_enter_invalid_code_in_the_editor_operations_in_stack_and_clicks_run_button_from_sheetname_and_row(String sheetName, Integer RowNumber) {
+		  try {
+	        	tryEditorPage.enterCodeFromExcel("tryEditorCode", 1);
+	        	tryEditorPage.clickRunButton();
+	        } catch (Exception e) {
+	        	LoggerLoad.info("Error while entering code or clicking Run: " + e.getMessage());
+	        }
 	}
-
-	@Then("The user should able to see the output in the console")
-	public void the_user_should_able_to_see_the_output_in_the_console() {
-		tryeditor.CodeEditorOutput();
+	
+	@Then("The user should be able to get alert on Operations in Stack")
+	public void the_user_should_be_able_to_get_alert_on_operations_in_stack() {
+		boolean isAlertPresent = tryEditorPage.HandleAlert();
+        assertTrue(isAlertPresent, "No alert displayed");
 	}
-//TC06
-	@Given("The user is on stack the Page")
-	public void the_user_is_on_stack_the_page() {
-		String expectedTitle = "Stack";
-		String actualTitle = stackpage.validatePageTitle();
-		LoggerLoad.info("Actual page title: " + actualTitle);
-		assertEquals("User is not on the expected page.", expectedTitle, actualTitle);
+	
+//TC06	
+	@Given("The user is in the Operations in Stack page")
+	public void the_user_is_in_the_operations_in_stack_page() {
+		stackPage.ClickOperationsinstackLink();
+	}
+	
+	@When("The user clicks the Practice Questions link from the Operations in Stack page")
+	public void the_user_clicks_the_practice_questions_link_from_the_operations_in_stack_page() {
+		stackPage.clickPracticeQuestionsLink();
+	}
+	
+	@Then("The user should be redirected to the Practice Questions page from Operations in Stack page")
+	public void the_user_should_be_redirected_to_the_practice_questions_page_from_operations_in_stack_page() {
+		stackPage.getcurrentpageUrl();
+		Assert.assertTrue(stackPage.getcurrentpageUrl().endsWith("practice"));
 
 	}
-
-	@When("The user clicks on Applications link of stack page")
-	public void the_user_clicks_on_applications_link_of_stack_page() {
-		
-		stackpage.StackApplicationslink();
-
-	}
-
-	@Then("The user should be directed to Applicationk page of stack")
-	public void the_user_should_be_directed_to_applicationk_page_of_stack() {
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-		String expectedTitle = "Applications";
-		String actualTitle = introductionpage.getHomePageTitle();
-		LoggerLoad.info("Actual page title: " + actualTitle);
-		assertEquals("User is not on the expected Applications page.", expectedTitle, actualTitle);
-	}
+	
 //TC07
-	@Given("The user is on Application page of stack page")
-	public void the_user_is_on_application_page_of_stack_page() {
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-		String expectedTitle = "Applications";
-		String actualTitle = introductionpage.getHomePageTitle();
-		LoggerLoad.info("Actual page title: " + actualTitle);
-		assertEquals("User is not on the expected Applications page.", expectedTitle, actualTitle);
-
+	@Given("The user is in stack page after signing in")
+	public void the_user_is_in_stack_page_after_signing_in() {
+		stackPage.getcurrentpageUrl();
 	}
-
-	@When("The user clicks on Try here button of Application Page")
-	public void the_user_clicks_on_try_here_button_of_application_page() {
-		stackpage.StackApplicationslink();
-		tryeditor.clickTryHereButton();
+	
+	@When("the user clicks the Implementation")
+	public void the_user_clicks_the_implementation() {
+		stackPage.ClickStackImplementationLink();
 	}
-
-	@Then("The user should be redirected to page having Editor with run button")
-	public void the_user_should_be_redirected_to_page_having_editor_with_run_button() {
-		String expectedTitle = "Assessment";
-		String actualTitle = introductionpage.getHomePageTitle();
-		// Check if the page title matches the expected title
-		assertEquals("Page title is incorrect. Expected: " + expectedTitle + ", but found: " + actualTitle,
-				expectedTitle, actualTitle);
+	
+	@Then("the user should be redirected to the Implementation data structure page")
+	public void the_user_should_be_redirected_to_the_implementation_data_structure_page() {
+		stackPage.getcurrentpageUrl();
+		Assert.assertTrue(stackPage.getcurrentpageUrl().endsWith("implementation/"));
 	}
-
-	@Given("The user is on Applications page to explore tryhere page with run button")
-	public void the_user_is_on_applications_page_to_explore_tryhere_page_with_run_button() {
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-		stackpage.StackApplicationslink();
-		String expectedTitle = "Applications";
-		String actualTitle = introductionpage.getHomePageTitle();
-		LoggerLoad.info("Actual page title: " + actualTitle);
-		assertEquals("User is on the expected Applications page.", expectedTitle, actualTitle);
+	
+//TC08
+	@Given("The user is on the Implementation")
+	public void the_user_is_on_the_implementation() {
+	   stackPage.ClickStackImplementationLink();
 	}
-
-	@When("The user clicks the Run button without entering any of code in the text area editor")
-	public void the_user_clicks_the_run_button_without_entering_any_of_code_in_the_text_area_editor() {
-		tryeditor.clickTryHereButton();
+	
+	@When("The user clicks Try Here button on the Implementation")
+	public void the_user_clicks_try_here_button_on_the_implementation() {
+		tryEditorPage.clickTryHereButton();
 	}
-
-	@Then("The user does not see error message tobe displayed")
-	public void the_user_does_not_see_error_message_tobe_displayed() {
-		LoggerLoad.info("The user does not see error message tobe displayed");
+	
+	@Then("The user is redirected to a page having Editor with run button for Implementation")
+	public void the_user_is_redirected_to_a_page_having_editor_with_run_button_for_implementation() {
+		stackPage.getcurrentpageUrl();
+		Assert.assertTrue(stackPage.getcurrentpageUrl().endsWith("tryEditor"));
 	}
-
-	@Given("The user is on tryEditor  page with run button and  an alert window")
-	public void the_user_is_on_try_editor_page_with_run_button_and_an_alert_window() {
-		stackpage.StackApplicationslink();
-		tryeditor.clickTryHereButton();
-		String expectedTitle = "Assessment";
-		String actualTitle = introductionpage.getHomePageTitle();
-		assertEquals(expectedTitle, actualTitle);
-
+	
+//TC09
+	@Given("The user is on tryEditor page and clicks Try here button in Implementation")
+	public void the_user_is_on_try_editor_page_and_clicks_try_here_button_in_implementation() {
+		  stackPage.ClickStackImplementationLink();
+		  tryEditorPage.clickTryHereButton();
 	}
-
-	@When("The user clicks on the Run button  with invalid code from sheetname {string} and row {int}")
-	public void the_user_clicks_on_the_run_button_with_invalid_code_from_sheetname_and_row(String sheetName,
-			Integer rowNumber) {
+	
+	@When("The user enters an empty code in editor of Implementation and clicks Run button")
+	public void the_user_enters_an_empty_code_in_editor_of_implementation_and_clicks_run_button() {
+		tryEditorPage.clickRunButton();
+	}
+	
+	@Then("No error message is displayed for Implementation")
+	public void no_error_message_is_displayed_for_implementation() {
+		stackPage.getcurrentpageUrl();
+		Assert.assertTrue(stackPage.getcurrentpageUrl().endsWith("tryEditor"));
+	}
+	
+//TC10
+	@Given("The user is on the tryEditor page after clicking Try here button in Implementation")
+	public void the_user_is_on_the_try_editor_page_after_clicking_try_here_button_in_implementation() {
+		  stackPage.ClickStackImplementationLink();
+		  tryEditorPage.clickTryHereButton();
+	}
+	
+	@When("The user wrote valid Python code in the editor of Implementation and clicks Run button from sheetname {string} and row {int}")
+	public void the_user_wrote_valid_python_code_in_the_editor_of_implementation_and_clicks_run_button_from_sheetname_and_row(String sheetName, Integer RowNumber) {
 		try {
-			tryeditor.enterCodeFromExcel(sheetName, rowNumber);
-			tryeditor.clickRunButton();
-		} catch (Exception e) {
-			LoggerLoad.error("Error while running invalid code: " + e.getMessage());
-		}
+        	tryEditorPage.enterCodeFromExcel("tryEditorCode", 0);
+        	tryEditorPage.clickRunButton();
+        } catch (Exception e) {
+        	LoggerLoad.info("Error while entering code or clicking Run: " + e.getMessage());
+        }
 	}
-
-	@Then("The user should able to see an error message in the form alert window")
-	public void the_user_should_able_to_see_an_error_message_in_the_form_alert_window() {
-		boolean isAlertPresent = tryeditor.HandleAlert();
-		assertTrue(isAlertPresent, "No alert displayed");
+	
+	@Then("The user should be able to see output in the console for Implementation")
+	public void the_user_should_be_able_to_see_output_in_the_console_for_implementation() {
+	   stackPage.validateCodeEditorOutput();
 	}
-
-	@Given("The user is on tryEditor page and with run button along with valid code in the editor")
-	public void the_user_is_on_try_editor_page_and_with_run_button_along_with_valid_code_in_the_editor() {
-		stackpage.StackApplicationslink();
-		tryeditor.clickTryHereButton();
-		String expectedTitle = "Assessment";
-		String actualTitle = introductionpage.getHomePageTitle();
-		assertEquals(expectedTitle, actualTitle);
-
+	
+//TC011
+	@Given("The user is on the tryEditor page and clicks Try here button in Implementation")
+	public void the_user_is_on_the_try_editor_page_and_clicks_try_here_button_in_implementation() {
+		 stackPage.ClickStackImplementationLink();
+		  tryEditorPage.clickTryHereButton();
 	}
-
-	@When("The user clicks Run button  and with valid code from the sheetname {string} and row {int}")
-	public void the_user_clicks_run_button_and_with_valid_code_from_the_sheetname_and_row(String sheetName,
-			Integer rowNumber) {
+	
+	@When("The user wrote invalid code in the editor Implementation and clicks Run button from sheetname {string} and row {int}")
+	public void the_user_wrote_invalid_code_in_the_editor_implementation_and_clicks_run_button_from_sheetname_and_row(String sheetName, Integer RowNumber) {
 		try {
-			tryeditor.enterCodeFromExcel(sheetName, rowNumber);
-			tryeditor.clickRunButton();
-		} catch (Exception e) {
-			LoggerLoad.info("Error while entering code or clicking Run: " + e.getMessage());
-		}
+        	tryEditorPage.enterCodeFromExcel("tryEditorCode", 1);
+        	tryEditorPage.clickRunButton();
+        } catch (Exception e) {
+        	LoggerLoad.info("Error while entering code or clicking Run: " + e.getMessage());
+        }
+	}
+	
+	@Then("The user should be able to get alert on Implementation")
+	public void the_user_should_be_able_to_get_alert_on_implementation() {
+		boolean isAlertPresent = tryEditorPage.HandleAlert();
+        assertTrue(isAlertPresent, "No alert displayed");
 	}
 
-	@Then("The user should able to see valid output in the console")
-	public void the_user_should_able_to_see_valid_output_in_the_console() {
-		String consoleOutput = tryeditor.getOutputText();
-		assertNotNull("Console output is null or empty.", consoleOutput);
+//TC12
+	@When("The user clicks the Practice Questions link from the Implementation")
+	public void the_user_clicks_the_practice_questions_link_from_the_implementation() {
+		 //stackPage.ClickStackImplementationLink();
+		 stackPage.clickPracticeQuestionsLink();
+	}
+	
+	@Then("The user should be redirected to the Practice Questions page from Implementation")
+	public void the_user_should_be_redirected_to_the_practice_questions_page_from_implementation() {
+		stackPage.getcurrentpageUrl();
+		Assert.assertTrue(stackPage.getcurrentpageUrl().endsWith("practice"));
 	}
 
-	@Given("The user is stack Page")
-	public void the_user_is_stack_page() {
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-		String expectedTitle = "stack";
-		String actualTitle = introductionpage.getHomePageTitle();
-		// Check if the page title matches the expected title
-		assertEquals(expectedTitle, actualTitle);
-
+//TC13
+	@When("the user clicks the Applications")
+	public void the_user_clicks_the_applications() {
+	    stackPage.StackApplicationslink();
+	}
+	
+	@Then("the user should be redirected to the Applications data structure page")
+	public void the_user_should_be_redirected_to_the_applications_data_structure_page() {
+		stackPage.getcurrentpageUrl();
+		Assert.assertTrue(stackPage.getcurrentpageUrl().endsWith("stack-applications/"));
+	}
+	
+//TC14
+	@Given("The user is on the Applications")
+	public void the_user_is_on_the_applications() {
+		stackPage.StackApplicationslink();
+	}
+	
+	@When("The user clicks Try Here button on the Applications")
+	public void the_user_clicks_try_here_button_on_the_applications() {
+		tryEditorPage.clickTryHereButton();
+}
+	
+	@Then("The user is redirected to a page having Editor with run button for Applications")
+	public void the_user_is_redirected_to_a_page_having_editor_with_run_button_for_applications() {
+		stackPage.getcurrentpageUrl();
 	}
 
-	@When("The user clicks on  Implementation  link of stack page")
-	public void the_user_clicks_on_implementation_link_of_stack_page() {
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		stackpage.ClickStackImplementationLink();
+//TC15
+	@Given("The user is on tryEditor page and clicks Try here button in Applications")
+	public void the_user_is_on_try_editor_page_and_clicks_try_here_button_in_applications() {
+	    stackPage.StackApplicationslink();
+	    tryEditorPage.clickTryHereButton();
 	}
-
-	@Then("The user should be directed to  Implementation  page of stack")
-	public void the_user_should_be_directed_to_implementation_page_of_stack() {
-
-		String expectedTitle = "Implementation";
-		String actualTitle = introductionpage.getHomePageTitle();
-		assertEquals(expectedTitle, actualTitle,
-				"Page title is incorrect. Expected: " + expectedTitle + ", but found: " + actualTitle);
+	
+	@When("The user enters an empty code in editor of Applications and clicks Run button")
+	public void the_user_enters_an_empty_code_in_editor_of_applications_and_clicks_run_button() {
+		tryEditorPage.clickRunButton();
 	}
-
-	@Given("The user is on  Implementation  page of stack page")
-	public void the_user_is_on_implementation_page_of_stack_page() {
-		stackpage.ClickStackImplementationLink();
-		LoggerLoad.info("The user is on the Implemenation link");
+	
+	@Then("No error message is displayed for Applications")
+	public void no_error_message_is_displayed_for_applications() {
+		stackPage.getcurrentpageUrl();
+		Assert.assertTrue(stackPage.getcurrentpageUrl().endsWith("tryEditor"));
 	}
-
-	@When("The user clicks on Try here button of  Implementation  Page")
-	public void the_user_clicks_on_try_here_button_of_implementation_page() {
-		stackpage.clickTryHereButton();
+	
+//TC16	
+	@Given("The user is on the tryEditor page after clicking Try here button in Applications")
+	public void the_user_is_on_the_try_editor_page_after_clicking_try_here_button_in_applications() {
+	    stackPage.StackApplicationslink();
+		tryEditorPage.clickTryHereButton();
 	}
-
-	@Then("The user should be redirected to page having tryEditor box with run button")
-	public void the_user_should_be_redirected_to_page_having_try_editor_box_with_run_button() {
-		String expectedTitle = "Assessment";
-		String actualTitle = introductionpage.getHomePageTitle();
-		assertEquals(expectedTitle, actualTitle,
-				"Page title is incorrect. Expected: " + expectedTitle + ", but found: " + actualTitle);
-	}
-
-	@Given("The user is on Implementation page to explore tryhere page with run button in stack")
-	public void the_user_is_on_implementation_page_to_explore_tryhere_page_with_run_button_in_stack() {
-		stackpage.ClickStackImplementationLink();
-	}
-
-	@Given("The user is on tryEditor  page with run button with alert window of stack")
-	public void the_user_is_on_try_editor_page_with_run_button_with_alert_window_of_stack() {
-		stackpage.ClickStackImplementationLink();
-		stackpage.clickTryHereButton();
-
-	}
-
-	@Given("The user is on tryEditor page along with run button and valid code")
-	public void the_user_is_on_try_editor_page_along_with_run_button_and_valid_code() {
-		stackpage.ClickStackImplementationLink();
-		stackpage.clickTryHereButton();
-	}
-
-	@When("The user clicks Run button with valid code from sheetname {string} and row {int}")
-	public void the_user_clicks_run_button_with_valid_code_from_sheetname_and_row(String sheetName, Integer rowNumber) {
+	
+	@When("The user has valid Python code in the editor of Applications and clicks Run button from sheetname {string} and row {int}")
+	public void the_user_has_valid_python_code_in_the_editor_of_applications_and_clicks_run_button_from_sheetname_and_row(String sheetName, Integer RowNumber) {
 		try {
-			tryeditor.enterCodeFromExcel(sheetName, rowNumber);
-			tryeditor.clickRunButton();
-		} catch (Exception e) {
-
-		}
-
+        	tryEditorPage.enterCodeFromExcel("tryEditorCode", 0);
+        	tryEditorPage.clickRunButton();
+        } catch (Exception e) {
+        	LoggerLoad.info("Error while entering code or clicking Run: " + e.getMessage());
+        }
 	}
-
-	@Given("The user lands on Opeartions in stack page")
-	public void the_user_lands_on_opeartions_in_stack_page() {
-		stackpage.ClickOperationsinstackLink();
-
+	
+	@Then("The user should be able to see output in the console for Applications")
+	public void the_user_should_be_able_to_see_output_in_the_console_for_applications() {
+		   stackPage.validateCodeEditorOutput();
 	}
-
-	@When("The user clicks Practice Questions link of stack page")
-	public void the_user_clicks_practice_questions_link_of_stack_page() {
-		stackpage.clickPracticeQuestionsLink();
+	
+//TC17
+	@Given("The user is on the tryEditor page and clicks Try here button in Applications")
+	public void the_user_is_on_the_try_editor_page_and_clicks_try_here_button_in_applications() {
+		    stackPage.StackApplicationslink();
+			tryEditorPage.clickTryHereButton();
 	}
-
-	@Then("The user should be redirected to Practice Questions page of Stack")
-	public void the_user_should_be_redirected_to_practice_questions_page_of_stack() {
-		String expectedTitle = "Practice Questions";
-		String actualTitle = introductionpage.getHomePageTitle();
-		assertEquals(expectedTitle, actualTitle,
-				"Page title is incorrect. Expected: " + expectedTitle + ", but found: " + actualTitle);
+	
+	@When("The user has invalid code in the editor Applications and clicks Run button from sheetname {string} and row {int}")
+	public void the_user_has_invalid_code_in_the_editor_applications_and_clicks_run_button_from_sheetname_and_row(String sheetName, Integer RowNumber) {
+		try {
+        	tryEditorPage.enterCodeFromExcel("tryEditorCode", 1);
+        	tryEditorPage.clickRunButton();
+        } catch (Exception e) {
+        	LoggerLoad.info("Error while entering code or clicking Run: " + e.getMessage());
+        }
+	}
+	
+	@Then("The user should be able to get alert on Applications")
+	public void the_user_should_be_able_to_get_alert_on_applications() {
+		boolean isAlertPresent = tryEditorPage.HandleAlert();
+        assertTrue(isAlertPresent, "No alert displayed");
+	}
+	
+//TC18
+	@When("The user clicks the Practice Questions link from the Applications")
+	public void the_user_clicks_the_practice_questions_link_from_the_applications() {
+	    stackPage.clickPracticeQuestionsLink();
+	}
+	
+	@Then("The user should be redirected to the Practice Questions page from Applications")
+	public void the_user_should_be_redirected_to_the_practice_questions_page_from_applications() {
+		stackPage.getcurrentpageUrl();
+		Assert.assertTrue(stackPage.getcurrentpageUrl().endsWith("practice"));
 	}
 
 }

@@ -4,21 +4,17 @@ import java.io.IOException;
 import org.apache.poi.openxml4j.exceptions.OpenXML4JException;
 import org.openqa.selenium.WebDriver;
 import com.fasterxml.jackson.databind.exc.InvalidFormatException;
-
 import driverManager.DriverFactory;
 import dsAlgoPageObjects.DataStructurePageObj;
 import dsAlgoPageObjects.HomePageObj;
 import dsAlgoPageObjects.IntroductionPageObj;
-import dsAlgoPageObjects.LinkedListPageObj;
 import dsAlgoPageObjects.SignInPageObj;
-import dsAlgoPageObjects.TreePageObj;
 import dsAlgoPageObjects.TryEditorPage;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import utils.ConfigReader;
 import utils.LoggerLoad;
-
 import static org.junit.Assert.assertEquals;
 import static org.testng.Assert.assertNotNull;
 import static org.testng.Assert.assertTrue;
