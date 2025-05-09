@@ -13296,3 +13296,64 @@ Session ID: e351d18487b1f64769c5331fe2df4ca2
 [INFO ] 2025-05-08 22:20:21.744 [main] LoggerLoad - Queue Operations Link is clicked
 [INFO ] 2025-05-08 22:20:22.053 [main] LoggerLoad - Practice Questions Link clicked
 [INFO ] 2025-05-08 22:20:22.343 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-09 17:49:37.459 [main] LoggerLoad - Initializing WebDriver...
+[INFO ] 2025-05-09 17:49:39.935 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-09 17:49:40.556 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-05-09 17:49:41.036 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-05-09 17:49:41.344 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-09 17:49:42.619 [main] LoggerLoad - Stack Get Started Button clicked
+[INFO ] 2025-05-09 17:49:43.091 [main] LoggerLoad - Operations in stack Link is clicked
+[INFO ] 2025-05-09 17:49:43.473 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-09 17:49:43.680 [main] LoggerLoad - Initializing WebDriver...
+[INFO ] 2025-05-09 17:49:45.259 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-09 17:49:45.819 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-05-09 17:49:46.368 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-05-09 17:49:46.668 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-09 17:49:47.985 [main] LoggerLoad - Stack Get Started Button clicked
+[INFO ] 2025-05-09 17:49:48.378 [main] LoggerLoad - Operations in stack Link is clicked
+[INFO ] 2025-05-09 17:49:49.087 [main] LoggerLoad - Clicked the Try Here button.
+[INFO ] 2025-05-09 17:49:49.514 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-09 17:49:49.577 [main] LoggerLoad - Initializing WebDriver...
+[INFO ] 2025-05-09 17:49:51.004 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-09 17:49:51.590 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-05-09 17:49:52.091 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-05-09 17:49:52.400 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-09 17:49:53.719 [main] LoggerLoad - Stack Get Started Button clicked
+[INFO ] 2025-05-09 17:49:54.203 [main] LoggerLoad - Operations in stack Link is clicked
+[INFO ] 2025-05-09 17:49:54.812 [main] LoggerLoad - Clicked the Try Here button.
+[INFO ] 2025-05-09 17:49:54.960 [main] LoggerLoad - Clicked the Run button.
+[INFO ] 2025-05-09 17:49:55.310 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-09 17:49:55.427 [main] LoggerLoad - Initializing WebDriver...
+[INFO ] 2025-05-09 17:49:56.876 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-09 17:49:57.423 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-05-09 17:49:57.964 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-05-09 17:49:58.273 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-09 17:49:59.500 [main] LoggerLoad - Stack Get Started Button clicked
+[INFO ] 2025-05-09 17:49:59.920 [main] LoggerLoad - Operations in stack Link is clicked
+[INFO ] 2025-05-09 17:50:00.574 [main] LoggerLoad - Clicked the Try Here button.
+[INFO ] 2025-05-09 17:50:00.583 [main] LoggerLoad - Reading code from Excel sheet: tryEditorCode, Row: 0
+[INFO ] 2025-05-09 17:50:01.411 [main] LoggerLoad - Editor Code is -->print('Python is fun!');
+[INFO ] 2025-05-09 17:50:01.849 [main] LoggerLoad - Clicked the Run button.
+[INFO ] 2025-05-09 17:50:02.257 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-09 17:50:02.299 [main] LoggerLoad - Initializing WebDriver...
+[INFO ] 2025-05-09 17:50:03.832 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-09 17:50:04.384 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-05-09 17:50:04.863 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-05-09 17:50:05.171 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-09 17:50:06.401 [main] LoggerLoad - Stack Get Started Button clicked
+[INFO ] 2025-05-09 17:50:06.788 [main] LoggerLoad - Operations in stack Link is clicked
+[INFO ] 2025-05-09 17:50:07.470 [main] LoggerLoad - Clicked the Try Here button.
+[INFO ] 2025-05-09 17:50:07.475 [main] LoggerLoad - Reading code from Excel sheet: tryEditorCode, Row: 1
+[INFO ] 2025-05-09 17:50:07.553 [main] LoggerLoad - Editor Code is -->This is a test message !
+[INFO ] 2025-05-09 17:50:07.951 [main] LoggerLoad - Clicked the Run button.
+[INFO ] 2025-05-09 17:50:07.963 [main] LoggerLoad - Alert present: SyntaxError: bad input on line 1
+[INFO ] 2025-05-09 17:50:08.281 [main] LoggerLoad - Browser closed successfully.
+[INFO ] 2025-05-09 17:50:08.342 [main] LoggerLoad - Initializing WebDriver...
+[INFO ] 2025-05-09 17:50:09.878 [main] LoggerLoad - Navigating to URL: https://dsportalapp.herokuapp.com
+[INFO ] 2025-05-09 17:50:10.418 [main] LoggerLoad - Inside Home URL
+[INFO ] 2025-05-09 17:50:10.922 [main] LoggerLoad - Button clicked successfully.
+[INFO ] 2025-05-09 17:50:11.252 [main] LoggerLoad - Sign In Link on Homepage clicked
+[INFO ] 2025-05-09 17:50:12.480 [main] LoggerLoad - Stack Get Started Button clicked
+[INFO ] 2025-05-09 17:50:12.883 [main] LoggerLoad - Operations in stack Link is clicked
+[INFO ] 2025-05-09 17:50:13.228 [main] LoggerLoad - Practice Questions Link clicked
+[INFO ] 2025-05-09 17:50:13.569 [main] LoggerLoad - Browser closed successfully.

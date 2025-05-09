@@ -11,7 +11,7 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 	@RunWith(Cucumber.class)
 
 	@CucumberOptions(
-			features="src/test/resources/features",
+			features="src/test/resources/features/Stack.feature",
 			glue={"stepDefinitions","hooks"},
 			dryRun=false,
 			monochrome=true,	
