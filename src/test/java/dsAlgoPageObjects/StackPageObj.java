@@ -2,7 +2,6 @@ package dsAlgoPageObjects;
 
 import java.time.Duration;
 import org.openqa.selenium.Alert;
-import org.openqa.selenium.By;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -20,16 +19,16 @@ public class StackPageObj {
 	String URL = ConfigReader.getUrl();
 	String homeURL = ConfigReader.getUrlHome();
 
-	@FindBy(xpath = "//h4[@class='bg-secondary text-white']")WebElement stackPageTitle;
-	@FindBy(xpath = "/html/body/div[2]/ul[1]/a")WebElement Operationsinstack;
-	@FindBy(xpath = "//a[@href='implementation']")WebElement StackImplementation;
-	@FindBy(xpath = "//a[@href='stack-applications']")WebElement StackApplications;
+	@FindBy(css = "//h4[@class='bg-secondary text-white']")WebElement stackPageTitle;
+	@FindBy(css = "/html/body/div[2]/ul[1]/a")WebElement Operationsinstack;
+	@FindBy(css = "//a[@href='implementation']")WebElement StackImplementation;
+	@FindBy(css = "//a[@href='stack-applications']")WebElement StackApplications;
 
-	@FindBy(xpath = "//*[@id='content']/a")WebElement PracticeQuestions;
-	@FindBy(xpath = "//a[@href='/tryEditor']")WebElement StacktryHere;
-	@FindBy(xpath = "//*[@id='answer_form']/button")WebElement StackRunButton;
-	@FindBy(xpath = "//*[@id=\"answer_form\"]/div/div/div[6]")WebElement CodeEditor;
-	@FindBy(xpath = "//pre[@id='output']")WebElement CodeEditorOutput;
+	@FindBy(css = "//*[@id='content']/a")WebElement PracticeQuestions;
+	@FindBy(css = "//a[@href='/tryEditor']")WebElement StacktryHere;
+	@FindBy(css = "//*[@id='answer_form']/button")WebElement StackRunButton;
+	@FindBy(css = "//*[@id=\"answer_form\"]/div/div/div[6]")WebElement CodeEditor;
+	@FindBy(css = "//pre[@id='output']")WebElement CodeEditorOutput;
 
 	public StackPageObj(WebDriver driver) {
 		this.driver = driver;

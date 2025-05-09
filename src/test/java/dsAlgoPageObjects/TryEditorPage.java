@@ -22,12 +22,12 @@ public class TryEditorPage {
     WebDriver driver;
 
    
-   @FindBy(xpath = "//a[@href='/tryEditor']") public  WebElement tryHereButton;
-    @FindBy(xpath = "//textarea[@tabindex='0']") WebElement textAreaForCode;
-    @FindBy(xpath = "//button[text()='Run']") WebElement runButton;
-    @FindBy(xpath = "//*[@id=\"answer_form\"]/div/div/div[6]")WebElement CodeEditor;
-    @FindBy(xpath = "//pre[@id='output']")WebElement consoleOutputMsg;
-    @FindBy(xpath = "//pre[@id='output']")WebElement CodeEditorOutput;
+   @FindBy(css = "//a[@href='/tryEditor']") public  WebElement tryHereButton;
+    @FindBy(css = "//textarea[@tabindex='0']") WebElement textAreaForCode;
+    @FindBy(css = "//button[text()='Run']") WebElement runButton;
+    @FindBy(css = "//*[@id=\"answer_form\"]/div/div/div[6]")WebElement CodeEditor;
+    @FindBy(css = "//pre[@id='output']")WebElement consoleOutputMsg;
+    @FindBy(css = "//pre[@id='output']")WebElement CodeEditorOutput;
     public TryEditorPage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this); 
