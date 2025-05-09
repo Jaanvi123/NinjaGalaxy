@@ -26,9 +26,9 @@ public class DriverFactory {
                     throw new IllegalArgumentException("Unsupported browser: " + browser);
             }
 
-            WebDriver driver = tlDriver.get();
-            driver.manage().window().maximize();
-            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+     //       WebDriver driver = tlDriver.get();
+        tlDriver.get().manage().window().maximize();
+        tlDriver.get().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         
         return tlDriver.get();
     }

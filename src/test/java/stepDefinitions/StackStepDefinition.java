@@ -31,7 +31,7 @@ public class StackStepDefinition
 	@Given("The user is on home page of dsalgo portal")
 	public void the_user_is_on_home_page_of_dsalgo_portal() {
 		homepage.openHomeUrl();
-		homepage.clickGetStartedHomePageButton();
+		
 	}
 	
 	@When("The user press Sign in link and enters valid credentials")

@@ -1,10 +1,11 @@
 package runner;
 
 import org.junit.runner.RunWith;
-import org.testng.annotations.DataProvider;
 import io.cucumber.junit.Cucumber;
+import org.testng.annotations.DataProvider;
 import io.cucumber.junit.CucumberOptions;
-import io.cucumber.testng.*;
+import io.cucumber.testng.AbstractTestNGCucumberTests;
+
 
 
 	@RunWith(Cucumber.class)
@@ -17,13 +18,14 @@ import io.cucumber.testng.*;
 			plugin= {"pretty","html:target/output.html","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
 					"io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"
 					}
-						)
-			
-	public class TestRunner extends AbstractTestNGCucumberTests {
-		 
-		  @Override
-		     @DataProvider(parallel = true)
-		     public Object[][] scenarios() {
-		         return super.scenarios();
-		     }
+			)
+			public class TestRunner extends AbstractTestNGCucumberTests {
+				 
+			     @Override
+			     @DataProvider(parallel = true)
+			     public Object[][] scenarios() {
+			         return super.scenarios();
+			    
+			     }
+	
 		 		}

@@ -32,8 +32,7 @@ public class SignInStepDefinition {
 	@When("The user clicks login button after entering valid username and valid password")
 	public void the_user_clicks_login_button_after_entering_valid_username_and_valid_password()
 			throws InvalidFormatException, IOException, OpenXML4JException, InterruptedException {
-		introductionpage.clickSignInLink();
-        signin.enterUsernameText("username");
+	      signin.enterUsernameText("username");
 		signin.enterPasswordText("password");
 		signin.clickloginButton();
 	}

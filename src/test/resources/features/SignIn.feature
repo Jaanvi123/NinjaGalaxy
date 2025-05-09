@@ -1,7 +1,6 @@
 Feature: DS Portal SignIn Feature
 
- Background: User is on DS Algo Sign in Page
-  Given The user is on the DS Algo Sign in Page
+
 ##TC01
   Scenario: Verify that user able to land on Home page after entering valid Username and Password fields
     Given The user is on the DS Algo Sign in Page
@@ -20,6 +19,7 @@ Feature: DS Portal SignIn Feature
 
  ##TC03
   Scenario Outline: Verify that user receives error message for empty Username field during Login
+  Given The user is on the DS Algo Sign in Page
     When The user clicks login button after entering the Password only from sheetname "<SheetName>" and row <RowNumber>
     Then The error message "Please fill out this field." appears below Username textbox
 
@@ -29,6 +29,7 @@ Feature: DS Portal SignIn Feature
 
 ## TC04
   Scenario Outline: Verify that user receives error message for empty Password field during Login
+  Given The user is on the DS Algo Sign in Page
     When The user clicks login button after entering the Username and leaves Password textbox empty from sheetname "<SheetName>" and row <RowNumber>
     Then The error message "Please fill out this field." appears below Password textbox
 
@@ -38,6 +39,7 @@ Feature: DS Portal SignIn Feature
 
 ## TC05
   Scenario Outline: Verify that user receives error message for invalid Username and invalid Password fields during Login
+  Given The user is on the DS Algo Sign in Page
     When The user clicks login button after entering invalid username and invalid password from sheetname "<SheetName>" and row <RowNumber>
     Then The user should able to see the error message "Invalid Username and Password"
 
@@ -47,6 +49,7 @@ Feature: DS Portal SignIn Feature
 
 ##TC06
   Scenario Outline: Verify that user receives error message for invalid Username field during Login
+  Given The user is on the DS Algo Sign in Page
     When The user clicks login button after entering invalid username and valid password "<SheetName>" and row <RowNumber>
     Then The user should able to see an error message "Invalid Username and Password"
 
@@ -56,6 +59,7 @@ Feature: DS Portal SignIn Feature
 
 ## TC07
   Scenario Outline: Verify that user receives error message for invalid Password field during Login
+  Given The user is on the DS Algo Sign in Page
     When The user clicks login button after entering valid username and invalid password from "<SheetName>" and row <RowNumber>
     Then The user should able to see an error message "Invalid Username and Password"
 

@@ -7,6 +7,7 @@ import java.time.Duration;
 import org.apache.poi.openxml4j.exceptions.OpenXML4JException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -54,7 +55,6 @@ public class LinkedListStepDefinition {
 	@Then("The user should land on the Linked list page by clicking Get started button for Linked list module")
 	public void the_user_should_land_on_the_linked_list_page_by_clicking_get_started_button_for_linked_list_module() {
 		introductionpage.clickLinkedListGetStartedButton();
-		
 		Assert.assertEquals(introductionpage.getHomePageTitle(), "Linked List");
 	}
 
@@ -73,7 +73,7 @@ public class LinkedListStepDefinition {
 
 	@Then("The user should be redirected to the Introduction page")
 	public void the_user_should_be_redirected_to_the_introduction_page() {
-		Assert.assertTrue(treePage.getcurrentpageUrl().endsWith("linked-list/introduction/"));
+		Assert.assertTrue(LinkedList.getCurrentPageUrl().endsWith("introduction/"));
 	}
 
 //TC02
@@ -85,13 +85,15 @@ public class LinkedListStepDefinition {
 	@When("The user clicks Try Here button on the Introduction page")
 	public void the_user_clicks_try_here_button_on_introduction_page() {
 		tryEditorPage.PageScrolldown();
-		tryEditorPage.clickTryHereButton();
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebElement tryHerebutton = wait.until(ExpectedConditions.elementToBeClickable(tryEditorPage.tryHereButton));
+		tryHerebutton.click();
 	}
 
 	@Then("The user is redirected to a page having Editor with run button on the Introduction page")
 	public void the_user_is_redirected_to_a_page_having_editor_with_run_button_on_introduction_page() {
 		LinkedList.getCurrentPageUrl();
-		Assert.assertTrue(treePage.getcurrentpageUrl().endsWith("tryEditor"));
+		Assert.assertTrue(LinkedList.getCurrentPageUrl().endsWith("tryEditor"));
 	}
 
 //TC03
@@ -103,22 +105,25 @@ public class LinkedListStepDefinition {
 	@When("The user enters an empty code in editor of Introduction page and clicks Run button")
 	public void the_user_entes_an_empty_code_in_editor_of_introduction_page_and_clicks_run_button() {
 		tryEditorPage.PageScrolldown();
-		tryEditorPage.clickTryHereButton();
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebElement tryHerebutton = wait.until(ExpectedConditions.elementToBeClickable(tryEditorPage.tryHereButton));
+		tryHerebutton.click();
 		tryEditorPage.clickRunButton();
 	}
 
 	@Then("No error message is displayed for Try editor of Introduction page")
 	public void no_error_message_is_displayed_for_try_editor_of_introduction_page() {
 		LinkedList.getCurrentPageUrl();
-		Assert.assertTrue(treePage.getcurrentpageUrl().endsWith("tryEditor"));
+		Assert.assertTrue(LinkedList.getCurrentPageUrl().endsWith("tryEditor"));
 	}
 
 //TC04
 	@Given("The user is on the tryEditor page and clicks Try here button on the Introduction page")
 	public void the_user_is_on_the_try_editor_page_and_clicks_try_here_button_on_the_introduction_page() {
 		LinkedList.clickIntroductionLink();
-		tryEditorPage.PageScrolldown();
-		tryEditorPage.clickTryHereButton();
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebElement tryHerebutton = wait.until(ExpectedConditions.elementToBeClickable(tryEditorPage.tryHereButton));
+		tryHerebutton.click();
 
 	}
 
@@ -145,7 +150,9 @@ public class LinkedListStepDefinition {
 	public void the_user_is_on_the_try_editor_page_along_with_run_button_and_valid_codeon_the_introduction_page() {
 		LinkedList.clickIntroductionLink();
 		tryEditorPage.PageScrolldown();
-		tryEditorPage.clickTryHereButton();
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebElement tryHerebutton = wait.until(ExpectedConditions.elementToBeClickable(tryEditorPage.tryHereButton));
+		tryHerebutton.click();
 
 	}
 
@@ -287,12 +294,13 @@ public class LinkedListStepDefinition {
 		}
 	}
 
-//TC12
+
 	@Then("The user should be able to see output in the console for Creating Linked List page")
 	public void the_user_should_be_able_to_see_output_in_the_console_for_creating_linked_list_page() {
 		tryEditorPage.CodeEditorOutput();
 	}
 
+	//TC12
 	@Given("The user is on Creating Linked List page after signing in")
 	public void the_user_is_on_creating_linked_list_page_after_signing_in() {
 		LinkedList.clickcreatingLinkedListLink();
@@ -305,7 +313,7 @@ public class LinkedListStepDefinition {
 
 	@Then("The user should be redirected to the Practice Questions page from Creating Linked List page")
 	public void the_user_should_be_redirected_to_the_practice_questions_page_from_creating_linked_list_page() {
-		Assert.assertTrue(treePage.getcurrentpageUrl().endsWith("practice"));
+		Assert.assertTrue(LinkedList.getCurrentPageUrl().endsWith("practice"));
 	}
 
 //TC13
@@ -430,7 +438,7 @@ public class LinkedListStepDefinition {
 
 	@Then("The user should be redirected to the Practice Questions page from Types of Linked List page")
 	public void the_user_should_be_redirected_to_the_practice_questions_page_from_types_of_linked_list_page() {
-		Assert.assertTrue(treePage.getcurrentpageUrl().endsWith("practice"));
+		Assert.assertTrue(LinkedList.getCurrentPageUrl().endsWith("practice"));
 	}
 
 //TC19
@@ -556,7 +564,7 @@ public class LinkedListStepDefinition {
 
 	@Then("The user should be redirected to the Practice Questions page from Implement Linked List in Python page")
 	public void the_user_should_be_redirected_to_the_practice_questions_page_from_implement_linked_list_in_python_page() {
-		Assert.assertTrue(treePage.getcurrentpageUrl().endsWith("practice"));
+		Assert.assertTrue(LinkedList.getCurrentPageUrl().endsWith("practice"));
 	}
 
 //TC25
@@ -681,7 +689,7 @@ public class LinkedListStepDefinition {
 
 	@Then("The user should be redirected to the Practice Questions page from Traversal page")
 	public void the_user_should_be_redirected_to_the_practice_questions_page_from_traversal_page() {
-		Assert.assertTrue(treePage.getcurrentpageUrl().endsWith("practice"));
+		Assert.assertTrue(LinkedList.getCurrentPageUrl().endsWith("practice"));
 	}
 
 //TC31
@@ -807,7 +815,7 @@ public class LinkedListStepDefinition {
 
 	@Then("The user should be redirected to the Practice Questions page from Insertion page")
 	public void the_user_should_be_redirected_to_the_practice_questions_page_from_Insertion_page() {
-		Assert.assertTrue(treePage.getcurrentpageUrl().endsWith("practice"));
+		Assert.assertTrue(LinkedList.getCurrentPageUrl().endsWith("practice"));
 	}
 
 //TC37
@@ -932,7 +940,7 @@ public class LinkedListStepDefinition {
 
 	@Then("The user should be redirected to the Practice Questions page from Deletion page")
 	public void the_user_should_be_redirected_to_the_practice_questions_page_from_Deletion_page() {
-		Assert.assertTrue(treePage.getcurrentpageUrl().endsWith("practice"));
+		Assert.assertTrue(LinkedList.getCurrentPageUrl().endsWith("practice"));
 	}
 
 }

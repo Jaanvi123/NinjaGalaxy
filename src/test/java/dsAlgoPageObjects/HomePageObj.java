@@ -31,7 +31,7 @@ public class HomePageObj {
 		return message;
 	}
 	public void clickGetStartedHomePageButton() {
-		PageFactory.initElements(driver, this);
+		//PageFactory.initElements(driver, this);
 		GetStartedButton.click();
 	}
 	public String getTitle() {

@@ -416,7 +416,9 @@ public class TreeStepDefinition {
 	public void the_user_is_on_the_try_editor_page_after_clicking_try_here_button_in_tree_traversals_link() {
 		 treePage.clickTreeTraversalsLink();
 		 treePage.PageScrollDown();
-		 tryEditorPage.clickTryHereButton();
+		 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+			WebElement tryHerebutton = wait.until(ExpectedConditions.elementToBeClickable(tryEditorPage.tryHereButton));
+			tryHerebutton.click();
 	}
 
 	@When("The user enters an empty code in editor of Tree Traversals link and clicks Run button")
@@ -434,7 +436,9 @@ public class TreeStepDefinition {
 	public void the_user_is_on_the_try_editor_page_and_clicks_try_here_button_in_tree_traversals_link() {
 		treePage.clickTreeTraversalsLink();
 		treePage.PageScrollDown();
-		 tryEditorPage.clickTryHereButton();
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebElement tryHerebutton = wait.until(ExpectedConditions.elementToBeClickable(tryEditorPage.tryHereButton));
+		tryHerebutton.click();
 	}
 	@When("The user writes invalid code in the editor of Tree Traversals page and clicks Run button from sheetname {string} and row {int}")
 	public void the_user_writes_invalid_code_in_the_editor_of_tree_traversals_page_and_clicks_run_button_from_sheetname_and_row(
@@ -457,7 +461,9 @@ public class TreeStepDefinition {
 	public void the_user_is_on_try_editor_page_along_with_run_button_and_valid_code_for_tree_traversals_page() {
 		treePage.clickTreeTraversalsLink();
 		treePage.PageScrollDown();
-		 tryEditorPage.clickTryHereButton();
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebElement tryHerebutton = wait.until(ExpectedConditions.elementToBeClickable(tryEditorPage.tryHereButton));
+		tryHerebutton.click();
 	}
 	
 	@When("The user writes valid Python code in the editor of Tree Traversals page and clicks Run button from sheetname {string} and row {int}")
@@ -532,7 +538,9 @@ public class TreeStepDefinition {
 	public void the_user_is_on_the_try_editor_page_after_clicking_try_here_button_in_traversals_illustration_link() {
 		treePage.clickTraversalsIllustrationsLink();
 		treePage.PageScrollDown();
-		tryEditorPage.clickTryHereButton();
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebElement tryHerebutton = wait.until(ExpectedConditions.elementToBeClickable(tryEditorPage.tryHereButton));
+		tryHerebutton.click();
 	}
 
 	@When("The user enters an empty code in editor of Traversals Illustration link and clicks Run button")
@@ -549,7 +557,9 @@ public class TreeStepDefinition {
 	public void the_user_is_on_the_try_editor_page_and_clicks_try_here_button_in_traversals_illustration_link() {
 		treePage.clickTraversalsIllustrationsLink();
 		treePage.PageScrollDown();
-		tryEditorPage.clickTryHereButton();
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebElement tryHerebutton = wait.until(ExpectedConditions.elementToBeClickable(tryEditorPage.tryHereButton));
+		tryHerebutton.click();
 	}
 	@When("The user writes invalid code in the editor of Traversals Illustration page and clicks Run button from sheetname {string} and row {int}")
 	public void the_user_writes_invalid_code_in_the_editor_of_traversals_illustration_page_and_clicks_run_button_from_sheetname_and_row(
@@ -571,7 +581,9 @@ public class TreeStepDefinition {
 	public void the_user_is_on_try_editor_page_along_with_run_button_and_valid_code_for_traversals_illustration_page() {
 		treePage.clickTraversalsIllustrationsLink();
 		treePage.PageScrollDown();
-		tryEditorPage.clickTryHereButton();
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebElement tryHerebutton = wait.until(ExpectedConditions.elementToBeClickable(tryEditorPage.tryHereButton));
+		tryHerebutton.click();
 	}
 	
 	@When("The user writes valid Python code in the editor of Traversals Illustration page and clicks Run button from sheetname {string} and row {int}")
@@ -627,7 +639,9 @@ public class TreeStepDefinition {
 	@When("The user clicks Try Here button in  Binary Trees page")
 	public void the_user_clicks_try_here_button_in_binary_trees_page() {
 		treePage.PageScrollDown();
-		tryEditorPage.clickTryHereButton();
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebElement tryHerebutton = wait.until(ExpectedConditions.elementToBeClickable(tryEditorPage.tryHereButton));
+		tryHerebutton.click();
 	}
 
 	@Then("The user is redirected to a page having Editor with run button for  Binary Trees page")
@@ -640,7 +654,9 @@ public class TreeStepDefinition {
 	public void the_user_is_on_the_try_editor_page_after_clicking_try_here_button_in_binary_trees_link(){
 		treePage.clickBinaryTreesLink();
 		treePage.PageScrollDown();
-		tryEditorPage.clickTryHereButton();
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebElement tryHerebutton = wait.until(ExpectedConditions.elementToBeClickable(tryEditorPage.tryHereButton));
+		tryHerebutton.click();
 	}
 	@When("The user enters an empty code in editor of  Binary Trees link and clicks Run button")
 	public void the_user_enters_an_empty_code_in_editor_of_binary_trees_link_and_clicks_run_button() {
@@ -656,7 +672,9 @@ public class TreeStepDefinition {
 	public void the_user_is_on_the_try_editor_page_and_clicks_try_here_button_in_binary_trees_link() {
 		treePage.clickBinaryTreesLink();
 		treePage.PageScrollDown();
-		tryEditorPage.clickTryHereButton();
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebElement tryHerebutton = wait.until(ExpectedConditions.elementToBeClickable(tryEditorPage.tryHereButton));
+		tryHerebutton.click();
 	}
 	
 	@When("The user writes invalid code in the editor of Binary Trees page and clicks Run button from sheetname {string} and row {int}")
@@ -680,7 +698,9 @@ public class TreeStepDefinition {
 	public void the_user_is_on_try_editor_page_along_with_run_button_and_valid_code_for_binary_trees_page() {
 		treePage.clickBinaryTreesLink();
 		treePage.PageScrollDown();
-		tryEditorPage.clickTryHereButton();
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebElement tryHerebutton = wait.until(ExpectedConditions.elementToBeClickable(tryEditorPage.tryHereButton));
+		tryHerebutton.click();
 	}
 	@When("The user writes valid Python code in the editor of Binary Trees page and clicks Run button from sheetname {string} and row {int}")
 	public void the_user_writes_valid_python_code_in_the_editor_of_binary_trees_page_and_clicks_run_button_from_sheetname_and_row(
@@ -734,7 +754,9 @@ public class TreeStepDefinition {
 	@When("The user clicks Try Here button in  Types of Binary Trees page")
 	public void the_user_clicks_try_here_button_in_types_of_binary_trees_page() {
 		treePage.PageScrollDown();
-		tryEditorPage.clickTryHereButton();
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebElement tryHerebutton = wait.until(ExpectedConditions.elementToBeClickable(tryEditorPage.tryHereButton));
+		tryHerebutton.click();
 	}
 	@Then("The user is redirected to a page having Editor with run button for  Types of Binary Trees page")
 	public void the_user_is_redirected_to_a_page_having_editor_with_run_button_for_types_of_binary_trees_page() {
@@ -746,7 +768,9 @@ public class TreeStepDefinition {
 	public void the_user_is_on_the_try_editor_page_after_clicking_try_here_button_in_types_of_binary_trees_link() {
 		treePage.clickTypesofBinaryTreesLink();
 		treePage.PageScrollDown();
-		tryEditorPage.clickTryHereButton();
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebElement tryHerebutton = wait.until(ExpectedConditions.elementToBeClickable(tryEditorPage.tryHereButton));
+		tryHerebutton.click();
 	}
 	@When("The user enters an empty code in editor of  Types of Binary Trees link and clicks Run button")
 	public void the_user_enters_an_empty_code_in_editor_of_types_of_binary_trees_link_and_clicks_run_button() {
@@ -762,7 +786,9 @@ public class TreeStepDefinition {
 	public void the_user_is_on_the_try_editor_page_clicks_try_here_button_in_types_of_binary_trees_link() {
 		treePage.clickTypesofBinaryTreesLink();
 		treePage.PageScrollDown();
-		tryEditorPage.clickTryHereButton();
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebElement tryHerebutton = wait.until(ExpectedConditions.elementToBeClickable(tryEditorPage.tryHereButton));
+		tryHerebutton.click();
 	}
 	@When("The user writes invalid code in the editor of Types of Binary Trees page and clicks Run button from sheetname {string} and row {int}")
 	public void the_user_writes_invalid_code_in_the_editor_of_types_of_binary_trees_page_and_clicks_run_button_from_sheetname_and_row(
@@ -785,7 +811,9 @@ public class TreeStepDefinition {
 	public void the_user_is_on_try_editor_page_along_with_run_button_and_valid_code_for_types_of_binary_trees_page() {
 		treePage.clickTypesofBinaryTreesLink();
 		treePage.PageScrollDown();
-		tryEditorPage.clickTryHereButton();
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebElement tryHerebutton = wait.until(ExpectedConditions.elementToBeClickable(tryEditorPage.tryHereButton));
+		tryHerebutton.click();
 	}
 	
 	@When("The user writes valid Python code in the editor of Types of Binary Trees page and clicks Run button from sheetname {string} and row {int}")
@@ -841,7 +869,9 @@ public class TreeStepDefinition {
 	@When("The user clicks Try Here button in Implementation in Python page")
 	public void the_user_clicks_try_here_button_in_implementation_in_python_page() {
 		treePage.PageScrollDown();
-		tryEditorPage.clickTryHereButton();
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebElement tryHerebutton = wait.until(ExpectedConditions.elementToBeClickable(tryEditorPage.tryHereButton));
+		tryHerebutton.click();
 	}
 	@Then("The user is redirected to a page having Editor with run button for Implementation in Python page")
 	public void the_user_is_redirected_to_a_page_having_editor_with_run_button_for_implementation_in_python_page() {
@@ -854,7 +884,9 @@ public class TreeStepDefinition {
 	public void the_user_is_on_the_try_editor_page_after_clicking_try_here_button_in_implementation_in_python_link() {
 		treePage.clickImplementationinPythonLink();
 		treePage.PageScrollDown();
-		tryEditorPage.clickTryHereButton();
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebElement tryHerebutton = wait.until(ExpectedConditions.elementToBeClickable(tryEditorPage.tryHereButton));
+		tryHerebutton.click();
 	}
 
 	@When("The user enters an empty code in editor of Implementation in Python link and clicks Run button")
@@ -868,11 +900,13 @@ public class TreeStepDefinition {
 		Assert.assertTrue(treePage.getcurrentpageUrl().endsWith("tryEditor"));
 	}
 //TC46
-	@Given("The user is on the tryEditor page clicks Try here button in Implementation in Python link")
-	public void the_user_is_on_the_try_editor_page_clicks_try_here_button_in_implementation_in_python_link() {
+	@Given("The user is on the tryEditor page and clicks Try here button in Implementation in Python link")
+	public void the_user_is_on_the_try_editor_page_and_clicks_try_here_button_in_implementation_in_python_link() {
 		treePage.clickImplementationinPythonLink();
 		treePage.PageScrollDown();
-		tryEditorPage.clickTryHereButton();
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebElement tryHerebutton = wait.until(ExpectedConditions.elementToBeClickable(tryEditorPage.tryHereButton));
+		tryHerebutton.click();
 	}
 	@When("The user writes invalid code in the editor of Implementation in Python page and clicks Run button from sheetname {string} and row {int}")
 	public void the_user_writes_invalid_code_in_the_editor_of_implementation_in_python_page_and_clicks_run_button_from_sheetname_and_row(
@@ -895,7 +929,9 @@ public class TreeStepDefinition {
 	public void the_user_is_on_try_editor_page_along_with_run_button_and_valid_code_for_implementation_in_python_page() {
 		treePage.clickImplementationinPythonLink();
 		treePage.PageScrollDown();
-		tryEditorPage.clickTryHereButton();
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebElement tryHerebutton = wait.until(ExpectedConditions.elementToBeClickable(tryEditorPage.tryHereButton));
+		tryHerebutton.click();
 	}
 	@When("The user writes valid Python code in the editor of Implementation in Python page and clicks Run button from sheetname {string} and row {int}")
 	public void the_user_writes_valid_python_code_in_the_editor_of_implementation_in_python_page_and_clicks_run_button_from_sheetname_and_row(
@@ -949,7 +985,9 @@ public class TreeStepDefinition {
 	@When("The user clicks Try Here button in Binary Tree Traversals page")
 	public void the_user_clicks_try_here_button_in_binary_tree_traversals_page() {
 		treePage.PageScrollDown();
-		tryEditorPage.clickTryHereButton();
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebElement tryHerebutton = wait.until(ExpectedConditions.elementToBeClickable(tryEditorPage.tryHereButton));
+		tryHerebutton.click();
 	}
 	@Then("The user is redirected to a page having Editor with run button for Binary Tree Traversals page")
 	public void the_user_is_redirected_to_a_page_having_editor_with_run_button_for_binary_tree_traversals_page() {
@@ -979,7 +1017,9 @@ public class TreeStepDefinition {
 	public void the_user_is_on_the_try_editor_page_and_clicks_try_here_button_in_binary_tree_traversals_link() {
 		treePage.clickBinaryTreeTraversalsLink();
 		treePage.PageScrollDown();
-		tryEditorPage.clickTryHereButton();
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebElement tryHerebutton = wait.until(ExpectedConditions.elementToBeClickable(tryEditorPage.tryHereButton));
+		tryHerebutton.click();
 	}
 	@When("The user writes invalid code in the editor of Binary Tree Traversals page and clicks Run button from sheetname {string} and row {int}")
 	public void the_user_writes_invalid_code_in_the_editor_of_binary_tree_traversals_page_and_clicks_run_button_from_sheetname_and_row(
@@ -1002,7 +1042,9 @@ public class TreeStepDefinition {
 	public void the_user_is_on_try_editor_page_along_with_run_button_and_valid_code_for_binary_tree_traversals_page() {
 		treePage.clickBinaryTreeTraversalsLink();
 		treePage.PageScrollDown();
-		tryEditorPage.clickTryHereButton();
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebElement tryHerebutton = wait.until(ExpectedConditions.elementToBeClickable(tryEditorPage.tryHereButton));
+		tryHerebutton.click();
 	}
 	@When("The user writes valid Python code in the editor of Binary Tree Traversals page and clicks Run button from sheetname {string} and row {int}")
 	public void the_user_writes_valid_python_code_in_the_editor_of_binary_tree_traversals_page_and_clicks_run_button_from_sheetname_and_row(
@@ -1058,7 +1100,9 @@ public class TreeStepDefinition {
 	@When("The user clicks Try Here button in Implementation of Binary Trees page")
 	public void the_user_clicks_try_here_button_in_implementation_of_binary_trees_page() {
 		treePage.PageScrollDown();
-		tryEditorPage.clickTryHereButton();
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebElement tryHerebutton = wait.until(ExpectedConditions.elementToBeClickable(tryEditorPage.tryHereButton));
+		tryHerebutton.click();
 	}
 	@Then("The user is redirected to a page having Editor with run button for Implementation of Binary Trees page")
 	public void the_user_is_redirected_to_a_page_having_editor_with_run_button_for_implementation_of_binary_trees_page() {
@@ -1070,7 +1114,9 @@ public class TreeStepDefinition {
 	public void the_user_is_on_the_try_editor_page_after_clicking_try_here_button_in_implementation_of_binary_trees_link() {
 		treePage.clickImplementationOfBinaryTreesLink();
 		treePage.PageScrollDown();
-		tryEditorPage.clickTryHereButton();
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebElement tryHerebutton = wait.until(ExpectedConditions.elementToBeClickable(tryEditorPage.tryHereButton));
+		tryHerebutton.click();
 	}
 
 	@When("The user enters an empty code in editor of Implementation of Binary Trees link and clicks Run button")
@@ -1087,7 +1133,9 @@ public class TreeStepDefinition {
 	public void the_user_is_on_the_try_editor_page_and_clicks_try_here_button_in_implementation_of_binary_trees_link(){
 		treePage.clickImplementationOfBinaryTreesLink();
 		treePage.PageScrollDown();
-		tryEditorPage.clickTryHereButton();
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebElement tryHerebutton = wait.until(ExpectedConditions.elementToBeClickable(tryEditorPage.tryHereButton));
+		tryHerebutton.click();
 	}
 	@When("The user writes invalid code in the editor of Implementation of Binary Trees page and clicks Run button from sheetname {string} and row {int}")
 	public void the_user_writes_invalid_code_in_the_editor_of_implementation_of_binary_trees_page_and_clicks_run_button_from_sheetname_and_row(
@@ -1110,7 +1158,9 @@ public class TreeStepDefinition {
 	public void the_user_is_on_try_editor_page_along_with_run_button_and_valid_code_for_implementation_of_binary_trees_page() {
 		treePage.clickImplementationOfBinaryTreesLink();
 		treePage.PageScrollDown();
-		tryEditorPage.clickTryHereButton();
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebElement tryHerebutton = wait.until(ExpectedConditions.elementToBeClickable(tryEditorPage.tryHereButton));
+		tryHerebutton.click();
 	}
 	@When("The user writes valid Python code in the editor of Implementation of Binary Trees page and clicks Run button from sheetname {string} and row {int}")
 	public void the_user_writes_valid_python_code_in_the_editor_of_implementation_of_binary_trees_page_and_clicks_run_button_from_sheetname_and_row(
@@ -1273,7 +1323,9 @@ public class TreeStepDefinition {
 	@When("The user clicks Try Here button in Binary Search Trees page")
 	public void the_user_clicks_try_here_button_in_binary_search_trees_page() {
 		treePage.PageScrollDown();
-		tryEditorPage.clickTryHereButton();
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebElement tryHerebutton = wait.until(ExpectedConditions.elementToBeClickable(tryEditorPage.tryHereButton));
+		tryHerebutton.click();
 	}
 
 	@Then("The user is redirected to a page having Editor with run button for  Binary Search Trees page")
@@ -1286,7 +1338,9 @@ public class TreeStepDefinition {
 	public void the_user_is_on_the_try_editor_page_after_clicking_try_here_button_in_binary_search_trees_link() {
 		treePage.clickBinarySearchTreesLink();
 		treePage.PageScrollDown();
-		tryEditorPage.clickTryHereButton();
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebElement tryHerebutton = wait.until(ExpectedConditions.elementToBeClickable(tryEditorPage.tryHereButton));
+		tryHerebutton.click();
 	}
 
 	@When("The user enters an empty code in editor of Binary Search Trees link and clicks Run button")
@@ -1303,13 +1357,15 @@ public class TreeStepDefinition {
 	public void the_user_is_on_the_try_editor_page_and_clicks_try_here_button_in_binary_search_trees_link() {
 		treePage.clickBinarySearchTreesLink();
 		treePage.PageScrollDown();
-		tryEditorPage.clickTryHereButton();
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebElement tryHerebutton = wait.until(ExpectedConditions.elementToBeClickable(tryEditorPage.tryHereButton));
+		tryHerebutton.click();
 	}
 	@When("The user writes invalid code in the editor of Binary Search Trees page and clicks Run button from sheetname {string} and row {int}")
 	public void the_user_writes_invalid_code_in_the_editor_of_binary_search_trees_page_and_clicks_run_button_from_sheetname_and_row(
 			String Sheetname, Integer RowNumber) {
 		try {
-        	tryEditorPage.enterCodeFromExcel("tryEditorCode", 0);
+        	tryEditorPage.enterCodeFromExcel("tryEditorCode", 1);
         	tryEditorPage.clickRunButton();
         } catch (Exception e) {
         	LoggerLoad.info("Error while entering code or clicking Run: " + e.getMessage());
@@ -1326,13 +1382,15 @@ public class TreeStepDefinition {
 	public void the_user_is_on_try_editor_page_along_with_run_button_and_valid_code_for_binary_search_trees_page() {
 		treePage.clickBinarySearchTreesLink();
 		treePage.PageScrollDown();
-		tryEditorPage.clickTryHereButton();
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebElement tryHerebutton = wait.until(ExpectedConditions.elementToBeClickable(tryEditorPage.tryHereButton));
+		tryHerebutton.click();
 	}
 	@When("The user writes valid Python code in the editor of Binary Search Trees page and clicks Run button from sheetname {string} and row {int}")
 	public void the_user_writes_valid_python_code_in_the_editor_of_binary_search_trees_page_and_clicks_run_button_from_sheetname_and_row(
 			String Sheetname, Integer RowNumber) {
 		try {
-        	tryEditorPage.enterCodeFromExcel("tryEditorCode", 1);
+        	tryEditorPage.enterCodeFromExcel("tryEditorCode", 0);
         	tryEditorPage.clickRunButton();
         } catch (Exception e) {
         	LoggerLoad.info("Error while entering code or clicking Run: " + e.getMessage());
