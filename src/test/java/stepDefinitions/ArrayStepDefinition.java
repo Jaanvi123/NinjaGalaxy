@@ -3,6 +3,8 @@ package stepDefinitions;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 import java.time.Duration;
+import java.util.concurrent.TimeoutException;
+
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.WebDriver;
@@ -447,7 +449,7 @@ public class ArrayStepDefinition {
 	}
 
 	@Then("The user should able to see an error message in alert window")
-	public void the_user_should_able_to_see_an_error_message_in_alert_window() {
+	public void the_user_should_able_to_see_an_error_message_in_alert_window() throws TimeoutException {
 		boolean isAlertPresent = tryEditorpage.HandleAlert();
 		assertTrue(isAlertPresent, "No alert displayed");
 	}
@@ -515,9 +517,9 @@ public class ArrayStepDefinition {
 	}
 	@When("The user clicks Run button with invalidcode from sheetname {string} and row {int} for Find Numbers with Even Number of Digits practice question")
 	public void the_user_clicks_run_button_with_invalidcode_from_sheetname_and_row_for_find_numbers_with_even_number_of_digits_practice_question(
-			String string, Integer int1) throws InterruptedException {
+			String Sheetname, Integer RowNumber) throws InterruptedException {
 		try {
-			tryEditorpage.enterCodeFromExcel("tryEditorCode", 1);
+			tryEditorpage.enterCodeFromExcel(Sheetname,RowNumber);
 			tryEditorpage.clickRunButton();
 			LoggerLoad.info("Run button clicked with invalid code.");
 		} catch (Exception e) {
