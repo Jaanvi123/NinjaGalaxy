@@ -66,11 +66,11 @@ public class RegisterPageObj {
         registerButton.click();
         LoggerLoad.info("Clicked on Register button");
     }
-    public void fillRegistrationForm(String sheetName, int rowIndex)
+     public void fillRegistrationForm(String sheetName, int rowIndex)
             throws IOException, OpenXML4JException, InterruptedException {
-        List<Map<String, String>> testData;
-		testData = excelread.readExcelSheet("src/test/resources/TestData/TestingData.xlsx", sheetName);
-		 LoggerLoad.info("Register test data: " + testData);
+        List<Map<String, String>> testData = excelread.readExcelSheet(sheetName);  // Only pass sheet name
+        LoggerLoad.info("Register test data: " + testData);
+
         if (rowIndex >= testData.size()) {
             LoggerLoad.error("Row index " + rowIndex + " is out of bounds for the sheet: " + sheetName);
             throw new IllegalArgumentException("Invalid row index: " + rowIndex);
