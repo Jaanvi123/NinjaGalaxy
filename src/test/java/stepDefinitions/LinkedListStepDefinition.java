@@ -7,14 +7,12 @@ import java.time.Duration;
 import org.apache.poi.openxml4j.exceptions.OpenXML4JException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import com.fasterxml.jackson.databind.exc.InvalidFormatException;
 import driverManager.DriverFactory;
 import dsAlgoPageObjects.HomePageObj;
-import dsAlgoPageObjects.IntroductionPageObj;
 import dsAlgoPageObjects.LinkedListPageObj;
 import dsAlgoPageObjects.SignInPageObj;
 import dsAlgoPageObjects.TreePageObj;
@@ -30,7 +28,7 @@ public class LinkedListStepDefinition {
 	WebDriver driver = DriverFactory.getDriver();
 	SignInPageObj signin = new SignInPageObj(driver);
 	ConfigReader configReader = new ConfigReader(driver);
-	IntroductionPageObj introductionpage = new IntroductionPageObj();
+
 	HomePageObj homepage = new HomePageObj(driver);
 	TreePageObj treePage = new TreePageObj(driver);
 	LinkedListPageObj LinkedList = new LinkedListPageObj(driver);
@@ -45,8 +43,8 @@ public class LinkedListStepDefinition {
 	@When("The user clicks Sign in link and enters valid credentials to sign in")
 	public void the_user_clicks_sign_in_link_and_enters_valid_credentials_to_sign_in()
 			throws InvalidFormatException, IOException, OpenXML4JException, InterruptedException {
-		introductionpage.clickgetStartedButton(driver);
-		introductionpage.clickSignInLink();
+		homepage.clickgetStartedButton(driver);
+		homepage.clickSignInLink();
 		signin.enterUsernameText("username");
 		signin.enterPasswordText("password");
 		signin.clickloginButton();
@@ -54,8 +52,8 @@ public class LinkedListStepDefinition {
 
 	@Then("The user should land on the Linked list page by clicking Get started button for Linked list module")
 	public void the_user_should_land_on_the_linked_list_page_by_clicking_get_started_button_for_linked_list_module() {
-		introductionpage.clickLinkedListGetStartedButton();
-		Assert.assertEquals(introductionpage.getHomePageTitle(), "Linked List");
+		homepage.clickLinkedListGetStartedButton();
+		Assert.assertEquals(homepage.getHomePageTitle(), "Linked List");
 	}
 
 //TC01

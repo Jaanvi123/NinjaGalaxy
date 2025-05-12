@@ -47,8 +47,7 @@ public class TreePageObj {
 	}
 
 	public String getcurrentpageUrl() {
-		// LoggerLoad.info(driver.getCurrentUrl());
-		return driver.getCurrentUrl();
+			return driver.getCurrentUrl();
 	}
 
 	public void clickOverviewOfTreesLink() {

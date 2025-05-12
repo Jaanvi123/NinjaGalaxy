@@ -46,9 +46,13 @@ Feature: Registration Page
       | Register  |         5 |
   
 ## TC07
-  Scenario: Verify that user is able to successfully Register using valid username and password details
-    When The user clicks Register button after entering  with valid username password and password confirmation in related textboxes 
-    Then The user should be redirected to Home Page of DS Algo with message New Account Created. You are logged in as username
+  Scenario Outline: Verify that user is able to successfully Register using valid username and password details
+   When The user clicks Register button after entering with valid username password and password confirmation from sheetname "<Sheetname>" and row <RowNumber>
+   Then The user should be redirected to Home Page of DS Algo with message New Account Created. You are logged in as username
+   Examples:
+      | Sheetname | RowNumber |
+      | Register  |         6 |
+  
     
  #TC08
   Scenario: Verify that user is able to click on login link from Registration page

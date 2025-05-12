@@ -1,0 +1,15 @@
+{
+  "reporter": {
+    "spark": {
+      "enabled": true,
+         "documentTitle": "Test Automation Report",
+      "reportName": "Regression Test Report",
+      "outputPath": "target/output.html",
+      "timelineEnabled": true
+    }
+  },
+  "systemInfo": {
+    "Environment": "QA",
+    "Tester": "Jaanvi"
+     }
+}

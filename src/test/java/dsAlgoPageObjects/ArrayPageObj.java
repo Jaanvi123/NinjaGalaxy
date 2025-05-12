@@ -21,8 +21,7 @@ public class ArrayPageObj {
         PageFactory.initElements(driver, this); 
     }
 
-    @FindBy(xpath = "//a[text()='Arrays in Python']")
-    WebElement arraysInPythonLink;
+    @FindBy(xpath = "//a[text()='Arrays in Python']")WebElement arraysInPythonLink;
 
   
 
@@ -53,7 +52,7 @@ public class ArrayPageObj {
     @FindBy(xpath = "//button[text()='Run']")
     public WebElement runButton;
 
-    @FindBy(xpath = "/html/body/div/div/form/input[@type='submit']")
+    @FindBy(xpath = "//input[@type='submit']")
     public WebElement submitButton;
  
     public void clickarraysInPythonLink() {

@@ -8,7 +8,6 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import driverManager.DriverFactory;
 import dsAlgoPageObjects.HomePageObj;
-import dsAlgoPageObjects.IntroductionPageObj;
 import dsAlgoPageObjects.QueuePageObj;
 import dsAlgoPageObjects.SignInPageObj;
 import dsAlgoPageObjects.TryEditorPage;
@@ -20,7 +19,7 @@ import utils.LoggerLoad;
 public class QueueStepDefinition{
 	WebDriver driver = DriverFactory.getDriver();
 	SignInPageObj signin = new SignInPageObj(driver);
-	IntroductionPageObj introductionpage = new IntroductionPageObj();
+
 	HomePageObj homepage = new HomePageObj(driver);
 	QueuePageObj queuePage = new QueuePageObj(driver);
 	TryEditorPage tryEditorPage = new TryEditorPage(driver);
@@ -33,8 +32,8 @@ public class QueueStepDefinition{
 	@When("The user clicks Sign in link and enters valid credentials for Queue page")
 	public void the_user_clicks_sign_in_link_and_enters_valid_credentials_for_queue_page()
 			throws InvalidFormatException, IOException, OpenXML4JException, InterruptedException {
-		introductionpage.clickgetStartedButton(driver);
-		introductionpage.clickSignInLink();
+		homepage.clickgetStartedButton(driver);
+		homepage.clickSignInLink();
 		signin.enterUsernameText("username");
 		signin.enterPasswordText("password");
 		signin.clickloginButton();
@@ -42,8 +41,8 @@ public class QueueStepDefinition{
 
 	@Then("The user lands on the queue page on clicking Get started button for queue module")
 	public void the_user_lands_on_the_queue_page_on_clicking_get_started_button_for_queue_module() {
-		introductionpage.clickQueueGetStartedButton();
-		Assert.assertEquals(introductionpage.getHomePageTitle(), "Queue");
+		homepage.clickQueueGetStartedButton();
+		Assert.assertEquals(homepage.getHomePageTitle(), "Queue");
 		
 	}
 

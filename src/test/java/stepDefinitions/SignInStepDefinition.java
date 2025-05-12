@@ -6,7 +6,6 @@ import org.openqa.selenium.WebDriver;
 import com.fasterxml.jackson.databind.exc.InvalidFormatException;
 import driverManager.DriverFactory;
 import dsAlgoPageObjects.HomePageObj;
-import dsAlgoPageObjects.IntroductionPageObj;
 import dsAlgoPageObjects.SignInPageObj;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -18,14 +17,13 @@ public class SignInStepDefinition {
 	WebDriver driver = DriverFactory.getDriver();
 	SignInPageObj signin = new SignInPageObj(driver);
 	ConfigReader configReader = new ConfigReader(driver);
-	IntroductionPageObj introductionpage = new IntroductionPageObj();
 	HomePageObj homepage = new HomePageObj(driver);
 	ExcelRead excelread = new ExcelRead();
 
 	@Given("The user is on the DS Algo Sign in Page")
 	public void the_user_is_on_the_ds_algo_sign_in_page() {
 		homepage.clickGetStartedHomePageButton();
-		introductionpage.clickSignInLink();
+		homepage.clickSignInLink();
 	}
 
 //TC01

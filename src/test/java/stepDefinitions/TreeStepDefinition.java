@@ -3,14 +3,12 @@ package stepDefinitions;
 import com.fasterxml.jackson.databind.exc.InvalidFormatException;
 import driverManager.DriverFactory;
 import dsAlgoPageObjects.HomePageObj;
-import dsAlgoPageObjects.IntroductionPageObj;
 import dsAlgoPageObjects.SignInPageObj;
 import dsAlgoPageObjects.TreePageObj;
 import dsAlgoPageObjects.TryEditorPage;
 import static org.testng.Assert.assertTrue;
 import java.io.IOException;
 import java.time.Duration;
-
 import org.apache.poi.openxml4j.exceptions.OpenXML4JException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -26,7 +24,6 @@ public class TreeStepDefinition {
 
 	WebDriver driver = DriverFactory.getDriver();
 	SignInPageObj signin = new SignInPageObj(driver);
-	IntroductionPageObj introductionpage = new IntroductionPageObj();
 	HomePageObj homepage = new HomePageObj(driver);
 	TreePageObj treePage = new TreePageObj(driver);
 	TryEditorPage tryEditorPage = new TryEditorPage(driver);
@@ -38,8 +35,8 @@ public class TreeStepDefinition {
 
 	@When("The user clicks Sign in link and enters valid credentials")
 	public void the_user_clicks_sign_in_link_and_enters_valid_credentials() throws InvalidFormatException, IOException, OpenXML4JException, InterruptedException {
-		introductionpage.clickgetStartedButton(driver);
-		introductionpage.clickSignInLink();
+		homepage.clickgetStartedButton(driver);
+		homepage.clickSignInLink();
 		signin.enterUsernameText("username");
 		signin.enterPasswordText("password");
 		signin.clickloginButton();
@@ -47,8 +44,8 @@ public class TreeStepDefinition {
 
 	@Then("The user should land on the tree page by clicking Get started button for tree module")
 	public void the_user_should_land_on_the_tree_page_by_clicking_get_started_button_for_tree_module() {
-		introductionpage.clickTreeGetStartedButton();
-		Assert.assertEquals(introductionpage.getHomePageTitle(), "Tree");
+		homepage.clickTreeGetStartedButton();
+		Assert.assertEquals(homepage.getHomePageTitle(), "Tree");
 		
 	}
 	//TC01	

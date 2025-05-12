@@ -47,11 +47,7 @@ public class ConfigReader {
 	public static String getUserName() {
 		return properties.getProperty("username");
 	}
-
-	public static String getConfirmPassword() {
-		return properties.getProperty("confirmPassword");
-	}
-
+	
 	public static String getPassword() {
 		return properties.getProperty("password");
 	}
@@ -60,34 +56,7 @@ public class ConfigReader {
 		return properties.getProperty("urlHome");
 	}
 
-	public static String getDSPageUrl() {
-		return properties.getProperty("DSPageUrl");
-	}
-
-	public static String getArrayPageUrl() {
-		return properties.getProperty("ArrayPageUrl");
-	}
-
-	public static String getLinkedListPageUrl() {
-		return properties.getProperty("LinkedListPageUrl");
-	}
-
-	public static String getStackPageUrl() {
-		return properties.getProperty("StackPageUrl");
-	}
-
-	public static String getQueuePageUrl() {
-		return properties.getProperty("QueuePageUrl");
-	}
-
-	public static String getTreePageUrl() {
-		return properties.getProperty("TreePageUrl");
-	}
-
-	public static String getGraphPageUrl() {
-		return properties.getProperty("GraphPageUrl");
-	}
-
+	
 	public ConfigReader(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);

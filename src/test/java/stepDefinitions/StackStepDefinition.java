@@ -4,7 +4,6 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import driverManager.DriverFactory;
 import dsAlgoPageObjects.HomePageObj;
-import dsAlgoPageObjects.IntroductionPageObj;
 import dsAlgoPageObjects.SignInPageObj;
 import dsAlgoPageObjects.StackPageObj;
 import dsAlgoPageObjects.TryEditorPage;
@@ -20,7 +19,7 @@ public class StackStepDefinition
 {
 	WebDriver driver = DriverFactory.getDriver();
 	SignInPageObj signin = new SignInPageObj(driver);
-	IntroductionPageObj introductionpage = new IntroductionPageObj();
+
 	HomePageObj homepage = new HomePageObj(driver);
 	TryEditorPage tryEditorPage = new TryEditorPage(driver);
 	StackPageObj stackPage = new StackPageObj(driver);
@@ -34,8 +33,8 @@ public class StackStepDefinition
 	
 	@When("The user press Sign in link and enters valid credentials")
 	public void the_user_press_sign_in_link_and_enters_valid_credentials() throws InvalidFormatException, IOException, OpenXML4JException, InterruptedException{
-		introductionpage.clickgetStartedButton(driver);
-		introductionpage.clickSignInLink();
+		homepage.clickgetStartedButton(driver);
+		homepage.clickSignInLink();
 		signin.enterUsernameText("username");
 		signin.enterPasswordText("password");
 		signin.clickloginButton();
@@ -43,8 +42,8 @@ public class StackStepDefinition
 	
 	@Then("The user lands on the stack page on clicking Get started button for stack module")
 	public void the_user_lands_on_the_stack_page_on_clicking_get_started_button_for_stack_module() {
-		introductionpage.clickStackGetStartedButton();
-		Assert.assertEquals(introductionpage.getHomePageTitle(), "Stack");
+		homepage.clickStackGetStartedButton();
+		Assert.assertEquals(homepage.getHomePageTitle(), "Stack");
 	}
 	
 //TC01

@@ -7,7 +7,6 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import driverManager.DriverFactory;
 import dsAlgoPageObjects.HomePageObj;
-import dsAlgoPageObjects.IntroductionPageObj;
 import dsAlgoPageObjects.RegisterPageObj;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -17,7 +16,6 @@ import io.cucumber.java.en.When;
 public class RegisterStepDefinition {
 
 	WebDriver driver = DriverFactory.getDriver();
-	IntroductionPageObj introductionpage = new IntroductionPageObj();
 	HomePageObj homepage = new HomePageObj(driver);
 	RegisterPageObj registerPage = new RegisterPageObj(driver);
 	WebElement getstartedBtn;
@@ -119,12 +117,10 @@ public class RegisterStepDefinition {
 
 	
 	// TC07
-	@When("The user clicks Register button after entering  with valid username password and password confirmation in related textboxes")
-	public void the_user_clicks_register_button_after_entering_with_valid_username_password_and_password_confirmation_in_related_textboxes_(
-			) throws IOException, OpenXML4JException, InterruptedException {
-		registerPage.SendValidUsername();
-		registerPage.SendValidPassword();
-		registerPage.SendConfirmPassword();
+	@When("The user clicks Register button after entering with valid username password and password confirmation from sheetname {string} and row {int}")
+	public void the_user_clicks_register_button_after_entering_with_valid_username_password_and_password_confirmation_from_sheetname_and_row(
+			String string, Integer int1) throws IOException, OpenXML4JException, InterruptedException {
+		registerPage.fillRegistrationForm("register", 6);
 		registerPage.clickRegisterButton();
 	}
 
@@ -141,7 +137,7 @@ public class RegisterStepDefinition {
 
 	@Then("The user should be landed on login page")
 	public void the_user_should_be_landed_on_login_page() {
-		Assert.assertEquals(introductionpage.getHomePageTitle(), "Login");
+		Assert.assertEquals(homepage.getHomePageTitle(), "Login");
 	}
 
 	// TC09
@@ -151,7 +147,7 @@ public class RegisterStepDefinition {
 	}
 	@Then("The user should be landed on the signin page")
 	public void the_user_should_be_landed_on_the_sigin_page() {
-		Assert.assertEquals(introductionpage.getHomePageTitle(), "Signin");
+		Assert.assertEquals(homepage.getHomePageTitle(), "Signin");
 	}
 
 }

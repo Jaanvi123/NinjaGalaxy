@@ -49,6 +49,7 @@ public class DataStructurePageObj {
 	}
 
 	public void ClickTimeComplexityLink() {
+		PageFactory.initElements(driver, this); 
 		timeComplexityLink.click();
 		LoggerLoad.info("Time Complexity Link Clicked");
 	}

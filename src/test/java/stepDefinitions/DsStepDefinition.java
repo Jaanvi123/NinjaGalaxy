@@ -1,13 +1,16 @@
 package stepDefinitions;
 
 import java.io.IOException;
+import java.time.Duration;
 import org.apache.poi.openxml4j.exceptions.OpenXML4JException;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import com.fasterxml.jackson.databind.exc.InvalidFormatException;
 import driverManager.DriverFactory;
 import dsAlgoPageObjects.DataStructurePageObj;
 import dsAlgoPageObjects.HomePageObj;
-import dsAlgoPageObjects.IntroductionPageObj;
 import dsAlgoPageObjects.SignInPageObj;
 import dsAlgoPageObjects.TryEditorPage;
 import io.cucumber.java.en.Given;
@@ -25,7 +28,6 @@ public class DsStepDefinition {
 	    WebDriver driver = DriverFactory.getDriver();
         HomePageObj homepage = new HomePageObj(driver);
         SignInPageObj signin = new SignInPageObj(driver);
-        IntroductionPageObj introductionpage = new IntroductionPageObj();
         DataStructurePageObj dataStructurepage = new DataStructurePageObj(driver);
         TryEditorPage tryEditorPage = new TryEditorPage(driver);
         ConfigReader configReader = new ConfigReader(driver);
@@ -33,8 +35,8 @@ public class DsStepDefinition {
     @Given("The user is logged into the DS Algo Portal")
     public void the_user_is_logged_into_the_ds_algo_portal() throws InterruptedException, InvalidFormatException, IOException, OpenXML4JException {
         homepage.openHomeUrl();
-    	introductionpage.clickgetStartedButton(driver);
-        introductionpage.clickSignInLink();
+    	homepage.clickgetStartedButton(driver);
+        homepage.clickSignInLink();
         signin.enterUsernameText("username");
 		signin.enterPasswordText("password");
 		signin.clickloginButton();        
@@ -69,17 +71,19 @@ public class DsStepDefinition {
     // TC02
     @Given("The user is on Time Complexity page of DS Introduction page")
     public void the_user_is_on_time_complexity_page_of_ds_introduction_page() {
-    	 dataStructurepage.ClickTimeComplexityLink();
+    	
+			dataStructurepage.ClickTimeComplexityLink();
+		
     }
     @When("The user clicks on Try here button of Time Complexity Page")
     public void the_user_clicks_on_try_here_button_of_time_complexity_page() {
-          tryEditorPage.clickTryHereButton();
+    	 tryEditorPage.clickTryHereButton();
       
     }
     @Then("The user should be directed to a page having Editor with run button")
     public void the_user_should_be_directed_to_a_page_having_editor_with_run_button() {
         String expectedTitle = "Assessment";
-        String actualTitle = introductionpage.getHomePageTitle();
+        String actualTitle = homepage.getHomePageTitle();
         assertEquals("Page title is incorrect. Expected: " + expectedTitle + ", but found: " + actualTitle,
                      expectedTitle, actualTitle);
        
@@ -92,7 +96,9 @@ public class DsStepDefinition {
     }
     @When("The user clicks the Run button without entering the code in the text area editor")
     public void the_user_clicks_the_run_button_without_entering_the_code_in_the_text_area_editor() {
-    	tryEditorPage.clickTryHereButton();
+    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebElement tryHerebutton = wait.until(ExpectedConditions.elementToBeClickable(tryEditorPage.tryHereButton));
+		tryHerebutton.click();
     	tryEditorPage.clickRunButton();
                    }
     
@@ -158,7 +164,7 @@ public class DsStepDefinition {
     @Then("The user should be redirected to Practice Questions page of DS")
     public void the_user_should_be_redirected_to_practice_questions_page_of_ds() {
         String expectedTitle = "Practice Questions";
-        String actualTitle = introductionpage.getHomePageTitle();
+        String actualTitle = homepage.getHomePageTitle();
          assertEquals("Page title is incorrect. Expected: " + expectedTitle + ", but found: " + actualTitle,
                      expectedTitle, actualTitle);
     }

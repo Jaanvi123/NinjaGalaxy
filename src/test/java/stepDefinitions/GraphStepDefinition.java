@@ -1,20 +1,14 @@
 package stepDefinitions;
 
 import static org.testng.Assert.assertTrue;
-
 import java.io.IOException;
-import java.time.Duration;
-
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.openxml4j.exceptions.OpenXML4JException;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-
 import driverManager.DriverFactory;
 import dsAlgoPageObjects.GraphPageObj;
 import dsAlgoPageObjects.HomePageObj;
-import dsAlgoPageObjects.IntroductionPageObj;
 import dsAlgoPageObjects.SignInPageObj;
 import dsAlgoPageObjects.TryEditorPage;
 import io.cucumber.java.en.Given;
@@ -25,14 +19,11 @@ import utils.LoggerLoad;
 public class GraphStepDefinition {
 	WebDriver driver = DriverFactory.getDriver();
 	SignInPageObj signin = new SignInPageObj(driver);
-	IntroductionPageObj introductionpage = new IntroductionPageObj();
 	HomePageObj homepage = new HomePageObj(driver);
 	TryEditorPage tryEditorPage = new TryEditorPage(driver);
 	GraphPageObj graphpage = new GraphPageObj(driver);
 	
-	
-//Inside Graph
-	
+
 	@Given("The user is on home page of ds portal")
 	public void the_user_is_on_home_page_of_ds_portal() {
 		homepage.openHomeUrl();
@@ -41,8 +32,8 @@ public class GraphStepDefinition {
 	
 	@When("The user clicks Sign in link for ds and enters valid credentials")
 	public void the_user_clicks_sign_in_link_for_ds_and_enters_valid_credentials() throws InvalidFormatException, IOException, OpenXML4JException, InterruptedException {
-		introductionpage.clickgetStartedButton(driver);
-		introductionpage.clickSignInLink();
+		homepage.clickgetStartedButton(driver);
+		homepage.clickSignInLink();
 		signin.enterUsernameText("username");
 		signin.enterPasswordText("password");
 		signin.clickloginButton();
@@ -50,8 +41,8 @@ public class GraphStepDefinition {
 	
 	@Then("The user lands on the graph page on clicking Get started button for graph module")
 	public void the_user_lands_on_the_graph_page_on_clicking_get_started_button_for_graph_module() {
-		introductionpage.clickGraphGetStartedButton();
-		Assert.assertEquals(introductionpage.getHomePageTitle(), "Graph");
+		homepage.clickGraphGetStartedButton();
+		Assert.assertEquals(homepage.getHomePageTitle(), "Graph");
 	}
 
 //TC01
@@ -170,7 +161,6 @@ public class GraphStepDefinition {
 		Assert.assertTrue(graphpage.getcurrentpageUrl().endsWith("practice"));
 	}
 
-//Graph Representations
 //TC07
 	
 	@Given("The user is in Graph page after signing in")

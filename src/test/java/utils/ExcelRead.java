@@ -2,20 +2,18 @@ package utils;
 
 import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
 public class ExcelRead {
 
 	 public  String filepath = "src/test/resources/TestData/TestingData.xlsx"; 
-	public List<Map<String, String>> readExcelSheet(String filepath , String sheetName) throws IOException {
+	 public List<Map<String, String>> readExcelSheet(String filepath , String sheetName) throws IOException {
 		List<Map<String, String>> excelData = new ArrayList<>();
 
 		FileInputStream fileInputStream = new FileInputStream(new File(filepath));
