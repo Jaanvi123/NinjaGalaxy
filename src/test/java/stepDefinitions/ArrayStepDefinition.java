@@ -2,9 +2,9 @@ package stepDefinitions;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
-import java.util.concurrent.TimeoutException;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.NoAlertPresentException;
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import driverManager.DriverFactory;
@@ -37,7 +37,9 @@ public class ArrayStepDefinition {
 
 	@When("The user clicks the Get Started button in Array Panel")
 	public void the_user_clicks_the_get_started_button_in_array_panel() {
+
 		homepage.clickArrayGetStartedButton();
+
 	}
 
 	@Then("The user should be navigated to the Array page")
@@ -78,7 +80,9 @@ public class ArrayStepDefinition {
 	@Given("The user is on the Arrays in Python page")
 	public void the_user_is_on_the_arrays_in_python_page() {
 		arraypage.clickarraysInPythonLink();
+
 		String pageTitle = homepage.getHomePageTitle();
+
 		Assert.assertEquals(pageTitle, "Arrays in Python",
 				"Expected page title: Arrays in Python, but found: " + pageTitle);
 		LoggerLoad.info("Correct page title displayed: Arrays in Python");
@@ -327,7 +331,9 @@ public class ArrayStepDefinition {
 
 	@Then("The user should be redirected to a page having an tryEditor with a Run button in Applications of Array link")
 	public void the_user_should_be_redirected_to_a_page_having_an_try_editor_with_a_run_button_in_applications_of_array_link() {
+
 		String actualTitle = homepage.getHomePageTitle();
+
 		LoggerLoad.info("Verifying page title: " + actualTitle);
 		Assert.assertEquals(actualTitle, "Applications of Array", "Expected title: 'Applications of Array' but found: " + actualTitle);
 	}
@@ -411,7 +417,9 @@ public class ArrayStepDefinition {
 
 	@Then("The user should be redirected to try Editor page with a Run and Submit buttons")
 	public void the_user_should_be_redirected_to_try_editor_page_with_a_run_and_submit_buttons() {
+
 		String pageTitle = homepage.getHomePageTitle();
+
 		Assert.assertTrue(pageTitle.contains("Assessment") || pageTitle.contains("Editor"),
 				"Unexpected page title: " + pageTitle);
 		LoggerLoad.info("User successfully landed on the Try Editor page.");
@@ -568,4 +576,6 @@ public void the_user_clicks_run_button_with_valid_code_from_sheetname_and_row_fo
 		}
 	}
 
+
 }
+

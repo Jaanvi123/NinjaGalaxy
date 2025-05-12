@@ -45,14 +45,14 @@ public class TryEditorPage {
         act.moveToElement(tryHereButton).click().perform();
         LoggerLoad.info("Clicked the Try Here button.");
     }
-  public void enterTryHereCode(String editorCode) {
-	  
-        CodeEditor = driver.switchTo().activeElement();
-		Actions actions = new Actions(driver);
-		actions.moveToElement(CodeEditor).click().perform();
-		CodeEditor.sendKeys(editorCode);
-		
-    } 
+   public void enterTryHereCode(String editorCode) {
+        WebElement editor = driver.switchTo().activeElement();
+
+        // Use JavaScript to set the editor value directly
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("document.querySelector('.CodeMirror').CodeMirror.setValue(arguments[0])", editorCode);
+    }
+
 	public void enterCodeFromExcel(String sheetName, int row)
 			throws InvalidFormatException, IOException, OpenXML4JException {
 		 ExcelRead excelread = new ExcelRead();

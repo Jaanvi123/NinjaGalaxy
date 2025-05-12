@@ -1,3 +1,4 @@
+
 Feature: Arrays
 
   Background: User is logged into DS Algo Portal
@@ -181,8 +182,11 @@ Feature: Arrays
     Then The user should able to see an error message in alert window
 
     Examples: 
-      | Sheetname          | RowNumber |
-      | ArrayPracticeQnsQ1 |         0 |
+      | Sheetname     | RowNumber |
+      | tryEditorCode |         1 |
+
+
+
 
   #TC24
   Scenario Outline: Verify that user is able to see output for valid python code
@@ -214,6 +218,7 @@ Feature: Arrays
       | Sheetname     | RowNumber |
       | pythonCode1 |        0 |
 
+
   #TC27
   Scenario Outline: Verify that user receives error for invalid python code for Find Numbers with Even Number of Digits Question
     Given The user is on the try Editor page for Find Numbers with Even Number of Digits practice question
@@ -224,6 +229,7 @@ Feature: Arrays
       | Sheetname     | RowNumber |
       | pythonCode1   |         1 |
 
+
   #TC28
   Scenario Outline: Verify that user is able to see output for valid python code
     Given The user is on the try Editor page for Find Numbers with Even Number of Digits practice question
@@ -232,7 +238,9 @@ Feature: Arrays
 
     Examples: 
       | Sheetname     | RowNumber |
+
       | pythonCode1   |         0 |
+
 
   #TC29
   Scenario Outline: Verify that user receives error for invalid python code for Squares of a Sorted Array Question
@@ -252,4 +260,6 @@ Feature: Arrays
 
     Examples: 
       | Sheetname     | RowNumber |
+
       | tryEditorCode |         0 |
+
