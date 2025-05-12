@@ -351,6 +351,7 @@ public class ArrayStepDefinition {
 //TC18
 	@When("The user clicks the Run button without entering the code in the Editor for Applications of Array section")
 	public void the_user_clicks_the_run_button_without_entering_the_code_in_the_editor_for_applications_of_array_section() {
+	        tryEditorpage.clickTryHereButton();
 		tryEditorpage.clickRunButton();
 	}
 
