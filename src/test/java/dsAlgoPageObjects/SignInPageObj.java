@@ -56,7 +56,7 @@ public class SignInPageObj {
 	public void EnterFromExcel(String sheetname, int row) throws IOException {
 
 		List<Map<String, String>> testData;
-		testData = excelread.readExcelSheet("src/test/resources/TestData/TestingData.xlsx", sheetname);
+		testData = excelread.readExcelSheet(sheetname);
 
 		if (row >= testData.size()) {
 			LoggerLoad.info("Row index " + row + " is out of bounds for the sheet: " + sheetname);

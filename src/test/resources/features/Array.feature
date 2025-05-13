@@ -6,7 +6,7 @@ Feature: Arrays
     When The user clicks the Get Started button in Array Panel
     Then The user should be navigated to the Array page
 
-  # (Arrays in Python page)
+   #(Arrays in Python page)
   ####TC01
   Scenario: Verify that user is able to navigate to Arrays in Python page
     Given The user is on the Array page
@@ -19,7 +19,7 @@ Feature: Arrays
     When The user clicks Try Here button in Arrays in Python page
     Then The user should be redirected to a page having an tryEditor with a Run button
 
-  ##TC03
+  #TC03
   Scenario: Verify Run button behavior with empty code editor on TryEditor
     Given The user is on the tryEditor page with a Run button
     When The user clicks the Run button without entering the code in the code Editor
@@ -34,7 +34,6 @@ Feature: Arrays
     Examples: 
       | Sheetname     | RowNumber |
       | tryEditorCode |         1 |
-
   #TC05
   Scenario Outline: Verify output for valid code on Try Editor page of Array in Python
     Given The user is on the tryEditor page with a Run button
@@ -45,14 +44,14 @@ Feature: Arrays
       | Sheetname     | RowNumber |
       | tryEditorCode |         0 |
 
-  #( Arrays Using List page)
-  #TC06
+  ##( Arrays Using List page)
+  @#TC06
   Scenario: Verify navigation to Arrays Using List page
     Given The user is on the Array page to explore Arrays Using List page
     When The user clicks the Arrays Using List link
     Then The user should be redirected to Arrays Using List page
 
-  ##TC07
+  #TC07
   Scenario: Verify Try Here button on Arrays Using List page
     Given The user is on the Arrays Using List page
     When The user clicks Try Here button in Arrays Using List page
@@ -64,7 +63,7 @@ Feature: Arrays
     When The user clicks the Run button without entering code in the Editor for Arrays Using List section
     Then The user should not see any error message in the popup
 
-  ##TC09
+  #TC09
   Scenario Outline: Verify error message for invalid code in Arrays Using List page
     Given The user is on the Arrays Using List page
     When The user clicks Run button with invalid code from sheetname "<Sheetname>" and row <RowNumber> for Arrays Using List page
@@ -91,19 +90,19 @@ Feature: Arrays
     When The user clicks the Basic Operations in Lists link
     Then The user should be redirected to Basic Operations in Lists page
 
-  ##TC12
+  #TC12
   Scenario: Verify that user is able to navigate to try Editor page under Basic Operations in Lists page
     Given The user is on Basic Operations in Lists page with tryhere button
     When The user clicks Try Here button in Basic Operations in Lists page
     Then The user should be redirected to a page having a tryEditor with a run button
 
-  ##TC13
+  #TC13
   Scenario: Verify that user sees no changes when clicked on Run button without entering code for Basic Operations in Lists page
     Given The user is on tryeditor page of Basic Operations in Lists page
     When The user clicks the Run button without entering the code in the code Editor
     Then The user should not see any error message in the popup
 
-  ##TC14
+  #TC14
   Scenario Outline: Verify that user receives error for invalid python code for Basic Operations in Lists page
     Given The user is on tryeditor page of Basic Operations in Lists page
     When The user clicks Run button with invalid code from sheetname "<Sheetname>" and row <RowNumber> for Basic Operations in Lists page
@@ -113,7 +112,7 @@ Feature: Arrays
       | Sheetname     | RowNumber |
       | tryEditorCode |         1 |
 
-  ##TC15
+  #TC15
   Scenario Outline: Verify that user is able to see output for valid python code for Basic Operations in Lists page
     Given The user is on tryeditor page of Basic Operations in Lists page
     When The user clicks Run button with valid code from sheetname "<Sheetname>" and row <RowNumber> for Basic Operations in Lists page
@@ -130,7 +129,7 @@ Feature: Arrays
     When The user clicks the Applications of Array link
     Then The user should be redirected to a page having an tryEditor with a Run button in Applications of Array link
 
-  ##TC17
+  #TC17
   Scenario: Verify that user is able to navigate to try Editor page under Applications of Array page
     Given The user is on Applications of Array page
     When The user clicks Try Here button in Applications of Array page
@@ -163,7 +162,7 @@ Feature: Arrays
       | tryEditorCode |         0 |
 
   #(Practice Questions page scenarios)
-  ##TC21
+  #TC21
   Scenario: Verify that user is able to navigate to list of Practice Questions under Array page
     Given The user is on the Array page
     When The user clicks Practice Questions link of Array page
@@ -179,11 +178,11 @@ Feature: Arrays
   Scenario Outline: Verify that user receives error for invalid python code for Search the array Question
     Given The user is on the try Editor page for Search the array practice question
     When The user clicks Run button with invalidcode from sheetname "<Sheetname>" and row <RowNumber> for Search the array practice question
-    Then The user should able to see an error message in alert window
+    Then The user should able to see an error message in output window
 
     Examples: 
       | Sheetname     | RowNumber |
-      | tryEditorCode |         1 |
+      | ArrayPracticeQnsQ1 |         0 |
 
 
 
@@ -196,19 +195,19 @@ Feature: Arrays
 
     Examples: 
       | Sheetname          | RowNumber |
-      | ArrayPracticeQnsQ1 |         1 |
+      | ArrayPracticeQnsQ1 |         1|																																																
 
-  #TC25
+  ##TC25
   Scenario Outline: Verify that user receives error for invalid python code for Max Consecutive Ones Question
     Given The user is on the try Editor page for Max Consecutive Ones practice question
     When The user clicks Run button with invalidcode from sheetname "<Sheetname>" and row <RowNumber>
-    Then The user should able to see an error message in alert window
+    Then The user should able to see an error message in output window
 
     Examples: 
       | Sheetname     | RowNumber |
       | pythonCode1 |         1|
 
-  #TC26
+  ##TC26
   Scenario Outline: Verify that user is able to see output for valid python code
     Given The user is on the try Editor page for Max Consecutive Ones practice question
     When The user clicks Run button with validcode from sheetname "<Sheetname>" and row <RowNumber> for Max Consecutive Ones practice question
@@ -219,18 +218,18 @@ Feature: Arrays
       | pythonCode1 |        0 |
 
 
-  #TC27
+  ##TC27
   Scenario Outline: Verify that user receives error for invalid python code for Find Numbers with Even Number of Digits Question
     Given The user is on the try Editor page for Find Numbers with Even Number of Digits practice question
     When The user clicks Run button with invalidcode from sheetname "<Sheetname>" and row <RowNumber>
-    Then The user should able to see an error message in alert window
+    Then The user should able to see an error message in output window
 
     Examples: 
       | Sheetname     | RowNumber |
       | pythonCode1   |         1 |
 
 
-  #TC28
+  ##TC28
   Scenario Outline: Verify that user is able to see output for valid python code
     Given The user is on the try Editor page for Find Numbers with Even Number of Digits practice question
     When The user clicks Run button with valid code from sheetname "<Sheetname>" and row <RowNumber> for Find Numbers with Even Number of Digits practice question
@@ -242,17 +241,17 @@ Feature: Arrays
       | pythonCode1   |         0 |
 
 
-  #TC29
+  ##TC29
   Scenario Outline: Verify that user receives error for invalid python code for Squares of a Sorted Array Question
     Given The user is on the try Editor page for Squares of a Sorted Array practice question
     When The user clicks Run button with invalidcode from sheetname "<Sheetname>" and row <RowNumber>
-    Then The user should able to see an error message in alert window
+    Then The user should able to see an error message in output window
 
     Examples: 
       | Sheetname     | RowNumber |
       | tryEditorCode |         1 |
 
-  #TC30
+  ##TC30
   Scenario Outline: Verify that user is able to see output for valid python code
     Given The user is on the try Editor page for Squares of a Sorted Array practice question
     When The user clicks Run button with valid code from sheetname "<Sheetname>" and row <RowNumber> for Squares of a Sorted Array question
@@ -261,5 +260,5 @@ Feature: Arrays
     Examples: 
       | Sheetname     | RowNumber |
 
-      | tryEditorCode |         0 |
+      | tryEditorCode |         0 |		
 

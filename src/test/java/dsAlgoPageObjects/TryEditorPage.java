@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.Map;
 import org.apache.poi.openxml4j.exceptions.OpenXML4JException;
 import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.WebDriver;
@@ -15,6 +16,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import driverManager.DriverFactory;
 import io.cucumber.core.internal.com.fasterxml.jackson.databind.exc.InvalidFormatException;
 import utils.ExcelRead;
 import utils.LoggerLoad;
@@ -22,48 +25,53 @@ import utils.LoggerLoad;
 public class TryEditorPage {
 	WebDriver driver;
 
-	@FindBy(css = "//a[@href='/tryEditor']")
-	public WebElement tryHereButton;
-	@FindBy(css = "//textarea[@tabindex='0']")
-	WebElement textAreaForCode;
-	@FindBy(css = "//button[text()='Run']")
-	WebElement runButton;
-	@FindBy(css = "//*[@id=\"answer_form\"]/div/div/div[6]")
-	WebElement CodeEditor;
-	@FindBy(css = "//pre[@id='output']")
-	WebElement consoleOutputMsg;
-	@FindBy(css = "//pre[@id='output']")
-	WebElement CodeEditorOutput;
+    @FindBy(xpath = "//a[@href='/tryEditor']") 
+    public WebElement tryHereButton;
 
-	public TryEditorPage(WebDriver driver) {
-		this.driver = driver;
-		PageFactory.initElements(driver, this);
-	}
+    @FindBy(xpath = "//textarea[@tabindex='0']") 
+    WebElement textAreaForCode;
 
-	public void clickRunButton() {
+    @FindBy(xpath = "//button[text()='Run']") 
+    WebElement runButton;
 
-		runButton.click();
-		LoggerLoad.info("Clicked the Run button.");
-	}
+    @FindBy(xpath = "//*[@id='answer_form']/div/div/div[6]") 
+    WebElement CodeEditor;
+
+    @FindBy(xpath = "//pre[@id='output']") 
+    WebElement consoleOutputMsg;
+
+    @FindBy(xpath = "//pre[@id='output']") 
+    WebElement CodeEditorOutput;
+
+    public TryEditorPage(WebDriver driver) {
+        this.driver = driver;
+        PageFactory.initElements(driver, this); 
+    }
+ 
+    public void clickRunButton() {
+        WebDriverWait wait = new WebDriverWait(DriverFactory.getDriver(), Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.elementToBeClickable(runButton));
+        
+        runButton.click();
+        LoggerLoad.info("Clicked the Run button.");
+    }
 
 	public void clickTryHereButton() {
-		// PageFactory.initElements(driver, this);
+	
 		Actions act = new Actions(driver);
 		act.moveToElement(tryHereButton).click().perform();
 		LoggerLoad.info("Clicked the Try Here button.");
 	}
 
-	public void enterTryHereCode(String editorCode) {
-		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("document.querySelector('.CodeMirror').CodeMirror.setValue(arguments[0])", editorCode);
-	}
+
 
 	public void enterCodeFromExcel(String sheetName, int row)
 			throws InvalidFormatException, IOException, OpenXML4JException {
 		ExcelRead excelread = new ExcelRead();
 		LoggerLoad.info("Reading code from Excel sheet: " + sheetName + ", Row: " + row);
-		List<Map<String, String>> testData = excelread.readExcelSheet("src/test/resources/TestData/TestingData.xlsx",
-				sheetName);
+
+		List<Map<String, String>> testData =excelread.readExcelSheet( sheetName);
+
 		String editorCode = "";
 		if (row <= testData.size()) {
 			editorCode = testData.get(row).get("editorCode");
@@ -71,11 +79,7 @@ public class TryEditorPage {
 		} else {
 			throw new IllegalArgumentException("Row index out of bounds.");
 		}
-		if (editorCode != null && !editorCode.isEmpty()) {
-			enterTryHereCode(editorCode);
-		} else {
-			LoggerLoad.error("No code found for the specified row in the Excel sheet.");
-		}
+		
 	}
 
 	public boolean HandleAlert() {
@@ -117,8 +121,10 @@ public class TryEditorPage {
 
 	public void PageScrolldown() {
 		PageFactory.initElements(driver, this);
-		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("window.scrollBy(0, 500);");
+
+	JavascriptExecutor js = (JavascriptExecutor) driver;
+	js.executeScript("window.scrollBy(0, 1000);");
+
 	}
 
 	public void CodeEditorOutput() {
