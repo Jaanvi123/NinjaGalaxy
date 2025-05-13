@@ -40,11 +40,6 @@ public class TreePageObj {
 		PageFactory.initElements(driver, this);
 	}
 
-	public void TreePageTitle() {
-		String actualUrl = driver.getCurrentUrl();
-		String expectedUrl = ConfigReader.getProperty("TreePageUrl");
-		LoggerLoad.info("Tree Page title:" + driver.getCurrentUrl());
-	}
 
 	public String getcurrentpageUrl() {
 			return driver.getCurrentUrl();

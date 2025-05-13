@@ -22,7 +22,7 @@ public class ConfigReader {
 		}
 		properties.load(inputStream);
 	}
-
+	
 	{
 		try (FileInputStream fileInput = new FileInputStream(propertyFilePath)) {
 			properties.load(fileInput);
@@ -31,7 +31,6 @@ public class ConfigReader {
 		}
 	}
 
-	
 	public static String getProperty(String key) {
 		return properties.getProperty(key);
 	}
@@ -47,7 +46,7 @@ public class ConfigReader {
 	public static String getUserName() {
 		return properties.getProperty("username");
 	}
-	
+
 	public static String getPassword() {
 		return properties.getProperty("password");
 	}
@@ -56,7 +55,6 @@ public class ConfigReader {
 		return properties.getProperty("urlHome");
 	}
 
-	
 	public ConfigReader(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);

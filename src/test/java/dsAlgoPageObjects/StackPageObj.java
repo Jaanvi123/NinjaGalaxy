@@ -62,8 +62,6 @@ public class StackPageObj {
 
 	public void clickPracticeQuestionsLink() {
 
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
-		WebElement editorOutputElement = wait.until(ExpectedConditions.visibilityOf(PracticeQuestions));
 		PracticeQuestions.click();
 		LoggerLoad.info("Practice Questions Link clicked");
 	}

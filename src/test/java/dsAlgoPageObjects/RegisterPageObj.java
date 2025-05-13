@@ -5,7 +5,6 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.text.SimpleDateFormat;
-
 import org.apache.poi.openxml4j.exceptions.OpenXML4JException;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -16,7 +15,6 @@ import org.openqa.selenium.support.PageFactory;
 import utils.ConfigReader;
 import utils.ExcelRead;
 import utils.LoggerLoad;
-
 import java.util.Date;
 import java.util.List;
 import java.util.Map;

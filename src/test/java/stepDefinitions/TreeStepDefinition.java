@@ -51,7 +51,7 @@ public class TreeStepDefinition {
 	//TC01	
 	@Given("The user is on the Tree page after signing in")
 	public void the_user_is_on_the_tree_page_after_signing_in() {
-		treePage.TreePageTitle();
+		treePage.getcurrentpageUrl();
 	}
 		
 	@When("The user clicks the Overview of Trees link")

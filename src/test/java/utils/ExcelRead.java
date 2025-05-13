@@ -12,8 +12,9 @@ import java.util.Map;
 
 public class ExcelRead {
 
-	 public  String filepath = "src/test/resources/TestData/TestingData.xlsx"; 
-	 public List<Map<String, String>> readExcelSheet(String filepath , String sheetName) throws IOException {
+	public String filepath = "src/test/resources/TestData/TestingData.xlsx";
+
+	public List<Map<String, String>> readExcelSheet(String filepath, String sheetName) throws IOException {
 		List<Map<String, String>> excelData = new ArrayList<>();
 
 		FileInputStream fileInputStream = new FileInputStream(new File(filepath));
@@ -25,7 +26,7 @@ public class ExcelRead {
 		}
 		Row headerRow = sheet.getRow(0);
 		int totalColumns = headerRow.getLastCellNum();
-			for (int i = 1; i <= sheet.getLastRowNum(); i++) {
+		for (int i = 1; i <= sheet.getLastRowNum(); i++) {
 			Row row = sheet.getRow(i);
 			if (row == null)
 				continue;
@@ -36,7 +37,7 @@ public class ExcelRead {
 				Cell dataCell = row.getCell(j);
 
 				String header = headerCell.getStringCellValue().trim();
-				String value = (dataCell != null) ? dataCell.toString().trim() : ""; 
+				String value = (dataCell != null) ? dataCell.toString().trim() : "";
 
 				rowData.put(header, value);
 			}
@@ -45,7 +46,20 @@ public class ExcelRead {
 		workbook.close();
 		fileInputStream.close();
 		return excelData;
-	} 
+	}
 
-	
+	public static String getCodeFromExcel(String filePath, String sheetName, int rowNum, int cellNum)
+			throws IOException {
+
+		FileInputStream fis = new FileInputStream(new File(filePath));
+		Workbook workbook = new XSSFWorkbook(fis);
+		Sheet sheet = workbook.getSheet(sheetName);
+		Row row = sheet.getRow(rowNum);
+		Cell cell = row.getCell(cellNum);
+		String code = cell.getStringCellValue();
+		workbook.close();
+		fis.close();
+		return code;
+	}
+
 }
