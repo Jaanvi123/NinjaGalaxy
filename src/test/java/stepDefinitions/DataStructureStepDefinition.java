@@ -54,10 +54,14 @@ public class DataStructureStepDefinition {
     // TC01
     @Given("The user is on data Structure introduction Page")
     public void the_user_is_on_data_structure_introduction_page() {
+<<<<<<< Updated upstream:src/test/java/stepDefinitions/DataStructureStepDefinition.java
         String expectedTitle = "Data Structures-Introduction";
         String actualTitle = dataStructurepage.validatePageTitle();
         assertEquals("User is not on the expected page.", expectedTitle, actualTitle);
         dataStructurepage.getcurrentpageUrl();
+=======
+            dataStructurepage.logCurrentPageUrl();
+>>>>>>> Stashed changes:src/test/java/stepDefinitions/DsStepDefinition.java
       
     }
     @When("The user clicks on Time Complexity link of DS Introduction page")

@@ -1,8 +1,12 @@
 package stepDefinitions;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
+<<<<<<< Updated upstream
 
 import java.time.Duration;
+=======
+import static org.testng.Assert.fail;
+>>>>>>> Stashed changes
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
@@ -228,6 +232,7 @@ public class ArrayStepDefinition {
     @When("The user clicks the Run button without entering code in the Editor for Arrays Using List section")
     public void the_user_clicks_the_run_button_without_entering_code_in_the_editor_for_arrays_using_list_section() {
 
+<<<<<<< Updated upstream
     	tryEditorpage.clickTryHereButton();
     	tryEditorpage.clickRunButton();
     }
@@ -267,6 +272,173 @@ public class ArrayStepDefinition {
         }
     }
     @Then("The user should be able to see output in the console")
+=======
+	@Given("The user is logged into the DS Algo Portal with valid credentials")
+	public void the_user_is_logged_into_the_ds_algo_portal_with_valid_credentials() throws InterruptedException {
+		homepage.clickGetStartedHomePageButton();
+		try {
+			homepage.clickSignInLink();
+		} catch (Exception e) {
+			LoggerLoad.info("Exception : ");
+			e.printStackTrace();
+		}
+		signin.enterUsernameText("username");
+		signin.enterPasswordText("password");
+		signin.clickloginButton();
+		LoggerLoad.info("User logged in successfully and reached Home page.");
+	}
+
+	@When("The user clicks the Get Started button in Array Panel")
+	public void the_user_clicks_the_get_started_button_in_array_panel() {
+
+		homepage.clickArrayGetStartedButton();
+
+	}
+
+	@Then("The user should be navigated to the Array page")
+	public void the_user_should_be_navigated_to_the_array_page() {
+		String pageTitle = homepage.getHomePageTitle();
+		LoggerLoad.info("Page title is: " + pageTitle);
+		Assert.assertEquals(pageTitle, "Array", "Wrong page title! Expected: Array, but found: " + pageTitle);
+		LoggerLoad.info("Correct page title displayed: " + pageTitle);
+
+	}
+
+//TC01
+
+	@Given("The user is on the Array page")
+	public void the_user_is_on_the_array_page() {
+		String expectedTitle = "Array";
+		String actualTitle = homepage.getHomePageTitle();
+		Assert.assertEquals(actualTitle, expectedTitle,
+				"Expected page title: " + expectedTitle + ", but found: " + actualTitle);
+	}
+
+	@When("The user clicks the Arrays in Python link")
+	public void the_user_clicks_the_arrays_in_python_link() {
+		arraypage.clickarraysInPythonLink();
+
+	}
+
+	@Then("The user should be redirected to Arrays in Python page")
+	public void the_user_should_be_redirected_to_arrays_in_python_page() {
+		String pageTitle = homepage.getHomePageTitle();
+		Assert.assertEquals(pageTitle, "Arrays in Python",
+				"Expected page title: Arrays in Python, but found: " + pageTitle);
+		LoggerLoad.info("Correct page title displayed: Arrays in Python");
+
+	}
+
+	//TC02
+		@Given("The user is on the Arrays in Python page")
+		public void the_user_is_on_the_arrays_in_python_page() {
+			arraypage.clickarraysInPythonLink();
+
+			String pageTitle = homepage.getHomePageTitle();
+
+			Assert.assertEquals(pageTitle, "Arrays in Python",
+					"Expected page title: Arrays in Python, but found: " + pageTitle);
+			LoggerLoad.info("Correct page title displayed: Arrays in Python");
+			}
+		
+		@When("The user clicks Try Here button in Arrays in Python page")
+		public void the_user_clicks_try_here_button_in_arrays_in_python_page() {
+		    tryEditorpage.PageScrolldown();
+
+		    try {
+		        // Optional: Add a short wait before clicking
+		        Thread.sleep(1000); // Or use WebDriverWait for better reliability
+		        tryEditorpage.clickTryHereButton();
+		        LoggerLoad.info("Clicked on Try Here button successfully.");
+		    } catch (Exception e) {
+		        LoggerLoad.error("Exception while clicking Try Here button: " + e.getMessage());
+		        e.printStackTrace();
+		        fail("Failed to click Try Here button on Arrays in Python page");
+		    }
+		}
+
+		@Then("The user should be redirected to a page having an tryEditor with a Run button")
+		public void the_user_should_be_redirected_to_a_page_having_an_try_editor_with_a_run_button() {
+			String pageTitle = homepage.getHomePageTitle();
+
+			Assert.assertTrue(pageTitle.contains("Assessment") || pageTitle.contains("Editor"),
+					"Unexpected page title: " + pageTitle);
+			LoggerLoad.info("User successfully landed on the Try Editor page.");
+		}
+
+
+//TC03
+	@Given("The user is on the tryEditor page with a Run button")
+	public void the_user_is_on_the_try_editor_page_with_a_run_button() {
+		arraypage.clickarraysInPythonLink();
+		tryEditorpage.clickTryHereButton();
+	}
+	
+	@When("The user clicks the Run button without entering the code in the code Editor")
+	public void the_user_clicks_the_run_button_without_entering_the_code_in_the_code_editor() {
+		try {
+			tryEditorpage.clickRunButton();
+		} catch (Exception e) {
+			LoggerLoad.info("Exception: ");
+			e.printStackTrace();
+		}
+	}
+
+	@Then("The user should not see any error message in the popup")
+	public void the_user_should_not_see_any_error_message_in_the_popup() {
+			LoggerLoad.info("No alert was displayed as expected.");
+		
+	}
+
+// TC04
+	
+	@When("The user clicks Run button with invalid code from sheetname {string} and row {int} for Arrays in Python page")
+	public void the_user_clicks_run_button_with_invalid_code_from_sheetname_and_row_for_arrays_in_python_page(String Sheetname, Integer RowNumber) {
+		try {
+			tryEditorpage.enterCodeFromExcel(Sheetname, RowNumber);
+			tryEditorpage.clickRunButton();
+		} catch (Exception e) {
+			System.err.println("Error while entering code or clicking Run: " + e.getMessage());
+		}
+	}
+	
+	@Then("The user should be able to see an error message in alert window")
+	public boolean the_user_should_be_able_to_see_an_error_message_in_alert_window() {
+		try {
+			Alert alert = driver.switchTo().alert();
+			LoggerLoad.info("Alert found: " + alert.getText());
+			alert.accept(); // Click OK on the alert
+			return true;
+		} catch (NoAlertPresentException e) {
+			LoggerLoad.error("No alert found.");
+			return false;
+		}
+	}
+
+//TC05
+	@Given("The user is on the tryEditor page of Array in python")
+	public void the_user_is_on_the_try_editor_page_of_array_in_python() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+	
+	@When("The user clicks Run button with the valid code from sheetname {string} and row {int}")
+	public void the_user_clicks_run_button_with_the_valid_code_from_sheetname_and_row(String Sheetname,
+			Integer RowNumber) {
+
+		arraypage.clickarraysInPythonLink();
+		tryEditorpage.clickTryHereButton();
+		try {
+			tryEditorpage.enterCodeFromExcel(Sheetname, RowNumber);
+			tryEditorpage.clickRunButton();
+		} catch (Exception e) {
+			System.err.println("Error while entering code or clicking Run: " + e.getMessage());
+		}
+
+	}
+
+	@Then("The user should be able to see output in the console")
+>>>>>>> Stashed changes
 	public void the_user_should_be_able_to_see_output_in_the_console() {
 		String consoleOutput =tryEditorpage.getOutputText();
 		if (consoleOutput != null && !consoleOutput.isEmpty()) {
@@ -394,6 +566,259 @@ public void the_user_is_on_tryeditor_page_of_basic_operations_in_lists_page() {
  public void the_user_clicks_the_run_button_without_entering_the_code_in_the_editor_for_applications_of_array_section() {
      try {
 		tryEditorpage.clickRunButton();
+<<<<<<< Updated upstream
+=======
+	}
+
+//TC14
+	@When("The user clicks Run button with invalid code from sheetname {string} and row {int} for Basic Operations in Lists page")
+	public void the_user_clicks_run_button_with_invalid_code_from_sheetname_and_row_for_basic_operations_in_lists_page(
+			String Sheetname, Integer RowNumber) {
+		try {
+			tryEditorpage.enterCodeFromExcel(Sheetname, RowNumber);
+			tryEditorpage.clickRunButton();
+			LoggerLoad.info("Run button clicked with invalid code.");
+		} catch (Exception e) {
+			LoggerLoad.error("Error while entering code or clicking Run: " + e.getMessage());
+		}
+	}
+
+//TC15
+	@When("The user clicks Run button with valid code from sheetname {string} and row {int} for Basic Operations in Lists page")
+	public void the_user_clicks_run_button_with_valid_code_from_sheetname_and_row_for_basic_operations_in_lists_page(
+			String Sheetname, Integer RowNumber) {
+		try {
+			tryEditorpage.enterCodeFromExcel(Sheetname, RowNumber);
+			tryEditorpage.clickRunButton();
+			LoggerLoad.info("Run button clicked with valid code.");
+		} catch (Exception e) {
+			LoggerLoad.error("Error while entering code or clicking Run: " + e.getMessage());
+		}
+	}
+
+//TC16
+	@When("The user clicks the Applications of Array link")
+	public void the_user_clicks_the_applications_of_array_link() {
+		arraypage.clickapplicationsOfArrayLink();
+	}
+
+	@Then("The user should be redirected to a page having an tryEditor with a Run button in Applications of Array link")
+	public void the_user_should_be_redirected_to_a_page_having_an_try_editor_with_a_run_button_in_applications_of_array_link() {
+
+		String actualTitle = homepage.getHomePageTitle();
+
+		LoggerLoad.info("Verifying page title: " + actualTitle);
+		Assert.assertEquals(actualTitle, "Applications of Array", "Expected title: 'Applications of Array' but found: " + actualTitle);
+	}
+
+//TC17
+	@Given("The user is on Applications of Array page")
+	public void the_user_is_on_applications_of_array_page() {
+		arraypage.clickapplicationsOfArrayLink();
+	}
+	@When("The user clicks Try Here button in Applications of Array page")
+	public void the_user_clicks_try_here_button_in_applications_of_array_page() {
+		tryEditorpage.clickTryHereButton();
+	}
+
+//TC18
+	@When("The user clicks the Run button without entering the code in the Editor for Applications of Array section")
+	public void the_user_clicks_the_run_button_without_entering_the_code_in_the_editor_for_applications_of_array_section() {
+		tryEditorpage.clickTryHereButton();
+
+		try {
+			tryEditorpage.clickRunButton();
+		} catch (Exception e) {
+		LoggerLoad.info("Exception: ");
+			e.printStackTrace();
+		}
+	}
+
+//TC19
+	@When("The user clicks Run button with invalidcode from sheetname {string} and row {int} for Applications of Array page")
+	public void the_user_clicks_run_button_with_invalidcode_from_sheetname_and_row_for_applications_of_array_page(
+			String Sheetname, Integer RowNumber) {
+		tryEditorpage.clickTryHereButton();
+		try {
+			tryEditorpage.enterCodeFromExcel(Sheetname, RowNumber);
+			tryEditorpage.clickRunButton();
+			LoggerLoad.info("Run button clicked with invalid code.");
+		} catch (Exception e) {
+			LoggerLoad.error("Error while entering code or clicking Run: " + e.getMessage());
+		}
+	}
+
+//TC20
+	@When("The user clicks Run button with valid code from sheetname {string} and row {int} for Applications of Array page")
+	public void the_user_clicks_run_button_with_valid_code_from_sheetname_and_row_for_applications_of_array_page(
+			String Sheetname, Integer RowNumber) {
+		tryEditorpage.clickTryHereButton();
+
+		try {
+			tryEditorpage.enterCodeFromExcel(Sheetname, RowNumber);
+			tryEditorpage.clickRunButton();
+			LoggerLoad.info("Run button clicked with valid code.");
+		} catch (Exception e) {
+			LoggerLoad.error("Error while entering code or clicking Run: " + e.getMessage());
+		}
+	}
+
+//TC21
+	@When("The user clicks Practice Questions link of Array page")
+	public void the_user_clicks_practice_questions_link_of_array_page() {
+		arraypage.clickapplicationsOfArrayLink();
+		arraypage.clickPracticeQuestionsLink();
+	}
+
+	@Then("The user should be redirected to page with four Practice Questions")
+	public void the_user_should_be_redirected_to_page_with_four_practice_questions() {
+		assertEquals("Search the array", arraypage.searchTheArrayLink.getText(),
+				"Text mismatch! Expected: Search the array");
+		assertEquals("Max Consecutive Ones", arraypage.maxConsecutiveOnes.getText(),
+				"Text mismatch! Expected: Max Consecutive Ones");
+		assertEquals("Find Numbers with Even Number of Digits", arraypage.findNumWithEvenNumOfDigits.getText(),
+				"Text mismatch! Expected: Find Numbers with Even Number of Digits");
+		assertEquals("Squares of a Sorted Array", arraypage.squaresOfAsortedArray.getText(),
+				"Text mismatch! Expected: Squares of a Sorted Array");
+	}
+
+//TC22
+	@Given("The user is on the Practice Questions page")
+	public void the_user_is_on_the_practice_questions_page() {
+		arraypage.clickarraysInPythonLink();
+	  arraypage.clickPracticeQuestionsLink();
+		
+	}
+	@When("The user clicks Search the array page Question link")
+	public void the_user_clicks_search_the_array_page_question_link() {
+		arraypage.clickSearchTheArrayLink();
+
+	}
+
+	@Then("The user should be redirected to try Editor page with a Run and Submit buttons")
+	public void the_user_should_be_redirected_to_try_editor_page_with_a_run_and_submit_buttons() {
+
+		String pageTitle = homepage.getHomePageTitle();
+
+		Assert.assertTrue(pageTitle.contains("Assessment") || pageTitle.contains("Editor"),
+				"Unexpected page title: " + pageTitle);
+		LoggerLoad.info("User successfully landed on the Try Editor page.");
+
+	}
+
+//TC23
+	@Given("The user is on the try Editor page for Search the array practice question")
+	public void the_user_is_on_the_try_editor_page_for_search_the_array_practice_question() {
+		 arraypage.clickarraysInPythonLink();
+		arraypage.clickPracticeQuestionsLink();
+		arraypage.clickSearchTheArrayLink();
+		
+	}
+
+
+
+	@When("The user clicks Run button with invalidcode from sheetname {string} and row {int} for Search the array practice question")
+	public void the_user_clicks_run_button_with_invalidcode_from_sheetname_and_row_for_search_the_array_practice_question(
+			String Sheetname, Integer RowNumber) throws InterruptedException {
+		
+		try {
+			tryEditorpage.enterCodeFromExcel(Sheetname, RowNumber);
+			tryEditorpage.clickRunButton();
+			LoggerLoad.info("Run button clicked with invalid code.");
+		} catch (Exception e) {
+			LoggerLoad.error("Error while entering code or clicking Run: " + e.getMessage());
+		}
+	}
+	@Then("The user should able to see an error message in output window")
+	public void the_user_should_able_to_see_an_error_message_in_output_window() {
+		String output = tryEditorpage.getOutputText();
+		LoggerLoad.info("Output from editor: " + output);
+	}
+
+
+//TC24
+	
+	@When("The user clicks Run button with valid code from sheetname {string} and row {int} for Search the array practice question")
+	public void the_user_clicks_run_button_with_valid_code_from_sheetname_and_row_for_search_the_array_practice_question(
+			String Sheetname, Integer RowNumber) throws InterruptedException {
+		try {
+			tryEditorpage.enterCodeFromExcel(Sheetname, RowNumber);
+			tryEditorpage.clickRunButton();
+			LoggerLoad.info("Run button clicked with valid code.");
+		} catch (Exception e) {
+			LoggerLoad.error("Error while entering code or clicking Run: " + e.getMessage());
+		}
+	}
+
+	
+
+//TC25
+	@Given("The user is on the try Editor page for Max Consecutive Ones practice question")
+	public void the_user_is_on_the_try_editor_page_for_max_consecutive_ones_practice_question() {
+		 arraypage.clickarraysInPythonLink();
+			arraypage.clickPracticeQuestionsLink();
+			arraypage.clickMaxConsecutiveOnes();
+			
+	}
+
+	@When("The user clicks Run button with invalidcode from sheetname {string} and row {int}")
+	public void the_user_clicks_run_button_with_invalidcode_from_sheetname_and_row(
+			String Sheetname, Integer RowNumber) throws InterruptedException {
+		try {
+			tryEditorpage.enterCodeFromExcel(Sheetname, RowNumber);
+			tryEditorpage.clickRunButton();
+			LoggerLoad.info("Run button clicked with invalid code.");
+		} catch (Exception e) {
+			LoggerLoad.error("Error while entering code or clicking Run: " + e.getMessage());
+		}
+	
+	}
+	
+
+//TC26
+	@When("The user clicks Run button with validcode from sheetname {string} and row {int} for Max Consecutive Ones practice question")
+	public void the_user_clicks_run_button_with_validcode_from_sheetname_and_row_for_max_consecutive_ones_practice_question(
+			String Sheetname, Integer RowNumber) throws InterruptedException {
+		try {
+			tryEditorpage.enterCodeFromExcel(Sheetname, RowNumber);
+			tryEditorpage.clickRunButton();
+			LoggerLoad.info("Run button clicked with valid code.");
+		} catch (Exception e) {
+			LoggerLoad.error("Error while entering code or clicking Run: " + e.getMessage());
+		}
+	
+	}
+	
+
+//TC27
+	@Given("The user is on the try Editor page for Find Numbers with Even Number of Digits practice question")
+	public void the_user_is_on_the_try_editor_page_for_find_numbers_with_even_number_of_digits_practice_question() {
+		 arraypage.clickarraysInPythonLink();
+			arraypage.clickPracticeQuestionsLink();
+			arraypage.clickFindNumWithEvenNumOfDigits();
+	}
+	@When("The user clicks Run button with invalidcode from sheetname {string} and row {int} for Find Numbers with Even Number of Digits practice question")
+	public void the_user_clicks_run_button_with_invalidcode_from_sheetname_and_row_for_find_numbers_with_even_number_of_digits_practice_question(
+			String Sheetname, Integer RowNumber) throws InterruptedException {
+		try {
+			tryEditorpage.enterCodeFromExcel(Sheetname,RowNumber);
+			tryEditorpage.clickRunButton();
+			LoggerLoad.info("Run button clicked with invalid code.");
+		} catch (Exception e) {
+			LoggerLoad.error("Error while entering code or clicking Run: " + e.getMessage());
+		}
+	}
+
+//TC28
+
+@When("The user clicks Run button with valid code from sheetname {string} and row {int} for Find Numbers with Even Number of Digits practice question")
+public void the_user_clicks_run_button_with_valid_code_from_sheetname_and_row_for_find_numbers_with_even_number_of_digits_practice_question(
+		String Sheetname, Integer RowNumber) throws InterruptedException {
+	try {
+		tryEditorpage.enterCodeFromExcel(Sheetname, RowNumber);
+		tryEditorpage.clickRunButton();
+		LoggerLoad.info("Run button clicked with valid code.");
+>>>>>>> Stashed changes
 	} catch (Exception e) {
 		// TODO Auto-generated catch block
 		e.printStackTrace();

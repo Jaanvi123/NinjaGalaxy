@@ -66,7 +66,11 @@ public class SignInPageObj {
 	public void EnterFromExcel(String sheetname, int row) throws IOException {
 
 		List<Map<String, String>> testData;
+<<<<<<< Updated upstream
 		testData = excelread.readExcelSheet("/Users/dineshdeshmukh/eclipse-workspace/NinjaGalaxy-Jaanvi-branch/src/test/resources/TestData/TestingData.xlsx", sheetname);
+=======
+		testData = excelread.readExcelSheet(sheetname);
+>>>>>>> Stashed changes
 
 		if (row >= testData.size()) {
 			LoggerLoad.info("Row index " + row + " is out of bounds for the sheet: " + sheetname);
@@ -86,14 +90,18 @@ public class SignInPageObj {
 		String Msg = errorMessage.getText();
 		LoggerLoad.info("Error Message is: " + Msg);
 	}
-
 	public void TakeScreenshot() throws IOException {
-		String scr = "screenshot_" + new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
-		File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		Files.move(screenshot.toPath(), Path.of(
-				"C:\\Users\\onlin\\eclipse-workspace\\DsAlgo_Galaxy\\src\\test\\resources\\Screenshots", scr + ".png"));
-		LoggerLoad.info("Screenshot saved: " + scr + ".png");
-		LoggerLoad.info("Error Message is displayed");
+	    String scr = "screenshot_" + new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
+	    File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+	    
+	    // Correct absolute path with leading slash
+	    Path destination = Path.of("/Users/dineshdeshmukh/eclipse-workspace/NinjaGalaxy-working/src/test/resources/Screenshots", scr + ".png");
+	    
+	    Files.move(screenshot.toPath(), destination);
+	    
+	    LoggerLoad.info("Screenshot saved: " + scr + ".png");
+	    LoggerLoad.info("Error Message is displayed");
 	}
+
 
 }

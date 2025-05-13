@@ -58,17 +58,19 @@ public class RegisterPageObj {
     }
     public void fillRegistrationForm(String sheetName, int rowIndex)
             throws IOException, OpenXML4JException, InterruptedException {
-        List<Map<String, String>> testData;
-		testData = excelread.readExcelSheet("src/test/resources/TestData/TestingData.xlsx", sheetName);
-		 LoggerLoad.info("Register test data: " + testData);
+        List<Map<String, String>> testData = excelread.readExcelSheet(sheetName);  // Only pass sheet name
+        LoggerLoad.info("Register test data: " + testData);
+
         if (rowIndex >= testData.size()) {
             LoggerLoad.error("Row index " + rowIndex + " is out of bounds for the sheet: " + sheetName);
             throw new IllegalArgumentException("Invalid row index: " + rowIndex);
         }
+
         Map<String, String> rowData = testData.get(rowIndex);
         String username = rowData.get("username");
         String password = rowData.get("password");
         String confirmPassword = rowData.get("password confirmation");
+<<<<<<< Updated upstream
         enterUsername(username);
         enterPassword(password);
         enterConfirmPassword(confirmPassword);
@@ -92,6 +94,17 @@ public class RegisterPageObj {
     }
 	
   
+=======
+
+        userNameField.sendKeys(username);
+        passwordField.sendKeys(password);
+        confirmPasswordField.sendKeys(confirmPassword);
+
+        LoggerLoad.info("Filled registration form with -> Username: " + username +
+                ", Password: " + password + ", Confirm Password: " + confirmPassword);
+    }
+
+>>>>>>> Stashed changes
     public String displayPasswordMismatchError() {
 		return passwordMismatchOnRegPage.getText();
 	}
@@ -136,4 +149,16 @@ public class RegisterPageObj {
 	   
 	    return actualAlertMsg;
 	}  
+<<<<<<< Updated upstream
+=======
+	
+	public void TakeErrorScreenshot() throws IOException {
+		String scr = "screenshot_" + new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
+		File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+		Files.move(screenshot.toPath(), Path.of(
+				"/Users/dineshdeshmukh/eclipse-workspace/NinjaGalaxy-working/src/test/resources/Screenshots", scr + ".png"));
+		LoggerLoad.info("Screenshot saved: " + scr + ".png");
+		LoggerLoad.info("Error Message is displayed on the screen");
+	}
+>>>>>>> Stashed changes
 }

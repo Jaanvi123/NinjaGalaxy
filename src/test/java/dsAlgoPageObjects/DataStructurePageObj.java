@@ -38,6 +38,7 @@ public class DataStructurePageObj {
 		LoggerLoad.info("Practice Questions link clicked");
 	}
 
+<<<<<<< Updated upstream
 	public void getcurrentpageUrl() {
 
 		String actualUrl = driver.getCurrentUrl();
@@ -45,7 +46,13 @@ public class DataStructurePageObj {
 		String expectedUrl = ConfigReader.getProperty("DSPageUrl"); 
 		assertEquals(expectedUrl, actualUrl);
 
+=======
+	public void logCurrentPageUrl() {
+	    String currentUrl = driver.getCurrentUrl();
+	    LoggerLoad.info("Current URL after login: " + currentUrl);
+>>>>>>> Stashed changes
 	}
+
 
 	public WebElement getTimeComplexityLink() {
 		return timeComplexityLink;
