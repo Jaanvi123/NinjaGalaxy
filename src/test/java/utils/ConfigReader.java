@@ -55,10 +55,6 @@ public class ConfigReader {
 		return properties.getProperty("urlHome");
 	}
 
-	public ConfigReader(WebDriver driver) {
-		this.driver = driver;
-		PageFactory.initElements(driver, this);
-
 	}
 
 }
